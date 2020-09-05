@@ -1,0 +1,50 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Remota.WebConfig.Models.RadioNetworkStatusResponseModel>
+@{
+    ViewBag.Path = new[] { Text.WebResources.ServerStatus };
+    ViewBag.Title = @Text.WebResources.RadioNetworksStatus;
+    Layout = "_Layout.cshtml";
+}
+
+@section Script {
+    <script src="~/Content/nestable2/jquery.nestable.js" defer></script>
+    <script src="~/Content/scripts/radio-networks-status.js" defer></script>
+}
+<link href="@Url.Content("~/Content/nestable2/jquery.nestable.min.css")" rel="stylesheet">
+<link href="@Url.Content("~/Content/nestable2/jquery.nestable")" rel="stylesheet">
+<link href="@Url.Content("~/Content/styles/radio-networks-status.css")" rel="stylesheet" type="text/css" />
+
+<div id="radioNetworksStatus_filter" class="dataTables_filter">
+    <div class="row justify-content-between top col-12" ">
+        <div class="col-3 col-auto my-1 col-a">
+            <select class="custom-select mr-sm-2" id="ordination">
+                <option value="" data-default disabled selected>@Text.WebResources.ChooseOrder</option>
+                <option value="type">@Text.WebResources.Type</option>
+                <option value="title">@Text.WebResources.Title</option>
+                <option value="details">@Text.WebResources.Details</option>
+                <option value="status">@Text.WebResources.Status </option>
+            </select>
+        </div>
+        <div class="col-3 col-auto my-1 col-a">
+            <select required="" class="form-control" id="ordination" name="KeepAliveMode">
+                <option value="type">@Text.WebResources.Type</option>
+                <option value="title">@Text.WebResources.Title</option>
+                <option value="details">@Text.WebResources.Details</option>
+                <option value="status">@Text.WebResources.Status </option>
+            </select>
+        </div>
+        <div class="col-3 my-1 col-b">
+            <span class="btn btn-primary" typeof="button" id="btnOrder">OK</span>
+        </div>
+        <div class="col-3 col-auto my-1 col-c">
+            <label class="label col-cc">Pesquisar  </label>
+        </div>
+        <div class="col-3 col-auto my-1 col-d">
+            <input type="text" class="form-control form-control-sm" id="search">
+        </div>
+    </div>
+</div>
+
+
+<div class="dd" id="radio-networks">
+
+</div>

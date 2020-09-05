@@ -1,0 +1,51 @@
+namespace App {
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (stationsGroups) {
+                var html = ``;               
+                stationsGroups.forEach(function (stationGroup) {
+                    html += buildItem(stationGroup);                    
+                    html += `<li class='dd-item' >${stationGroup.details}</li>`; 
+                    
+
+                });
+                $("div#radio-networks").append(html); //--- Coloca todos os elementos dentro da lista #radio-networks-list
+            }
+        });
+    }
+
+    function buildItem(item) {
+        var html = "<li class='dd-item' 'id=radio-networks-list'>";
+        html += "<div class='dd-handle'>" + item.id + "</div>";
+
+        if (item.stations) {
+
+            html += "<ol class='dd-list'>";
+            $.each(item.stations, function (index, sub) {
+                html += buildItem(sub);
+            });
+            html += "</ol>";
+
+        }
+
+        html += "</li>";
+
+        return html;     
+      
+    }
+
+
+    loadRadioNetworks();
+    //$('#radio-networks').nestable('');
+    
+    
+    //$('#radio-networks-content').html(output);
+   
+        //loadRadioNetworks();
+
+}

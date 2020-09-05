@@ -1,0 +1,255 @@
+@{
+    ViewData["Title"] = "AccessGroups";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@using System.Linq;
+
+<div class="row">
+    <div class="col">
+        <table class="table table-striped table-bordered w-100 dt-responsive" id="accessGroups">
+            <thead>
+                <tr>
+                    <th>@Remota.WebApp.Resources.WebResources.Name</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<div id="accessGroupModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="accessGroupModalLabel" aria-hidden="true" data-toggle="modal" data-target="accessGroupModal">
+    <div class="modal-dialog" role="document">
+        <form id="accessGroupForm" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="accessGroupModalLabel" data-label-add="@Remota.WebApp.Resources.WebResources.AddAccessGroup" data-label-change="@Remota.WebApp.Resources.WebResources.ChangeAccessGroup"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+                <div class="alert alert-danger"></div>
+
+                <div class="form-group">
+                    <label for="name">@Remota.WebApp.Resources.WebResources.Name</label>
+                    <input required class="form-control" type="text" id="name" name="Name" />
+                    <span id="name_feedback" class="invalid-feedback"></span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnSaveAccessGroup">@Remota.WebApp.Resources.WebResources.Save</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">@Remota.WebApp.Resources.WebResources.Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div id="confirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">@Remota.WebApp.Resources.WebResources.Attention</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>@Remota.WebApp.Resources.WebResources.ConfirmDeleteAccessGroup</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" id="btnConfirmDeleteAccessGroup" data-toggle="modal" data-target="btnConfirmDeleteAccessGroup">@Remota.WebApp.Resources.WebResources.Yes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">@Remota.WebApp.Resources.WebResources.No</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/access-groups.bundle.js" asp-append-version="true"></script>
+
+===============================
+import 'bootstrap/dist/js/bootstrap.bundle'
+import '../css/access-groups.scss'
+import 'datatables/media/js/jquery.dataTables'
+
+$(function () {
+    $('#accessGroups').dataTable({       
+        ajax: {
+            "url": '/api/dispatcher/access-groups',
+            "dataSrc": ''
+        },
+        dom: "<'row mb-3'<'col'B>>" +
+            "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+        columns: [
+            { data: "name", searchable: true }
+        ],
+        order: [[0, 'desc']],
+        select: {
+            style: 'os'
+        },
+        responsive: {
+            breakpoints: [
+                { name: 'xl', width: Infinity },
+                { name: 'lg', width: 1200 },
+                { name: 'md', width: 992 },
+                { name: 'sm', width: 768 },
+                { name: 'xs', width: 576 }
+            ]
+        },
+        buttons: [
+            {
+                text: function () { return dt.i18n('Add', 'Add'); },
+                action: function () {
+                    $('form').prop('action', '/api/access-groups/add').find('.invalid-feedback, .alert').hide();
+                    $('#accessGroupForm :input').val("");
+
+                    let label = $('#accessGroupModalLabel');
+                    label.text(label.data('label-add'));
+                    $('#accessGroupModal').modal('show');
+                }
+            },
+            {
+                extend: 'selectedSingle',
+                text: function () { return dt.i18n('Change', 'Change'); },
+                action: function () {
+                    $('form').prop('action', '/api/access-groups/update').find('.invalid-feedback, .alert').hide();
+                    let record = dt.row({ selected: true }).data();
+                    $('#name').val(record.name);
+
+                    let label = $('#accessGroupModalLabel');
+                    label.text(label.data('label-change'));
+                    $('#accessGroupModal').modal('show');
+
+                    $('#btnSaveAccessGroup').prop("disabled", true);
+                }
+            },
+            {
+                extend: 'selected',
+                text: function () { return dt.i18n('Delete', 'Delete'); },
+                action: function () {
+                    $('#confirmModal').modal('show');
+                }
+            }
+        ]
+    });
+
+    function reloadTable() {
+        unblockUI();
+
+        $('#accessGroupModal,#confirmModal').modal('hide');
+
+        dataTable.clear();
+        dataTable.ajax.reload();
+        dataTable.draw();
+    }
+
+    $('#accessGroupForm :input').change(enableButtons);
+    $('#accessGroupForm :input').keyup(enableButtons);
+
+    function enableButtons(event) {
+        if (event.keyCode !== 9) {
+            $('#btnSaveAccessGroup').prop('disabled', false);
+        }
+    }
+
+    $('#btnSaveAccessGroup').on('click', function () {
+        $('.invalid-feedback').hide();
+        $('#accessGroupModal').modal('hide');
+
+        saveClicked = true;
+    });
+
+    $('#accessGroupModal').on('hidden.bs.modal', function () {
+        if (saveClicked) {
+            blockUI();
+            saveAccessGroup();
+            saveClicked = false;
+        }
+    });
+
+    function saveAccessGroup() {
+        let rowData = dataTable.row({ selected: true }).data();
+
+        let data = JSON.stringify({
+            guid: (rowData && rowData['guid']) || null,
+            name: $('#name').val()
+        });
+        $.ajax($('form').prop('action'), {
+            method: 'POST',
+            contentType: 'application/json',
+            data: data
+        }).then(reloadTable, function (result) {
+            $('#accessGroupModal').modal('show');
+            unblockUI();
+            let errors = result.responseJSON.errors || [];
+            let msg = result.statusText || null;
+            for (let field in errors) {
+                $(`#${field} ~ .invalid-feedback`).show().html(errors[field].map(x => x.errorMessage).join('<br/>'));
+            }
+            if (msg) {
+                $('#accessGroupModal .alert').show().text(msg);
+            };
+        });
+    }
+
+    $('#btnConfirmDeleteAccessGroup').on('click', function () {
+        blockUI();
+
+        let data = JSON.stringify(dataTable.rows({ selected: true }).data().toArray());
+        $.ajax('/api/access-groups/delete', {
+            method: 'POST',
+            contentType: 'application/json',
+            data: data,
+            error: function (result) {
+                unblockUI();
+
+                let msg = result.statusText || null;
+                let errors = result.responseJSON.errors || [];
+                console.log(errors);
+                console.log(result);
+                if (msg) {
+                    msg += "<br /><br />";
+                    for (let error in errors) {
+                        msg += `Erro em ${error}: `;
+                        msg += errors[error].map(x => x.errorMessage);
+                        msg += "<br/>";
+                    }
+                    $('#confirmModal').modal('hide');
+                    $('#errorText').html(msg);
+                    $('#errorModal').modal('show');
+                }
+            }
+        }).then(reloadTable);
+    });
+
+});
+            //alert('ENTROU PRONTO!');
+
+
+            //--- Exemplo de obtenção
+    //$.ajax('/api/dispatcher/access-groups', {
+    //    method: 'GET',
+    //    contentType: 'application/json',
+    //    success: function (data) {
+    //        alert('Gotten VERIFICAR!');
+    //    }
+    //});
+
+    //function reloadTable() {
+    //    unblockUI();
+
+    //    $('#accessGroupModal,#confirmModal').modal('hide');
+
+    //    dataTable.clear();
+    //    dataTable.ajax.reload();
+    //    dataTable.draw();
+    //}
+
+

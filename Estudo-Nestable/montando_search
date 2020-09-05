@@ -1,0 +1,201 @@
+namespace App {
+
+    let stationGroups: any = [];
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                stationGroups = data;
+              
+                drawContent(stationGroups);
+            }
+        });
+    }
+
+    function drawContent(stationGroups) {
+        $("#radio-networks").html("");
+
+        let nestableConfigs = {
+            expandBtnHTML: '',
+            collapseBtnHTML: ''
+        };
+
+        var html = '';
+        html += '<ol class="dd-list">';
+
+        stationGroups.forEach(function (stationGroup) {             
+
+            html += `<li class="dd-item dd3-item stationGroup" id="station-group-${stationGroup.guid}">`;            
+            html += `<div class='dd-handle stationGroup-color'>`;            
+            html += '<div class="row justify-content-between stationGroup-content">';
+            html += `<div class="col-6 stationGroup-type">${stationGroup.type}`;
+            html += '<div>';
+            html += `<div class="stationGroup-details">${stationGroup.details}</div>`;
+            html += '</div>';
+            html += '</div>';            
+            html += `<div class="col-5 stationGroup-status" data-status="${stationGroup.status}"> ${stationGroup.status}`;
+            html += '</div>';            
+            html += '</div>';
+            html += '</div>';      
+
+            html += buildItem(stationGroup);
+            html += '</li>';
+            
+        });
+        html += '</ol>';
+
+        $("#radio-networks").append(html); 
+
+        $('.stationGroup-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.stationGroup-color'), this);
+        });
+
+        $('.station-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.station-color'), this);
+        });
+
+        $('.dd3-item').on('click', function () {
+            if ($(this).hasClass('dd-collapsed')) {
+                $(this).removeClass('dd-collapsed');
+            }
+            else {
+                $(this).addClass('dd-collapsed');
+            }
+        });
+
+        //Você desativa todos os eventos de ponteiro, exceto o recolhimento.
+       /* $('#nestable02').nestable({ maxDepth: 1 });  */
+    }
+
+    function buildItem(item) {
+        var html = '';
+
+        if (item.stations) {           
+
+            html += '<ol class="dd-list">';
+
+            $.each(item.stations, function (index, sub) {                
+
+                html += `<li class="dd-item dd3-item station" id="station-${sub.guid}" >`;
+                html += `<div class="dd-handle station-color">`;                
+                html += '<div class="row justify-content-between station-content">';
+                html += `<div class="col-6 station-title">${sub.title}`;
+                html += '<div>';
+                html += `<div class="station-details">${sub.details}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += `<div class="col-5 station-status" data-status="${sub.status}"> ${sub.status}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += '</li>';
+
+                changeColor(sub.status, '.station-color', '.station-status');
+            });
+
+            html += '</ol>';
+        }
+        return html;
+    }
+
+    loadRadioNetworks();
+
+    function changeColor(status, colorSelector, statusSelector) {
+        let color = status === 'Offline' ? `#B70A0A` : `#60B70A`;
+
+        $(colorSelector).css('border-left-color', color);  
+        $(statusSelector).css('color', color);    
+    }
+
+    $('#search').on('keyup', search);
+    
+    function search() {
+
+        let filteredStationGroups: any = [];
+        let filteredStations: any = [];
+
+        let search = $("#search").val();
+        let data   = stationGroups;
+
+        filteredStationGroups = data.filter(filter(search));
+
+        drawContent(filteredStationGroups);
+    }
+
+    function filter(search) {
+        return function (item) {
+
+            let returnFirstLevel = item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.type.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+            let filteredStations = filterStations(search, item.stations);
+
+            if (!returnFirstLevel && filteredStations.length > 0) {
+                item.stations = filteredStations;
+                return true;
+            } else  {
+                return returnFirstLevel;
+            }
+        }               
+    }
+
+    function filterStations(search, stations) {
+        let filteredStations = stations.filter(filterStationsBySearchTerm(search));
+        return filteredStations;
+    }
+
+    function filterStationsBySearchTerm(search) {
+        return function (item) {
+            return item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+        }
+    }
+
+
+
+        //var novabusca = data.filter(input);
+
+        //if ( n[i] != $(this).parents('div.dataTables_filter')[0] )
+        /*
+        var posA = fieldsStatus[0];
+
+
+        var novabusca = fieldsStatus.filter(function (item) {
+            return groups.filter(el => status.toLowerCase().indexOf(status.toLowerCase()) > -1);
+        })
+
+        console.log(novabusca);
+
+        const search = groups.filter(function (fields) {
+            if ((status == 'On') || (status = 'On')) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+        const filterItems = (query) => {
+            return groups.filter(el => status.toLowerCase().indexOf(query.toLowerCase()) > -1);
+        };
+            
+
+            function returnfilter(value) {
+                return value = input;
+            }
+            var filtered = [groupDetails, status].filter(returnfilter);
+
+
+
+   
+
+
+            alert('search');*/
+                      
+}

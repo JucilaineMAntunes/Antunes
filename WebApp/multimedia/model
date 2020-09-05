@@ -1,0 +1,236 @@
+using Nancy;
+using Nancy.ModelBinding;
+using Nancy.Security;
+using Nancy.Validation;
+using Remota.Services.Shared.Domain.MultimediaFiles.Services.Interfaces;
+using Remota.Services.Shared.Domain.Security.Services.Interfaces;
+using Remota.Services.Shared.Domain.Users.Services.Interfaces;
+using Remota.Shared.Services;
+using Remota.WebConfig.Models;
+using Remota.WebConfig.Resources;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using dbModels = Remota.Server.Database.Models;
+using System.Diagnostics;
+
+namespace Remota.WebConfig.Modules
+{
+    public class MultimediaFilesModule : NancyModule
+    {
+        private const int MaxFileSize = 524288 * 8; // 500 Kb * 8 = 4MB
+
+        private readonly ILoggerService _loggerService;
+        private readonly IMultimediaFilesService _multimediaFilesService;
+        private readonly IUsersService _usersService;
+        private readonly ISecurityService _securityService;
+
+        public MultimediaFilesModule(ILoggerService loggerService,
+            IMultimediaFilesService multimediaFilesService, IUsersService usersService, ISecurityService securityService)
+        {
+
+            _loggerService = loggerService;
+            _multimediaFilesService = multimediaFilesService;
+            _usersService = usersService;
+            _securityService = securityService;
+
+            if (Debugger.IsAttached)
+                this.RequiresApiAuthentication();
+            else this.RequiresAuthentication();
+
+            Get["/web/multimedia-files"] = _ =>
+            {
+
+                var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeMultimedia");
+                if (!access)
+                    return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+
+                return View["MultimediaFiles.cshtml", new MultimediaFileModelResponse(_multimediaFilesService.Where(x => x.IsPublic || x.OwnerUserGuid == (Context.CurrentUser as UserIdentity)?.Guid))];
+            };
+
+            Get["/api/multimedia-files"] = _ =>
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(Context.Request.Headers.Authorization))
+                    {
+                        var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeMultimedia");
+                        if (!access)
+                            return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+                    }
+
+                    var user = (Context.CurrentUser as UserIdentity);
+
+                    var multimediaFiles = _multimediaFilesService.Where(x => x.IsPublic || x.OwnerUserGuid == user?.Guid).ToList();
+                    var multimediaFilesModel = new List<MultimediaFileModel>();
+
+                    foreach (var s in multimediaFiles)
+                        multimediaFilesModel.Add(new MultimediaFileModel(s)
+                        {
+                            OwnerUserName = _usersService.Find(x => x.Guid == s.OwnerUserGuid).FullName
+                        });
+
+                    return Response.AsJson(multimediaFilesModel, HttpStatusCode.OK);
+                }
+                catch (Exception ex)
+                {
+                    _loggerService.LogError(ex);
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = WebResources.Error_FailureObtainingMultimediaFiles };
+                }
+            };
+
+            Get["/api/multimedia-files/{id}"] = parameters =>
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(Context.Request.Headers.Authorization))
+                    {
+                        var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeMultimedia");
+                        if (!access)
+                            return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+                    }
+
+                    var guid = parameters.id;
+                    var multimediaFile = new MultimediaFileModel(_multimediaFilesService.Find(x => x.Guid == guid));
+                    return Response.AsJson(multimediaFile, HttpStatusCode.OK);
+                }
+                catch (Exception ex)
+                {
+                    _loggerService.LogError(ex);
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = WebResources.Error_FailureObtainingMultimediaFiles };
+                }
+            };
+
+            Post["/api/multimedia-files/add", true] = async (_, __) =>
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(Context.Request.Headers.Authorization))
+                    {
+                        var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeMultimedia");
+                        if (!access)
+                            return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+                    }
+
+                    var multimediaFile = this.Bind<MultimediaFileModel>();
+                    var result = this.Validate(multimediaFile);
+
+                    var isMp3Valid = false;
+                    var ownerUserGuid = default(Guid);
+
+                    if (Context.CurrentUser is UserIdentity identity)
+                        ownerUserGuid = identity.Guid;
+
+                    if (multimediaFile.FileData.Length > 0)
+                    {
+                        isMp3Valid = _multimediaFilesService.TestFileData(multimediaFile.FileData);
+
+                        if (multimediaFile.FileData.Length > MaxFileSize)
+                            //juci return Negotiate.WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ValidationError_InvalidFileDataSize);
+                            return Negotiate.WithAllowedMediaRange("application/json").WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ValidationError_InvalidFileDataSize);
+                    }
+
+                    if (!result.IsValid || !isMp3Valid)
+                    {
+                        //return Negotiate.WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ExceptInvalidFileFormat);  JUCI
+                        if (!isMp3Valid)
+                        {
+                            return Negotiate.WithAllowedMediaRange("application/json").WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ExceptInvalidFileFormat);
+
+                        }
+                        else
+                        {
+                            return Negotiate.WithAllowedMediaRange("application/json").WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.Error_FailureValidatingItem);
+                        }
+                    }
+                    var model = new dbModels.MultimediaFiles.MultimediaFileModel(Guid.Empty, multimediaFile.FileName, (Shared.Enums.AudioExtensions)multimediaFile.FileType, multimediaFile.Description, ownerUserGuid, multimediaFile.IsPublic)
+                    {
+                        FileData = multimediaFile.FileData
+                    };
+
+                    await _multimediaFilesService.AddAsync(model);
+
+                    return Response.AsJson(multimediaFile, HttpStatusCode.OK);
+                }
+                catch (Exception ex)
+                {
+                    _loggerService.LogError(ex);
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = WebResources.Error_FailureSavingMultimediaFiles };
+                }
+            };
+
+            Post["/api/multimedia-files/update", true] = async (_, __) =>
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(Context.Request.Headers.Authorization))
+                    {
+                        var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeMultimedia");
+                        if (!access)
+                            return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+                    }
+
+                    var multimediaFile = this.Bind<MultimediaFileModel>();
+                    var result = this.Validate(multimediaFile);
+
+                    var isMp3Valid = true;
+
+                    if (multimediaFile.FileData.Length > 0)
+                    {
+                        isMp3Valid = _multimediaFilesService.TestFileData(multimediaFile.FileData);
+
+                        if (multimediaFile.FileData.Length > MaxFileSize)
+                            //juci return Negotiate.WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ValidationError_InvalidFileDataSize);
+                            return Negotiate.WithAllowedMediaRange("application/json").WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ValidationError_InvalidFileDataSize);
+                    }
+
+                    if (result.IsValid && isMp3Valid)
+                        await _multimediaFilesService.UpdateAsync(new dbModels.MultimediaFiles.MultimediaFileModel((Guid)multimediaFile.Guid, multimediaFile.FileName, (Shared.Enums.AudioExtensions)multimediaFile.FileType, multimediaFile.Description, Guid.Empty, multimediaFile.IsPublic)
+                        {
+                            FileData = multimediaFile.FileData
+                        });
+                    else //juci return Negotiate.WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ExceptInvalidFile);
+                        return Negotiate.WithAllowedMediaRange("application/json").WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.ExceptInvalidFile);
+
+
+                    //juci return Response.AsJson(multimediaFile, HttpStatusCode.OK);
+                    return Response.AsJson(multimediaFile, HttpStatusCode.OK);
+                }
+                catch (Exception ex)
+                {
+                    _loggerService.LogError(ex);
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = WebResources.Error_FailureSavingMultimediaFiles };
+                }
+            };
+
+            Post["/api/multimedia-files/delete", true] = async (_, __) =>
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(Context.Request.Headers.Authorization))
+                    {
+                        var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeMultimedia");
+                        if (!access)
+                            return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+                    }
+
+                    foreach (var record in this.Bind<IEnumerable<MultimediaFileModel>>())
+                        await _multimediaFilesService.DeleteAsync(new dbModels.MultimediaFiles.MultimediaFileModel
+                        {
+                            Guid = (Guid)record.Guid,
+                            OwnerUserGuid = (Guid)record.OwnerUserGuid,
+                            IsPublic = record.IsPublic
+                        });
+
+                    //juci return Negotiate.WithModel(new object()).WithStatusCode(HttpStatusCode.OK);
+                    return Response.AsJson(new object(), HttpStatusCode.OK);
+                }
+                catch (Exception ex)
+                {
+                    _loggerService.LogError(ex);
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = WebResources.Error_FailureDeletingMultimediaFiles };
+                }
+            };
+        }
+    }
+}

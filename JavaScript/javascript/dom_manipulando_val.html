@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+       function distribuiCaracter(){
+        
+        //selecionar o valor digitado
+        //console.log(document.getElementById('entrada').value)
+       	var caracter = document.getElementById('entrada').value
+       	//limpar o campo
+       	document.getElementById('entrada').value = ''
+
+       	caracter.trim()
+
+       	 switch(caracter){
+       	 	case '0':
+       	 	case '1':
+       	 	document.getElementById('numeros').value += caracter
+       	 	break;
+       	 	default:
+       	 	document.getElementById('letras').value += caracter
+
+       	 }
+       }
+    </script>
+  </head>
+  <body>
+  <input type="text" placeholder="Digite aqui" onkeyup="distribuiCaracter()" id="entrada"/>
+  <br/>
+
+  <span>Letras:</span>
+  <input type="text" disabled="disabled" id="letras"/>  
+  
+  <span>Numeros:</span>
+  <input type="text" disabled="disabled" id="numeros"/>
+
+  
+  </body>
+</html>

@@ -1,0 +1,90 @@
+laytout
+
+
+@{
+    ViewData["Title"] = "AccessGroups";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<p>use this area to provide additional information.</p>
+<p>@ViewData["name"]</p>
+
+<div style="width:50%; margin:0 auto">
+  <table id="accessGroups">
+     <thead>
+        <tr>Name </tr>
+     </thead>
+  </table>
+</div>
+
+===============js======
+//import 'bootstrap/dist/js/bootstrap.bundle'
+//import '../css/access-groups.scss';
+
+var i = 0;
+
+$(document).ready(function () {
+    let oTable = $('#accessGroups').DataTable({
+        "ajax": {
+            "url": '/api/access-groups',
+            "type": "get",
+            "datatype": "json"
+        },
+        "columns": [
+            { "data": "name", "autowidth": true }
+        ]
+    })
+});
+===================layout----
+                    <h6 class="text-primary align-self-center mx-2 pt-4 align-self-md-start text-uppercase">@Remota.WebApp.Resources.WebResources.Management</h6>
+
+                    <a class="nav-item nav-link text-light" asp-controller="AccessGroups" asp-action="Index" href="AccessGroups">
+                        <i class="far fa-circle"></i>
+                        <span class="ml-2">@Remota.WebApp.Resources.WebResources.AccessGroups</span>
+                    </a>
+=============controle===
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Remota.Services.Shared.Domain.Security.Services.Interfaces;
+using Remota.Shared.Services;
+using Remota.Services.Shared.Application.AccessGroups;
+using Remota.Server.Database.Models;
+
+namespace Remota.WebApp.Controllers
+{
+    public class AccessGroupsController : Controller
+    {
+        private readonly IAccessGroupsService _service;
+        private readonly ISecurityService _securityService;
+
+        public AccessGroupsController(IAccessGroupsService service, ISecurityService security)
+        {
+            _service = service;
+            _securityService = security;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult GetAccessGroups()
+        {
+            var result = _service.GetAll().OrderBy(x => x.Name);
+
+           /* using (MyDatabaseEntities dc = new MyDatabaseEntities())
+            {
+                var access = dc.
+
+            }*/
+            return View(result);
+        }
+
+    }
+}					

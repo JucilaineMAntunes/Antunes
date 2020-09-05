@@ -1,0 +1,35 @@
+ReverseProxyMiddleware
+using Microsoft.AspNetCore.Http.Features; 
+
+ if (targetUri != null)
+            {
+                var targetRequestMessage = CreateTargetMessage(context, targetUri, appSettings.Token);
+
+                using (var responseMessage = await _httpClient.SendAsync(targetRequestMessage, HttpCompletionOption.ResponseHeadersRead, context.RequestAborted))
+                {
+                    context.Response.StatusCode = (int)responseMessage.StatusCode;
+                    CopyFromTargetResponseHeaders(context, responseMessage);
+                    await responseMessage.Content.CopyToAsync(context.Response.Body);
+                    return;
+                }
+            }
+            await _nextMiddleware(context);
+        }
+
+PARARA
+
+if (targetUri != null)
+            {
+                var targetRequestMessage = CreateTargetMessage(context, targetUri, appSettings.Token);
+
+                using (var responseMessage = await _httpClient.SendAsync(targetRequestMessage, HttpCompletionOption.ResponseHeadersRead, context.RequestAborted))
+                {
+                    context.Response.StatusCode = (int)responseMessage.StatusCode;
+                    context.Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = responseMessage.ReasonPhrase;
+                    CopyFromTargetResponseHeaders(context, responseMessage);
+                    await responseMessage.Content.CopyToAsync(context.Response.Body);
+                    return;
+                }
+            }
+            await _nextMiddleware(context);
+        }

@@ -1,0 +1,51 @@
+using Remota.Shared.Services;
+using Nancy;
+using Remota.WebConfig.Models;
+using Remota.WebConfig.Resources;
+using Remota.Services.Shared.Domain.Security.Services.Interfaces;
+using Nancy.Security;
+using System.Collections.Generic;
+using Remota.Services.Shared.Domain.RadioNetworksStatus.Interfaces;
+using System.Linq;
+using Remota.WebConfig.Managers;
+
+namespace Remota.WebConfig.Modules
+{
+    public class RadioNetworksStatusModule : NancyModule
+    {
+        private readonly ILoggerService _logger;
+        private readonly ISecurityService _securityService;
+        private readonly IRadioNetworksService _radioNetworksService;
+
+
+        public RadioNetworksStatusModule(ILoggerService logger, ISecurityService securityService, IRadioNetworksService radioNetworksService, RadioNetworksStatusManager radioNetworksStatusManager)
+        {
+            _logger = logger;
+            _securityService = securityService;
+            _radioNetworksService = radioNetworksService;
+
+            this.RequiresAuthentication();
+
+            Get["/web/status-radio-networks"] = _ =>
+            {
+                var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeGroups");
+                if (!access)
+                    return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+
+                return View["RadioNetworksStatus.cshtml", new RadioNetworkStatusResponseModel()];
+            };
+
+            Get["/api/status-radio-networks"] = _ =>
+            {
+                var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeGroups");
+                if (!access)
+                    return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+
+                var result = _radioNetworksService.GetDispatchStationStatusGroups();
+
+                return Response.AsJson(result);
+
+            };
+        }
+    }
+}

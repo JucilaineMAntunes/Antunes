@@ -1,0 +1,103 @@
+@{
+    ViewBag.Path = new[] { @Text.WebResources.Management };
+    ViewBag.Title = @Text.WebResources.Users;
+    ViewBag.FormAction = "/web/users ";
+    ViewBag.RenderFormButtons = false;
+    Layout = "_Layout.cshtml";
+}
+@using System.Linq;
+
+@section Script {
+    <script src="@Url.Content("~/Content/jquery-mask/jquery.mask.min.js")" defer></script>
+    <script src="@Url.Content("~/Content/scripts/users.js")" defer></script>
+}
+<div class="row">
+    <div class="col">
+        <table class="table table-striped table-bordered w-100 dt-responsive" id="users">
+            <thead>
+                <tr>
+                    <th>@Text.WebResources.Username</th>
+                    <th>@Text.WebResources.UserFullName</th>
+                    <th>@Text.WebResources.UserSecurity</th>
+                    <th>@Text.WebResources.UserAccessGroup</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@section Modal {
+    <div id="userModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <form id="userForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userModalLabel" data-label-add="@Text.WebResources.AddUser" data-label-change="@Text.WebResources.ChangeUser"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    @helper TabHeader(string name, string text, bool active = false)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link @(active ? "active" : "")" id="@name-tab" data-toggle="tab" href="#@name-panel" role="tab" aria-controls="@name-panel" aria-selected="true">@text</a>
+                        </li>
+                    }
+
+                    <div class="alert alert-danger"></div>
+
+                    @helper TabContent(string name, bool active = false)
+                    {
+                        <div class="tab-pane fade pt-2 show @(active ? "active" : "")" id="@name-panel" role="tabpanel" aria-labelledby="@name-tab">
+                            @Html.Partial("_" + name + "Tab", Model)
+                        </div>
+                    }
+
+                    <div class="row">
+                        <ul class="col-12 nav nav-tabs" id="settings" role="tablist">
+                            @TabHeader("general", Text.WebResources.General + "", true)
+                            @TabHeader("personalData", Text.WebResources.PersonalData + "")
+                            @TabHeader("security", Text.WebResources.Security + "")
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 tab-content" id="settingsContent">
+                            @TabContent("general", true)
+                            @TabContent("personalData")
+                            @TabContent("security")
+                        </div>
+                    </div>
+
+                    <div class="alert alert-danger"></div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSaveUser">@Text.WebResources.Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">@Text.WebResources.Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">@Text.WebResources.Attention</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="confirm-modal-message">@Text.WebResources.ConfirmDeleteUser</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btnConfirmDeleteUser">@Text.WebResources.Yes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">@Text.WebResources.No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+

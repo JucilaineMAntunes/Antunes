@@ -1,0 +1,61 @@
+Os métodos estão fora, pois o que está dentro do $(function() { ... }); é executado depois que a tela é desenhada.
+
+Jucilaine Antunes  4:24 PM
+sim precisa ser depois
+
+Bruno Fraga  4:27 PM
+Esse método $( ... ) é do JQuery, ele equivale ao onload da página, um evento que é chamado quando a tela acaba de carregar
+4:27
+Ao invés de você chamar $(function () { ... });, você pode chamar window.onload = function () { ... }
+4:27
+Sendo que o primeiro modo é utilizando o JQuery e o segundo é utilizando JavaScript puro
+4:30
+Os métodos que começam com hub (vamos chamá-los de hubs), devem ser registrados no SignalR (tecnologia que permite que ao chamar uma rotina no server, essa seja executada no client) antes que a conexão SignalR seja estabelecida.
+
+ if ($.connection) {
+        let hub = (<any>$.connection).radioNetworksStatusHub;
+
+        hub.client.setStationOffline = function (guid) {
+            $(`#${guid} .dd-handle`).css("border-left-color", "#B70A0A")
+        }
+        hub.client.setStationOnline = function (guid) {
+            $(`#${guid} .dd-handle`).css("border-left-color", "#649F35")
+        }
+    }
+
+
+
+       var parentEls = $('#station-' + guid).parents()
+                .map(function () {
+                    return this.className;
+                })
+                .get()
+                .join(", ");
+            alert('parents: ' + parentEls );
+			
+			
+$('.stationGroup').mouseout((e) => {
+            let txt = $(e.target).val();
+            $('.stationGroup').html('out stationGroup-details' + txt);
+        })
+
+        $('.stationGroup').mouseenter(() => {
+
+            $('.stationGroup-type').html('enter stationGroup-type');
+        })
+
+
+        $('.stationGroup').mouseover(() => {
+
+            $('.stationGroup').html('entrou over stationGroup');
+
+          
+
+
+        })
+
+
+           $("*", document.body).each(function () {
+                var parentTag = $(this).parent().get(0).tagName;
+                $(this).prepend(document.createTextNode(parentTag + " > "));
+            });		

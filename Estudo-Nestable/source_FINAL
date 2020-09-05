@@ -1,0 +1,253 @@
+namespace App {
+
+    let stationGroups: any = [];
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                stationGroups = data;
+
+                drawContent(stationGroups);
+            }
+        });
+    }
+
+    function drawContent(stationGroups) {
+        $("#radio-networks").html("");
+
+        let nestableConfigs = {
+            expandBtnHTML: '',
+            collapseBtnHTML: ''
+        };
+
+        var html = '';
+        html += '<ol class="dd-list">';
+
+        stationGroups.forEach(function (stationGroup) {
+
+            html += `<li class="dd-item dd3-item stationGroup" id="station-group-${stationGroup.guid}">`;
+            html += `<div class='dd-handle stationGroup-color'>`;
+            html += '<div class="row justify-content-between stationGroup-content">';
+            html += `<div class="col-6 stationGroup-type">${stationGroup.type}`;
+            html += '<div>';
+            html += `<div class="stationGroup-details">${stationGroup.details}</div>`;
+            html += '</div>';
+            html += '</div>';
+            html += `<div class="col-5 stationGroup-status" data-status="${stationGroup.status}"> ${stationGroup.status}`;
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            html += buildItem(stationGroup);
+            html += '</li>';
+
+        });
+        html += '</ol>';
+
+        $("#radio-networks").append(html);
+
+        $('.stationGroup-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.stationGroup-color'), this);
+        });
+
+        $('.station-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.station-color'), this);
+        });
+
+        $('.dd3-item').on('click', function () {
+            if ($(this).hasClass('dd-collapsed')) {
+                $(this).removeClass('dd-collapsed');
+            }
+            else {
+                $(this).addClass('dd-collapsed');
+            }
+        });
+
+        //Você desativa todos os eventos de ponteiro, exceto o recolhimento.
+        /* $('#nestable02').nestable({ maxDepth: 1 });  */
+    }
+
+    function buildItem(item) {
+        var html = '';
+
+        if (item.stations) {
+
+            html += '<ol class="dd-list">';
+
+            $.each(item.stations, function (index, sub) {
+
+                html += `<li class="dd-item dd3-item station" id="station-${sub.guid}" >`;
+                html += `<div class="dd-handle station-color">`;
+                html += '<div class="row justify-content-between station-content">';
+                html += `<div class="col-6 station-title">${sub.title}`;
+                html += '<div>';
+                html += `<div class="station-details">${sub.details}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += `<div class="col-5 station-status" data-status="${sub.status}"> ${sub.status}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += '</li>';
+
+                changeColor(sub.status, '.station-color', '.station-status');
+            });
+
+            html += '</ol>';
+        }
+        return html;
+    }
+
+    loadRadioNetworks();
+
+    function changeColor(status, colorSelector, statusSelector) {
+        let color = status === 'Offline' ? `#B70A0A` : `#60B70A`;
+
+        $(colorSelector).css('border-left-color', color);
+        $(statusSelector).css('color', color);
+    }
+
+    $('#search').on('keyup', search);
+
+    function search() {
+
+        let filteredStationGroups: any = [];
+
+        let search = $("#search").val();
+        let data = cloneArray(stationGroups);
+
+        filteredStationGroups = data.filter(filter(search));
+
+        drawContent(filteredStationGroups);
+    }
+
+    function cloneArray(array) {
+        let newArray: any = [];
+        array.forEach((v, i) => {
+            const val = (typeof v === 'object') ? Object.assign({}, v) : v;
+            newArray.push(val);
+        });
+        return newArray;
+    }
+
+    function filter(search) {
+        return function (item) {
+           
+            let returnFirstLevel = item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.type.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+            let filteredStations = filterStations(search, item.stations);
+            
+
+            if (!returnFirstLevel && filteredStations.length > 0) {
+                item.stations = filteredStations;
+                return true;
+            } else {
+                return returnFirstLevel;
+            }
+
+        }
+    }
+
+    function filterStations(search, stations) {
+        let filteredStations = stations.filter(filterStationsBySearchTerm(search));
+        return filteredStations;
+    }
+
+    function filterStationsBySearchTerm(search) {
+        return function (item) {
+            return item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+        }
+    }
+
+
+    $('#btnOrder').on('click', function () {
+      
+        let order = $("#inlineFormCustomSelect").val();        
+        alert('ordem' + order + order);        
+
+        let data = stationGroups;
+       
+
+        let orderStationGroups = data.order(order);
+
+       //drawContent(orderStationGroups);
+
+        //let orderStationGroups = data.sort(order(orderFields));
+
+       // drawContent(orderStationGroups);
+
+    });
+
+
+
+    function order(orderFields) {
+        return function (item) {
+            var returnFirstLevel;
+
+            if (orderFields = '11') {
+                returnFirstLevel = item.title.sort();
+            } else if (orderFields = '22') {
+                returnFirstLevel = item.details.sort();
+            }
+
+            return returnFirstLevel;
+            /*
+            let returnFirstLevel = item.title.sort().indexOf(order()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.type.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+            let filteredStations = filterStations(search, item.stations);
+
+            if (search.length > 0) {
+                if (!returnFirstLevel && filteredStations.length > 0) {
+                    item.stations = filteredStations;
+                    return true;
+                } else {
+                    return returnFirstLevel;
+                }
+            }
+            else {
+                return filteredStations;
+            }*/
+
+        }
+    }
+
+    function orderStations(order, stations) {
+        let orderStations;
+        if (order = '11') {
+            orderStations = stations.title.sort(orderStationsBySearchTerm(order));
+        } else if (order = '22') {
+            orderStations = stations.details.sort(orderStationsBySearchTerm(order));
+        }
+
+        return orderStations;
+    }
+
+    function orderStationsBySearchTerm(ord) {
+        return function (item) {
+            return item.title.sort();
+        }
+    }
+
+
+
+    /* function filter2(search) {
+         return function (item) {
+             return item.title.indexOf(search) > -1 || item.details.indexOf(search) > -1 || (item.type !== undefined && item.type.indexOf(search) > -1) || item.status.indexOf(search) > -1 || item.stations.filter(filter2(search));
+         }
+     }*/
+
+
+}

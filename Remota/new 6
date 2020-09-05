@@ -1,0 +1,45 @@
+            <tbody>
+                @foreach (var security in Model.Securities.OrderByDescending(x => x.Name).Take(10))
+                {
+                    <tr>
+                        <td>@security.Name</td>
+                    </tr>
+                }
+            </tbody>
+			
+			
+			
+         <table class="table table-striped table-bordered w-100 dt-responsive" id="securities">
+            <thead>
+                <tr>
+                    <th>@Remota.WebApp.Resources.WebResources.Name</th>
+                </tr>
+            </thead>
+          </table>			
+		  
+		  
+		  
+		  agora isso  data.forEach não funciona mais no js dai tenho q desenhar tela usando o datatables
+		  
+ function loadRadios(radiosWithAccess?) {
+            let radios = $('#radiosWithAccess');
+            radios.html("");
+
+            $.ajax('/api/radios', {
+                method: 'GET',
+                contentType: 'application/json',
+                success: function (data) {
+                    data.forEach(function (radio) {
+                        let div = "<div class=\"form-check\"><input class=\"form-check-input radios-check\" type=\"checkbox\" data-radio-guid=\"" + radio.guid + "\" data-radio-alias=\"" + radio.alias + "\" id=\"radio_" + radio.guid + "\"><label class=\"form-check-label\" for=\"radio_" + radio.guid + "\">" + radio.alias + "</label></div>";
+                        radios.append(div);
+
+                        if (radiosWithAccess) {
+                            let withAccess = radiosWithAccess.find(radioWithAccess => radioWithAccess.guid === radio.guid || radioWithAccess.guid.replace(/-/g, '') === radio.guid);
+                            if (withAccess) {
+                                $('#radio_' + radio.guid).prop('checked', true);
+                            }
+                        }
+                    });
+                }
+            });
+        }		  

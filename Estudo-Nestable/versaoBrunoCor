@@ -1,0 +1,171 @@
+namespace App {
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (stationsGroups) {
+                let nestableConfigs = {
+                    expandBtnHTML: '',
+                    collapseBtnHTML: ''
+                };
+
+                var html = ``;
+
+                html += "<ol class='dd-list'>";
+
+                stationsGroups.forEach(function (stationGroup) {
+                    var color = stationGroup.status === `Offline` ? `#B70A0A` : `#B70A0A`;                          
+
+                    html += `<li class="dd-item dd3-item" id="first-a">`;  
+                    html += `<div class="dd-handle container marcador-container" id="first-b" style="border-left: 4px solid ${color}; border-radius: 10px;">`;
+                    html += `<div class="row justify-content-between" id="first-c">`;
+                    html += `<div class="col-6"'>${stationGroup.type}`;
+                    html += `<div>`;
+                    html += `<div'>${stationGroup.details}</div>`;
+                    html += "</div>";
+                    
+                    html += `<div class="col-5 station-group-status dd-collapsed" id="first-d"' style="color: ${ color };" > ${stationGroup.status}</div>`;
+                    html += "</div>";
+                    html += "</div>";
+                    html += "</div>";
+
+                    html += buildItem(stationGroup);
+
+                    html += "</li>";
+                });
+                html += "</ol>";
+                $("#radio-networks").append(html); //---Put all elements in #radio-networks-list
+
+                $('#first-d').click(function () {
+                    if ($('#first-d').hasClass('dd-collapsed')) {
+                        $('#first-d').removeClass('dd-collapsed');
+                    }
+                    else {
+                        $('#first-d').removeClass('dd-collapsed');
+                    }
+                });
+
+                //$("#radio-networks").nestable(nestableConfigs);
+
+
+                //var group = $('station-group-status').val.length;
+
+                /*var group = document.getElementsByClassName("station-group-status");
+                var statusGroupa = $('#first-d').text();
+                var statusGroupb = $($('.station-group-status')[0]).data('value');
+
+
+                for (var i = 0; i < group.length; ++i) {
+                    console.log(group[i]);
+                }*/
+
+
+
+
+
+
+
+
+                //juci $('#first-a').addClass('dd-collapsed');
+                //$('#first-d').removeClass('dd-collapsed');  
+
+
+
+                /*
+
+                $('.collapse').on('shown.bs.collapse', function () {
+                    $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+                }).on('hidden.bs.collapse', function () {
+                    $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+                });
+                */
+            }
+        });
+    }
+
+    function buildItem(item) {
+        var html = ``;
+
+        if (item.stations) {
+
+            html += `<ol class="dd-list" id=radio-network-list'>`;
+
+            $.each(item.stations, function (index, sub) {
+                var colorItem = sub.status === `Offline` ? `#B70A0A` : `#60B70A`;                
+
+                html += `<li class="dd-item dd3-item" id="second-a" >`;
+                html += `<div class="dd-handle container marcador-container" id="second-b" style="border-left: 4px solid ${colorItem}; border-radius: 10px;">`; 
+                html += `<div class="row justify-content-between" id="second-c" >`;
+                html += `<div class="col-6"'>${sub.title}`;
+                html += `<div>`;
+                html += `<div'>${sub.details}</div>`;
+                html += "</div>";                
+                html += `<div class="col-5" id="second-d"' style="color: ${colorItem};"> ${sub.status}</div>`;                
+                html += "</div>";
+                html += "</div>";
+                html += "</div>";
+                html += "</li>";
+            });
+
+            html += "</ol>";
+
+        }
+
+        return html;
+    }
+
+
+    loadRadioNetworks();
+
+
+
+
+    /*
+    $('#first-a').removeClass('dd-collapsed');  
+    $('#first-b').removeClass('dd-collapsed');  
+    $('#first-c').removeClass('dd-collapsed');  
+    $('#first-d').removeClass('dd-collapsed'); 
+   // $('#first-a').addClass('dd-collapsed');
+   // $('#first-a').nestable('collapseAll');
+    $('#first-a').nestable('expandAll');
+
+    $('#first-a').on('shown.collapse', function () {
+        $('#first-a').removeClass('dd-collapsed');  
+    });
+     */
+
+
+    // $('#first-a').addClass('dd-collapsed')
+    // $('#first-a').removeClass('dd-collapsed')
+
+
+    //$('#radio-networks-list').nestable('');
+
+    //$('#radio-networks').nestable('asNestedSet');        
+
+
+    //$('#radio-networks-content').html(output);
+
+    //loadRadioNetworks();
+
+    //$('#tree').nestable('expandAll');
+
+
+    //$('#tree').nestable('collapseAll');
+
+    /*$('#collapseDescricao').on('hidden.bs.collapse', function () {
+        $('[data-target="#collapseDescricao"]').text("Mostrar descrição");
+    });
+    $('#collapseDescricao').on('shown.bs.collapse', function () {
+        $('[data-target="#collapseDescricao"]').text("Ocultar descrição");
+    });*/
+
+
+
+
+
+
+}

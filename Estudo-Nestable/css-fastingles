@@ -1,0 +1,182 @@
+
+#nestable2-output {
+    width: 100%;
+    height: 7em;
+    font-size: 0.75em;
+    line-height: 1.333333em;    
+    padding: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;   
+    margin: auto;
+}
+
+#nestable2 {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 0 0;
+    margin-bottom: 0;
+   
+}
+#first {
+    padding: 0 0 0 0;
+    margin-top: 10px;
+    border: 1px solid #333;  
+   
+}
+
+#first-a {
+    /* margin primeira quebra */
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+#first-b {
+    border: 1px solid #808080;
+    /* definimos o quão arredondado irá ficar nosso box */
+    border-radius: 10px;
+    height: 70px;
+    width: 90%;   
+}
+
+#first-c {
+    margin-top: 10px;
+}
+
+#first-d {        
+    padding: 0 10px 0 10px; 
+    text-align:end;
+}
+
+#second {
+    margin-top: 15px;    
+    margin-left: 30px;    
+}
+
+
+#second-a {
+    /*border: 1px solid yellow;*/
+    border: 1px solid #808080;
+    /* definimos o quão arredondado irá ficar nosso box */
+    border-radius: 10px;
+    /* definimos a altura do box */
+    height: 70px;
+    /*definimos a largura do box*/
+    width: 89%;
+    margin: 5px 0 10px 60px;
+    
+}
+#second-b {
+    margin-top: 10px;    
+    align-self: center;
+    padding: 10px 10px;
+}
+
+#second-d {
+    margin-top: 10px;
+    text-align: end;
+    align-self: center;
+    
+}
+
+
+.dd-item {
+    display: block;
+    /*position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 2.1em;
+    border: 1px solid green;*/
+    /* JUCI AQUI definimos a largura do box*/
+    /*width: 300px;*/
+    /* definimos a altura do box */
+    /*height: 100px;*/
+    /* definimos a cor de fundo do box */
+    /*background-color: #eee;*/
+}
+
+/*largura*/
+@media only screen and (min-width: 40px) {
+
+    .dd {
+        float: left;        
+        width: 80%;
+    }
+}
+
+.dd-handle {
+    /*height: 30px;*/
+    color: #333;
+    text-decoration: none;
+    
+ 
+    
+
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+
+.dd-item > button {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    float: left;
+
+
+    width: 25px;
+    height: 10px;
+    margin: 5px 0;
+    padding: 0;
+    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    /*font-size: 12px;*/
+    line-height: 4px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid pink;
+}
+
+    .dd-item > button:before {
+        content: '+';
+        border-right-color: darkgreen;
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+        
+    }
+
+    .dd-item > button[data-action="collapse"]:before {
+        content: '-';
+        border-bottom-color: darkgreen;
+       
+    }
+
+.seta-1 {
+    border-left: 8px solid #333;
+    border-top: 8px solid transparent;
+    border-bottom: 5px solid transparent;
+    float: left;
+}
+
+#nestable2 .dd-handle:hover {
+    /*background: #bbb;*/
+    border: 1px inset #649F35;
+    
+}
+
+#nestable2 .dd-list > button:before {
+    color: #fff;
+}
+

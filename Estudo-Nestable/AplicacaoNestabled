@@ -1,0 +1,308 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Remota.WebConfig.Models.RadioNetworkStatusModel>
+@{
+    ViewBag.Path = new[] { Text.WebResources.ServerStatus };
+    ViewBag.Title = @Text.WebResources.RadioNetworksStatus;
+    ViewBag.FormAction = "/web/status-radio-networks";
+    Layout = "_Layout.cshtml";
+}
+@using System.Linq;
+@using Remota.WebConfig;
+@section Script {
+    <script src="~/Content/nestable2/jquery.nestable.js" defer></script>
+    <script src="~/Content/scripts/radio-networks-status.js" defer></script>
+}
+
+<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/styles/radio-networks-status.css")" />
+<link href="@Url.Content("~/Content/nestable2/jquery.nestable.min.css")" rel="stylesheet">
+
+
+<div class="id="radio-networks">
+</div>
+===================================
+
+namespace App {
+
+    $(document).ready(function () {
+        var obj = '[{"id":1},{"id":2},{"id":3,"children":[{"id":4},{"id":5}]}]';
+        var output = '';
+
+        function buildItem(item) {
+
+            var html = "<li class='dd-item' data-id='" + item.id + "'>";
+            html += "<div class='dd-handle'>" + item.id + "</div>";
+
+            if (item.children) {
+
+                html += "<ol class='dd-list'>";
+                $.each(item.children, function (index, sub) {
+                    html += buildItem(sub);
+                });
+                html += "</ol>";
+            }
+
+
+            html += "</li>";
+
+            return html;
+        }
+
+        $.each(JSON.parse(obj), function (index, item) {
+
+            output += buildItem(item);
+
+        });
+
+        $('#radio-networks-content').html(output);
+
+
+        var listStatus = document.getElementsByClassName("radio-networks");
+        var list = $($('.radio-networks')[0]).data('value');
+        loadRadioNetworks();
+
+
+        statusGroup.status;
+        var accessByRadioNetworks = $('#radio-networks').data('value');
+
+
+       
+        function loadRadioNetworks() {
+            let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+            LoadFieldsRadioNetworks.html("");
+
+            $.ajax('/api/status-radio-networks', {
+                method: 'GET',
+                contentType: 'application/json',
+                success: function (stationsGroups) {
+                    var html = ``;
+                    stationsGroups.forEach(function (stationGroup) {
+                        html += `<h3>${stationGroup.details}</h3>`; //--- Criamos um elemento para o nome do group
+                        html += `<ul>`; //--- Criamos uma lista dentro para os stations
+                        stationGroup.stations.forEach(function (station) {
+                            html += `<li>${station.details}</li>`; //--- Criamos um elemento para cada station
+                        });
+                        html += `</ul>`; //--- Finaliza lista de stations
+                    });
+                    $("div#radio-networks").append(html); //--- Coloca todos os elementos dentro da lista #radio-networks-list
+                }
+            });
+        }    
+
+    });
+
+}
+
+=========================
+using Remota.Shared.Services;
+using Nancy;
+using Remota.WebConfig.Models;
+using Remota.WebConfig.Resources;
+using Remota.Services.Shared.Domain.Security.Services.Interfaces;
+using Nancy.Security;
+using System.Collections.Generic;
+
+namespace Remota.WebConfig.Modules
+{
+    public class RadioNetworksStatusModule : NancyModule
+    {
+        private readonly ILoggerService _logger;
+        private readonly ISecurityService _securityService;
+
+        public RadioNetworksStatusModule(ILoggerService logger, ISecurityService securityService)
+        {
+            _logger = logger;
+            _securityService = securityService;
+
+            this.RequiresAuthentication();
+
+
+            Get["/web/status-radio-networks"] = _ =>
+            {
+                var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeGroups");
+                if (!access)
+                    return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+
+                var groups = GetDispatchStationGroupModel();
+
+                var model = new RadioNetworkStatusModel(groups);
+
+                return View["RadioNetworksStatus.cshtml", model];
+            };
+
+
+            Get["/api/status-radio-networks"] = _ =>
+            {
+                var access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, "ViewOrChangeGroups");
+                if (!access)
+                    return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+
+                var result = GetDispatchStationGroupModel();
+
+                return Response.AsJson(result);
+
+            };
+        }
+
+        public List<DispatchStationGroupModel> GetDispatchStationGroupModel()
+        {
+
+            List<DispatchStationGroupModel> groups = new List<DispatchStationGroupModel>();
+
+
+            List<DispatchStationModel> stations = new List<DispatchStationModel>();
+
+            groups.Add(new DispatchStationGroupModel(System.Guid.NewGuid(), "Dispatch 1", "MORRETES",
+                         DispatchStationGroupType.Gateway, DispatchStationStatus.Online, stations
+                         ));
+
+            stations.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 1-A",
+                   "BASEA 11",
+                   DispatchStationStatus.Offline));
+
+            stations.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 1-B",
+                   "BASEA 21",
+                   DispatchStationStatus.Online));
+
+            stations.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 1-C",
+                   "BASEA 31",
+                   DispatchStationStatus.Online));
+
+
+            List<DispatchStationModel> stations1 = new List<DispatchStationModel>();
+
+            groups.Add(new DispatchStationGroupModel(System.Guid.NewGuid(), "Dispatch 2", "PORTO-DE-GALINHAS",
+                         DispatchStationGroupType.COBHAM, DispatchStationStatus.Offline, stations1
+                         ));
+
+            stations1.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 2-A",
+                   "BASEA 21",
+                   DispatchStationStatus.Online));
+
+            stations1.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 2-B",
+                   "BASEA 22",
+                   DispatchStationStatus.Offline));
+
+            stations1.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 2-C",
+                   "BASEA 23",
+                   DispatchStationStatus.Offline));
+
+            stations1.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 2-D",
+                   "BASEA 24",
+                   DispatchStationStatus.Online));
+
+            return groups;
+
+
+
+            //new DispatchStationModel(System.Guid.NewGuid(), "Dispatch 1-A", "BASEA", DispatchStationStatus.Offline)
+            //var station = new DispatchStationModel(System.Guid.NewGuid(), "Dispatch 1-A", "BASEA", DispatchStationStatus.Offline);
+            //stations.Add(new DispatchStationModel(System.Guid.NewGuid(), "Dispatch 1-A", "BASEA", DispatchStationStatus.Offline));
+
+        }
+
+        private List<DispatchStationGroupModel> LoadFieldsRadioNetworks()
+        {
+            List<DispatchStationGroupModel> group = new List<DispatchStationGroupModel>();
+            List<DispatchStationModel> stations = new List<DispatchStationModel>();
+
+
+
+            group.Add(new DispatchStationGroupModel(System.Guid.NewGuid(), "Dispatch 1", "MORRETES",
+                         DispatchStationGroupType.Gateway, DispatchStationStatus.Offline, stations
+                         ));
+
+            stations.Add(new DispatchStationModel(System.Guid.NewGuid(),
+                   "Dispatch 1-A",
+                   "BASEA",
+                   DispatchStationStatus.Online));
+
+
+            return group;
+        }
+
+    }
+}
+=================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace Remota.WebConfig.Models
+{
+    public class RadioNetworkStatusModel : BaseResponseModel
+    {
+        public List<DispatchStationGroupModel> StationGroups { get; set; }
+
+        public RadioNetworkStatusModel(List<DispatchStationGroupModel> groups)
+        { 
+            StationGroups = groups;
+        }
+    }
+
+    public class DispatchStationGroupModel
+    {
+        public Guid Guid { get; set; }
+        public string Title { get; set; }
+        public string Details { get; set; }
+        public DispatchStationGroupType Type { get; set; }
+        public DispatchStationStatus Status { get; set; }
+        public List<DispatchStationModel> Stations { get; set; }
+
+        public DispatchStationGroupModel(Guid guid, 
+                                         string title,
+                                         string details,
+                                         DispatchStationGroupType type,
+                                         DispatchStationStatus status,
+                                         List<DispatchStationModel> stations)
+        {
+            Guid = guid;
+            Title = title;
+            Details = details;
+            Type = type;
+            Status = status;
+            Stations = stations;
+        }
+    }
+    public class DispatchStationModel
+    {
+        public Guid Guid { get; set; }
+        public string Title { get; set; }
+        public string Details { get; set; }
+        public DispatchStationStatus Status { get; set; }
+
+        public DispatchStationModel(Guid guid, string title, string details, DispatchStationStatus status)
+        {
+            Guid = guid;
+            Title = title;
+            Details = details;
+            Status = status;            
+        }
+    }
+
+    public enum DispatchStationGroupType
+    {
+        Gateway,
+        FSI,
+        ICOM,
+        COBHAM,
+        Radio
+    }
+
+    public enum DispatchStationStatus
+    {
+        Online,
+        Offline
+    }
+
+}
+
+
+

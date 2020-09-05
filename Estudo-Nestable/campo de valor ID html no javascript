@@ -1,0 +1,24 @@
+
+let input = $("#search").val();
+
+
+
+$($('.stationGroup-status')[0]).parents('.stationGroup-color')
+$('.stationGroup-status').parents('li')
+
+$('.stationGroup-status').parents('.stationGroup-color')
+$('.stationGroup-status').parents('li')
+
+
+data.filter(filter2('BASE'))
+
+
+Para pegar a descrição do select selecionado:
+
+$("#faturamento-mes-referencia option:selected").text();
+Para pegar o value do select selecionado:
+
+$("#faturamento-mes-referencia").val();
+Para selecionar um select da sua option através do value do select:
+
+$("#faturamento-mes-referencia").val(8); //(Agosto)

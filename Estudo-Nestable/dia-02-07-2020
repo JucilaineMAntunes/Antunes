@@ -1,0 +1,117 @@
+namespace App {
+
+    let stationGroups: any = [];
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                stationGroups = data;
+                              
+                drawContent(stationGroups);
+            }
+        });
+    }
+
+    function drawContent(stationGroups) {
+        let nestableConfigs = {
+            expandBtnHTML: '',
+            collapseBtnHTML: ''
+        };
+
+        var html = '';
+        html += '<ol class="dd-list">';
+
+        stationGroups.forEach(function (stationGroup) {
+            var color = stationGroup.status === 'Offline' ? '#B70A0A' : '#60B70A';
+
+            html += '<li class="dd-item dd3-item station-group" id="group-guid">';
+            html += '<div class="dd-handle station-group-color" style="border-left: 6px solid ${color}; border-radius: 10px;">';
+            html += '<div class="row justify-content-between station-group-content">';
+            html += '<div class="col-6 station-group-type">${stationGroup.type}';
+            html += '<div>';
+            html += '<div class="station-group-details">${stationGroup.details}</div>';
+            html += '</div>';
+            html += '</div>';
+            html += '<div class="col-5 station-group-status" style="color: ${color};"> ${stationGroup.status}</div>';
+            html += '</div>';
+            html += '</div>';
+
+            html += buildItem(stationGroup);
+
+            html += '</li>';
+        });
+        html += '</ol>';
+        $("#radio-networks").append(html); //---Put all elements in #radio-networks-list
+
+        $('.dd3-item').on('click', function () {
+            if ($(this).hasClass('dd-collapsed')) {
+                $(this).removeClass('dd-collapsed');
+            }
+            else {
+                $(this).addClass('dd-collapsed');
+            }
+        });
+
+        //Você desativa todos os eventos de ponteiro, exceto o recolhimento.
+        $('#nestable02').nestable({ maxDepth: 1 });  
+    }
+
+    function buildItem(item) {
+        var html = '';
+
+        if (item.stations) {           
+
+            html += '<ol class="dd-list">';
+
+            $.each(item.stations, function (index, sub) {
+                var colorItem = sub.status === 'Offline' ? '#B70A0A' : '#60B70A';
+
+                html += '<li class="dd-item dd3-item station" id="station_guid" >';
+                html += '<div class="dd-handle station-color" style="border-left: 6px solid ${colorItem}; border-radius: 10px;">';
+                html += '<div class="row justify-content-between station-content">';
+                html += '<div class="col-6 station-title">${sub.title}';
+                html += '<div>';
+                html += '<div class="station-details">${sub.details}</div>';
+                html += '</div>';
+                html += '</div>';
+                html += '<div class="col-5 station-status" style="color: ${colorItem};"> ${sub.status}</div>';
+                html += '</div>';
+                html += '</div>';
+                html += '</li>';
+
+            });
+
+            html += '</ol>';
+        }
+        return html;
+    }
+
+    loadRadioNetworks();
+
+    function changeColor() {
+        let filteredStationGroups: any = [];
+
+        drawContent(filteredStationGroups);
+
+        alert('color');
+    }
+
+    $('#search').on('keyup', search);
+
+    function search() {
+        let filteredStationGroups: any = [];
+
+        // filtrar conforme o texto digitado
+        // filteredStationGroups vai ter somente os itens que equivalem a busca
+
+        // chamar a função drawContent(filteredStationGroups) mandando filteredStationGroups
+
+        alert('search');
+    }
+
+
+}

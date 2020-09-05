@@ -1,0 +1,265 @@
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("2d42263c463a43d396806673c03b3e9d", "N"));
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("d56025ce863b4d8c9eadda06c1460535", "N"));
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("57228cfcdc1440ae82062953c3a0d792", "N"));
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("7286b28b7f9747cfb6da8ca3cf599161", "N"));
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("a0deb9e657224eb786b6ad9c4e02f9ac", "N"));
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("421362042c3c4d5ab7aac2ef36292900", "N"));
+                //Hubs.RadioNetworksStatusHub.SetStationOnline(_signalR, Guid.ParseExact("d105d8941a3e4bc1939585bfd1971af3", "N"));                
+                //Hubs.RadioNetworksStatusHub.SetStationOffline(_signalR, Guid.ParseExact("ebdee74feda74ad19f7f11b1463297b1", "N"));
+				
+=============				
+<div id="radioNetworksStatus_filter" class="dataTables_filter">
+    <div class="float-left form-inline">
+        <div>
+            <label for="ordenation" class="mr-3 col-form-label">@Text.WebResources.order</label>
+        </div>
+        <div>
+            <select required class="form-control" name="ordenation" id="ordination">
+                <option value="type">@Text.WebResources.Type</option>
+                <option value="title">@Text.WebResources.Title</option>
+                <option value="details">@Text.WebResources.Details</option>
+                <option value="status">@Text.WebResources.Status </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="float-right form-inline">
+        <div>
+            <label for="search" class="mr-3 col-form-label">@Text.WebResources.Search</label>
+        </div>
+        <div>            
+            <input type="text" class="form-control" name="search" id="search">
+        </div>
+    </div>
+</div>
+
+<div class="dd" id="radio-networks">
+
+</div>
+
+=============
+
+namespace App {
+    let stationGroups: any = [];
+
+    $(function () {
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                stationGroups = data;
+                drawContent(stationGroups, 'S');
+            }
+        });
+
+        function drawContent(stationGroups, collapsed) {
+            $("#radio-networks").html("");
+
+            let nestableConfigs = {
+                expandBtnHTML: '',
+                collapseBtnHTML: ''
+            };
+
+            var html = '';
+            html += '<ol class="dd-list">';
+
+            stationGroups.forEach(function (stationGroup) {
+                html += `<li class="dd-item dd3-item stationGroup dd-collapsed" id="${stationGroup.guid}">
+                            <div class='dd-handle stationGroup-color item'>
+                                <div class="row justify-content-between stationGroup-content">
+                                    <div class="col-6 stationGroup-type">${stationGroup.title}(${stationGroup.type})
+                                        <div><div class="stationGroup-details">${stationGroup.details}</div></div>
+                                    </div>
+                                    <div class="col-5 stationGroup-status" data-status="${stationGroup.status}"> ${stationGroup.status}</div>
+                                </div>
+                            </div> ${buildItem(stationGroup)}
+                         </li>`;
+            });
+            html += '</ol>';
+
+            $("#radio-networks").append(html);
+
+            $('.stationGroup-status').each(function () {
+                let status = $(this).data("status");
+                changeColor(status, $(this).parents('.stationGroup-color'), this);
+            });
+
+            $('.station-status').each(function () {
+                let status = $(this).data("status");
+                changeColor(status, $(this).parents('.station-color'), this);
+            });
+
+            $('.dd3-item').on('click', function () {
+                if ($(this).hasClass('dd-collapsed')) {
+                    $(this).removeClass('dd-collapsed');
+                }
+                else {
+                    $(this).addClass('dd-collapsed');
+                }
+            });
+
+            if (collapsed === 'S') {
+                $('.dd3-item').addClass('dd-collapsed');
+            }
+        }
+
+        function buildItem(item) {
+            var html = '';
+
+            if (item.stations) {
+
+                html += '<ol class="dd-list">';
+
+                $.each(item.stations, function (index, sub) {
+
+                    html += `<li class="dd-item dd3-item station dd-collapsed" id="${sub.guid}" >
+                                <div class="dd-handle station-color">
+                                    <div class="row justify-content-between station-content">
+                                        <div class="col-6 station-title">${sub.title}
+                                            <div><div class="station-details">${sub.details}</div></div>
+                                        </div>
+                                        <div class="col-5 station-status" data-status="${sub.status}"> ${sub.status}</div>
+                                    </div>
+                                </div>
+                             </li>`;
+
+                    changeColor(sub.status, '.station-color', '.station-status');
+                });
+
+                html += '</ol>';
+            }
+            return html;
+        }
+
+        function changeColor(status, colorSelector, statusSelector) {
+            let color = status === 'Offline' ? `#B70A0A` : `#649F35`;
+
+            $(colorSelector).css('border-left-color', color);
+            $(statusSelector).css('color', color);
+        }
+
+        $('#search').on('keyup', search);
+
+        function search() {
+            let filteredStationGroups: any = [];
+
+            let search = $("#search").val();
+            let data = cloneArray(stationGroups);
+
+            filteredStationGroups = data.filter(filter(search));
+
+            drawContent(filteredStationGroups, 'N');
+        }
+
+        function cloneArray(array) {
+            let newArray: any = [];
+            array.forEach((v, i) => {
+                const val = (typeof v === 'object') ? Object.assign({}, v) : v;
+                newArray.push(val);
+            });
+            return newArray;
+        }
+
+        function filter(search) {
+            return function (item) {
+
+                let returnFirstLevel = (item.title || '').toLowerCase().indexOf(search.toLowerCase()) > -1
+                    || (item.details || '').toLowerCase().indexOf(search.toLowerCase()) > -1
+                    || (item.type || '').toLowerCase().indexOf(search.toLowerCase()) > -1
+                    || (item.status || '').toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+                let filteredStations = filterStations(search, item.stations);
+
+                if (!returnFirstLevel && filteredStations.length > 0) {
+                    item.stations = filteredStations;
+                    return true;
+                } else {
+                    return returnFirstLevel;
+                }
+
+            }
+        }
+
+        function filterStations(search, stations) {
+            let filteredStations = stations.filter(filterStationsBySearchTerm(search));
+            return filteredStations;
+        }
+
+        function filterStationsBySearchTerm(search) {
+            return function (item) {
+                return (item.title || '').toLowerCase().indexOf(search.toLowerCase()) > -1
+                    || (item.details || '').toLowerCase().indexOf(search.toLowerCase()) > -1
+                    || (item.status || '').toLowerCase().indexOf(search.toLowerCase()) > -1;
+            }
+        }
+
+        $('#ordination').on('change', function () {
+            let order = <any>$("#ordination").val();
+            var last = null;
+
+            if (order != null) {
+                if (stationGroups.length > 0)
+                    sortStations(stationGroups[0].stations, order);
+
+                stationGroups = stationGroups.sort(function (group, comparerGroup) {
+                    if (group != last)
+                        sortStations(group.stations, order);
+                    last = group;
+
+                    if (order === 'status')
+                        return ('' + comparerGroup[order]).localeCompare(group[order])
+                    else return ('' + group[order]).localeCompare(comparerGroup[order])
+                });
+
+                drawContent(stationGroups, 'N');
+            }
+        });
+
+        function sortStations(stations, order) {
+            stations = stations.sort(function (station, comparerStation) {
+                if (order === "status") return ('' + comparerStation[order]).localeCompare(station[order])
+                else return ('' + station[order]).localeCompare(comparerStation[order])
+            });
+        }
+
+    });
+
+
+    if ($.connection) {
+        let hub = (<any>$.connection).radioNetworksStatusHub;
+        let foundOn = 'N';
+        let group;
+
+        hub.client.setStationOffline = function (guid) {
+            $(`#${guid} .dd-handle`).css("border-left-color", "#B70A0A")
+            $(`#${guid} .station-status`).css("color", "#B70A0A")
+            $(`#${guid} .station-status`).text('Offline')
+            $(`#${guid} .station-status`).data('status', 'Offline')
+
+            if (foundOn === 'N') {
+                group = $(`#${guid}`).closest('.stationGroup').find(`.dd-handle`);
+                group.css("border-left-color", "#B70A0A");
+                group.find('.stationGroup-status').css("color", "#B70A0A");
+                group.find('.stationGroup-status').text('Offline');
+                group.find('.stationGroup-status').data('status', 'Offline');
+            }
+        }
+        hub.client.setStationOnline = function (guid) {
+            foundOn = 'S'
+            $(`#${guid} .dd-handle`).css("border-left-color", "#649F35")
+            $(`#${guid} .station-status`).css("color", "#649F35")
+            $(`#${guid} .station-status`).text('Online')
+            $(`#${guid} .station-status`).data('status', 'Online')
+
+            group = $(`#${guid}`).closest('.stationGroup').find(`.dd-handle`);
+            group.css("border-left-color", "#649F35");
+            group.find('.stationGroup-status').css("color", "#649F35");
+            group.find('.stationGroup-status').text('Online');
+            group.find('.stationGroup-status').data('status', 'Online');
+        }
+    }
+}				
+                
+				
+				
+				

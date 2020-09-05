@@ -1,0 +1,74 @@
+using Nancy;
+using Nancy.Security;
+using Remota.Services.Shared.Domain.Security.Services.Interfaces;
+using Remota.Services.Shared.Infrastructure.Repository.Interfaces;
+using Remota.Shared.Services;
+using Remota.WebConfig.Resources;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
+
+namespace Remota.WebConfig.Modules
+{
+    public class StationsModule : NancyModule
+    {
+        private readonly ILoggerService _logger;
+        private readonly IStationsRepository _stationsRepository;
+        private readonly ISecurityService _securityService;
+
+        public StationsModule(ILoggerService logger, IStationsRepository stationsRepository, ISecurityService securityService)
+        {
+            _logger = logger;
+            _stationsRepository = stationsRepository;
+            _securityService = securityService;
+
+            if (Debugger.IsAttached)
+                this.RequiresApiAuthentication();
+            else this.RequiresAuthentication();
+
+            Get["/api/stations"] = _ =>
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(Context.Request.Headers.Authorization))
+                    {
+                        List<string> securityProperties = new List<string> { "ViewOrChangeGroups", "ViewOrChangeRadioGroups", "ViewOrChangeStationGroups", "ViewOrChangeTasks" }.ToList();
+                        bool access = _securityService.CheckUserAccess(((UserIdentity)Context.CurrentUser).Guid, securityProperties);
+                        if (!access)
+                            return new Response { StatusCode = HttpStatusCode.Forbidden, ReasonPhrase = WebResources.Error_PermissionDenied };
+                    }
+                    var stations = _stationsRepository.GetAll().OrderBy(x => x.Alias);
+                    var result = new List<object>();
+
+                    foreach (var station in stations)
+                    {
+                        dynamic resultStation = new
+                        {
+                            guid = station.Guid,
+                            alias = station.Alias,
+                            abbreviation = station.Abbreviation,
+                            voiceControl = station.VoiceControl
+                        };
+
+                        result.Add(resultStation);
+                    }
+
+                    //juci return Response.AsJson(result);
+
+                    return Response.AsJson(result, HttpStatusCode.OK);
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError(e);
+
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = WebResources.Error_FailureObtainingStations };
+                }
+            };            
+
+        }
+    }
+
+
+
+}

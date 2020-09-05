@@ -1,0 +1,210 @@
+namespace App {
+    let stationGroups: any = [];
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                stationGroups = data;
+                drawContent(stationGroups);
+            }
+        });
+    }
+
+    function drawContent(stationGroups) {
+        $("#radio-networks").html("");
+
+        let nestableConfigs = {
+            expandBtnHTML: '',
+            collapseBtnHTML: ''
+        };
+
+        var html = '';
+        html += '<ol class="dd-list">';
+
+        stationGroups.forEach(function (stationGroup) {
+
+            html += `<li class="dd-item dd3-item stationGroup" id="station-group-${stationGroup.guid}">`;
+            html += `<div class='dd-handle stationGroup-color'>`;
+            html += '<div class="row justify-content-between stationGroup-content">';
+            html += `<div class="col-6 stationGroup-type">${stationGroup.type}`;
+            html += '<div>';
+            html += `<div class="stationGroup-details">${stationGroup.details}</div>`;
+            html += '</div>';
+            html += '</div>';
+            html += `<div class="col-5 stationGroup-status" data-status="${stationGroup.status}"> ${stationGroup.status}`;
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            html += buildItem(stationGroup);
+            html += '</li>';
+
+        });
+        html += '</ol>';
+
+        $("#radio-networks").append(html);
+
+        $('.stationGroup-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.stationGroup-color'), this);
+        });
+
+        $('.station-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.station-color'), this);
+        });
+
+        $('.dd3-item').on('click', function () {
+            if ($(this).hasClass('dd-collapsed')) {
+                $(this).removeClass('dd-collapsed');
+            }
+            else {
+                $(this).addClass('dd-collapsed');
+            }
+        });
+
+        //Você desativa todos os eventos de ponteiro, exceto o recolhimento.
+        /* $('#nestable02').nestable({ maxDepth: 1 });  */
+    }
+
+    function buildItem(item) {
+        var html = '';
+
+        if (item.stations) {
+
+            html += '<ol class="dd-list">';
+
+            $.each(item.stations, function (index, sub) {
+
+                html += `<li class="dd-item dd3-item station" id="station-${sub.guid}" >`;
+                html += `<div class="dd-handle station-color">`;
+                html += '<div class="row justify-content-between station-content">';
+                html += `<div class="col-6 station-title">${sub.title}`;
+                html += '<div>';
+                html += `<div class="station-details">${sub.details}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += `<div class="col-5 station-status" data-status="${sub.status}"> ${sub.status}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += '</li>';
+
+                changeColor(sub.status, '.station-color', '.station-status');
+            });
+
+            html += '</ol>';
+        }
+        return html;
+    }
+
+    loadRadioNetworks();
+
+    function changeColor(status, colorSelector, statusSelector) {
+        let color = status === 'Offline' ? `#B70A0A` : `#60B70A`;
+
+        $(colorSelector).css('border-left-color', color);
+        $(statusSelector).css('color', color);
+    }
+
+    $('#search').on('keyup', search);
+
+    function search() {
+
+        let filteredStationGroups: any = [];
+
+        let search = $("#search").val();
+        let data = cloneArray(stationGroups);
+
+        filteredStationGroups = data.filter(filter(search));
+
+        drawContent(filteredStationGroups);
+    }
+
+    function cloneArray(array) {
+        let newArray: any = [];
+        array.forEach((v, i) => {
+            const val = (typeof v === 'object') ? Object.assign({}, v) : v;
+            newArray.push(val);
+        });
+        return newArray;
+    }
+
+    function filter(search) {
+        return function (item) {
+
+            let returnFirstLevel = item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.type.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+            let filteredStations = filterStations(search, item.stations);
+
+
+            if (!returnFirstLevel && filteredStations.length > 0) {
+                item.stations = filteredStations;
+                return true;
+            } else {
+                return returnFirstLevel;
+            }
+
+        }
+    }
+
+    function filterStations(search, stations) {
+        let filteredStations = stations.filter(filterStationsBySearchTerm(search));
+        return filteredStations;
+    }
+
+    function filterStationsBySearchTerm(search) {
+        return function (item) {
+            return item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+        }
+    }
+
+    $('#btnOrder').on('click', function () {
+        let order = <any>$("#ordination").val();
+        var last = null; //--- Inicializa a variável last.
+
+
+        //        Verificação feita pelo sort na lista ["a", "b", "c", "d"]:
+        //                a  |  b
+        //              -----------
+        //   Compara:    "b" | "a" - Aqui o (a == "b") e (last == null), logo (a != last) 
+        //   Compara:    "b" | "c" - Aqui o (a == "b") e (last == "b"), logo (a == last)
+        //   Compara:    "b" | "d" - Aqui o (a == "b") e (last == "b"), logo (a == last)
+        //   Compara:    "c" | "d" - Aqui o (a == "c") e (last == "b"), logo (a == last)
+        //   Entretanto a variável a nunca recebe o primeiro elemento da nossa lista. Que no caso é "a". Então a "operação" nunca é feita sobre esse primeiro elemento.
+
+        if (stationGroups.length > 0) //--- Verificamos se pelo menos há algum elemento na lista, para não dar erro ao tentar obter stationGroups[0].
+            sortStations(stationGroups[0].stations, order); //--- Ordena a lista de estações do primeiro elemento da lista.
+
+        stationGroups = stationGroups.sort(function (group, comparerGroup) { //--- Aqui não precisamos validar, pois se stationGroups.length <= 0, não executará o sort.
+            if (group != last) //--- Se group for igual ao último elemento iterado,
+                sortStations(group.stations, order); //--- Ordena a lista de estações deste grupo.
+            last = group; //--- O último elemento iterado (last) "recebe" o elemento que está sendo iterado atualmente.
+            return ('' + comparerGroup[order]).localeCompare(group[order])
+        });
+
+        //--- Nesse método, nós iterávamos em cima da lista stationGroups pela segunda vez. Do modo que foi implementado acima, não é necessário.
+        //$.each(stationGroups, function (i, v) { 
+        //    v.stations = v.stations.sort(function (a, b) {
+        //        return ('' + b[order]).localeCompare(a[order])
+        //    });
+        //});
+
+        drawContent(stationGroups);
+    });
+
+    function sortStations(stations, order) {
+        stations = stations.sort(function (station, comparerStation) {
+            return ('' + comparerStation[order]).localeCompare(station[order])
+        });
+    }
+
+}

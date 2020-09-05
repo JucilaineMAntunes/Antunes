@@ -1,0 +1,1 @@
+<?php $RDS_URL='bancoscn.c5gygdlrp1db.us-east-1.rds.amazonaws.com'; $RDS_DB='dados'; $RDS_user='admin'; $RDS_pwd='12345678'; ?>

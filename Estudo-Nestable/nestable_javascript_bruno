@@ -1,0 +1,254 @@
+import { each } from "../typings/jquery/index";
+
+namespace App {
+
+    $(document).ready(function () {
+        var obj = '[{"id":1},{"id":2},{"id":3,"children":[{"id":4},{"id":5}]}]';
+        var output = '';
+
+        function buildItem(item) {
+
+            var html = "<li class='dd-item' data-id='" + item.id + "'>";
+            html += "<div class='dd-handle'>" + item.id + "</div>";
+
+            if (item.children) {
+
+                html += "<ol class='dd-list'>";
+                $.each(item.children, function (index, sub) {
+                    html += buildItem(sub);
+                });
+                html += "</ol>";
+            }
+
+
+            html += "</li>";
+
+            return html;
+        }
+
+        $.each(JSON.parse(obj), function (index, item) {
+
+            output += buildItem(item);
+
+        });
+        //loadRadioNetworks;
+
+        $('#radio-networks-content').html(output);        
+        $('#radio-networks').nestable('');
+        //$('#radio-networks').html(output);
+        //$('#radio-networks').data('groups');
+        //$('#radio-networks').data('StationGroups');
+        //$('#radio-networks').data('Station');
+
+        var listStatus = document.getElementsByClassName("radio-networks");
+        var list = $($('.radio-networks')[0]).data('value');
+        loadRadioNetworks();
+
+
+        statusGroup.status;
+        var accessByRadioNetworks = $('#radio-networks').data('value');
+
+
+        // @foreach (var group in Model.StationGroups.OrderBy(x => x.Title).Take(10))
+
+
+
+
+        function loadRadioNetworks() {
+            let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+            LoadFieldsRadioNetworks.html("");
+
+            $.ajax('/api/status-radio-networks', {
+                method: 'GET',
+                contentType: 'application/json',
+                success: function (stationsGroups) {
+                    var html = ``;
+                    stationsGroups.forEach(function (stationGroup) {
+                        html += `<h3>${stationGroup.details}</h3>`; //--- Criamos um elemento para o nome do group
+                        html += `<ul>`; //--- Criamos uma lista dentro para os stations
+                        stationGroup.stations.forEach(function (station) {
+                            html += `<li>${station.details}</li>`; //--- Criamos um elemento para cada station
+                        });
+                        html += `</ul>`; //--- Finaliza lista de stations
+                    });
+                    $("div#radio-networks").append(html); //--- Coloca todos os elementos dentro da lista #radio-networks-list
+                }
+            });
+        }
+
+       /*
+        faz uma chamada de ajax e no success dessa chamada você percorre os itens retornados para chamar a função de "desenho" do html        
+        deveria ser uma chamada de ajax e no sucess percorrer os itens retornados chamando o desenho do html
+        
+                
+                //@foreach(var group in Model.StationGroups.OrderBy(x => x.Title).Take(10))
+            
+        
+              //$('#radio-networks').nestable();
+        
+                //$('.radio-networks-container').data('value');   
+        
+                //$('#appendnestable').nestable({ 2: 2, 0: 1 });
+        
+                /*
+                //Opcionalmente, você pode definir a propriedade 'parent_id' no seu objeto e controlar em qual local da árvore seu item será adicionado.
+                $('.dd').aninhar('add', { "id": 1, "parent_id": 2, "children": [{ "id": 4 }] });
+        
+                $('#nestable').nestable({ maxDepth: 2, grupo: 1 });
+        
+                $('.dd').encaixável('toArray');
+        
+                //Você pode adicionar qualquer item passando um objeto.Um novo item será anexado à árvore raiz.
+                 $('.dd').aninhar('add', { "id": 1, "filhos": [{ "id": 4 }] });
+        
+        
+                $('.dd-item').aninhar('add', { "id": 1, "parent_id": 2, "children": [{ "id": 4 }] });
+        
+        */
+
+
+        //var statusGroup = $('.station-group-status').data('value');    
+
+        //console.log(list.nestable('serialize'));        
+
+
+        //forEach().
+
+
+        /*$('#nestable-menu').on('click', function (e) {
+             var target = $(e.target),
+                 action = target.data('action');
+             if (action === 'expand-all') {
+                 $('.dd').add('expandAll');
+             }
+             if (action === 'collapse-all') {
+                 $('.dd').add('collapseAll');
+             }
+         });*/
+
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var statusGroup = $('.station-group-status').data('value');
+
+    if (statusGroup == "Online") {
+        $('#second-d').css('color', 'green')
+        $('.box').css('border', 'green')
+    } else {
+        $('#second-d').css('color', 'red')
+        $('.box').css('border', 'red')
+    }
+
+    var listStatus = document.getElementsByClassName("station-group-status");
+    var list = $($('.station-group-status')[0]).data('value');
+
+    //$('#second-d').css('color', 'green')
+
+    // 
+
+    //$($('.station-group-status')[0])
+
+
+
+
+
+
+
+
+
+
+    //document.getElementsByClassName("station-group-status").length
+    /*
+ for (i = 0; i < document.getElementsByClassName("station-group-status").length; i++) {
+
+ }
+
+ document.getElementsByClassName("station-group-status").length
+
+
+ var status = $('.station-group-status').data('value');
+
+ var listStatus = document.getElementsByClassName("station-group-status");
+
+ for (var idx, select_content = select_contents[idx = 0]; idx < select_contentslength; select_content = select_contents[idx += 1]) {
+
+ }
+
+ document.getElementsByClassName("station-group-status").length
+ 
+ var select_contents = document.getElementsByClassName("station-group-status");
+ for (var idx, select_content = select_contents[idx = 0]; idx < select_contents.length; select_content = select_contents[idx += 1]) {
+     if (select_content.style.display === "none" || select_content.style.display === "") {
+         select_content.style.display = "block";
+     } else {
+         $scope.getLastEventsBySelectedEventTypes();
+         select_content.style.display = "none";
+     }
+ }*/
+    //$('.station-group-status').data('value')
+
+
+
+    /*
+    var i = 2;
+    var len = $('.station-group-status').length;
+    var text = "";
+    for (; i < len; i++) {
+        text += cars[i] + "<br>";
+    }
+    for (i = 0; i < 5; i++) {
+
+    if (status === "Online") {
+        $('#second-d').css('color', 'green')
+    } else {
+        $('#second-d').css('color', 'red')
+    }
+
+
+$('.station-group-status')[0]
+
+*/
+    //  $($('.station-group-status')[0]).data('value')
+
+
+
+
+    /*JUCI essa parte eu que estou construindo QDO STATUS = ONLINE ou OFFLINE
+    document.getElementById("second-d").style.color = "#ff0000";
+    function myFunction() {
+        var x = document.getElementById("second-d");
+        x.value = x.value.toUpperCase();
+    }
+
+    function modificaClasse() {
+        document.getElementById('mensagem').className = 'red'
+    }
+    */
+    /*JUCI essa parte eu que estou construindo*/
+
+
+
+
+
+}

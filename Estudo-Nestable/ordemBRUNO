@@ -1,0 +1,261 @@
+namespace App {
+    let stationGroups: any = [];
+
+    function loadRadioNetworks() {
+        let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+        LoadFieldsRadioNetworks.html("");
+        $.ajax('/api/status-radio-networks', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                stationGroups = data;
+                drawContent(stationGroups);
+            }
+        });
+    }
+
+    function drawContent(stationGroups) {
+        $("#radio-networks").html("");
+
+        let nestableConfigs = {
+            expandBtnHTML: '',
+            collapseBtnHTML: ''
+        };
+
+        var html = '';
+        html += '<ol class="dd-list">';
+
+        stationGroups.forEach(function (stationGroup) {
+
+            html += `<li class="dd-item dd3-item stationGroup" id="station-group-${stationGroup.guid}">`;
+            html += `<div class='dd-handle stationGroup-color'>`;
+            html += '<div class="row justify-content-between stationGroup-content">';
+            html += `<div class="col-6 stationGroup-type">${stationGroup.type}`;
+            html += '<div>';
+            html += `<div class="stationGroup-details">${stationGroup.details}</div>`;
+            html += '</div>';
+            html += '</div>';
+            html += `<div class="col-5 stationGroup-status" data-status="${stationGroup.status}"> ${stationGroup.status}`;
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            html += buildItem(stationGroup);
+            html += '</li>';
+
+        });
+        html += '</ol>';
+
+        $("#radio-networks").append(html);
+
+        $('.stationGroup-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.stationGroup-color'), this);
+        });
+
+        $('.station-status').each(function () {
+            let status = $(this).data("status");
+            changeColor(status, $(this).parents('.station-color'), this);
+        });
+
+        $('.dd3-item').on('click', function () {
+            if ($(this).hasClass('dd-collapsed')) {
+                $(this).removeClass('dd-collapsed');
+            }
+            else {
+                $(this).addClass('dd-collapsed');
+            }
+        });
+
+        //Você desativa todos os eventos de ponteiro, exceto o recolhimento.
+        /* $('#nestable02').nestable({ maxDepth: 1 });  */
+    }
+
+    function buildItem(item) {
+        var html = '';
+
+        if (item.stations) {
+
+            html += '<ol class="dd-list">';
+
+            $.each(item.stations, function (index, sub) {
+
+                html += `<li class="dd-item dd3-item station" id="station-${sub.guid}" >`;
+                html += `<div class="dd-handle station-color">`;
+                html += '<div class="row justify-content-between station-content">';
+                html += `<div class="col-6 station-title">${sub.title}`;
+                html += '<div>';
+                html += `<div class="station-details">${sub.details}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += `<div class="col-5 station-status" data-status="${sub.status}"> ${sub.status}</div>`;
+                html += '</div>';
+                html += '</div>';
+                html += '</li>';
+
+                changeColor(sub.status, '.station-color', '.station-status');
+            });
+
+            html += '</ol>';
+        }
+        return html;
+    }
+
+    loadRadioNetworks();
+
+    function changeColor(status, colorSelector, statusSelector) {
+        let color = status === 'Offline' ? `#B70A0A` : `#60B70A`;
+
+        $(colorSelector).css('border-left-color', color);
+        $(statusSelector).css('color', color);
+    }
+
+    $('#search').on('keyup', search);
+
+    function search() {
+
+        let filteredStationGroups: any = [];
+
+        let search = $("#search").val();
+        let data = cloneArray(stationGroups);
+
+        filteredStationGroups = data.filter(filter(search));
+
+        drawContent(filteredStationGroups);
+    }
+
+    function cloneArray(array) {
+        let newArray: any = [];
+        array.forEach((v, i) => {
+            const val = (typeof v === 'object') ? Object.assign({}, v) : v;
+            newArray.push(val);
+        });
+        return newArray;
+    }
+
+    function filter(search) {
+        return function (item) {
+
+            let returnFirstLevel = item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.type.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+
+            let filteredStations = filterStations(search, item.stations);
+
+
+            if (!returnFirstLevel && filteredStations.length > 0) {
+                item.stations = filteredStations;
+                return true;
+            } else {
+                return returnFirstLevel;
+            }
+
+        }
+    }
+
+    function filterStations(search, stations) {
+        let filteredStations = stations.filter(filterStationsBySearchTerm(search));
+        return filteredStations;
+    }
+
+    function filterStationsBySearchTerm(search) {
+        return function (item) {
+            return item.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.details.toLowerCase().indexOf(search.toLowerCase()) > -1
+                || item.status.toLowerCase().indexOf(search.toLowerCase()) > -1;
+        }
+    }
+
+    $('#btnOrder').on('click', function () {
+        let order = <any>$("#ordination").val();
+
+        stationGroups = stationGroups.sort(function (a, b) {
+            return (b[order].toString()).localeCompare(a[order])
+        });
+
+        $.each(stationGroups, function (i, v) {
+            v.stations = v.stations.sort(function (a, b) {
+                return (b[order].toString()).localeCompare(a[order])
+            });
+        });
+
+        drawContent(stationGroups);
+    });
+
+    //function ordination() {
+    //    let filteredStationGroups: any = [];
+
+    //    let order = $("#ordination").val();
+
+    //    //let stationGroups2 = cloneArray(stationGroups);
+
+    //    //stationGroups2 = stationGroups2.sort(sort(order));
+
+    //    //$.each(stationGroups2, function (i, v) {
+    //    //    stationGroups2[i].stations = v.sort(sort(order));
+    //    //});
+
+    //    //drawContent(stationGroups2);
+
+    //    stationGroups = stationGroups.sort(sort(order));
+
+    //    //$.each(stationGroups, function (i, v) {
+    //    //    stationGroups[i].stations = v.stations.sort(sort(order));
+    //    //});
+
+    //    drawContent(stationGroups);
+    //}
+
+    //function sort(orderProperty) {
+    //    /* ordena segundo nivel preciso chamar depois do primeiro */
+
+    //    return function (item) {
+    //        //item.stations.sort(function (a, b) {
+    //        if (a[orderProperty] > b[orderProperty])
+    //            return 1;
+    //        if (a[orderProperty] < b[orderProperty])
+    //            return -1;
+    //        return 0;
+    //        //});
+    //    }
+    //}    //function sort(orderProperty) {
+    //    /* ordena segundo nivel preciso chamar depois do primeiro */
+
+    //    return function (item) {
+    //        //item.stations.sort(function (a, b) {
+    //        if (a[orderProperty] > b[orderProperty])
+    //            return 1;
+    //        if (a[orderProperty] < b[orderProperty])
+    //            return -1;
+    //        return 0;
+    //        //});
+    //    }
+    //}
+
+    // function orderStations(orderProperty, stations) {
+    //     let orderedStations = stations.sort(orderStationsProperty(orderProperty, stations));
+    //     return orderedStations;
+    // }
+
+    //function orderStationsProperty(orderProperty, stations) {
+    //    return function (item) {
+    //        return function (a, b) {
+    //            if (item.stations.orderProperty === "status") {
+    //                if (a[item.stations.orderProperty] > b[item.stations.orderProperty])
+    //                    return -1;
+    //                if (a[item.stations.orderProperty] < b[item.stations.orderProperty])
+    //                    return 1;
+    //                return 0;
+    //            } else {
+    //                if (a[item.stations.orderProperty] > b[item.stations.orderProperty])
+    //                    return 1;
+    //                if (a[item.stations.orderProperty] < b[item.stations.orderProperty])
+    //                    return -1;
+    //                return 0;
+    //            }
+    //        }
+
+    //    }
+    //}
+}

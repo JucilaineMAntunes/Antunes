@@ -1,0 +1,44 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Remota.WebConfig.Models.RadioNetworkStatusResponseModel>
+    @{
+    ViewBag.Path = new[] { Text.WebResources.ServerStatus };
+    ViewBag.Title = @Text.WebResources.RadioNetworksStatus;
+    Layout = "_Layout.cshtml";
+    }
+
+    @section Script {
+    <script src="~/Content/nestable2/jquery.nestable.js" defer></script>
+    <script src="~/Content/scripts/radio-networks-status.js" defer></script>
+    }
+
+    <link href="@Url.Content("~/Content/nestable2/jquery.nestable.min.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/nestable2/jquery.nestable.css")" rel="stylesheet" >
+    <link href="@Url.Content("~/Content/styles/radio-networks-status.css")" rel="stylesheet" type="text/css"/>    
+
+    <div id="radioNetworksStatus_filter" class="dataTables_filter">
+        <div class="float-left form-inline">
+            <div>
+                <label for="ordenation" class="mr-3 col-form-label">@Text.WebResources.order</label>
+            </div>
+            <div>
+                <select required class="form-control" name="ordenation" id="ordination">
+                    <option value="type">@Text.WebResources.Type</option>
+                    <option value="title">@Text.WebResources.Title</option>
+                    <option value="details">@Text.WebResources.Details</option>
+                    <option value="status">@Text.WebResources.Status </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="float-right form-inline">
+            <div>
+                <label for="search" class="mr-3 col-form-label">@Text.WebResources.Search</label>
+            </div>
+            <div>
+                <input type="text" class="form-control" name="search" id="search">
+            </div>
+        </div>
+    </div>
+
+    <div class="dd" id="radio-networks">
+
+    </div>

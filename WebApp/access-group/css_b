@@ -1,0 +1,10 @@
+//@import "~datatables/media/css/jquery.dataTables.css"; //largura ok sem marcacao linha a linha
+
+//@import "~datatables.net-bs4/css/dataTables.bootstrap4.css";
+
+@import "~datatables.net-bs4/css/dataTables.bootstrap4.min.css";
+
+//destaca linha
+table.dataTable tbody tr.selected {
+    background-color: #B0BED9;
+}

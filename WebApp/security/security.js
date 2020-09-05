@@ -1,0 +1,499 @@
+import 'bootstrap'
+import 'popper.js'
+import '../js/datatables'
+
+let saveClicked = false;
+let accessAllRadios = false;
+let accessAllReports = false;
+
+$(function () {
+
+    let dataTable = $('#securities').DataTable({
+        ajax: {
+            url: '/api/dispatcher/securities',
+            dataSrc: ''
+        },
+        dom: "<'row mb-3'<'col'B>>" +
+            "<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+        columns: [
+            { data: 'name' }
+        ],
+        order: [[0, 'desc']],
+        select: {
+            style: 'os'
+        },
+        responsive: {
+            breakpoints: [
+                { name: 'xl', width: Infinity },
+                { name: 'lg', width: 1200 },
+                { name: 'md', width: 992 },
+                { name: 'sm', width: 768 },
+                { name: 'xs', width: 576 }
+            ]
+        },
+        buttons: [
+            {
+                text: 'Add',
+                action: function () {
+                    $('form').prop('action', '/api/dispatcher/securities/add').find('.invalid-feedback, .alert').hide();
+                    $('#securityForm :input').val("");
+
+                    loadRadios();
+                    loadReports();
+                    loadProperties();
+
+                    $('#accessAllRadios').prop('checked', true);
+                    $('#accessAllReports').prop('checked', true);
+                    accessAllRadios = true;
+                    accessAllReports = true;
+
+                    let label = $('#securityModalLabel');
+                    label.text(label.data('label-add'));
+                    $('#securityModal').modal('show');
+                }
+            },
+            {
+                extend: 'selectedSingle',
+                text: 'Change',
+                action: function (_, dt) {
+                    $('form').prop('action', '/api/dispatcher/securities/update').find('.invalid-feedback, .alert').hide();
+                    let record = dt.row({ selected: true }).data();
+                    $('#name').val(record.name);
+
+                    loadRadios(record.radiosWithAccess);
+                    loadReports(record.reportsWithAccess);
+                    loadProperties(record.properties);
+
+                    $('#accessAllRadios').prop('checked', record.accessAllRadios);
+                    $('#accessAllReports').prop('checked', record.accessAllReports);
+                    accessAllRadios = record.accessAllRadios;
+                    accessAllReports = record.accessAllReports;
+
+                    let label = $('#securityModalLabel');
+                    label.text(label.data('label-change'));
+                    $('#securityModal').modal('show');
+
+                    $('#btnSaveSecurity').prop("disabled", true);
+                }
+            },
+            {
+                extend: 'selected',
+                text: 'Delete',
+                action: function () {
+                    $('#confirmModal').modal('show');
+                }
+            }
+        ]
+
+    });
+
+    function loadRadios(radiosWithAccess) {
+        let radios = $('#radiosWithAccess');
+        radios.html("");
+
+        $.ajax('/api/dispatcher/radios', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                data.forEach(function (radio) {
+                    let div = "<div class=\"form-check\"><input class=\"form-check-input radios-check\" type=\"checkbox\" data-radio-guid=\"" + radio.guid + "\" data-radio-alias=\"" + radio.alias + "\" id=\"radio_" + radio.guid + "\"><label class=\"form-check-label\" for=\"radio_" + radio.guid + "\">" + radio.alias + "</label></div>";
+                    radios.append(div);
+
+                    if (radiosWithAccess) {
+                        let withAccess = radiosWithAccess.find(radioWithAccess => radioWithAccess.guid === radio.guid || radioWithAccess.guid.replace(/-/g, '') === radio.guid);
+                        if (withAccess) {
+                            $('#radio_' + radio.guid).prop('checked', true);
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    function loadReports(reportsWithAccess) {
+        let reports = $('#reportsWithAccess');
+        reports.html("");
+
+        $.ajax('/api/dispatcher/reports', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                data.forEach(function (report) {
+                    let div = "<div class=\"form-check\"><input class=\"form-check-input reports-check\" type=\"checkbox\" data-report-name=\"" + report.name + "\" id=\"report_" + report.name + "\"><label class=\"form-check-label\" for=\"report_" + report.name + "\">" + report.description + "</label></div>";
+                    reports.append(div);
+
+                    if (reportsWithAccess) {
+                        let withAccess = reportsWithAccess.find(reportWithAccess => reportWithAccess.name === report.name);
+                        if (withAccess) {
+                            $('#report_' + report.name).prop('checked', true);
+                        }
+                    }
+                });
+            }
+        });
+    }
+    
+    function loadProperties(propertiesWithAccess) {
+
+        let consoleProperties = $('#consoleProperties');
+        $('#consoleProperties div.consoleProperties-check').remove();
+
+        let radarProperties = $('#radarProperties');
+        $('#radarProperties div.radarProperties-check').remove();
+
+        let webProperties = $('#webProperties');
+        $('#webProperties div.webProperties-check').remove();
+
+        let sdkProperties = $('#sdkProperties');
+        $('#sdkProperties div.sdkProperties-check').remove();
+
+        let adminProperties = $('#adminProperties');
+        $('#adminProperties div.adminProperties-check').remove();
+
+
+        $.ajax('/api/dispatcher/security-properties', {
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (data) {
+                data.forEach(function (property) {
+                    switch (property.group) {
+                        case "Console":
+                            loadConsoleProperty(consoleProperties, property, propertiesWithAccess);
+                            break;
+                        case "Radar":
+                            loadRadarProperty(radarProperties, property, propertiesWithAccess);
+                            break;
+                        case "Web":
+                            loadWebProperty(webProperties, property, propertiesWithAccess);
+                            break;
+                        case "Sdk":
+                            loadSdkProperty(sdkProperties, property, propertiesWithAccess);
+                            break;
+                        case "Admin":
+                            loadAdminProperty(adminProperties, property, propertiesWithAccess);
+                            break;
+                    }
+                });
+                registerPropertiesCheckEvents();
+                if ($('input.consoleProperties-check:not(:checked)').length <= 0)
+                    $('#markAllConsole').prop("checked", true);
+                else
+                    $('#markAllConsole').prop("checked", false);
+
+                if ($('input.radarProperties-check:not(:checked)').length <= 0)
+                    $('#markAllRadar').prop("checked", true);
+                else
+                    $('#markAllRadar').prop("checked", false);
+
+                if ($('input.webProperties-check:not(:checked)').length <= 0)
+                    $('#markAllWeb').prop("checked", true);
+                else
+                    $('#markAllWeb').prop("checked", false);
+
+                if ($('input.sdkProperties-check:not(:checked)').length <= 0)
+                    $('#markAllSdk').prop("checked", true);
+                else
+                    $('#markAllSdk').prop("checked", false);
+            }
+        });
+    }
+
+    function loadConsoleProperty(consoleProperties, property, propertiesWithAccess) {
+        let div = "<div class=\"form-check consoleProperties-check\"><input class=\"form-check-input consoleProperties-check\" type=\"checkbox\" data-consoleProperty-name=\"" + property.name + "\" id=\"consoleProperty_" + property.name + "\"><label class=\"form-check-label\" for=\"consoleProperty_" + property.name + "\">" + property.description + "</label></div>";
+        consoleProperties.append(div);
+
+        if (propertiesWithAccess) {
+            let withAccess = propertiesWithAccess.find(propertyWithAccess => propertyWithAccess.name === property.name && propertyWithAccess.group === "Console");
+            if (withAccess) {
+                $('#consoleProperty_' + property.name).prop('checked', true);
+            }
+        }
+    }
+
+    function loadRadarProperty(radarProperties, property, propertiesWithAccess) {
+        let div = "<div class=\"form-check radarProperties-check\"><input class=\"form-check-input radarProperties-check\" type=\"checkbox\" data-radarProperty-name=\"" + property.name + "\" id=\"radarProperty_" + property.name + "\"><label class=\"form-check-label\" for=\"radarProperty_" + property.name + "\">" + property.description + "</label></div>";
+        radarProperties.append(div);
+
+        if (propertiesWithAccess) {
+            let withAccess = propertiesWithAccess.find(propertyWithAccess => propertyWithAccess.name === property.name && propertyWithAccess.group === "Radar");
+            if (withAccess) {
+                $('#radarProperty_' + property.name).prop('checked', true);
+            }
+        }
+    }
+
+    function loadWebProperty(webProperties, property, propertiesWithAccess) {
+        let div = "<div class=\"form-check webProperties-check\"><input class=\"form-check-input webProperties-check\" type=\"checkbox\" data-webProperty-name=\"" + property.name + "\" id=\"webProperty_" + property.name + "\"><label class=\"form-check-label\" for=\"webProperty_" + property.name + "\">" + property.description + "</label></div>";
+        webProperties.append(div);
+
+        if (propertiesWithAccess) {
+            let withAccess = propertiesWithAccess.find(propertyWithAccess => propertyWithAccess.name === property.name && propertyWithAccess.group === "Web");
+            if (withAccess) {
+                $('#webProperty_' + property.name).prop('checked', true);
+            }
+        }
+    }
+
+    function loadSdkProperty(sdkProperties, property, propertiesWithAccess) {
+        let div = "<div class=\"form-check sdkProperties-check\"><input class=\"form-check-input sdkProperties-check\" type=\"checkbox\" data-sdkProperty-name=\"" + property.name + "\" id=\"sdkProperty_" + property.name + "\"><label class=\"form-check-label\" for=\"sdkProperty_" + property.name + "\">" + property.description + "</label></div>";
+        sdkProperties.append(div);
+
+        if (propertiesWithAccess) {
+            let withAccess = propertiesWithAccess.find(propertyWithAccess => propertyWithAccess.name === property.name && propertyWithAccess.group === "Sdk");
+            if (withAccess) {
+                $('#sdkProperty_' + property.name).prop('checked', true);
+            }
+        }
+    }
+
+    function loadAdminProperty(adminProperties, property, propertiesWithAccess) {
+        let div = "<div class=\"form-check adminProperties-check\"><input class=\"form-check-input adminProperties-check\" type=\"checkbox\" data-adminProperty-name=\"" + property.name + "\" id=\"adminProperty_" + property.name + "\"><label class=\"form-check-label\" for=\"adminProperty_" + property.name + "\">" + property.name + "</label></div>";
+        adminProperties.append(div);
+
+        if (propertiesWithAccess) {
+            let withAccess = propertiesWithAccess.find(propertyWithAccess => propertyWithAccess.name === property.name && propertyWithAccess.group === "Admin");
+            if (withAccess) {
+                $('#adminProperty_' + property.name).prop('checked', true);
+            }
+        }
+    }
+
+    function reloadTable() {
+        
+        $('#securityModal,#confirmModal').modal('hide');
+
+        dataTable.clear();
+        dataTable.ajax.reload();
+        dataTable.draw();
+    }
+
+    $('#securityForm').on('change', 'input', enableButtons);
+    $('#securityForm').on('keyup', 'input', enableButtons);
+
+    function enableButtons(event) {
+        if (event.keyCode !== 9) {
+            $('#btnSaveSecurity').prop('disabled', false);
+        }
+    }
+
+    $('#accessAllRadios').change(function () {
+        let checked = $('#accessAllRadios').prop('checked');
+        if (checked) {
+            $('.radios-check').prop('disabled', true);
+        } else {
+            $('.radios-check').prop('disabled', false);
+        }
+    });
+
+    $('#accessAllReports').change(function () {
+        let checked = $('#accessAllReports').prop('checked');
+        if (checked) {
+            $('.reports-check').prop('disabled', true);
+        } else {
+            $('.reports-check').prop('disabled', false);
+        }
+    });
+
+
+
+
+
+
+    $('#markAllConsole').change(function () {
+        let checked = $('#markAllConsole').prop('checked');
+        if (checked) {
+            $('input.consoleProperties-check').prop('checked', true);
+        } else {
+            $('input.consoleProperties-check').prop('checked', false);
+        }
+    });
+
+    $('#markAllRadar').change(function () {
+        let checked = $('#markAllRadar').prop('checked');
+        if (checked) {
+            $('input.radarProperties-check').prop('checked', true);
+        } else {
+            $('input.radarProperties-check').prop('checked', false);
+        }
+    });
+
+    $('#markAllWeb').change(function () {
+        let checked = $('#markAllWeb').prop('checked');
+        if (checked) {
+            $('input.webProperties-check').prop('checked', true);
+        } else {
+            $('input.webProperties-check').prop('checked', false);
+        }
+    });
+
+    $('#markAllSdk').change(function () {
+        let checked = $('#markAllSdk').prop('checked');
+        if (checked) {
+            $('input.sdkProperties-check').prop('checked', true);
+        } else {
+            $('input.sdkProperties-check').prop('checked', false);
+        }
+    });
+
+
+
+
+    $('#btnSaveSecurity').on('click', function () {
+        $('.invalid-feedback').hide();
+        $('#securityModal').modal('hide');
+
+        saveClicked = true;
+    });
+
+    $('#securityModal').on('hidden.bs.modal', function () {
+        if (saveClicked) {
+
+            saveSecurity();
+            saveClicked = false;
+        }
+    });
+
+    $('#securityModal').on('shown.bs.modal', function () {
+        if (accessAllRadios) {
+            $('.radios-check').prop('disabled', true);
+        }
+        if (accessAllReports) {
+            $('.reports-check').prop('disabled', true);
+        }
+    });
+
+    var registerPropertiesCheckEvents = function () {
+        $('input.consoleProperties-check').change(function () {
+            if ($('input.consoleProperties-check:not(:checked)').length <= 0)
+                $('#markAllConsole').prop("checked", true);
+            else
+                $('#markAllConsole').prop("checked", false);
+        });
+        $('input.radarProperties-check').change(function () {
+            if ($('input.radarProperties-check:not(:checked)').length <= 0)
+                $('#markAllRadar').prop("checked", true);
+            else
+                $('#markAllRadar').prop("checked", false);
+        });
+        $('input.webProperties-check').change(function () {
+            if ($('input.webProperties-check:not(:checked)').length <= 0)
+                $('#markAllWeb').prop("checked", true);
+            else
+                $('#markAllWeb').prop("checked", false);
+        });
+        $('input.sdkProperties-check').change(function () {
+            if ($('input.sdkProperties-check:not(:checked)').length <= 0)
+                $('#markAllSdk').prop("checked", true);
+            else
+                $('#markAllSdk').prop("checked", false);
+        });
+    }
+
+    function saveSecurity() {
+        let rowData = dataTable.row({ selected: true }).data();
+
+        let radiosWithAccess = [];
+        let reportsWithAccess = [];
+        let propertiesWithAccess = [];
+
+        $('.radios-check:checked').each(function () {
+            radiosWithAccess.push({
+                alias: $(this).attr('data-radio-alias'),
+                guid: $(this).attr('data-radio-guid')
+            })
+        });
+        $('.reports-check:checked').each(function () {
+            reportsWithAccess.push({
+                name: $(this).attr('data-report-name'),
+                access: true
+            });
+        });
+        $('input.consoleProperties-check:checked').each(function () {
+            propertiesWithAccess.push({
+                group: "Console",
+                name: $(this).attr('data-consoleProperty-name')
+            });
+        });
+        $('input.radarProperties-check:checked').each(function () {
+            propertiesWithAccess.push({
+                group: "Radar",
+                name: $(this).attr('data-radarProperty-name')
+            });
+        });
+        $('input.sdkProperties-check:checked').each(function () {
+            propertiesWithAccess.push({
+                group: "Sdk",
+                name: $(this).attr('data-sdkProperty-name')
+            });
+        });
+        $('input.webProperties-check:checked').each(function () {
+            propertiesWithAccess.push({
+                group: "Web",
+                name: $(this).attr('data-webProperty-name')
+            });
+        });
+        $('input.adminProperties-check:checked').each(function () {
+            propertiesWithAccess.push({
+                group: "Admin",
+                name: $(this).attr('data-adminProperty-name')
+            });
+        });
+
+        let data = JSON.stringify({
+            guid: (rowData && rowData['guid']) || null,
+            name: $('#name').val(),
+            accessAllRadios: $('#accessAllRadios').prop('checked'),
+            radiosWithAccess: radiosWithAccess,
+            accessAllReports: $('#accessAllReports').prop('checked'),
+            reportsWithAccess: reportsWithAccess,
+            properties: propertiesWithAccess
+        });
+        $.ajax($('form').prop('action'), {
+            method: 'POST',
+            contentType: 'application/json',
+            data: data
+        }).then(reloadTable, function (result) {
+            $('#securityModal').modal('show');
+
+            let errors = result.responseJSON.errors || [];
+            let msg = result.statusText || null;
+            for (let field in errors) {
+                $(`#${field} ~ .invalid-feedback`).show().html(errors[field].map(x => x.errorMessage).join('<br/>'));
+            }
+
+            if (msg) {
+                $('#securityModal .alert').show().text(msg);
+            };
+        });
+    }
+
+    $('#btnConfirmDeleteSecurity').on('click', function () {
+
+        let data = JSON.stringify(dataTable.rows({ selected: true }).data().toArray());
+        $.ajax('/api/dispatcher/securities/delete', {
+            method: 'POST',
+            contentType: 'application/json',
+            data: data,
+            error: function (result) {
+
+                let msg = result.statusText || null;
+                let errors = result.responseJSON.errors || [];
+                console.log(errors);
+                console.log(result);
+                if (msg) {
+                    msg += "<br /><br />";
+                    for (let error in errors) {
+                        msg += `Erro em ${error}: `;
+                        msg += errors[error].map(x => x.errorMessage);
+                        msg += "<br/>";
+                    }
+                    $('#confirmModal').modal('hide');
+                    $('#errorText').html(msg);
+                    $('#errorModal').modal('show');
+                }
+            }
+        }).then(reloadTable);
+    });
+});

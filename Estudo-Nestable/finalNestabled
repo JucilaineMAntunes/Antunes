@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>jQuery UI Sortable - Example</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <style>
+         #nestable2-output { width: 100%; height: 7em; font-size: 0.75em; line-height: 1.333333em; font-family: Consolas, monospace; padding: 5px; box-sizing: border-box; -moz-box-sizing: border-box; }
+
+#nestable2 .dd-handle {
+    color: #fff;
+    border: 1px solid #999;
+    background: #bbb;
+    background: -webkit-linear-gradient(top, #bbb 0%, #999 100%);
+    background:    -moz-linear-gradient(top, #bbb 0%, #999 100%);
+    background:         linear-gradient(top, #bbb 0%, #999 100%);
+}
+#nestable2 .dd-handle:hover { background: #bbb; }
+#nestable2 .dd-item > button:before { color: #fff; }
+      </style>
+      
+<script src="jquery.nestable.js"></script>
+<script>
+
+$(document).ready(function()
+{
+
+    var updateOutput = function(e)
+    {
+        var list   = e.length ? e : $(e.target),
+            output = list.data('output');
+        if (window.JSON) {
+            output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
+        } else {
+            output.val('JSON browser support required for this demo.');
+        }
+    };
+
+    // activate Nestable for list 1
+    $('#nestable').nestable({
+        group: 1
+    })
+    .on('change', updateOutput);
+
+    // activate Nestable for list 2
+    $('#nestable2').nestable({
+        group: 1
+    })
+    .on('change', updateOutput);
+
+    // output initial serialised data
+    updateOutput($('#nestable').data('output', $('#nestable-output')));
+    updateOutput($('#nestable2').data('output', $('#nestable2-output')));
+
+    $('#nestable-menu').on('click', function(e)
+    {
+        var target = $(e.target),
+            action = target.data('action');
+        if (action === 'expand-all') {
+            $('.dd').nestable('expandAll');
+        }
+        if (action === 'collapse-all') {
+            $('.dd').nestable('collapseAll');
+        }
+    });
+
+    $('#nestable3').nestable();
+
+});
+</script>
+   </head>
+   
+   <body>
+          <div class="dd" id="nestable2">
+            <ol class="dd-list">
+                <li class="dd-item" data-id="13">
+                    <div class="dd-handle">Item 13</div>
+                </li>
+                <li class="dd-item" data-id="14">
+                    <div class="dd-handle">Item 14</div>
+                </li>
+                <li class="dd-item" data-id="15">
+                    <div class="dd-handle">Item 15</div>
+                    <ol class="dd-list">
+                        <li class="dd-item" data-id="16"><div class="dd-handle">Item 16</div></li>
+                        <li class="dd-item" data-id="17"><div class="dd-handle">Item 17</div></li>
+                        <li class="dd-item" data-id="18"><div class="dd-handle">Item 18</div></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+
+   </body>
+</html>

@@ -1,0 +1,102 @@
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Remota.WebConfig.Models.MultimediaFileModelResponse>
+@{
+    ViewBag.Path = new[] { @Text.WebResources.Management };
+    ViewBag.Title = @Text.WebResources.Multimedia;
+    ViewBag.FormAction = "/web/multimedia-files";
+    ViewBag.RenderFormButtons = false;
+    Layout = "_Layout.cshtml";
+}
+@using System.Linq;
+
+@section Script {
+    <script src="@Url.Content("~/Content/scripts/multimedia-files.js")" defer></script>
+}
+
+<div class="row">
+    <div class="col">
+        <table class="table table-striped table-bordered w-100 dt-responsive" id="multimediaFiles">
+            <thead>
+                <tr>
+                    <th>@Text.WebResources.Public</th>
+                    <th>@Text.WebResources.Description</th>
+                    <th>@Text.WebResources.User</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var multimediaFile in Model.MultimediaFiles.OrderByDescending(x => x.Description).Take(10))
+                {
+                    <tr>
+                        <td>@multimediaFile.IsPublic</td>
+                        <td>@multimediaFile.Description</td>
+                        <td>@multimediaFile.OwnerUserName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Modal {
+    <div id="multimediaFileModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="multimediaFileModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <form id="multimediaFileForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="multimediaFileModalLabel" data-label-add="@Text.WebResources.AddMultimediaFile" data-label-change="@Text.WebResources.ChangeMultimediaFile"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="alert alert-danger"></div>
+
+                    <div class="form-group">
+                        <label for="description">@Text.WebResources.Description</label>
+                        <input required class="form-control" type="text" id="description" name="description" />
+                        <span class="invalid-feedback"></span>
+                    </div>
+
+                    <div class="form-check my-2">
+                        <input class="form-check-input" type="checkbox" id="public" name="public" />
+                        <label class="form-check-label" for="public">@Text.WebResources.Public</label>
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="custom-file">
+                            <input  accept="audio/mp3" class="form-control custom-file-input" type="file" id="fileData" name="data" />
+                            <label id="data-label" class="custom-file-label text-nowrap text-truncate" for="fileData">@Text.WebResources.File</label>
+                        </div>
+                    </div>
+                    <span class="invalid-feedback"></span>
+                </div>
+
+                <span class="ml-2">@Text.WebResources.FileSizeLimitWarning</span>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnSaveMultimediaFiles">@Text.WebResources.Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">@Text.WebResources.Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">@Text.WebResources.Attention</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>@Text.WebResources.ChangeMultimediaFile</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btnConfirmDeleteMultimediaFile">@Text.WebResources.Yes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">@Text.WebResources.No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

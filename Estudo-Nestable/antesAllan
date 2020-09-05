@@ -1,0 +1,365 @@
+namespace App {
+
+    $(document).ready(function () {
+        var obj = '[{"id":3,"children":[{"id":4},{"id":5}]}]';
+        var output = '';
+
+        function buildItem(item) {
+
+            var html = "<li class='dd-item' data-id='" + item.id + "'>";
+            html += "<div class='dd-handle'>" + item.id + "</div>";
+
+            if (item.children) {
+
+                html += "<ol class='dd-list'>";
+                $.each(item.children, function (index, sub) {
+                    html += buildItem(loadRadioNetworks(item));
+                });
+                html += "</ol>";
+            }
+
+
+            html += "</li>";
+
+            return html;
+        }
+
+        $.each(JSON.parse(obj), function (index, item) {
+
+            output += buildItem(item);
+
+           
+        });
+
+
+        $('#radio-networks').html(output);
+        $('#radio-networks-contend').encaixável(output);
+
+        //$('#radio-networks').encaixável(output);
+
+        //$('#radio-networks-content').html(output);
+        $('#radio-networks').nestable('');
+        //loadRadioNetworks();
+
+        
+        /*
+         $('.dd').nestable({
+    callback: function(l,e){
+        // l is the main container
+        // e is the element that was moved
+       }
+       });
+
+add: Você pode adicionar qualquer item passando um objeto. Um novo item será anexado à árvore raiz.
+$('.dd').nestable('add', {"id":1,"children":[{"id":4}]});
+Opcionalmente, você pode definir a propriedade 'parent_id' no seu objeto e controlar em qual local da árvore seu item será adicionado.
+$ ( ' .dd ' ) . aninhar ( ' add ' , { " id " : 1 , " parent_id " : 2 , " children " : [ { " id " : 4 } ] } )  ;
+
+         */
+
+
+
+        function loadRadioNetworks(item) {
+            let LoadFieldsRadioNetworks = $('#LoadFieldsRadioNetworks');
+            LoadFieldsRadioNetworks.html("");
+
+            $.ajax('/api/status-radio-networks', {
+                method: 'GET',
+                contentType: 'application/json',
+                success: function (stationsGroups) {
+                    var html = ``;                 
+                    stationsGroups.forEach(function (stationGroup) {                        
+                        html += `<div id="radio-networks-contend"> <h3>${stationGroup.details}</h3>`; //--- Criamos um elemento para o nome do group
+                        html += "<ol class='dd-list data-id='" + item.id + "> "; //--- Criamos uma lista dentro para os stations
+                        stationGroup.stations.forEach(function (station) {
+                          html += `<li  class='dd-item' >${station.details}</li>`; //--- Criamos um elemento para cada station                            
+                        });
+                        html += `</ol>`; //--- Finaliza lista de stations    
+                        html += `</div>`;
+                    });
+                    $("div#radio-networks").append(html); //--- Coloca todos os elementos dentro da lista #radio-networks-list
+                }
+            });
+        }
+
+    });
+
+}
+
+
+
+
+
+
+        // class="class="uk-nestable" data-uk-nestable="{maxDepth:10}
+
+        //$('.dd').nestable({ scroll: true });
+
+        /*
+
+        $('.dd').nestable('add', { "id": 1, "children": [{ "id": 4 }] });
+
+        $('.dd').nestable('add', { "id": 1, "parent_id": 2, "children": [{ "id": 4 }] });
+
+        $('.dd').nestable({ scroll: true });
+
+
+        $('.list-group-item').on('click', function () {
+            $('.list', this)
+                .toggleClass('glyphicon-chevron-right')
+                .toggleClass('glyphicon-chevron-down');
+        });*/
+
+        //$('#radio-networks').aninhar('add', { "id": 3, "parent_id": 2, "children": [{ "id": 4 }] });
+        //$('#radio-networks').aninhar('add', { "id": 3, "parent_id": 2, "children": [{ "id": 5 }] });
+
+        //$('#nestable').nestable({ "maxDepth": 2, "grupo": 1 });
+
+       // $('.dd').encaixável('toArray');
+
+        //Você pode adicionar qualquer item passando um objeto.Um novo item será anexado à árvore raiz.
+       // $('.dd').aninhar('add', { "id": 1, "filhos": [{ "id": 4 }] });
+
+
+        //$('#radio-networks').nestable('#radio-networks-container');
+        //$('#radio-networks').nestable('asNestedSet');        
+
+       //$('#radio-networks').$<any>(aninhado).('serializar');
+        //$('#radio-networks-container').nestable('{ 2: 2, 0: 1 }'); 
+
+
+        //$('.dd').nestable('add', { "id": 1, "parent_id": 2, "children": [{ "id": 4 }] });
+
+        //$('#radio-networks').html(output);
+        //$('#radio-networks').data('groups');
+        //$('#radio-networks').data('StationGroups');
+        //$('#radio-networks').data('Station');
+
+       /* $('#radio-networks').nestable({  });
+
+  
+        // activate Nestable for list 1
+    $('#nestable').nestable({
+        group: 1
+    })
+    .on('change', updateOutput);
+
+    // activate Nestable for list 2
+    $('#nestable2').nestable({
+        group: 1
+    })
+    .on('change', updateOutput);
+    
+    
+    
+
+        updateOutput($('#radio-networks').data('output', $('#nestable-output')));
+        updateOutput($('#radio-networks').data('output', $('#nestable2-output')));
+    */
+
+
+
+
+		
+
+
+
+
+       /*
+        faz uma chamada de ajax e no success dessa chamada você percorre os itens retornados para chamar a função de "desenho" do html        
+        deveria ser uma chamada de ajax e no sucess percorrer os itens retornados chamando o desenho do html
+        
+                
+                //@foreach(var group in Model.StationGroups.OrderBy(x => x.Title).Take(10))
+            
+        
+              //$('#radio-networks').nestable();
+        
+                //$('.radio-networks-container').data('value');   
+        
+                //$('#appendnestable').nestable({ 2: 2, 0: 1 });
+        
+                /*
+                //Opcionalmente, você pode definir a propriedade 'parent_id' no seu objeto e controlar em qual local da árvore seu item será adicionado.
+                $('.dd').aninhar('add', { "id": 1, "parent_id": 2, "children": [{ "id": 4 }] });
+        
+                $('#nestable').nestable({ maxDepth: 2, grupo: 1 });
+        
+                $('.dd').encaixável('toArray');
+        
+                //Você pode adicionar qualquer item passando um objeto.Um novo item será anexado à árvore raiz.
+                 $('.dd').aninhar('add', { "id": 1, "filhos": [{ "id": 4 }] });
+        
+        
+                $('.dd-item').aninhar('add', { "id": 1, "parent_id": 2, "children": [{ "id": 4 }] });
+        
+        */
+
+
+        //var statusGroup = $('.station-group-status').data('value');    
+
+        //console.log(list.nestable('serialize'));        
+
+
+        //forEach().
+
+
+        /*$('#nestable-menu').on('click', function (e) {
+             var target = $(e.target),
+                 action = target.data('action');
+             if (action === 'expand-all') {
+                 $('.dd').add('expandAll');
+             }
+             if (action === 'collapse-all') {
+                 $('.dd').add('collapseAll');
+             }
+         });*/
+
+https://www.codeply.com/go/bp/89084 exemplo
+
+
+
+
+
+
+
+
+
+
+
+        // @foreach (var group in Model.StationGroups.OrderBy(x => x.Title).Take(10))
+
+@foreach (var station in group.Stations.OrderBy(x => x.Title).Take(10))
+                    {
+                        <li class="dd-item" data-id="2">
+                            <div class="dd-handle">  @station.Title</div>
+                        </li>
+                    }
+					
+					
+isso traz o online mas não qdo percorre $('#first-d').text()
+2:01
+var group = document.getElementsByClassName("station-group-status");
+                for (var i = 0; i < group.length; ++i) {
+                    console.log(group[i]);
+                }
+2:03
+esse seria a pergunta 1
+
+@foreach (var group in Model.StationGroups.OrderBy(x => x.Title).Take(10)) Deste modo você está obtendo os dados antes de desenhar a view. É um jeito 			
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+
+
+    var statusGroup = $('.station-group-status').data('value');
+
+    if (statusGroup == "Online") {
+        $('#second-d').css('color', 'green')
+        $('.box').css('border', 'green')
+    } else {
+        $('#second-d').css('color', 'red')
+        $('.box').css('border', 'red')
+    }
+
+    var listStatus = document.getElementsByClassName("station-group-status");
+    var list = $($('.station-group-status')[0]).data('value');*/
+
+    //$('#second-d').css('color', 'green')
+
+    // 
+
+    //$($('.station-group-status')[0])
+
+
+
+
+
+
+
+
+
+
+    //document.getElementsByClassName("station-group-status").length
+    /*
+ for (i = 0; i < document.getElementsByClassName("station-group-status").length; i++) {
+
+ }
+
+ document.getElementsByClassName("station-group-status").length
+
+
+ var status = $('.station-group-status').data('value');
+
+ var listStatus = document.getElementsByClassName("station-group-status");
+
+ for (var idx, select_content = select_contents[idx = 0]; idx < select_contentslength; select_content = select_contents[idx += 1]) {
+
+ }
+
+ document.getElementsByClassName("station-group-status").length
+ 
+ var select_contents = document.getElementsByClassName("station-group-status");
+ for (var idx, select_content = select_contents[idx = 0]; idx < select_contents.length; select_content = select_contents[idx += 1]) {
+     if (select_content.style.display === "none" || select_content.style.display === "") {
+         select_content.style.display = "block";
+     } else {
+         $scope.getLastEventsBySelectedEventTypes();
+         select_content.style.display = "none";
+     }
+ }*/
+    //$('.station-group-status').data('value')
+
+
+
+    /*
+    var i = 2;
+    var len = $('.station-group-status').length;
+    var text = "";
+    for (; i < len; i++) {
+        text += cars[i] + "<br>";
+    }
+    for (i = 0; i < 5; i++) {
+
+    if (status === "Online") {
+        $('#second-d').css('color', 'green')
+    } else {
+        $('#second-d').css('color', 'red')
+    }
+
+
+$('.station-group-status')[0]
+
+*/
+    //  $($('.station-group-status')[0]).data('value')
+
+
+
+
+    /*JUCI essa parte eu que estou construindo QDO STATUS = ONLINE ou OFFLINE
+    document.getElementById("second-d").style.color = "#ff0000";
+    function myFunction() {
+        var x = document.getElementById("second-d");
+        x.value = x.value.toUpperCase();
+    }
+
+    function modificaClasse() {
+        document.getElementById('mensagem').className = 'red'
+    }
+    */
+    /*JUCI essa parte eu que estou construindo*/
+
+
+
+

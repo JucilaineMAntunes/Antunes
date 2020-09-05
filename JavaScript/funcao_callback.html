@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+       function modifica(corDeFundo, l, a){
+        // alert(modifica)
+        document.getElementById('quadrado').style.background =corDeFundo 
+
+        document.getElementById('quadrado').style.width = l 
+        document.getElementById('quadrado').style.height = a 
+
+       }
+    </script>
+  </head>
+  <body>
+
+    <h1>Manipulando estilo </h1>
+
+    <button type="button" onclick="modifica('#FF0000','200px','10px')">Vermelho</button>
+
+<button type="button" onclick="modifica('#00FF00','150px','200px')">Verde</button>
+
+    <hr/>
+
+    <div style="border: solid 1px #000; width: 100px; height: 100px" id="quadrado"></div>
+  <br/>
+
+  
+  </body>
+</html>
