@@ -1,0 +1,77 @@
+_context      _service   
+
+entidades => models
+service-entidades => 
+view => telas
+Controllers/entidades.cs =>modules
+SalesWebMvc/data => service grava banco
+
+
+
+select * from CstaProfileExtensions
+select * from CstaProfiles
+select * from CstaTelephoneExtensions
+---
+select * from Agrupments
+select * from AgrupmentRadios
+
+select * from Radios  ???
+
+
+
+https://github.com/acenelio/workshop-asp-net-core-mvc/blob/master/SalesWebMvc/Controllers/DepartmentsController.cs
+
+
+
+await _service.DeleteAsync(CstaProfileModelToDbCstaProfileModel(record)); ERRO chamda modules
+
+namespace Remota.WebConfig.Models
+{
+    public class CstaProfileExtensionModel
+    {
+        public Guid? Guid { get; set; }
+        public Guid ProfileGuid { get; set; }
+        public Guid ExtensionGuid { get; set; }
+        public CstaProfileExtensionModel[] CstaProfileExtensions { get; set; }
+    }
+    
+    public class CstaProfileExtensionModelResponseModel : BaseResponseModel
+    {
+        public IEnumerable<CstaProfileExtensionModel> CstaProfileExtensions { get; set; }
+
+        public CstaProfileExtensionModelResponseModel(IEnumerable<CstaProfileExtensionModel> cstaProfileExtensions)
+        {
+            CstaProfileExtensions = cstaProfileExtensions;
+        }
+
+        private List<CstaProfileExtensionModel> FromDbcstaProfileExtensionModelList(IEnumerable<CstaProfileExtensionModel> cstaProfileExtensions)
+        {
+            List<CstaProfileExtensionModel> result = new List<CstaProfileExtensionModel>();
+            foreach (var item in cstaProfileExtensions)
+            {
+                var cstaProfileExtensionModel = new CstaProfileExtensionModel()
+                {
+                    Guid = item.Guid,
+                    ProfileGuid = item.ProfileGuid,
+                    ExtensionGuid = item.ExtensionGuid
+                };
+
+            }
+            return result;
+        }
+    }
+    public sealed class CstaProfileExtensionRequestModelValidator : AbstractValidator<CstaProfileExtensionModel>
+    {
+        public CstaProfileExtensionRequestModelValidator()
+        {
+            CascadeMode = CascadeMode.StopOnFirstFailure;
+            
+            RuleFor(x => x.ProfileGuid).NotNull().NotEmpty().WithGlobalMessage(WebResources.ValidationError_CstaPhoneExtensionEmptyExtension);
+        }
+    }
+}
+
+insert into Consoles (guid, alias, ConsoleType, active)
+values ('ccdf1f05678a47a18ac8b5cc5621fbb', 'teste4', 1, 'true');
+
+

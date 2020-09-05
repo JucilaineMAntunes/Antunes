@@ -1,0 +1,34 @@
+ss
+SCSS - Erro ao compilar arquivos
+
+Follow
+0
+
+Edit
+
+Allan Wiese
+5 de jun. de 2019
+Quando o erro Browserslist: caniuse-lite is outdated. Please run next command npm update caniuse-lite browserslist ocorre compilando arquivos scss (usados pelo twitter-bootstrap, por exemplo), uma alternativa de solução é a seguinte:
+
+Fechar Visual Studio
+Navegar para C:\users\usuario\AppData\Local\Temp\WebCompilerX.X.X
+Dentro de node_modules, excluir as pastas caniuse-lite e browserslist
+
+Executar em um prompt de comandos na pasta do WebCompiler:
+npm i caniuse-lite browserslist
+
+C:\users\jucilainte\AppData\Local\Temp\WebCompilerX.X.X
+
+
+
+
+ C:\users\usuario\AppData\Local\Temp\WebCompilerX.X.X
+ C:\Users\Jucilaine\AppData\Local\Temp\
+ 
+ 
+ pra importar datatables
+ 
+ npm i datatables 
+ 
+ 
+ C:\Projects\TXRoIP\Remota.WebApp> npm i datatables

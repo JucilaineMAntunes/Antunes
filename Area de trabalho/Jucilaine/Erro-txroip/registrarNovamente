@@ -1,0 +1,92 @@
+diretorio txroip/output pegar ip config da maquina
+senão tem Você tem que dar Build no projeto Remota.ServerService e Remota.RecorderService.exe 
+
+Remota.RecorderService.exe register --hostname 192.168.15.43 --primary --username admin --password txr1001
+
+
+Remota.ServerService.exe register --hostname 192.168.15.43 --primary --username admin --password txr1001
+
+ou
+
+Remota.ServerService register --primary --username admin --password txr1001
+
+===========================================================================================================
+
+
+
+remota.ServerService.exe register 192.168.15.43 --primary --username admin --password txr1001 --dbencypt
+
+Remota.RecorderService.exe register --hostname 192.168.15.43 --primary --username admin --password txr1001
+
+
+
+
+ouuuuuuuuuuuuuuuuuuuuuouuuuuuuuuuuuuuuuuuuuuouuuuuuuuuuuuuuuuuuuuuouuuuuuuuuuuuuuuuuuuuu
+
+select * from dbo.Services
+
+entrar diretorio output e abrir
+
+Remota.Recorder.exe.config         TIPO 1
+
+Remota.Server.exe.config           TIPO 0
+
+
+Altera o GUID 1 - DESPACHO Recorder
+
+
+================ webconfig.csproj ============================
+
+  <EmbeddedResource Include="Content\scripts\csta-phone-extension.js">
+      <DependentUpon>csta-phone-extension.ts</DependentUpon>
+    </EmbeddedResource>
+	
+	=======================startar iniciar servico===========================
+	
+	mouse direito set as starup projet
+	=========SEM LICENCA ===========================
+	
+Se antes de me chamar você puder commitar tudo, seria bom
+8:40
+Esse erro que você me mandou é pela falta de licença
+8:40
+Você pode criar uma licença, entrando lá na pasta Output
+
+Jucilaine Antunes  8:40 AM
+ok
+
+Bruno  8:40 AM
+Lá dentro existe uma pasta chamada SecureAssemblies
+8:40
+E tem um programa chamado Remota.Activator
+8:41
+Quando abrir me avisa
+
+
+Bruno  8:42 AM
+Abre o programa Remota.Activator
+Seleciona, no combo box, sei lá o que System
+8:42
+Achou ele?
+	se tiver alguma opção como "ler HardwareId", clica nela
+8:47
+Põe qualquer número de série
+8:47
+0999, pode ser
+8:47
+Marca todos os check boxes
+8:48
+E põe 100 pra quantidade de terminais, quantidade de pilares, ramais telefônicos, etc.
+
+Você tem que fazer do Remota.Config o seu "Startup" project
+Clica com o botão direito em cima do Remota.Config
+8:57
+E aperta a letra a
+
+Jucilaine Antunes  8:57 AM
+
+Bruno  8:58 AM
+Seleciona a opção Set as StartUp project
+
+============================
+OLD SERVER 4b47337d-3378-42fc-8721-322afd6a02a5

@@ -1,0 +1,10 @@
+[Model]
+ModelName = Samsung SCX-4200 Series
+
+[Language]
+LangKey = SUGE1
+DefaultLang = En
+
+[Registy]
+Path = SOFTWARE\SPanel\Samsung\Samsung SCX-4200 Series
+UserKey = SCX4200JM

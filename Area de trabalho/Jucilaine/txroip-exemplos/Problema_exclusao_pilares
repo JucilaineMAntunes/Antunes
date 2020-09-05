@@ -1,0 +1,39 @@
+ $(document).on('click', '#phoneAccountsGroups .nav-link', function () {
+            let index = parseInt(<any>$(document).find('.remove-phone-account-icon').attr('data-account-index'), 10);
+
+            if (selectedPhoneAccount >= 0)
+                saveCurrentPhoneAccount();
+
+            selectedPhoneAccount = index;
+            loadCurrentPhoneAccount();
+        });
+
+        $(document).on('click', '#postAccountsGroups .nav-link', function () {
+            let index = parseInt(<any>$(document).find('.remove-post-account-icon').attr('data-account-index'), 10);
+
+            if (selectedPostAccount >= 0)
+                saveCurrentPostAccount();
+
+            selectedPostAccount = index;
+            loadCurrentPostAccount();
+        });
+=======
+    $(document).on('click', '#phoneAccountsGroups .nav-link', function () {
+            let index = parseInt(<any>$(this).find('.remove-phone-account-icon').attr('data-account-index'), 10);
+
+            if (selectedPhoneAccount >= 0)
+                saveCurrentPhoneAccount();
+
+            selectedPhoneAccount = index;
+            loadCurrentPhoneAccount();
+        });
+
+        $(document).on('click', '#postAccountsGroups .nav-link', function () {
+            let index = parseInt(<any>$(this).find('.remove-post-account-icon').attr('data-account-index'), 10);
+
+            if (selectedPostAccount >= 0)
+                saveCurrentPostAccount();
+
+            selectedPostAccount = index;
+            loadCurrentPostAccount();
+        });

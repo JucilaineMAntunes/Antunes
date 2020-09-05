@@ -1,0 +1,44 @@
+[Menu]
+MANUAL=Kullanýcý Kýlavuzu
+MGR_OPEN=Smart Panel
+MGR_EXIT=Çýkýþ 
+MGR_SETTING=Seçenekler 
+MGR_JOBMONITOR=Ýþ Monitörü 
+MGR_DRV_SETTING=Sürücü Ayarý
+MGR_PRN_SETTING=Yazýcý Ayarý
+MGR_BUYNOW=Þimdi Satýn Al
+MGR_GUIDE=Sorun Giderme Kýlavuzu
+MGR_ERR_TOOLTIP=Desteklenen yazýcý sürücüsü veya baðlantý noktasý yok
+MGR_SCAN_MANAGER=Tarama ve Faks Yöneticisi
+MGR_SCAN_MANAGER_OLD=Tarama Yöneticisi
+
+[Msg]
+OK_BUTTON=Tamam 
+BUSY_ERR_TITLE=Yazýcý meþgul 
+BUSY_ERR_MSG=Yazýcý boþ olduðunda Yazýcý Ayarý kullanýlabilir
+FATAL_ERR_TITLE=Hata
+FATAL_ERR_MSG=Lütfen desteklenen sürücü veya baðlantý noktasý yükleyin.
+INITIAL_MSG=Lütfen bekleyin...
+SM_OTHERPORT=Diðer yazýcý zaten izlenmekte.
+SM_INSTALLPRINTER=Yazýcý sürücüsü kurulu deðil veya yazýcý baðlantý noktasý USB veya að deðil.
+GUIDE_ERROR=Kullaným Kýlavuzu bulunamadý
+USB Printer is not found. Please add the printer=USB yaz?c?s? bulunamad?. Lütfen yaz?c?y? ekleyin
+Printer driver is not installed, please install the driver...=Yaz?c? sürücüsü yüklü de?il, lütfen sürücüyü yükleyin...
+No Active Window. Please select a window and press the button again.=Etkin pencere yok. Lütfen bir pencere seçin ve dü?meye tekrar bas?n.
+
+[Option]
+SM_OPT_CAPTION=Seçenekler
+SM_OPT_TITLE=Smart Panel Uyarý Seçeneði
+SM_OPT_CHECK_FINISH=Að yazýcýsý için iþ tamamlandýðýnda görüntüle
+SM_OPT_CHECK_ERROR=Yazdýrma iþlemi gerçekleþtirilemediðinde göster (örneðin, kaðýt bittiðinde)
+SM_OPT_CHECK_WAIT=Yazýcýda sorun yokken ancak beklemedeylen göster (örneðin, ýsýnýrken)
+SM_OPT_CHECK_JOBMONITOR=Ýþ yazýcýya kaydedildiðinde Ýþ Monitörü'nü baþlat
+SM_OPT_INTERVAL=Þu aralýklarla otomatik durum denetimi zamanla:
+SM_OPT_STYLE=Görüntüle
+SM_OPT_BALLOON=Balon stili
+SM_OPT_PANEL=Açýlýr pencere (Smart Panel)
+SM_OPT_SEC=(1-10 sn)
+SM_OPT_OK=Tamam
+SM_OPT_CANCEL=Ýptal
+SM_OPT_SHOW=Yazdýrma durum mesajýný göster
+

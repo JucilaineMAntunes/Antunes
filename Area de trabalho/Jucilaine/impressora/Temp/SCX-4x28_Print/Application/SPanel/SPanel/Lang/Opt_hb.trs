@@ -1,0 +1,14 @@
+SM_OPT_CAPTION=אפשרויות
+SM_OPT_TITLE=אפשרות אתראה Smart Panel
+SM_OPT_CHECK_FINISH=הצג כאשר המשימה הסתיימה עבור מדפסת רשת
+SM_OPT_CHECK_ERROR=מציגה מתי המדפסת אינה יכולה להדפיס (למשל, נגמר הנייר)
+SM_OPT_CHECK_WAIT=מציגה מתי אין למדפסת בעיה אלא היא רק בהמתנה (למשל, מתחממת)
+SM_OPT_CHECK_JOBMONITOR=הפעל את מנטר המשימות כאשר המשימה נשמרת במדפסת
+SM_OPT_INTERVAL=קבע לוח זמנים לבדיקת מצב אוטומטית כל
+SM_OPT_STYLE=הצג עם
+SM_OPT_BALLOON=סגנון בלון
+SM_OPT_PANEL=חלון קופץ (Smart Panel)
+SM_OPT_SEC=(1-10 שניות)
+SM_OPT_OK=אישור
+SM_OPT_CANCEL=בטל
+SM_OPT_SHOW=הצג הודעת מצב ההדפסה

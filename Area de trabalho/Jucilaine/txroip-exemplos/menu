@@ -1,0 +1,88 @@
+
+{ "security", "access-groups", "users", "radio-networks", "consoles", "station-groups", "maps", "phone-patch", "licenses", "integrations", "profile",
+  "groups", "radio-groups", "multimedia-files", "tasks", "posts", "telephony", "phone-contacts", "csta-phone-extensions" }); 
+  
+"security ChangeSystemSecurity", 
+"access-groups ViewOrChangeAccessGroups",  juci criou
+"users ChangeUsers", 
+"radio-networks ViewOrChangeRadioNetworks",  juci criou
+"consoles ViewOrChangeConsoles",  saiu  ViewOrPlayConsoleRecordings
+"station-groups ViewOrChangeStationGroups",  juci criou
+"phone-patch ViewOrChangcPhonePatch",  juci criou
+"integrations ViewOrChalicIntegrations",  juci criou
+"profile ViewOrChangeProfile",  juci criou
+"groups ViewOrChangeGroups", juci criou
+"radio-groups ViewOrChanicRadioGroups",  juci criou
+"multimedia-files ViewOrPublicMultimediaFiles",  juci criou
+"tasks ViewOrChangeTasks",  juci criou
+"posts ViewOrChangePosts",  juci alterou ViewOrPlayPostCallRecordings
+"telephony ViewOrChangeTelephony",  juci criou
+"phone-contacts ChangePublicPhoneContacts", 
+"csta-phone-extensions ChangePublicCstaPhoneExtensions"  
+
+=>
+monitor  ViewOrChangeMonitor
+user-sessions ViewOrChangeMonitor
+general  ViewOrChangeGeneral
+services  ViewOrChangeServices
+----
+@NavLink("monitor", Text.WebResources.SystemMonitor + "")
+@NavLink("user-sessions", Text.WebResources.ActiveSessions + "")
+@NavLink("general", Text.WebResources.General + "")
+@NavLink("services", Text.WebResources.Services + "")
+---
+@(Context.CurrentUser.Claims.Contains("radio-networks") ? NavLink("radio-networks", Text.WebResources.RadioNetworks + "") : null)
+@(Context.CurrentUser.Claims.Contains("consoles") ? NavLink("consoles", Text.WebResources.Consoles + "") : null)
+@(Context.CurrentUser.Claims.Contains("posts") ? NavLink("posts", Text.WebResources.Posts + "") : null)
+@{ if (Context.CurrentUser.Claims.Contains("radio-networks") && false)
+@(Context.CurrentUser.Claims.Contains("integrations") ? NavLink("integrations", Text.WebResources.Integrations + "") : null)
+@{ if (Context.CurrentUser.Claims.Contains("tasks"))
+@{ if (Context.CurrentUser.Claims.Contains("telephony"))
+@(Context.CurrentUser.Claims.Contains("access-groups") ? NavLink("access-groups", Text.WebResources.AccessGroups + "") : null)
+@(Context.CurrentUser.Claims.Contains("security") ? NavLink("security", Text.WebResources.Security + "") : null)
+@(Context.CurrentUser.Claims.Contains("users") ? NavLink("users", Text.WebResources.Users + "") : null)
+@(Context.CurrentUser.Claims.Contains("groups") ? NavLink("groups", Text.WebResources.Groups + "") : null)
+@(Context.CurrentUser.Claims.Contains("radio-groups") ? NavLink("radio-groups", Text.WebResources.RadioGroups + "") : null)
+@(Context.CurrentUser.Claims.Contains("station-groups") ? NavLink("station-groups", Text.WebResources.StationGroups + "") : null)
+@(Context.CurrentUser.Claims.Contains("multimedia-files") ? NavLink("multimedia-files", Text.WebResources.Multimedia + "") : null)
+@(Context.CurrentUser.Claims.Contains("phone-contacts") ? NavLink("phone-contacts", Text.WebResources.PhoneContact + "") : null)
+  
+  
+  ===============================
+  
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeAccessGroups");  
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeRadioNetworks");    
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeConsoles");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeStationGroups");
+
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangePhonePatch");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeIntegrations");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeProfile");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeGroups");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeRadioGroups");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeMultimediaFiles");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeTasks");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangePosts");
+yield return new SecurityPropertyDescriptor(SecurityPropertyCommandGroup.Web, "ViewOrChangeTelephony");
+
+
+"security ChangeSystemSecurity", 
+"access-groups ViewOrChangeAccessGroups",  juci criou
+"users ChangeUsers", 
+"radio-networks ViewOrChangeRadioNetworks",  juci criou
+"consoles ViewOrChangeConsoles",  juci criou
+"station-groups ViewOrChangeStationGroups",  juci criou
+"maps ViewOrChangeMaps",  juci criou
+"phone-patch ViewOrChangcPhonePatch",  juci criou
+"licenses ViewOrChangeLicenses",  juci criou
+"integrations ViewOrChalicIntegrations",  juci criou
+"profile ViewOrChangeProfile",  juci criou
+"groups ViewOrChangeGroups", juci criou
+"radio-groups ViewOrChanicRadioGroups",  juci criou
+"multimedia-files ViewOrPublicMultimediaFiles",  juci criou
+"tasks ViewOrChangeTasks",  juci criou
+"posts ViewOrChangePosts",  juci criou
+"telephony ViewOrChangeTelephony",  juci criou
+"phone-contacts ChangePublicPhoneContacts", 
+"csta-phone-extensions ChangePublicCstaPhoneExtensions"  
+=>

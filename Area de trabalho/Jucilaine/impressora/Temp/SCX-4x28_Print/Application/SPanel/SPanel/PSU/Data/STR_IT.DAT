@@ -1,0 +1,1181 @@
+[MAIN]
+Exit = Esci
+Help = ?
+Apply = Applica
+Default = Predef. stampante
+Close = Chiudi
+S2PC =Digitalizza su PC
+
+[COMMON]
+IDS_APPNAME = Utilità impostazioni stampante
+IDS_X_APPNAME = ControlCentre
+IDS_P_APPNAME = Pannello di controllo remoto
+IDS_STRING100 = Seleziona un file firmware.
+IDS_STRING101 = File firmware non valido.
+IDS_STRING102 = Impossibile scrivere dati.
+IDS_STRING103 = Impossibile leggere dati.
+IDS_STRING104 = byte trasferiti
+IDS_STRING105 = Scrittura completata. Non spegnere finché l’apparecchio non è stato inizializzato.
+IDS_STRING106 = Aggiornamento completato!
+IDS_STRING107 = La porta è occupata
+IDS_STRING108 = Pronta
+BUSY_ERR_TITLE = La stampante è occupata 
+IDS_COPYRIGHT2 = Tutti i diritti riservati.
+IDC_REFRESH = Aggiorna
+IDL_ID = ID
+IDL_FILENAME = Nome file
+IDC_ADD_BROWSE = Sfoglia
+IDC_SEND = Invia
+IDS_IMPORTERROR = Sono stati segnalati alcuni errori.
+IDS_IMPORTHEADERERROR = Le informazioni di intestazione disponibili in questo file CSV non sono valide.
+IDS_IMPORTFILEERROR = Questo file CSV contiene dati non validi.
+IDS_DELMSG = Procedere?
+IDS_ERRORSTRING = Errore durante l'invio del comando alla stampante.
+IDS_NOT_RESPOND = La stampante non risponde
+IDS_SEND_ERROR = Errore di scrittura sulla porta.
+IDS_SEND_PER = byte trasferiti
+IDS_SEND_NOTMEM = Memoria insufficiente
+IDS_NOT_SUPPORT = Questo programma non supporta Windows NT
+IDS_STRING107 = La porta è occupata
+Port busy = La porta è utilizzata da un’altra applicazione.
+
+IDS_NOT_RESPOND = Non risponde
+AddFilePath_Err = Selezionare un programma con il pulsante Sfoglia
+AddFileName_Err = Immettere il nome dell’applicazione
+ExistErr = Esiste già
+Delete_DefaultItem = Questa è una voce predefinita e non può essere eliminata
+Over_Number = La quantità di file è limitata. Impossibile aggiungere il programma.
+PaperPort = La cartella PaperPort non esiste. Eseguire il programma PaperPort per creare automaticamente la cartella.
+EmptyErr = L'elenco Destinazione pannello anteriore è vuoto.
+MaxNoErr = Il dispositivo consente solo 9 voci.È stato raggiunto il numero massimo consentito.
+Msg_delete_font = Eliminare il font?
+Msg_delete_macro = Eliminare la macro?
+Msg_delete_font_all = Eliminare tutti i font flash?
+Msg_delete_macro_all =Eliminare tutte le macro?
+Msg_delete_fontmacro_all = Eliminare tutti i font flash e le macro?
+
+IDS_INVALID_FONT = Questo tipo è errato. supporta solo “Adobe Type1” (tipo ASCII).
+IDS_FAIL_FORMDOWNLOAD = Impossibile scaricare font. Riprovare?
+IDS_FAIL_FONTDOWNLOAD = Impossibile scaricare modulo. Riprovare?
+IDS_FAIL_FORMDELETE = Impossibile scaricare font. Riprovare?
+IDS_FAIL_FONTDELETE = Impossibile eliminare modulo. Riprovare?
+IDS_SUCCESS_DOWNLOAD_SINGULAR = File scaricato con successo.
+IDS_SUCCESS_DELETE_SINGULAR = File eliminato con successo.
+IDS_LIMIT_FILE = Il limite massimo dei file di risorse è 20. Utilizzarlo solo per i file di risorse utilizzati più spesso. Per scaricare altri file di risorse, eliminare prima i file di risorse memorizzati nella stampante.
+Msg_Format_FlashMemory = Tutti i file di macro, font e moduli scaricati nella memoria flash verranno rimossi. Continuare?
+Msg_InitializeMemory = Tutte le macro, i file di font e moduli scaricati nella memoria verranno rimossi. Continuare?
+Msg_Proceed = Continuare?
+IncludeGroup = Le voci selezionate non sono incluse nel gruppo. Eliminare la voce nel gruppo.
+
+Msg_Error_IP_Addr = L'indirizzo immesso non è formattato correttamente. L'indirizzo deve essere composto da 4 numeri da 0 a 255, separati da punti.
+Msg_Error_IP_Value = Il valore immesso non è formattato correttamente. Il valore deve essere composto da 4 numeri da 0 a 255, separati da punti.
+Msg_Validation = Un campo obbligatorio non è stato compilato correttamente, o è stato lasciato vuoto.
+Msg_Empty_Name = Il nome della voce è vuoto. Controllare il nome.
+Msg_Empty_Value = Il valore della voce è vuoto. Controllare il valore.
+IPSet_Err =  Controllare il valore di input.
+Path_Err = Impossibile utilizzare quel percorso. Scegliere un altro percorso.
+
+IDOK = OK
+IDCANCEL = Annulla
+IDL_NAME = Nome
+IDS_NUM = N. 
+
+[STRING]
+;Common
+ON = Attivato
+OFF = Disattivato
+LOW = Bassa
+HIGH = Alta
+HIGH 1 = Alta 1
+HIGH 2 = Alta 2
+HIGH 3 = Alta 3
+HIGH1 = Alta1
+HIGH2 = Alta2
+HIGH3 = Alta3
+Plain = Normale
+Higher = Più alta
+Highest = Altissima
+
+Altitude2Mode_Plain = Normale
+Altitude2Mode_High = Alta
+Altitude3Mode_Plain = Normale
+Altitude3Mode_High = Alta
+Altitude3Mode_Higher = Più alta
+Altitude4Mode_Plain = Normale
+Altitude4Mode_High = Alta
+Altitude4Mode_Higher = Più alta
+Altitude4Mode_Highest = Altissima
+
+mm = mm
+Print list = Stampa un elenco
+Typeface = Stile
+Symbol set = Set di simboli
+Font List = Elenco font
+Font = Font
+Point Size = Punti
+Pitch = Passo
+Auto Wrap = A capo autom.
+LPI = LPI
+Top Margin = Margine superiore
+Top Margin(mm) = Margine superiore(mm)
+Top Margin(inch) = Margine superiore(pollici)
+Dark = Scuro
+Auto = Automatico
+Print = Stampa
+
+;title
+Layout = Layout
+Paper Option = Opzione carta
+Graphic = Grafica
+SETTING = Impostazione
+Information  =  Informazioni
+Emulation = Emulazione
+Network = Rete
+Network(IPv4) = Rete(IPv4)
+About = Informazioni su
+Fax = Fax
+Fax Setting = Impostazione fax
+Scan = Digitalizza
+System Setup = Impostazione
+Paper Setup = Opzione carta
+
+COLOR = Colore
+COLOUR = Colore
+CHECK = Verifica
+Emulation Setting = Impostazione emulazione
+PCL = PCL
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = Font flash e macro
+Store PCL Font and Macro = Memorizza font e macro PCL
+Format = Formato
+Format Flash Memory = Formatta memoria Flash
+Initialize Font/Form Memory = Inizializza memoria font/moduli
+Initialize = Inizializza
+
+;Phonebook
+Directory = Directory
+Phonebook = Elenco
+Emailbook = Rubrica
+Phone Book = Elenco
+Address Book = Rubrica
+
+;fax
+Fax Setting = Impostazione fax
+Fax Cover Sheet = Copertina fax
+Machine ID = ID apparecchio
+Fax Number = Numero fax
+Machine Fax No = N. fax
+Machine Fax Number = N. fax
+
+Tray1 Paper = Carta vassoio 1
+Tray2 Paper = Carta vassoio 2
+Tray3 Paper = Carta vassoio 3
+Tray4 Paper = Carta vassoio 4
+Tray 1 Paper = Carta vassoio 1
+Tray 2 Paper = Carta vassoio 2
+Tray 3 Paper = Carta vassoio 3
+Tray 4 Paper = Carta vassoio 4
+Bypass Paper = Carta vassoio bypass
+
+Sending = Invio
+Redial Interval = Intervallo ricomposizione
+Redial Count = Conteggio ricomposizioni
+Prefix Dial = Sel. prefisso
+ECM Mode = Modo ECM
+
+DisCard Size = Ignora formato
+Rings to Answer = Squilli risposta
+Stamp receiver name = Stampa info destinatario
+
+Sending Confirmation = Conferma invio
+On-Error = Errore attivazione
+Auto Journal = Giornale automatico
+RX Redcution = Riduzione RX
+Com = Com
+Ringer = Suoneria
+Med = Supporto
+Toll Save = Risp. telefono
+Clock Mode = Modo orologio
+Sound = Suono
+Key Sound = Suono tasti
+
+Redial Term = Riselezione (durata)
+Redial Times = Riselezione (n. di tentativi)
+Send Report = Rapporto invio
+Auto Report = Rapporto automatico
+
+;scan
+Scan Destination = Destinazione digitalizzazione
+Destination = Destinazione
+75dpi Draft = 75 dpi Bozza
+150dpi = 150 dpi
+200dpi = 200 dpi
+300dpi Normal = 300 dpi Normale
+600dpi = 600 dpi
+
+75dpi-Draft = 75 dpi Bozza
+300dpi-Normal = 300 dpi Normale
+
+Scan Resolution = Risoluzione
+Scan Color = Colore digital.
+Scan Colour = Colore digital.
+Black and White = Bianco e nero
+Gray = Grigio
+256 Colors = 256 colori
+256 Colours = 256 colori
+True Colors = 16,8 milioni di colori
+True Colours = 16,8 milioni di colori
+
+Show Preview = Mostra anteprima
+
+ADF Duplex = ADF fronte-retro
+Long-Edge Binding = Rilegatura lato lungo
+Short-Edge Binding = Rilegatura lato corto
+
+;Layout
+Orientation = Orientamento
+Portrait = Verticale
+Landscape = Orizzontale
+SimplexMargin = Margine fronte
+Simplex Margin = Margine fronte
+Simplex Margin(mm) = Margine fronte(mm)
+Simplex Margin(inch) = Margine fronte(pollici)
+Left Margin = Margine sinistro
+Left Margin(mm) = Margine sinistro(mm)
+Left Margin(inch) = Margine sinistro(pollici)
+Duplex = Fronte-retro
+Print Option = Opzione di stampa
+Short Edge = Lato corto
+Long Edge = Lato lungo
+
+Margin = Margine
+
+;PaperOption
+Copies = Copie
+Paper Size = Formato carta
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = Busta B5
+Letter = Lettera
+Legal = Legale
+Executive = Executive
+No 10 Env. = COM-10
+No. 10 Env. = COM-10
+No.10 Env. = COM-10
+Monarch Env. = Monarch
+DL Env. = DL
+C4 Env. = C4
+C5 Env. = C5
+C6 Env. = C6
+US Folio = Folio USA
+Oficio = Oficio
+Statement = Statement
+US postcard = Cartolina USA
+Index Card = Scheda indicizzata
+Custom Paper = Carta personalizzata
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = Personalizzato
+Custom1 = Personalizzato 1
+Custom2 = Personalizzato 2
+Custom3 = Personalizzato 3
+Custom4 = Personalizzato 4
+Custom5 = Personalizzato 5
+Folio = Folio
+
+Paper Type = Tipo carta
+Tray 1 Type = Tipo vassoio 1
+Tray 2 Type = Tipo vassoio 2
+Tray 3 Type = Tipo vassoio 3
+Plain Paper = Carta normale
+Bond Paper = Carta per scrivere
+Bond = Carta per scrivere
+Transparency = Lucidi
+Card Stock = Cartoncini
+CardStock = Cartoncini
+Labels = Etichette
+Preprinted = Prestampata
+Color Page = Pagina a colori
+Colour Page = Pagina a colori
+Envelope = Buste
+Thick Paper = Carta spessa
+Thin Paper = Carta sottile
+Thick = Carta spessa
+Thin = Carta sottile
+Cotton = Cotonata
+Recycled = Riciclata
+
+Printer Default = Predefinito stampante
+Colored = Colorata
+Coloured = Colorata
+Colored Paper = Carta colorata
+Coloured Paper = Carta colorata
+Color Paper = A colori
+Colour Paper = A colori
+Recycled Paper = Carta riciclata
+Letterhead = Carta intestata
+Special = Speciale
+Samsung Photo Paper = Carta foto. Samsung
+Photo Paper = Carta foto.
+Photo Paper 120 = Carta foto. 120
+Photo Paper 160 = Carta foto. 160
+Photo Paper 180 = Carta foto. 180
+Photo Paper 220 = Carta foto. 220
+Photo Paper 120 g/m2 = Carta foto. 120 g/m2
+Photo Paper 160 g/m2 = Carta foto. 160 g/m2
+Photo Paper 180 g/m2 = Carta foto. 180 g/m2
+Photo Paper 220 g/m2 = Carta foto. 220 g/m2
+Photo Paper 120g/m2 = Carta foto. 120g/m2
+Photo Paper 160g/m2 = Carta foto. 160g/m2
+Photo Paper 180g/m2 = Carta foto. 180g/m2
+Photo Paper 220g/m2 = Carta foto. 220g/m2
+Photo/Image = Fotografia/Immagine
+Paper Source = Alimentazione
+Auto Select = Selez. autom.
+Tray1 = Vassoio 1
+Tray2 = Vassoio 2
+Tray3 = Vassoio 3
+Tray4 = Vassoio 4
+Tray 1 = Vassoio 1
+Tray 2 = Vassoio 2
+Tray 3 = Vassoio 3
+Tray 4 = Vassoio 4
+Tray 5 = Vassoio 5
+Manual = Manuale
+MP Tray = Vassoio multifunzione
+Manual Feed = Alimentazione manuale
+Auto Selection = Selezione automatica
+Manual Feeder = Alimentatore manuale
+Multi-Purpose Tray = Vassoio multifunzione
+
+;Graphic
+Resolution = Risoluzione
+300dpi = 300 dpi
+1200dpi = 1200 dpi
+600dpi = 600 dpi
+
+300dpi-Draft = 300 dpi-Bozza
+600dpi-Draft = 600 dpi-Bozza
+600dpi-Normal = 600 dpi-Normale
+1200dpi-Best = 1200 dpi-Migliore
+Manual Adjustment = Regolazione manuale
+
+Darkness = Scurezza
+Normal = Normale
+Draft = Bozza
+Best = Migliore
+Light = Spia
+
+Text Enhance = Miglior. testo
+Image Enhance = Miglior. imm.
+
+Image Quality = Qualità immagine
+
+
+;Setting
+Power Save = Risparmio energia
+1 minute  = 1 minuti
+1 minutes  = 1 minuti
+5 minutes  = 5 minuti
+10 minutes  = 10 minuti
+15 minutes  = 15 minuti
+20 minutes  = 20 minuti
+30 minutes  = 30 minuti
+45 minutes  = 45 minuti
+60 minutes  = 60 minuti
+120 minutes  = 120 minuti
+180 minutes  = 180 minuti
+240 minutes  = 240 minuti
+360 minutes  = 360 minuti
+Auto Continue = Cont. autom.
+Jam Recovery = Ripr. incepp.
+Altitude Adjustment = Regolazione altitudine
+Auto CR = CR automatico
+LF+CR = LF+CR
+LF = LF
+Line Termination = Terminazione linea
+Job Timeout = Timeout lavoro
+Toner Save = Risp. toner
+Auto Clean Drum = Pulizia automatica tamburo
+Decide Emulation = Decidi emulazione
+
+;COLOR
+Manual Color Adjustment = Regolazione colori manuale
+Manual Colour Adjustment = Regolazione colori manuale
+Color Adjustment = Regolazione colori
+Colour Adjustment = Regolazione colori
+Cyan = Ciano
+Magenta = Magenta
+Yellow = Giallo
+Black = Nero
+
+Auto Color Calibration = Calibrazione colori automatica
+Auto Colour Calibration = Calibrazione colori automatica
+Auto Color Registration = Registrazione colori automatica
+Auto Colour Registration = Registrazione colori automatica
+Run Now = Esegui ora
+
+Color Mode = Modalità colori
+Colour Mode = Modalità colori
+;Color = Colore
+Glayscale = Scala di grigi
+
+;CHECK
+Imaging Unit = Fotounità
+Transfer Belt = Cinghia di trasferimento
+Fuser = Fusore
+Transfer Roll = Rullo di trasferimento
+MP Pickroll = Rullo vassoio multifunzione
+Tray1 Pickroll = Rullo vassoio 1
+Tray2 Pickroll = Rullo vassoio 2
+Tray3 Pickroll = Rullo vassoio 3
+Tray4 Pickroll = Rullo vassoio 4
+
+%S Image Counted = Immagine contata
+%S Page Counted = Pagina contata
+
+;Information
+Configuration Print = Stampa configurazione
+Test Print = Prova di stampa
+Test Prints = Prova di stampa
+Menu Map = Mappa menu
+Network Configuration Print  =  Stampa configurazione di rete
+Print Network Configuration  =  Stampa configurazione di rete
+
+;Network
+Config Network = Config. rete
+Configuration Network = Configurazione rete
+;IP Assign Method  = Rete assegnazione IP
+IP Assign Method  = Metodo assegnazione IP
+BOOTP = BOOTP
+DHCP = DHCP
+Static = Statico
+Static IP  = IP statico
+Default Set = Ins. predef.
+Restore = Ripristina
+Print Network Config = Stampa configurazione di rete
+IP Address = Indirizzo IP
+SubnetMask = Maschera di sottorete
+Gateway = Gateway
+
+;pcl
+Courier = Courier
+Lines Per Page = Righe per pagina
+Lines = Righe
+Form Length = Lunghezza modulo
+PCL Font List = Elenco font PCL
+
+Regular = Normale
+
+;EPSON
+International character set = Set di caratteri internazionali
+character set = Set di caratteri
+Character Table = Tabella caratteri
+Form Lines = Righe modulo
+
+San Serif = San Serif
+Roman = Roman
+
+USA = USA
+France = Francia
+Germany = Germania
+UK = Regno Unito
+Sweden = Svezia
+Denmark 1 = Danimarca 1
+Denmark1 = Danimarca1
+Italy = Italia
+Spain 1 = Spagna 1
+Spain1 = Spagna1
+Japan = Giappone
+Norway = Norvegia
+Denmark 2 = Danimarca 2
+Denmark2 = Danimarca2
+Spain 2 = Spagna 2
+Spain2 = Spagna2
+Latin = Latino
+
+ITALIC = Corsivo
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+Hebrew Old = Ebraico antico
+Hebrew New = Ebraico moderno
+
+;ps3
+Print error information = Informazioni sull’errore di stampa
+
+PS Error Information = Informazioni sull’errore di stampa
+PS Font List = Elenco font PS
+
+PostScript Error Information = Informazioni errore PostScript
+PostScript Font List = Elenco font PostScript
+
+Print PS Error = Informazioni sull’errore di stampa
+Print PostScript Error = Stampa errore PostScript
+
+;PaperOption
+6 3/4 Env. = Buste 6 3/4
+No.9 Env. = Buste n. 9
+No. 9 Env. = Buste n. 9
+Personal Check = Targa personale
+
+;Graphic
+Toner Density = Densità toner
+
+;EPSON
+Adjust Top Margin = Regola margine superiore
+
+;Xerox
+Print Density = Densità stampa
+Tray 1 Size = Dimensioni vassoio 1
+Print Quantity = Quantità di stampa
+Print Quality = Qualità di stampa
+Simplex Top Margin = Margine superiore fronte
+Simplex Left Margin = Margine sinistro fronte
+Duplex Top Margin = Margine superiore fronte-retro
+Duplex Left Margin = Margine sinistro fronte-retro
+2-Sided Printing = Stampa fronte-retro
+Power Saver(min) = Risparmio energetico (min)
+Configuration Page = Pagina di configurazione
+Office Demo = Dimostrazione ufficio
+2-Sided Demo = Dimostrazione su due facciate
+2-Sided Demo Page = Dimostrazione su due facciate
+1200 dpi Quality = Qualità 1200 dpi
+
+;Add
+Print Configuration Page = Stampa pagina di configurazione
+Print Demo Page = Stampa pagina di prova
+Print Menu Map = Mappa menu di stampa
+Print Test Page = Stampa pagina di prova
+Machine Setup = Impostazione apparecchio
+
+12 Hour = 12 ore
+24 Hour = 24 ore
+
+Sound/Volume = Audio/Volume
+Alarm Sound = Suono allarme
+Speaker = Altoparlante
+Receiving = Ricezione
+Auto Reduction= Riduzione automatica
+
+Emulation Type= Tipo emulazione
+Duplex Margin = Margine fronte-retro
+Duplex Margin(mm) = Margine fronte-retro(mm)
+Duplex Margin(inch) = Margine fronte-retro(pollici)
+Short Binding = Rilegatura lato corto
+Short Binding(mm) = Rilegatura lato corto(mm)
+Short Binding(inch) = Rilegatura lato corto(pollici)
+Long Binding = Rilegatura lato lungo
+Long Binding(mm) = Rilegatura lato lungo(mm)
+Long Binding(inch) = Rilegatura lato lungo(pollici)
+
+No.10 Envelope= Buste n. 10
+Monarch Envelope = Buste Monarch
+DL Envelope = Buste DL
+C5 Envelope = Buste C5
+Post A6 = Cartoline A6
+PostCard 4x6 = Cartolina 4x6
+C6 Envelope = Buste C6
+Ledger = Registro
+JPost = JPost
+JPostD = JPostD
+Width = Larghezza
+Height = Altezza
+Custom Width = Larghezza personalizzata
+Custom Height = Altezza personalizzata
+Letter R = Lettera R
+A4 R = A4 R
+JIS B5 R = JIS B5 R
+A5 R = A5 R
+Executive R = R Executive
+State R = R State
+A3 Over = Over A3
+B5 Envelope = Buste B5
+634 = 634
+NO.9 = N. 9
+US Post = Cartolina US
+Index = Schede indicizzate
+B6 = B6
+Hagaki = Hagaki
+A6 R = A6 R
+Post A6 R = Cartolina A6 R
+Hagaki R = Hagaki R
+
+Tray 1 Paper Size = Formato vassoio carta 1
+Tray 2 Paper Size = Formato vassoio carta 2
+Tray 3 Paper Size = Formato vassoio carta 3
+Tray 4 Paper Size = Formato vassoio carta 4
+MP Tray Paper Size = Formato carta vassoio multifunzione
+Manual Feeder Paper Size = Formato carta Alimentatore manuale
+
+Heavy Weight = Pesante
+Hole Punched = Perforata
+Punched = Perforata
+Archive = Archivio
+Extra Thick = Extra spessa
+
+Tray 1 Tray 2 = Vassoio 1 Vassoio 2
+Tray Chaining = Concatenazione vassoi
+FAST1200 = VELOCE 1200
+Calibration = Calibrazione
+
+TCP/IP = TCP/IP
+Print Network Information = Stampa informazioni di rete
+
+;Maintenance = Maintenance
+Cartridge Maintenance = Manutenzione cartuccia
+Ink Cartridge Alignment = Allineamento cartuccia inchiostro
+Ink Cartridge Clean = Cartuccia inchiostro pulita
+
+Transfer Roller = Rullo di trasferimento
+Tray1 Roller = Rullo vassoio 1
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+;Captiva Fax setting
+Line Configuration = Configurazione linea
+Machine Name = Nome macchina
+Audio Line Monitor = Monitoraggio linea
+Ring Volume = Volume squillo
+Medium = Medio
+Manual Dial Tone Volume = Volume selezione manuale
+Fax Transmission Defaults = Default trasmissione fax
+Automatic Redial Attempts = Tentativi riselezione automatica
+Redial Time Interval = Intervallo riselezione
+Prefix Dial Number = N. prefisso
+Error Collection Mode = Modo raccolta errori
+Confirmation Report = Rapporto di conferma
+Always Print = Stampa sempre
+Print On Error = Stampa se errore
+Receive Defaults = Default di ricezione
+Auto Answer Delay = Ritardo risposta automatica
+Receive Header =Intestazione di ricezione
+Transmission Report = Rapporto trasmissione
+Default Output Options = Opzioni di uscita predefinite
+Stapled = Pinzato
+
+Maintenance = Manutenzione
+Firmware Upgrade = Aggiornamento firmware
+
+Auto Line Monitor = Monitoraggio linea
+
+Original Type = Tipo di originale
+Text = Testo
+Text/Photo = Testo/Foto
+Photo = Foto
+Photo 120 = Foto 120
+Photo 160 = Foto 160
+Photo 180 = Foto 180
+Photo 220 = Foto 220
+Copy = Copia
+Transfer Belt Reset = Ripristino cinghia di trasferimento
+Reset Count = Ripristina conteggio
+Serial Number = Numero di serie
+
+;Dell
+inch = pollici
+Print Font List = Stampa elenco font
+Printer ID = ID stampante
+Printer Setup = Impostazione stampante
+Printer Fax Number = Numero fax stampante
+Print Network Configuration Page = Stampa pagina di configurazione di rete
+Configure Network = Configura rete
+Tray Linking = Collegamento vassoio
+
+;k2Xrx
+Collation = Fascicolazione
+Smart Duplexing = Stampa fronte-retro intelligente
+Job Held Timer = Timer lavoro sospeso
+hours = ore
+Tray 1MPT = Vassoio 1 multifunzione
+Tray 1(MPT) = Vassoio 1 (multifunzione)
+Tray 1 (MPT) = Vassoio 1 (multifunzione)
+Tray1MPT Size = Dimensioni vassoio 1 multifunzione
+
+Toner Low Alert = Toner scarso
+Print Supplies Information = Stampa informazioni materiali
+Print Accounting List = Stampa elenco account
+Print Accounting Report = Stampa rapporto conteggio
+Print Stored Job List = Stampa elenco lavori memorizzati
+Print Completed Job List = Stampa elenco lavori completati
+Print Usage Page = Stampa pagina di utilizzo
+MP Tray Paper Setup = Vassoio multifunzione Impostazione carta
+Manual Feed Paper Setup = Alimentazione manuale Impostaz. carta
+Tray 1 Paper Setup = Impostazione carta Vassoio 1
+Tray 2 Paper Setup = Impostazione carta Vassoio 2
+Tray 3 Paper Setup = Impostazione carta Vassoio 3
+Tray 4 Paper Setup = Impostazione carta Vassoio 4
+High Coverage Mode = Modalità copertura alta
+High Coverage = Copertura elevata
+Screen = Schermo
+Enhanced = Migliorato
+Detailed = Dettagliato
+Wireless Network Setting = Impostazione rete wireless
+Paper Substitution = Sostituzione carta
+Glossy Photo 111-130g/m2 = Fotografica lucida 111-130g/m2
+Glossy Photo 131-175g/m2 = Fotografica lucida 131-175g/m2
+Glossy Photo 176-220g/m2 = Fotografica lucida 176-220g/m2
+
+[PHONEBOOK]
+CAPTION = Rubrica
+EMAILCAPTION = Rubrica
+IDS_EMAIL_ADDRESS = Indirizzo e-mail
+IDS_TEL_NUMBER = Numero telefono
+IDC_EDIT = Modifica
+IDC_MODIFY= Modifica
+IDC_DELETE = Elimina
+IDC_DELETE_ALL = Elimina tutto
+IDC_GET_PHONEBOOK = Leggi
+IDC_SEND_PHONEBOOK = Scrivi
+IDC_GET_EMAIL = Leggi
+IDC_SEND_EMAIL = Scrivi
+IDL_TYPE = Tipo
+IDC_ONETOUCH_DIAL =  Selezione diretta
+IDC_SPEED_DIAL_2 =  Selezione abbreviata
+IDC_GROUP_DIAL = Selezione di gruppi di numeri
+IDC_EMAIL_GROUP_DIAL = Posta di gruppo
+IDC_READSTATIC = Fare clic sul pulsante Leggi per recuperare i numeri di telefono dalla stampante.
+IDC_WRITESTATIC = Fare clic sul pulsante Scrivi per salvare i numeri di telefono sulla stampante.
+IDC_Email_READSTATIC = Fare clic sul pulsante Leggi per recuperare gli indirizzi e-mail dalla stampante.
+IDC_Email_WRITESTATIC = Fare clic sul pulsante Scrivi per salvare gli indirizzi e-mail nella stampante.
+IDC_EMAIL = E-mail
+IDC_TOTAL = Totale
+IDC_ADD = Aggiungi
+IDC_IMPORT = Importa
+IDC_EXPORT = Esporta
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = Selezione di gruppi di numeri
+CAPTION_EMAIL = Posta di gruppo
+IDL_I_ADDRESS = Indirizzi inclusi
+IDL_A_ADDRESS = Indirizzi disponibili
+IDL_I_NUMBER = Numeri inclusi
+IDL_A_NUMBER = Numeri disponibili
+
+IDL_GNAME = Nome gruppo
+
+IDC_REMOVE = Rimuovi
+IDC_ADD = Aggiungi
+
+[Scan Setting]
+CAPTION = Destinazione digitalizzazione
+
+IDC_AVAILABLE_STATIC = Elenco destinazioni disponibili
+IDC_FRONT_STATIC = Elenco destinaz. pannello ant.
+IDC_SCAN_ADDAPP = Aggiungi applicazione
+IDC_SCAN_REMOVEAPP = Rimuovi applicazione
+IDC_LOC_STATIC = Ubicazione salvataggio predefinita
+
+IDC_ADD_FILEPATH_STATIC = Percorso file
+IDC_ADD_FILENAME_STATIC = Nome applicazione
+
+IDC_SCANTYPE = Tipo file
+IDC_SCANLANG = Lingua 
+
+DocTYPE_ITEM_0 = Salva su BMP
+DocTYPE_ITEM_1 = Salva su JPEG
+DocTYPE_ITEM_2 = Salva su PDF
+DocTYPE_ITEM_3 = Salva su TIFF
+
+EmailTYPE_ITEM_0 = Salva su JPEG
+EmailTYPE_ITEM_1 = Salva su PDF
+EmailTYPE_ITEM_2 = Salva su TIFF
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Testo (.txt)
+OCR_ITEM_3 = PDF (.pdf)
+OCR_ITEM_4 = RTF (.rtf)
+
+LANG_ITEM_0 = Inglese
+LANG_ITEM_1 = Tedesco
+LANG_ITEM_2 = Francese
+LANG_ITEM_3 = Spagnolo
+LANG_ITEM_4 = Italiano
+
+LANG_ITEM_5 = Svedese
+LANG_ITEM_6 = Olandese
+LANG_ITEM_7 = Portoghese (Europa)
+LANG_ITEM_8 = Portoghese (Brasile)
+LANG_ITEM_9 = Ungherese
+
+LANG_ITEM_10 = Polacco
+LANG_ITEM_11 = Russo
+LANG_ITEM_12 = Giapponese
+LANG_ITEM_13 = Cinese semplificato
+LANG_ITEM_14 = Cinese tradizionale
+
+LANG_ITEM_15 = Coreano
+LANG_ITEM_16 = Russo+Inglese
+LANG_ITEM_17 = Numerico
+LANG_ITEM_18 = Alfabetico
+LANG_ITEM_19 = Ucraino
+
+LANG_ITEM_20 = Estone
+LANG_ITEM_21 = Lettone
+LANG_ITEM_22 = Lituano
+LANG_ITEM_23 = Norvegese
+LANG_ITEM_24 = Finlandese
+
+LANG_ITEM_25 = Danese
+LANG_ITEM_26 = Ceco
+LANG_ITEM_27 = Turco
+LANG_ITEM_28 = Ucraino+Inglese
+LANG_ITEM_29 = Uzbeco
+
+[ScanToPc]
+CAPTION = Opzione JPEG
+IDC_OPTION_STATIC = Questa funzione modifica l’immagine in file JPEG e consente di inviare più rapidamente un’e-mail.  Selezionare un’opzione.
+IDC_ORIGINAL = Dimensioni originale
+IDC_SIZE_SMALL = Piccole (regola le dimensioni dell’immagine su una finestra 640 x 480)
+IDC_SIZE_NOMAL = Normali (regola le dimensioni dell’immagine su una finestra 800 x 600)
+IDC_SIZE_LARGE = Grandi (regola le dimensioni dell’immagine su una finestra 1024 x 768)
+IDOK = OK
+IDCANCEL = Annulla
+
+[Flash]
+IDL_ADD = Aggiungi
+IDL_DELETE = Eimina
+IDL_DELETE_ALL = Elimina tutto
+Print list = Stampa un elenco
+IDC_REFRESH = Aggiorna
+IDC_FONTS = Font
+IDC_MACROS = Macro
+IDC_DELETE_ALL_FONT_MACRO= Elimina tutti i font e le macro
+IDC_ENABLEMACRO = Attiva macro
+IDC_DISABLEMACRO = Disattiva macro
+
+[PS3]
+IDC_ADD_PS3 = Aggiungi
+IDC_DELETE_PS3 = Elimina tutto
+IDC_PRINT_LIST = Stampa un elenco
+IDC_PS3_REFRESH = Aggiorna
+Print PostScript Flash Directory = Stampa directory flash PostScript
+Format Flash Memory = Formatta memoria Flash
+Flash Fonts/Forms = Font/moduli Flash
+Size = Dimensioni
+
+IDL_RESOURCE_TYPE = Tipo risorsa
+IDC_FMU_RADIO_ALL = Tutti
+IDC_FMU_RADIO_FONT = Font
+IDC_FMU_RADIO_FORM = Moduli
+IDL_STORAGE_TYPE = Tipo dati
+IDC_FMU_RADIO_MEMORY = Memoria
+IDC_FMU_RADIO_HDD = Disco rigido
+IDC_FMU_RESET = Reimposta
+IDC_FMU_DOWNLOAD = Scarica
+IDC_FMU_DELETE = Elimina
+IDC_FMU_DELETE_ALL = Elimina tutto
+IDC_FMU_REFRESH = Aggiorna
+IDC_FMU_STATIC_TOTALMEM = Totali (KB)
+IDC_FMU_STATIC_USEDMEM = Usati (KB)
+IDC_FMU_STATIC_AVAILABLEMEM = Disponibili (KB)
+IDC_FMU_REPORT = Rapporto
+
+
+[SEND]
+CAPTION = Scaricamento in corso...
+IDL_FILE_SIZE = Dimensioni file
+IDL_STATUS = Stato
+
+[SELECT_FILE]
+Select a file = Seleziona un file
+Note = Nota: Questo ID viene ignorato se il file ha un proprio ID.
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=Aggiornamento firmware
+IDC_BROWSE=Sfoglia...
+IDC_UPDATE=Aggiorna
+IDL_FILE_NAME=Nome file:
+IDL_FILE_INFORMATION=Informazioni file:
+IDL_FILE_SIZE=Dimensioni file:
+IDC_FILE_SIZE=0 byte
+IDL_PROGRESS=Avanzamento
+IDL_MESSAGE=Messaggio:
+
+
+[HELP]
+No help = Nessun argomento della Guida associato a questo elemento.
+
+;Layout
+Orientation = Determina la direzione della stampa sulla pagina.
+Top Margin = Determina la distanza tra il margine superiore dell'area stampabile sulla pagina e la parte superiore della prima riga nella pagina.
+Left Margin = Determina la distanza tra il margine sinistro dell’area stampabile sulla pagina e l’estremità sinistra di ciascuna riga sulla pagina.
+Print Option = L'opzione fronte-retro consente di stampare automaticamente documenti a due facciate.
+Duplex = L'opzione fronte-retro consente di stampare automaticamente documenti a due facciate.
+
+;Paper Option
+Copies = Determina il numero di copie di ciascun lavoro di stampa.
+Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+Tray 1 Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+Tray 2 Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+Tray 3 Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+Tray 4 Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+MP Tray Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+Manual Feeder Paper Size = Imposta il formato della carta caricata nel vassoio della stampante.
+Paper Type = Determina il tipo di carta della stampante.
+Paper Source = È possibile selezionare il vassoio predefinito per la carta della stampante.
+
+;Graphic
+Resolution = Determina la risoluzione di stampa.
+Darkness = Determina la densità del toner della pagina.
+
+Auto Color Calibration = Consente di impostare la stampante per la calibrazione automatica onde fornire la migliore qualità di stampa dei colori possibile.
+Auto Colour Calibration = Consente di impostare la stampante per la calibrazione automatica onde fornire la migliore qualità di stampa dei colori possibile.
+Auto Color Registration = Consente di regolare la posizione del testo o della grafica a colori per abbinare la posizione dei colori stampati a quella sullo schermo.
+Auto Colour Registration = Consente di regolare la posizione del testo o della grafica a colori per abbinare la posizione dei colori stampati a quella sullo schermo.
+Manual Color Adjustment = Consente di regolare manualmente il contrasto del colore per ciascuna cartuccia. Se il documento stampato risulta troppo chiaro, sbiadito o con parti mancanti, spostare la barra di scorrimento in direzione +. Se il documento stampato risulta troppo sfuocato, spostare la barra di scorrimento in direzione -.
+Manual Colour Adjustment = Consente di regolare manualmente il contrasto del colore per ciascuna cartuccia. Se il documento stampato risulta troppo chiaro, sbiadito o con parti mancanti, spostare la barra di scorrimento in direzione +. Se il documento stampato risulta troppo sfuocato, spostare la barra di scorrimento in direzione -.
+
+;Setting
+Power Save = Determina quanto tempo sarà necessario alla stampante per passare dalla modalità stand-by alla modalità di risparmio energetico.
+Jam Recovery = Fa sì che la stampante cerchi di ristampare le pagine del documento che si sono inceppate.
+Auto Continue = Determina la risposta della stampante quando l’utente stampa una pagina senza carta nel vassoio multifunzione, ma l’origine della carta del driver è impostata su Alimentazione manuale.
+Altitude Adjustment = È possibile ottimizzare la qualità di stampa a seconda dell'altitudine. 
+Auto CR = Dopo ciascuna riga di un documento, la stampante si aspetta di ricevere un avanzamento linea (LF), seguito da un ritorno a capo (CR). Questa impostazione determina cosa farà la stampante se riceverà un LF, ma non un CR. 
+
+Job Timeout = Determina il tempo che la stampante lascerà trascorrere per la stampa dei dati prima di accettare i dati attraverso l’altra interfaccia.
+Toner Save = Determina la quantità di toner da usare per stampare la pagina.
+Auto Clean Drum = Determina automaticamente se pulire o meno il tamburo. Se è attivata, il foglio di pulizia dell'OPC verrà stampato ogni 500 pagine. (Per una migliore risoluzione, pulire il tamburo OPC)
+Decide Emulation = Decide l'emulazione.
+Emulation Type = Decide l'emulazione.
+
+
+;Check
+Imaging Unit = Fotounità consente di controllare il numero totale di immagini stampate con la fotounità corrente.
+Transfer Belt = Consente di controllare il numero totale di immagini stampate con la cinghia di trasferimento corrente.
+Fuser Type = Consente di controllare il numero totale di immagini stampate con l'unità fusore corrente.
+Fuser = Fotounità consente di controllare il numero totale di immagini stampate con la fotounità corrente.
+Transfer Roll = Questa opzione è destinata all'uso esclusivo da parte dei tecnici dell'assistenza. 
+Tray1 Pickroll = Questa opzione è destinata all'uso esclusivo da parte dei tecnici dell'assistenza. 
+Tray2 Pickroll = Questa opzione è destinata all'uso esclusivo da parte dei tecnici dell'assistenza. 
+Tray3 Pickroll = Questa opzione è destinata all'uso esclusivo da parte dei tecnici dell'assistenza. 
+Tray4 Pickroll = Questa opzione è destinata all'uso esclusivo da parte dei tecnici dell'assistenza. 
+
+
+;Information
+Configuration Print = Stampa la configurazione corrente della stampante.
+Print Configuration Page = Stampa la configurazione corrente della stampante.
+Configuration Page = Stampa la configurazione corrente della stampante.
+Network Configuration Print = Stampa la configurazione di rete corrente della stampante.
+Print Network Configuration = Stampa la configurazione di rete corrente della stampante.
+Test Print = Stampa la pagina di prova. 
+Test Prints = Stampa la pagina di prova. 
+Print Demo Page = Stampa la pagina di prova. 
+Menu Map = Stampa la mappa dei menu della stampante.
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = Imposta le impostazioni della destinazione di digitalizzazione.
+Scan Resolution = L'impostazione Risoluzione determina la quantità di informazioni che lo scanner catturerà nell'immagine digitalizzata ottenuta.
+Scan Color = Specifica in che modalità deve essere acquisita l'immagine. Consente di scegliere il tipo di modalità di digitalizzazione desiderato durante la digitalizzazione del documento di origine originale.
+Scan Colour = Specifica in che modalità deve essere acquisita l'immagine. Consente di scegliere il tipo di modalità di digitalizzazione desiderato durante la digitalizzazione del documento di origine originale.
+Show Preview = Questa casella di controllo stabilisce se la finestra di dialogo Digitalizzazione appare o meno per consentire di modificare le opzioni di digitalizzazione.  Se questa opzione è selezionata, viene visualizzata una digitalizzazione di anteprima e le opzioni di digitalizzazione possono essere modificate prima che venga eseguita una digitalizzazione completa.  Se questa casella non è selezionata, l’immagine verrà acquisita direttamente nell’applicazione scelta.
+ADF Duplex = come origine del documento viene selezionato l'Alimentatore documenti automatico. Selezionare questa modalità per digitalizzare pagine fronte-retro. Se, come origine del documento, si seleziona ADF fronte-retro, verrà digitalizzato il documento presente nell'Alimentatore documenti automatico. Se l'alimentatore è vuoto, il sistema visualizzerà un messaggio. Per procedere, posizionare il documento da digitalizzare sull'alimentatore e ritentare l'operazione. Per la modalità ADF fronte-retro, selezionare il tipo di rilegatura appropriato per ottenere dallo scanner pagine orientate nel verso corretto. Se le pagine del documento di origine hanno un orientamento verticale, come ad esempio nel caso di un libro o di un volantino, fare clic su Rilegatura lato lungo. Se hanno invece un orientamento orizzontale, come ad esempio nel caso di un blocco appunti, fare clic su Rilegatura lato corto.
+
+IDC_AVAILABLE_STATIC = Mostra un elenco di applicazioni correntemente collegate ai file BMP nel registro di configurazione del PC. Ogni volta che viene eseguita la scheda Impostazioni digitalizzazione, l’elenco delle destinazioni di digitalizzazione disponibili viene aggiornato.
+IDC_FRONT_STATIC =  Mostra l’elenco delle applicazioni aggiunte al pannello anteriore della stampante. Se la stampante viene utilizzata per la prima volta, il pannello anteriore della stampante aggiornerà le opzioni predefinite.
+IDC_SCAN_MOVE = Questo pulsante sposta le voci selezionate in Destinazione di digitalizzazione disponibile in Elenco destinazioni pannello anteriore.
+IDC_SCAN_ADDAPP = Questo pulsante può aggiungere una voce selezionata da un file “exe” valido. La voce aggiunta viene visualizzata in Elenco destinazioni disponibili.
+IDC_SCAN_REMOVEAPP = Questo pulsante consente di rimuovere un elemento che è stato aggiunto dall'utente in Destinazioni di digitalizzazione disponibili. 
+IDC_LOC_STATIC = Determina la cartella di salvataggio predefinita.
+
+;Phonebook
+Directory = Imposta le impostazioni della elenco elettronica e della rubrica. 
+Phonebook = Imposta le impostazioni della elenco.
+Phone Book = Imposta le impostazioni della elenco.
+Emailbook = Imposta le impostazioni della rubrica.
+Address Book = Imposta le impostazioni della rubrica.
+IDC_EDIT = Gli utenti possono memorizzare o modificare i numeri delle voci selezionate.
+IDC_DELETE = Gli utenti possono eliminare la voce selezionata.
+IDC_DELETE_ALL = Gli utenti possono eliminare tutte le voci.
+IDC_GROUP_DIAL = Gli utenti possono impostare o modificare il numero di selezione di gruppi di numeri selezionato.  Se la selezione di gruppi di numeri non è stata selezionata, il relativo pulsante è disattivato.
+IDC_GET_PHONEBOOK = Gli utenti possono ottenere i numeri della Rubrica dall’apparecchio.
+IDC_SEND_PHONEBOOK = Gli utenti possono scaricare i numeri della Rubrica nell’apparecchio.
+IDC_EMAIL_GROUP_DIAL = Gli utenti possono impostare o modificare la voce della posta di gruppo selezionata.  Se il tipo di selezione non è Posta di gruppo, il relativo pulsante è disattivato.
+IDC_GET_EMAIL = Gli utenti possono ottenere le voci della posta dall’apparecchio.
+IDC_SEND_EMAIL = Gli utenti possono scaricare le voci della posta nell’apparecchio.
+IDC_ADD = L'utente può memorizzare i numeri delle voci selezionate.
+IDC_MODIFY = L'utente può modificare i numeri delle voci selezionate.
+IDC_EMAIL_ADD = L'utente può memorizzare gli indirizzi delle voci selezionate.
+IDC_EMAIL_MODIFY = L'utente può modificare gli indirizzi delle voci selezionate.
+IDC_G_ADD = L'utente può impostare il numero di gruppo selezionato.
+IDC_G_MODIFY = L'utente può modificare il numero di gruppo selezionato.
+IDC_G_EMAIL_ADD = L'utente può impostare la posta di gruppo selezionata.
+IDC_G_EMAIL_MODIFY = L'utente può modificare la posta di gruppo selezionata.
+
+;Fax
+Machine ID = Specifica il nome della pagina di copertina fax.
+Printer ID = Specifica il nome della pagina di copertina fax.
+Fax Number = Specifica il numero di fax per la pagina di copertina fax.
+Machine Fax No = Specifica il numero di fax per la pagina di copertina fax.
+Machine Fax Number = Specifica il numero di fax per la pagina di copertina fax.
+Printer Fax Number = Specifica il numero di fax per la pagina di copertina fax.
+
+;Network
+BOOTP = il server BOOTP assegna automaticamente l’indirizzo IP.
+DHCP = il server DHCP assegna automaticamente l’indirizzo IP.
+Static = è possibile immettere l'indirizzo IP, la maschera di sottorete e il gateway. 
+
+Emulation Setting = Imposta il valore di ciascuna emulazione.
+
+;PCL
+Typeface = Mostra lo stile del font corrente.
+Font = Mostra i font correnti.
+Symbol Set = Un set di simboli è un raggruppamento unico di tutti i caratteri disponibili in un font.
+
+;EPSON
+Pitch = Determina la spaziatura dei caratteri.
+Point Size = Disponibile solo quando si seleziona un font outline a spaziatura proporzionale. Viene ignorato per gli altri font.
+Lines Per Page = Imposta il numero di righe nella pagina.
+Lines = Imposta il numero di righe nella pagina.
+Form Length = Imposta il numero di righe nella pagina.
+Courier = Determina il tipo di font Courier; Normale o Scuro.
+International character set = Un set di caratteri internazionali è un raggruppamento unico di tutti i caratteri disponibili in un font.
+character set = Un set di caratteri internazionali è un raggruppamento unico di tutti i caratteri disponibili in un font.
+Character Table = Determina la tabella dei caratteri.
+LPI = Determina il numero di righe nella pagina.
+Auto Wrap = Determina il ritorno a capo automatico.
+Form Lines = Imposta il numero di righe nel modulo (pagina).
+
+IDL_ADD = Aggiunge un font o una macro alla memoria Flash.
+IDL_DELETE = Elimina un font o una macro dalla memoria Flash.
+IDL_DELETE_ALL = Elimina tutti i font o le macro dalla memoria Flash.
+Print list = Stampa un elenco dei font o delle macro aggiunti.
+IDC_ENABLEMACRO = Attiva la macro selezionata.
+IDC_DISABLEMACRO = Disattiva la macro selezionata.
+IDC_REFRESH = Aggiorna le informazioni sui font e sulle macro.
+IDC_DELETE_ALL_FONT_MACRO = Elimina tutte le macro e i font dalla memoria Flash.
+
+Print PostScript Flash Directory = Stampa la directory Flash della memoria Flash.
+Print error information = Specifica se stampare o meno le informazioni sugli errori PostScript dopo la stampa del documento. Se si desidera che la stampante stampi una pagina di errore quando si verifica l’errore nel lavoro di stampa, attivarla. 
+PostScript error information = Specifica se stampare o meno le informazioni sugli errori PostScript dopo la stampa del documento. Se si desidera che la stampante stampi una pagina di errore quando si verifica l’errore nel lavoro di stampa, attivarla. 
+PS error information = Specifica se stampare o meno le informazioni sugli errori PostScript dopo la stampa del documento. Se si desidera che la stampante stampi una pagina di errore quando si verifica l’errore nel lavoro di stampa, attivarla. 
+Print PS Error = Specifica se stampare o meno le informazioni sugli errori PostScript dopo la stampa del documento. Se si desidera che la stampante stampi una pagina di errore quando si verifica l’errore nel lavoro di stampa, attivarla. 
+Print PostScript Error = Specifica se stampare o meno le informazioni sugli errori PostScript dopo la stampa del documento.
+Font List = Stampa l’elenco di font della stampante correntemente disponibili.
+Print Font List = Stampa l’elenco di font della stampante correntemente disponibili.
+PCL Font List = Stampa l’elenco di font della stampante correntemente disponibili.
+PS Font List = Stampa l’elenco di font della stampante correntemente disponibili.
+Postscript Font List = Stampa l’elenco di font della stampante correntemente disponibili.
+
+IDC_ADD_PS3 = Aggiunge un font PostScript alla memoria Flash.
+IDC_DELETE_PS3 = Elimina tutti i font e i moduli PostScript dalla memoria Flash.
+IDC_PRINT_LIST = Stampa un elenco dei font e dei moduli PostScript.
+IDC_PS3_REFRESH = Aggiorna le informazioni sui font e sui moduli PostScript.
+
+IDC_FMU_RESET= È possibile ripristinare il nome del file selezionato correntemente.
+IDC_FMU_DOWNLOAD = Con questo pulsante un utente può scaricare le risorse nell'apparecchio.
+IDC_FMU_DELETE = Con questo pulsante un utente può eliminare la risorsa dall'apparecchio.
+IDC_FMU_DELETE_ALL = Con questo pulsante un utente può eliminare tutte le risorse dall'apparecchio.
+Format Flash Memory = Formatta la memoria flash della stampante per inizializzare il file system. Tutti i file di macro, font e moduli scaricati nella memoria flash verranno rimossi.
+Initialize Font/Form Memory = Inizializza la memoria di font/moduli nella stampante. Tutte le macro, i file di font e moduli scaricati nella memoria verranno rimossi.
+IDC_FMU_REFRESH = È possibile aggiornare le dimensioni della memoria totale, utilizzata e disponibile. Inoltre, si possono aggiornare gli elenchi dei nomi delle risorse memorizzate nella memoria del sistema.
+IDC_FMU_REPORT = Questo pulsante può creare un elenco di risorse presente nel sistema.
+
+;EPSON
+Adjust Top Margin = Regola il margine superiore della pagina. 
+
+;Xerox
+Tray 1 Size = Imposta il formato della carta caricata nel vassoio 1 della stampante. Quando si seleziona un formato carta personalizzato, i campi Lato corto e Lato lungo sono attivati ed è possibile definire i formati carta personalizzati. 
+Simplex Top Margin = Determina la distanza tra il margine superiore dell'area stampabile sulla pagina e la parte superiore della prima riga nella pagina. È per la modalità di stampa fronte.
+Simplex Left Margin = Determina la distanza tra il margine sinistro dell’area stampabile sulla pagina e l’estremità sinistra di ciascuna riga sulla pagina. È per la modalità di stampa fronte.
+Duplex Top Margin = Determina la distanza tra il margine superiore dell'area stampabile sulla pagina e la parte superiore della prima riga nella pagina. È per la modalità di stampa fronte-retro. 
+Duplex Left Margin = Determina la distanza tra il margine sinistro dell’area stampabile sulla pagina e l’estremità sinistra di ciascuna riga sulla pagina. È per la modalità di stampa fronte-retro. 
+2-Sided Printing = Stampa fronte-retro consente di stampare automaticamente documenti su due facciate. 
+Office Demo = Stampa la pagina di prova ufficio della stampante.
+2-Sided Demo =  Stampa la pagina di prova su due facciate della stampante. 
+2-Sided Demo Page =  Stampa la pagina di prova su due facciate della stampante. 
+
+Ink Cartridge Alignment = Allinea la cartuccia dell'inchiostro.
+Ink Cartridge Clean = Pulisce la cartuccia dell'inchiostro.
+
+Tray Chaining = Quando si seleziona qualunque valore eccetto Selezione automatica da Alimentazione e il vassoio selezionato è vuoto, la stampante stampa automaticamente da altri vassoi. 
+Tray Linking = Quando si seleziona qualunque valore eccetto Selezione automatica da Alimentazione e il vassoio selezionato è vuoto, la stampante stampa automaticamente da altri vassoi.
+
+Short Binding = Imposta il margine inferiore del lato posteriore per la rilegatura sul lato corto.
+Long Binding = Imposta il margine destro del lato posteriore per la rilegatura sul lato lungo.
+Image Enhance = Questa opzione migliora la qualità di stampa.
+
+;Firmware Update
+IDL_PROGRESS= Visualizza lo stato di avanzamento dell'aggiornamento del firmware.
+IDC_UPDATE= Avvia l'aggiornamento del firmware.
+
+Original Type = Per ottenere copie di qualità migliore, selezionare questa opzione secondo il tipo di originale.Transfer Belt Reset = The life of the transfer belt is expired. Replace the transfer belt with a new one then, click the Reset Count button. When the Reset Count window pops up, enter the serial number of new transfer belt, and click Apply.
+Transfer Belt Reset = La durata della cinghia di trasferimento è scaduta. Sostituire la cinghia di trasferimento con una nuova, quindi fare clic sul pulsante ripristina conteggio. Quando viene visualizzata la finestra Ripristina conteggio, immettere il numero di serie della nuova cinghia di trasferimento e fare clic su Applica.
+Print Network Configuration Page = Stampa la pagina di configurazione di rete corrente della stampante.
+
+;k2Xrx
+Collation = Questa opzione consente di fascicolare i dati ricevuti mediante i driver di stampa. La stampante stamperà copie a gruppi, in corrispondenza della sequenza di originali.
+Smart Duplexing = Se questo menu è attivato, la stampante rileverà un lavoro di un'unica pagina e lo stamperà come singola pagina fronte-retro anche se il driver della stampante del PC era preimpostato sulla stampa fronte-retro.
+Job Held Timer = La macchina contiene un lavoro per un periodo di tempo specifico. È possibile impostare un periodo di tempo per 72 ore al massimo.
+Toll Save = Imposta la stampante a memorizzare i fax e inviarli all’ora specificata. 
+
+Toner Low Alert = Se il toner nella cartuccia è esaurito, viene visualizzato un messaggio di richiesta di sostituzione della cartuccia del toner. È possibile scegliere se visualizzare o meno questo messaggio.
+Print Supplies Information = Stampa la pagina delle informazioni sull’alimentazione.
+Print Accounting Report = Stampa il rapporto del numero di stampe ottenute.
+Print Stored Job List = Stampa i lavori attualmente salvati sul disco rigido.
+Print Completed Job List = Stampa l’elenco dei lavori di stampa completati.
+Print Usage Page = Stampa il numero totale delle pagine stampate per persona o gruppo.
+Screen = Schermo consente all'utente di selezionare le opzioni per convertire un'immagine a toni continui in un'immagine binaria stampabile. La modalità Normale genererà delle stampe con tonalità uniforme sull'intera pagina. La modalità Migliorato genererà delle stampe con dettagli ben definiti sull'intera pagina. La modalità Dettagliato genererà delle stampe con dettagli ben definiti sull'intera pagina.
+Wireless Network Setting = Configurare l'impostazione della rete wireless in base alle proprie esigenze.
+Paper Substitution = Quando la carta non corrisponde, questa opzione imposta il formato di stampa A4 nel formato Letter o viceversa.

@@ -1,0 +1,1180 @@
+[MAIN]
+Exit = Выход
+Help = Справка
+Apply = Применить
+Default = По умолчанию
+Close = Закрыть
+S2PC =Сканировать на компьютер
+
+[COMMON]
+IDS_APPNAME = Утилита настройки принтера
+IDS_X_APPNAME = Центр управления
+IDS_P_APPNAME = Панель дистанционного управления
+IDS_STRING100 = Выберите файл ПО устройства.
+IDS_STRING101 = Недопустимый файл ПО устройства.
+IDS_STRING102 = Ошибка записи данных.
+IDS_STRING103 = Ошибка чтения данных.
+IDS_STRING104 = байт передано
+IDS_STRING105 = Запись завершена. Не выключайте устройство до завершения инициализации.
+IDS_STRING106 = Обновление завершено.
+IDS_STRING107 = Порт занят
+IDS_STRING108 = Готов
+BUSY_ERR_TITLE = Принтер занят 
+IDS_COPYRIGHT2 = Все права защищены.
+IDC_REFRESH = Обновить
+IDL_ID = Идентификатор
+IDL_FILENAME = Имя файла
+IDC_ADD_BROWSE = Обзор
+IDC_SEND = Отправить
+IDS_IMPORTERROR = Сообщений об ошибках не поступало.
+IDS_IMPORTHEADERERROR = Неверный заголовок файла CSV.
+IDS_IMPORTFILEERROR = Файл CSV содержит недопустимые данные.
+IDS_DELMSG = Вы уверены?
+IDS_ERRORSTRING = Ошибка отправки команды на принтер
+IDS_NOT_RESPOND = Принтер не отвечает
+IDS_SEND_ERROR = Ошибка записи в порт.
+IDS_SEND_PER = байт передано
+IDS_SEND_NOTMEM = Недостаточно памяти
+IDS_NOT_SUPPORT = Windows NT не поддерживает эту программу
+IDS_STRING107 = Порт занят
+Port busy = Порт используется другим приложением.
+
+IDS_NOT_RESPOND = Не отвечает
+AddFilePath_Err = Нажмите на кнопку «Обзор» и выберите программу
+AddFileName_Err = Введите имя приложения
+ExistErr = Уже существует
+Delete_DefaultItem = Этот элемент используется по умолчанию, удаление невозможно
+Over_Number = Количество файлов ограничено. Добавить программу невозможно.
+PaperPort = Папка PaperPort не существует. Для автоматического создания папки запустите программу PaperPort.
+EmptyErr = Список «Лицевая панель: приложения» пуст.
+MaxNoErr = Устройство не позволяет хранить более 9 записей.Книга содержит максимальное число записей.
+Msg_delete_font = Удалить этот шрифт?
+Msg_delete_macro = Удалить этот макрос?
+Msg_delete_font_all = Удалить все шрифты из флэш-памяти?
+Msg_delete_macro_all =Удалить все макросы?
+Msg_delete_fontmacro_all = Удалить все шрифты и макросы из флэш-памяти?
+
+IDS_INVALID_FONT = Неверный тип. поддерживает только шрифты Adobe Type 1 (ASCII).
+IDS_FAIL_FORMDOWNLOAD = Ошибка загрузки шрифта. Повторить?
+IDS_FAIL_FONTDOWNLOAD = Ошибка загрузки формы. Повторить?
+IDS_FAIL_FORMDELETE = Ошибка удаления шрифта. Повторить?
+IDS_FAIL_FONTDELETE = Ошибка удаления формы. Повторить?
+IDS_SUCCESS_DOWNLOAD_SINGULAR = файл загружен.
+IDS_SUCCESS_DELETE_SINGULAR = файл удален.
+IDS_LIMIT_FILE = Максимальное количество ресурсных файлов — 20. Используйте функцию только для наиболее нужных файлов. Для загрузки других ресурсных файлов удалите файлы, хранящиеся на принтере.
+Msg_Format_FlashMemory = Все макросы, шрифты и файлы форм, загруженные во флэш-память, будут удалены. Продолжить?
+Msg_InitializeMemory = Все макросы, шрифты и файлы форм, загруженные в память, будут удалены. Продолжить?
+Msg_Proceed = Продолжить?
+IncludeGroup = Выбранный элемент включен в группу. Удалите элемент из группы.
+
+Msg_Error_IP_Addr = Введенный адрес имеет неверный формат. Адрес должен состоять из 4 чисел от 0 до 255, разделенных точками.
+Msg_Error_IP_Value = Введенное значение имеет неверный формат. Значение должно состоять из 4 чисел от 0 до 255, разделенных точками.
+Msg_Validation = Обязательное поле не заполнено или заполнено неверно.
+Msg_Empty_Name = Пустое имя записи. Проверьте имя.
+Msg_Empty_Value = Пустое значение записи. Проверьте значение.
+IPSet_Err =  Проверьте входное значение.
+Path_Err = Невозможно использовать данный путь. Выберите другой.
+
+IDOK = OK
+IDCANCEL = Отмена
+IDL_NAME = Имя
+IDS_NUM = Номер
+
+[STRING]
+;Common
+ON = Вкл
+OFF = Выкл.
+LOW = Низко
+HIGH = Высоко
+HIGH 1 = Высоко 1
+HIGH 2 = Высоко 2
+HIGH 3 = Высоко 3
+HIGH1 = Высоко1
+HIGH2 = Высоко2
+HIGH3 = Высоко3
+Plain = Низко
+Higher = Выше
+Highest = Максимум
+
+Altitude2Mode_Plain = Низко
+Altitude2Mode_High = Высоко
+Altitude3Mode_Plain = Низко
+Altitude3Mode_High = Высоко
+Altitude3Mode_Higher = Выше
+Altitude4Mode_Plain = Низко
+Altitude4Mode_High = Высоко
+Altitude4Mode_Higher = Выше
+Altitude4Mode_Highest = Максимум
+
+mm = мм
+Print list = Печать списка
+Typeface = Гарнитура
+Symbol set = Набор символов
+Font List = Список шрифтов
+Font = Шрифт
+Point Size = Размер в пунктах
+Pitch = Шаг
+Auto Wrap = Автоперенос
+LPI = Строк на дюйм
+Top Margin = Верхнее поле
+Top Margin(mm) = Верхнее поле(мм)
+Top Margin(inch) = Верхнее поле(д.)
+Dark = Темный
+Auto = Автоматически
+Print = Печать
+
+;title
+Layout = Макет
+Paper Option = Настройки бумаги
+Graphic = Графика
+SETTING = Настройка
+Information  =  Информация
+Emulation = Эмуляция
+Network = Сеть
+Network(IPv4) = Сеть(IPv4)
+About = О программе
+Fax = Факс
+Fax Setting = Настройка факса
+Scan = Сканирование
+System Setup = Настройка
+Paper Setup = Настройки бумаги
+
+COLOR = Цветное
+COLOUR = Цветное
+CHECK = Проверка
+Emulation Setting = Настройки эмуляции
+PCL = PCL
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = Шрифты и макросы из флэш-памяти
+Store PCL Font and Macro = Сохранение шрифта и макроса PCL
+Format = Форматирование
+Format Flash Memory = Форматировать флэш-память
+Initialize Font/Form Memory = Инициализация памяти форм / шрифтов
+Initialize = Инициализация
+
+;Phonebook
+Directory = Каталог
+Phonebook = Телефонная книга
+Emailbook = Адресная книга
+Phone Book = Тел. книга
+Address Book = Адресная книга
+
+;fax
+Fax Setting = Настройка факса
+Fax Cover Sheet = Титульный лист факса
+Machine ID = Идентификатор устройства
+Fax Number = Номер факса
+Machine Fax No = Номер факса устройства
+Machine Fax Number = Номер факса устройства
+
+Tray1 Paper = Бумага в лотке 1
+Tray2 Paper = Бумага в лотке 2
+Tray3 Paper = Бумага в лотке 3
+Tray4 Paper = Бумага в лотке 4
+Tray 1 Paper = Бумага в лотке 1
+Tray 2 Paper = Бумага в лотке 2
+Tray 3 Paper = Бумага в лотке 3
+Tray 4 Paper = Бумага в лотке 4
+Bypass Paper = Бумага в обходном лотке
+
+Sending = Отправка
+Redial Interval = Интервал повторного набора
+Redial Count = Количество повторных наборов
+Prefix Dial = Префикс набора
+ECM Mode = Режим исправления ошибок
+
+DisCard Size = Обрезать изображение
+Rings to Answer = Звонков до ответа
+Stamp receiver name = Печать данных адресата
+
+Sending Confirmation = Подтверждение отправки
+On-Error = При ошибке
+Auto Journal = Автоматический журнал
+RX Redcution = Уменьшение при получении
+Com = Связь
+Ringer = Звонок
+Med = Средний
+Toll Save = Экономичные звонки
+Clock Mode = Режим часов
+Sound = Звук
+Key Sound = Звук клавиш
+
+Redial Term = Интервал дозвона
+Redial Times = Количество попыток
+Send Report = Отчет об отправке
+Auto Report = Автоматический отчет
+
+;scan
+Scan Destination = Приложения для сканирования
+Destination = Приложение
+75dpi Draft = 75 тчк/дюйм (черновое)
+150dpi = 150 тчк/дюйм
+200dpi = 200 тчк/дюйм
+300dpi Normal = 300 тчк/дюйм (стандартное)
+600dpi = 600 тчк/дюйм
+
+75dpi-Draft = 75 тчк/дюйм (черновое)
+300dpi-Normal = 300 тчк/дюйм (стандартное)
+
+Scan Resolution = Разрешение
+Scan Color = Цветность скан.
+Scan Colour = Цветность скан.
+Black and White = Черно-белое
+Gray = Оттенки серого
+256 Colors = 256 цветов
+256 Colours = 256 цветов
+True Colors = True Color
+True Colours = True Color
+
+Show Preview = Предварительный просмотр
+
+ADF Duplex = Двусторонний автоподатчик
+Long-Edge Binding = Переплет по длинному краю
+Short-Edge Binding = Переплет по короткому краю
+
+;Layout
+Orientation = Ориентация
+Portrait = Книжная
+Landscape = Альбомная
+SimplexMargin = Поля при односторонней печати
+Simplex Margin = Поля при односторонней печати
+Simplex Margin(mm) = Поля при односторонней печати(мм)
+Simplex Margin(inch) = Поля при односторонней печати(д.)
+Left Margin = Левое поле
+Left Margin(mm) = Левое поле(мм)
+Left Margin(inch) = Левое поле(д.)
+Duplex = Двусторонняя печать
+Print Option = Печать
+Short Edge = Короткий край
+Long Edge = Длинный край
+
+Margin = Поле
+
+;PaperOption
+Copies = Количество копий
+Paper Size = Размер бумаги
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = ISO B5
+Letter = Letter
+Legal = Legal
+Executive = Executive
+No 10 Env. = Конверт 10
+No. 10 Env. = Конверт 10
+No.10 Env. = Конверт 10
+Monarch Env. = Конверт Monarch
+DL Env. = Конверт DL
+C4 Env. = Конверт C4
+C5 Env. = Конверт C5
+C6 Env. = Конверт C6
+US Folio = US Folio
+Oficio = Oficio
+Statement = Statement
+US postcard = Открытка США
+Index Card = Каталожная карточка
+Custom Paper = Нестандартный размер
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = Другой
+Custom1 = Другой 1
+Custom2 = Другой 2
+Custom3 = Другой 3
+Custom4 = Другой 4
+Custom5 = Другой 5
+Folio = Folio
+
+Paper Type = Тип бумаги
+Tray 1 Type = Тип бумаги в лотке 1
+Tray 2 Type = Тип бумаги в лотке 2
+Tray 3 Type = Тип бумаги в лотке 3
+Plain Paper = Обычная
+Bond Paper = Высокосортная
+Bond = Высокосортная
+Transparency = Прозрачная пленка
+Card Stock = Картон
+CardStock = Картон
+Labels = Наклейки
+Preprinted = Формы
+Color Page = Цветная
+Colour Page = Цветная
+Envelope = Конверты
+Thick Paper = Толстая
+Thin Paper = Тонкая
+Thick = Толстая
+Thin = Тонкая
+Cotton = Хлопковая
+Recycled = Вторичная
+
+Printer Default = Настройки по умолчанию
+Colored = Цветная
+Coloured = Цветная
+Colored Paper = Цветная бумага
+Coloured Paper = Цветная бумага
+Color Paper = Цветная бумага
+Colour Paper = Цветная бумага
+Recycled Paper = Вторичная бумага
+Letterhead = Фирменные бланки
+Special = Другая
+Samsung Photo Paper = Фотобумага Samsung
+Photo Paper = Фотобумага
+Photo Paper 120 = Фотобумага 120
+Photo Paper 160 = Фотобумага 160
+Photo Paper 180 = Фотобумага 180
+Photo Paper 220 = Фотобумага 220
+Photo Paper 120 g/m2 = Фотобумага 120 g/m2
+Photo Paper 160 g/m2 = Фотобумага 160 g/m2
+Photo Paper 180 g/m2 = Фотобумага 180 g/m2
+Photo Paper 220 g/m2 = Фотобумага 220 g/m2
+Photo Paper 120g/m2 = Фотобумага 120g/m2
+Photo Paper 160g/m2 = Фотобумага 160g/m2
+Photo Paper 180g/m2 = Фотобумага 180g/m2
+Photo Paper 220g/m2 = Фотобумага 220g/m2
+Photo/Image = Фотография/изображение
+Paper Source = Источник бумаги
+Auto Select = Автоматический выбор
+Tray1 = Лоток 1
+Tray2 = Лоток 2
+Tray3 = Лоток 3
+Tray4 = Лоток 4
+Tray 1 = Лоток 1
+Tray 2 = Лоток 2
+Tray 3 = Лоток 3
+Tray 4 = Лоток 4
+Tray 5 = Лоток 5
+Manual = Вручную
+MP Tray = Многоцелевой лоток
+Manual Feed = Ручная подача
+Auto Selection = автоматический выбор
+Manual Feeder = ручная подача
+Multi-Purpose Tray = многоцелевой лоток
+
+;Graphic
+Resolution = Разрешение
+300dpi = 300 тчк/дюйм
+1200dpi = 1200 тчк/дюйм
+600dpi = 600 тчк/дюйм
+
+300dpi-Draft = 300 тчк/дюйм (черновик)
+600dpi-Draft = 600 тчк/дюйм (черновик)
+600dpi-Normal = 600 тчк/дюйм (стандартное)
+1200dpi-Best = 1200 тчк/дюйм (высшее)
+Manual Adjustment = Ручная настройка
+
+Darkness = Плотность
+Normal = Стандартная
+Draft = Черновое
+Best = Высокое
+Light = Светлая
+
+Text Enhance = Улучшение текста
+Image Enhance = Улучшение изображения
+
+Image Quality = Качество изображения
+
+
+;Setting
+Power Save = Энергосбережение
+1 minute  = 1 минут
+1 minutes  = 1 минут
+5 minutes  = 5 минут
+10 minutes  = 10 минут
+15 minutes  = 15 минут
+20 minutes  = 20 минут
+30 minutes  = 30 минут
+45 minutes  = 45 минут
+60 minutes  = 60 минут
+120 minutes  = 120 минут
+180 minutes  = 180 минут
+240 minutes  = 240 минут
+360 minutes  = 360 минут
+Auto Continue = Автопродолжение
+Jam Recovery = Устранение замятия
+Altitude Adjustment = Поправка на высоту
+Auto CR = Авто-CR
+LF+CR = LF+CR
+LF = LF
+Line Termination = Оконечное оборудование линии
+Job Timeout = Время ожидания задания
+Toner Save = Экономия тонера
+Auto Clean Drum = Автоматическая чистка барабана
+Decide Emulation = Выбор режима эмуляции
+
+;COLOR
+Manual Color Adjustment = Ручная настройка цвета
+Manual Colour Adjustment = Ручная настройка цвета
+Color Adjustment = Настройка цвета
+Colour Adjustment = Настройка цвета
+Cyan = Голубой
+Magenta = Пурпурный
+Yellow = Желтый
+Black = Черный
+
+Auto Color Calibration = Автоматическая калибровка цвета
+Auto Colour Calibration = Автоматическая калибровка цвета
+Auto Color Registration = Автоматическое совмещение цветов
+Auto Colour Registration = Автоматическое совмещение цветов
+Run Now = Выполнить
+
+Color Mode = Цветовой режим 
+Colour Mode = Цветовой режим 
+;Color = Цветное
+Glayscale = Оттенки серого
+
+;CHECK
+Imaging Unit = Блок переноса изображения
+Transfer Belt = Лента переноса
+Fuser = Термофиксатор
+Transfer Roll = Ролик переноса
+MP Pickroll = Ролик подачи МЦЛ
+Tray1 Pickroll = Ролик подачи лотка 1
+Tray2 Pickroll = Ролик подачи лотка 2
+Tray3 Pickroll = Ролик подачи лотка 3
+Tray4 Pickroll = Ролик подачи лотка 4
+
+%S Image Counted = Напечатано изображений
+%S Page Counted = Напечатано страниц
+
+;Information
+Configuration Print = Печать страницы конфигурации
+Test Print = Печать тестовой страницы
+Test Prints = Печать тестовой страницы
+Menu Map = Структура меню
+Network Configuration Print  =  Печать сетевой конфигурации
+Print Network Configuration  =  Печать конфигурации сети
+
+;Network
+Config Network = Конфигурация сети
+Configuration Network = Конфигурация сети
+;IP Assign Method  = Сеть назначение IP-адреса
+IP Assign Method  = Метод назначения IP-адреса
+BOOTP = BOOTP
+DHCP = DHCP
+Static = Статический
+Static IP  = Статический IP-адрес
+Default Set = По умолчанию
+Restore = Восстановить
+Print Network Config = Печать сетевой конфигурации
+IP Address = IP-адрес
+SubnetMask = Маска подсети
+Gateway = Шлюз
+
+;pcl
+Courier = Courier
+Lines Per Page = Строк на страницу
+Lines = Число линий
+Form Length = Длина формы
+PCL Font List = Шрифты PCL
+
+Regular = Обычный
+
+;EPSON
+International character set = Международный набор символов
+character set = Набор символов
+Character Table = Таблица символов
+Form Lines = Строк на форму
+
+San Serif = San Serif
+Roman = Roman
+
+USA = США
+France = Франция
+Germany = Германия
+UK = Великобритания
+Sweden = Швеция
+Denmark 1 = Дания 1
+Denmark1 = Дания1
+Italy = Италия
+Spain 1 = Испания 1
+Spain1 = Испания1
+Japan = Япония
+Norway = Норвегия
+Denmark 2 = Дания 2
+Denmark2 = Дания2
+Spain 2 = Испания 2
+Spain2 = Испания2
+Latin = Латиница
+
+ITALIC = Курсив
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+Hebrew Old = Древнееврейский
+Hebrew New = Современный иврит
+
+;ps3
+Print error information = Печать информации об ошибке
+
+PS Error Information = Информация об ошибке PS 
+PS Font List = Шрифты PS
+
+PostScript Error Information = Информация об ошибке PostScript 
+PostScript Font List = Шрифты PostScript
+
+Print PS Error = Информация об ошибке PS 
+Print PostScript Error = Печать ошибок PostScript
+
+;PaperOption
+6 3/4 Env. = Конв. 6 3/4
+No.9 Env. = Конв. 9
+No. 9 Env. = Конв. 9
+Personal Check = Личный чек
+
+;Graphic
+Toner Density = Плотность тонера
+
+;EPSON
+Adjust Top Margin = Настройка верхнего поля
+
+;Xerox
+Print Density = Плотность печати
+Tray 1 Size = Размер бумаги в лотке 1
+Print Quantity = Число копий
+Print Quality = Качество печати
+Simplex Top Margin = Верхнее поле при односторонней печати
+Simplex Left Margin = Левое поле при односторонней печати
+Duplex Top Margin = Верхнее поле при двусторонней печати
+Duplex Left Margin = Левое поле при двусторонней печати
+2-Sided Printing = Двусторонняя печать
+Power Saver(min) = Режим энергосбережения (мин.)
+Configuration Page = Страница конфигурации
+Office Demo = Обычная демонстрационная страница
+2-Sided Demo = Двусторонняя демонстрационная страница
+2-Sided Demo Page = Двусторонняя демонстрационная страница
+1200 dpi Quality = Качество 1200 тчк./дюйм
+
+;Add
+Print Configuration Page = Печать страницы конфигурации
+Print Demo Page = Печать демонстрационной страницы
+Print Menu Map = Печать структуры меню
+Print Test Page = Печать тестовой страницы
+Machine Setup = Настройка устройства
+
+12 Hour = 12 часов
+24 Hour = 24 часа
+
+Sound/Volume = Звук / громкость
+Alarm Sound = Звук сигнала
+Speaker = Динамик
+Receiving = Прием
+Auto Reduction= Автоматическое уменьшение
+
+Emulation Type= Тип эмуляции
+Duplex Margin = Двусторонние поля
+Duplex Margin(mm) = Двусторонние пол(мм)
+Duplex Margin(inch) = Двусторонние пол(д.)
+Short Binding = Короткий переплет
+Short Binding(mm) = Короткий переплет(мм)
+Short Binding(inch) = Короткий переплет(д.)
+Long Binding = Длинный переплет
+Long Binding(mm) = Длинный переплет(мм)
+Long Binding(inch) = Длинный переплет(д.)
+
+No.10 Envelope= Конверт 10
+Monarch Envelope = Конверт Monarch
+DL Envelope = Конверт DL
+C5 Envelope = Конверт C5
+Post A6 = Открытка A6
+PostCard 4x6 = открытка 4x6
+C6 Envelope = Конверт C6
+Ledger = Ledger
+JPost = JPost
+JPostD = JPostD
+Width = Ширина
+Height = Высота
+Custom Width = Нестандартная ширина
+Custom Height = Нестандартная высота
+Letter R = Letter (П)
+A4 R = A4 (П)
+JIS B5 R = JIS B5 (П)
+A5 R = A5 (П)
+Executive R = Executive (П)
+State R = State (П)
+A3 Over = A3 Over
+B5 Envelope = Конверт B5
+634 = Конверт 6 3/4
+NO.9 = Конверт 9
+US Post = Открытка США
+Index = Каталожная карточка
+B6 = B6
+Hagaki = Hagaki
+A6 R = A6 (П)
+Post A6 R = Открытка A6 (П)
+Hagaki R = Hagaki (П)
+
+Tray 1 Paper Size = Размер бумаги в лотке 1
+Tray 2 Paper Size = Размер бумаги в лотке 2
+Tray 3 Paper Size = Размер бумаги в лотке 3
+Tray 4 Paper Size = Размер бумаги в лотке 4
+MP Tray Paper Size = Размер бумаги в многоцелевом лотке
+Manual Feeder Paper Size = Размер бумаги в ручная подача
+
+Heavy Weight = Плотная
+Hole Punched = Перфорированная
+Punched = Перфорированная
+Archive = Архивная
+Extra Thick = Сверхтолстая бумага плотностью
+
+Tray 1 Tray 2 = Лоток 1 и лоток 2
+Tray Chaining = Цикл лотков
+FAST1200 = Быстрое 1200
+Calibration = Калибровка
+
+TCP/IP = TCP/IP
+Print Network Information = Печать информации о сетевом подключении
+
+;Maintenance = Maintenance
+Cartridge Maintenance = Обслуживание картриджа
+Ink Cartridge Alignment = Выравнивание чернильного картриджа
+Ink Cartridge Clean = Чистка чернильного картриджа
+
+Transfer Roller = Ролик переноса
+Tray1 Roller = Ролик переноса лотка 1
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+;Captiva Fax setting
+Line Configuration = Конфигурация линии
+Machine Name = Имя устройства
+Audio Line Monitor = Монитор звуковой линии
+Ring Volume = Громкость звонка
+Medium = Средняя
+Manual Dial Tone Volume = Громкость ручного набора
+Fax Transmission Defaults = Передача факса: параметры по умолчанию
+Automatic Redial Attempts = Попыток автодозвона
+Redial Time Interval = Интервал автодозвона
+Prefix Dial Number = Префикс
+Error Collection Mode = Режим исправления ошибок
+Confirmation Report = Отчет подтверждения
+Always Print = Всегда печатать
+Print On Error = Печатать при ошибке
+Receive Defaults = Прием: по умолчанию
+Auto Answer Delay = Задержка автоответа
+Receive Header =Заголовок приема
+Transmission Report = Отчет передачи
+Default Output Options = Опции готовой работы по умолчанию
+Stapled = Сшивание
+
+Maintenance = Обслуживание
+Firmware Upgrade = Обновление микропрограммы
+
+Auto Line Monitor = Монитор звуковой линии
+
+Original Type = Тип оригинала
+Text = Текст
+Text/Photo = Текст и фотография
+Photo = Фотография
+Photo 120 = Фотография 120
+Photo 160 = Фотография 160
+Photo 180 = Фотография 180
+Photo 220 = Фотография 220
+Copy = Копия
+Transfer Belt Reset = Сброс значений ленты переноса
+Reset Count = Счетчик сброса
+Serial Number = Серийный номер
+
+;Dell
+inch = д.
+Print Font List = Печать списка шрифтов
+Printer ID = ИД принтера
+Printer Setup = Настройка принтера
+Printer Fax Number = Номер факса для принтера
+Print Network Configuration Page = Печать страницы сетевой конфигурации
+Configure Network = Настройка сети
+Tray Linking = Связь лотков
+
+;k2Xrx
+Collation = Разбор по копиям
+Smart Duplexing = Улучшенная двусторонняя печать
+Job Held Timer = Таймер приостановки печати
+hours = ч.
+Tray 1MPT = Лоток 1 (МЦЛ)
+Tray 1(MPT) = Лоток 1 (МЦЛ)
+Tray 1 (MPT) = Лоток 1 (МЦЛ)
+Tray1MPT Size = Размер лотка 1 (МЦЛ)
+
+Toner Low Alert = Тонер на исходе
+Print Supplies Information = Печать сведений о расходных материалах
+Print Accounting List = Печать списка учета
+Print Accounting Report = Напечатать отчет об использ. устройства
+Print Stored Job List = Напечатать список сохраненных заданий
+Print Completed Job List = Напечатать список выполненных заданий
+Print Usage Page = Напечатать отчет об использовании
+MP Tray Paper Setup = Параметры бумаги для многоцелевого лотка
+Manual Feed Paper Setup = Параметры бумаги для ручной подачи
+Tray 1 Paper Setup = Параметры бумаги для лотка 1
+Tray 2 Paper Setup = Параметры бумаги для лотка 2
+Tray 3 Paper Setup = Параметры бумаги для лотка 3
+Tray 4 Paper Setup = Параметры бумаги для лотка 4
+High Coverage Mode = Режим высокого заполнения
+High Coverage = Высокое заполнение
+Screen = Экран
+Enhanced = Улучшенный
+Detailed = Детальный
+Wireless Network Setting = Настройка беспроводной сети
+Paper Substitution = Замена бумаги
+Glossy Photo 111-130g/m2 = Глянцевая фотобумага 111-130 г/м2
+Glossy Photo 131-175g/m2 = Глянцевая фотобумага 131-175 г/м2
+Glossy Photo 176-220g/m2 = Глянцевая фотобумага 176-220 г/м2
+[PHONEBOOK]
+CAPTION = Тел. книга
+EMAILCAPTION = Адресная книга
+IDS_EMAIL_ADDRESS = Адрес электронной почты
+IDS_TEL_NUMBER = Номер телефона
+IDC_EDIT = Правка
+IDC_MODIFY= Изменить
+IDC_DELETE = Удалить
+IDC_DELETE_ALL = Удалить все
+IDC_GET_PHONEBOOK = Чтение
+IDC_SEND_PHONEBOOK = Запись
+IDC_GET_EMAIL = Чтение
+IDC_SEND_EMAIL = Запись
+IDL_TYPE = Тип
+IDC_ONETOUCH_DIAL =  Набор одной кнопкой
+IDC_SPEED_DIAL_2 =  Быстрый набор
+IDC_GROUP_DIAL = Групповой набор
+IDC_EMAIL_GROUP_DIAL = Группа электронной почты
+IDC_READSTATIC = Для считывания телефонных номеров из памяти принтера нажмите на кнопку «Чтение».
+IDC_WRITESTATIC = Для сохранения телефонных номеров на принтере нажмите на кнопку «Запись». 
+IDC_Email_READSTATIC = Для считывания адресов электронной почты из памяти принтера нажмите на кнопку «Чтение».
+IDC_Email_WRITESTATIC = Для сохранения адресов электронной почты нажмите на кнопку «Запись».
+IDC_EMAIL = Электронная почта
+IDC_TOTAL = Всего
+IDC_ADD = Добавить
+IDC_IMPORT = Импорт
+IDC_EXPORT = Экспорт
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = Групповой набор
+CAPTION_EMAIL = Группа электронной почты
+IDL_I_ADDRESS = Добавленные адреса
+IDL_A_ADDRESS = Доступные адреса
+IDL_I_NUMBER = Добавленные номера
+IDL_A_NUMBER = Доступные номера
+
+IDL_GNAME = Имя группы
+
+IDC_REMOVE = Удалить
+IDC_ADD = Добавить
+
+[Scan Setting]
+CAPTION = Приложения для сканирования
+
+IDC_AVAILABLE_STATIC = Скан: доступные приложения
+IDC_FRONT_STATIC = Лицевая панель: приложения
+IDC_SCAN_ADDAPP = Добавить приложение
+IDC_SCAN_REMOVEAPP = Удалить приложение
+IDC_LOC_STATIC = Папка для сохранения по умолчанию
+
+IDC_ADD_FILEPATH_STATIC = Путь к файлу
+IDC_ADD_FILENAME_STATIC = Имя приложения
+
+IDC_SCANTYPE = Тип файла
+IDC_SCANLANG = Язык 
+
+DocTYPE_ITEM_0 = Сохранить как BMP
+DocTYPE_ITEM_1 = Сохранить как JPEG
+DocTYPE_ITEM_2 = Сохранить как PDF
+DocTYPE_ITEM_3 = Сохранить как TIFF
+
+EmailTYPE_ITEM_0 = Сохранить как JPEG
+EmailTYPE_ITEM_1 = Сохранить как PDF
+EmailTYPE_ITEM_2 = Сохранить как TIFF
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Text (.txt)
+OCR_ITEM_3 = PDF (.pdf)
+OCR_ITEM_4 = RTF (.rtf)
+
+LANG_ITEM_0 = Английский
+LANG_ITEM_1 = Немецкий
+LANG_ITEM_2 = Французский
+LANG_ITEM_3 = Испанский
+LANG_ITEM_4 = Итальянский
+
+LANG_ITEM_5 = Шведский
+LANG_ITEM_6 = Нидерландский
+LANG_ITEM_7 = Португальский (Европа)
+LANG_ITEM_8 = Португальс. (Бразилия)
+LANG_ITEM_9 = Венгерский
+
+LANG_ITEM_10 = Польский
+LANG_ITEM_11 = Русский
+LANG_ITEM_12 = Японский
+LANG_ITEM_13 = Китайский (упрощенное)
+LANG_ITEM_14 = Китайский (традицион.)
+
+LANG_ITEM_15 = Корейский
+LANG_ITEM_16 = Русский+английский
+LANG_ITEM_17 = Цифры
+LANG_ITEM_18 = Алфавит
+LANG_ITEM_19 = Украинский
+
+LANG_ITEM_20 = Эстонский
+LANG_ITEM_21 = Латышский
+LANG_ITEM_22 = Литовский
+LANG_ITEM_23 = Норвежский
+LANG_ITEM_24 = Финский
+
+LANG_ITEM_25 = Датский
+LANG_ITEM_26 = Чешский
+LANG_ITEM_27 = Турецкий
+LANG_ITEM_28 = Украинский+английский
+LANG_ITEM_29 = Узбекский
+
+[ScanToPc]
+CAPTION = Функция JPEG
+IDC_OPTION_STATIC = Эта функция позволяет сохранить изображение как файл JPEG, что обеспечивает более высокую скорость передачи по электронной почте.  Выберите значение.
+IDC_ORIGINAL = Исходный размер
+IDC_SIZE_SMALL = Небольшой (настройка размера изображения для окна 640 x 480)
+IDC_SIZE_NOMAL = Обычный (настройка размера изображения для окна 800 x 600)
+IDC_SIZE_LARGE = Большой (настройка размера изображения для окна 1 024 x 768)
+IDOK = OK
+IDCANCEL = Отмена
+
+[Flash]
+IDL_ADD = Добавить
+IDL_DELETE = Удалить
+IDL_DELETE_ALL = Удалить все
+Print list = Печать списка
+IDC_REFRESH = Обновить
+IDC_FONTS = Шрифты
+IDC_MACROS = Макросы
+IDC_DELETE_ALL_FONT_MACRO= Удалить все шрифты и макросы
+IDC_ENABLEMACRO = Включить макрос
+IDC_DISABLEMACRO = Отключить макрос
+
+[PS3]
+IDC_ADD_PS3 = Добавить
+IDC_DELETE_PS3 = Удалить все
+IDC_PRINT_LIST = Печать списка
+IDC_PS3_REFRESH = Обновить
+Print PostScript Flash Directory = Печать каталога PostScript из флэш-памяти
+Format Flash Memory = Форматировать флэш-память
+Flash Fonts/Forms = Шрифты и формы из флэш-памяти
+Size = Размер
+
+IDL_RESOURCE_TYPE = Тип ресурса
+IDC_FMU_RADIO_ALL = Все
+IDC_FMU_RADIO_FONT = Шрифты
+IDC_FMU_RADIO_FORM = Формы
+IDL_STORAGE_TYPE = Тип устройства хранения
+IDC_FMU_RADIO_MEMORY = Память
+IDC_FMU_RADIO_HDD = Жесткий диск
+IDC_FMU_RESET = Сброс
+IDC_FMU_DOWNLOAD = Загрузить
+IDC_FMU_DELETE = Удалить
+IDC_FMU_DELETE_ALL = Удалить все
+IDC_FMU_REFRESH = Обновить
+IDC_FMU_STATIC_TOTALMEM = Всего (Кб)
+IDC_FMU_STATIC_USEDMEM = Занято (Кб)
+IDC_FMU_STATIC_AVAILABLEMEM = Доступно (Кб)
+IDC_FMU_REPORT = Отчет
+
+
+[SEND]
+CAPTION = Загрузка...
+IDL_FILE_SIZE = Размер файла
+IDL_STATUS = Состояние
+
+[SELECT_FILE]
+Select a file = Выберите файл
+Note = Примечание. Если файл имеет собственный идентификатор, этот идентификатор игнорируется.
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=Обновление микропрограммы
+IDC_BROWSE=Обзор...
+IDC_UPDATE=Обновление
+IDL_FILE_NAME=Имя файла:
+IDL_FILE_INFORMATION=Информация о файле
+IDL_FILE_SIZE=Размер файла:
+IDC_FILE_SIZE=0 байтов
+IDL_PROGRESS=Выполнение
+IDL_MESSAGE=Сообщение:
+
+
+[HELP]
+No help = Для данного элемента нет раздела справки.
+
+;Layout
+Orientation = Определяет ориентацию изображения на странице.
+Top Margin = Определяет расстояние между верхней границей области печати и верхним краем первой строки на странице.
+Left Margin = Определяет расстояние между левой границей области печати и левым краем строк на странице.
+Print Option = Параметр «Двусторонняя печать» позволяет автоматически печатать двусторонние документы.
+Duplex = Параметр «Двусторонняя печать» позволяет автоматически печатать двусторонние документы.
+
+;Paper Option
+Copies = Определяет количество копий для каждого задания.
+Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+Tray 1 Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+Tray 2 Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+Tray 3 Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+Tray 4 Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+MP Tray Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+Manual Feeder Paper Size = Выбор размера бумаги, загруженной в лоток принтера.
+Paper Type = Определяет тип бумаги.
+Paper Source = Выбор лотка по умолчанию.
+
+;Graphic
+Resolution = Определяет разрешение печати.
+Darkness = Определяет плотность печати на странице.
+
+Auto Color Calibration = Включает регулярную калибровку принтера для достижения наилучшего качества цветной печати.
+Auto Colour Calibration = Включает регулярную калибровку принтера для достижения наилучшего качества цветной печати.
+Auto Color Registration = Настройка положения цветного текста или графики для соответствия положения цветов на принтере их положению на экране.
+Auto Colour Registration = Настройка положения цветного текста или графики для соответствия положения цветов на принтере их положению на экране.
+Manual Color Adjustment = Настройка цветового контраста тонера каждого картриджа вручную. В случае если отпечатанный документ выглядит слишком светлым, бледным или местами непропечатанным, передвиньте ползунок в направлении знака «+». В случае если отпечатанный документ выглядит слишком размытым, передвиньте ползунок в направлении знака «-».
+Manual Colour Adjustment = Настройка цветового контраста тонера каждого картриджа вручную. В случае если отпечатанный документ выглядит слишком светлым, бледным или местами непропечатанным, передвиньте ползунок в направлении знака «+». В случае если отпечатанный документ выглядит слишком размытым, передвиньте ползунок в направлении знака «-».
+
+;Setting
+Power Save = Определяет, через какое время принтер переходит из режима ожидания в режим пониженного энергопотребления.
+Jam Recovery = Определяет, повторит ли принтер попытку печати замятых страниц документа.
+Auto Continue = Определяет действия принтера в том случае, если пользователь пытается напечатать страницу в режиме ручной подачи при отсутствии бумаги в многоцелевом лотке.
+Altitude Adjustment = Оптимизация качества печати в зависимости от высоты над уровнем моря. 
+Auto CR = После каждой строки документа принтер ожидает команды перевода строки (LF), за которой следует команда возврата каретки (CR). Этот параметр определяет, что делает принтер при получении команды LF без команды CR. 
+
+Job Timeout = Определяет время ожидания данных для печати перед приемом данных через другой интерфейс.
+Toner Save = Определяет расход тонера при печати страницы.
+Auto Clean Drum = Автоматически определяет необходимость чистки барабана. Если эта функция включена, после каждых 500 страниц будет печататься страница чистки барабана. Барабан следует чистить для обеспечения лучшего разрешения.
+Decide Emulation = Выбор режима эмуляции.
+Emulation Type = Выбор режима эмуляции.
+
+
+;Check
+Imaging Unit = Общее число страниц, напечатанных с использованием этого блока переноса изображения.
+Transfer Belt = Общее число страниц, напечатанных с использованием этой ленты переноса.
+Fuser Type = Общее число страниц, напечатанных с использованием этого термофиксатора.
+Fuser = Общее число страниц, напечатанных с использованием этого термофиксатора.
+Transfer Roll = Этот параметр предназначен только для сотрудников службы технической поддержки. 
+Tray1 Pickroll = Этот параметр предназначен только для сотрудников службы технической поддержки. 
+Tray2 Pickroll = Этот параметр предназначен только для сотрудников службы технической поддержки. 
+Tray3 Pickroll = Этот параметр предназначен только для сотрудников службы технической поддержки. 
+Tray4 Pickroll = Этот параметр предназначен только для сотрудников службы технической поддержки. 
+
+
+;Information
+Configuration Print = Печать страницы текущей конфигурации принтера.
+Print Configuration Page = Печать страницы текущей конфигурации принтера.
+Configuration Page = Печать страницы текущей конфигурации принтера.
+Network Configuration Print = Печать страницы текущей сетевой конфигурации.
+Print Network Configuration = Печать страницы текущей сетевой конфигурации.
+Test Print = Печать демонстрационной страницы. 
+Test Prints = Печать демонстрационной страницы. 
+Print Demo Page = Печать демонстрационной страницы. 
+Menu Map = Печать структуры меню принтера.
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = Выбор настроек приложений для сканирования.
+Scan Resolution = Разрешение определяет объем графической информации, которая сохранится в отсканированном изображении.
+Scan Color = В этом меню можно указать режим сканирования исходного документа. 
+Scan Colour = В этом меню можно указать режим сканирования исходного документа. 
+Show Preview = Это параметр определяет, будет ли открываться диалоговое окно «Сканирование», в котором можно изменить настройки сканирования.  Если этот флажок установлен, будет выполнено предварительное сканирование, после которого нужные настройки можно будет изменить.  Если этот флажок не установлен, изображение будет отсканировано напрямую в указанное приложение.
+ADF Duplex = в качестве источника документов выбирается автоподатчик. Этот режим выбирают для сканирования страниц с двух сторон листов. При выборе этого режима выполняется сканирование документа, находящегося в автоподатчике. Если автоподатчик пуст, выводится системное сообщение. Чтобы продолжить работу, поместите документ в автоподатчик и повторите попытку сканирования. Для правильной ориентации отсканированных страниц в режиме Двусторонний автоподатчик следует правильно выбрать тип переплета. Если страницы в документе имеют книжную ориентацию, выберите Переплет по длинному краю. Если страницы имеют альбомную ориентацию, выберите Переплет по короткому краю.
+
+IDC_AVAILABLE_STATIC = Список приложений, сопоставленных файлам BMP в реестре компьютера. При изменении параметров на вкладке «Параметры сканирования» список «Сканирование: доступные приложения» обновляется.
+IDC_FRONT_STATIC =  В этом окне содержится список приложений, доступных с лицевой панели принтера. После начала работы с принтером список приложений по умолчанию на лицевой панели обновляется.
+IDC_SCAN_MOVE = Перемещение выбранных элементов из списка «Сканирование: доступные приложения» в список «Лицевая панель: приложения».
+IDC_SCAN_ADDAPP = Добавление элемента (допустимого файла с расширением .exe). Новый элемент появится в списке «Сканирование: доступные приложения».
+IDC_SCAN_REMOVEAPP = Удаление записи из списка «Сканирование: доступные приложения». 
+IDC_LOC_STATIC = Выбор папки хранения по умолчанию.
+
+;Phonebook
+Directory = Выбор настроек электронной почты и телефонной книги. 
+Phonebook = Выбор настроек телефонной книги.
+Phone Book = Выбор настроек телефонной книги.
+Emailbook = Выбор настроек телефонной книги.
+Address Book = Выбор настроек телефонной книги..
+IDC_EDIT = Сохранение и изменение выбранных записей.
+IDC_DELETE = Удаление выбранной записи.
+IDC_DELETE_ALL = Удаление всех записей.
+IDC_GROUP_DIAL = Назначение и изменение выбранного номера группового набора.  Если выбранный номер не является номером группового набора, кнопка «Групповой набор» становится недоступной.
+IDC_GET_PHONEBOOK = Получение номеров телефонной книги с устройства.
+IDC_SEND_PHONEBOOK = Загрузка номеров телефонной книги в устройство.
+IDC_EMAIL_GROUP_DIAL = Назначение и изменение выбранной группы электронной почты.  Если выбранное значение не является группой  электронной почты, кнопка «Группа электронной почты» становится недоступной.
+IDC_GET_EMAIL = Получение адресов электронной почты с устройства.
+IDC_SEND_EMAIL = Загрузка адресов электронной почты в устройство.
+IDC_ADD = Сохранение выбранных номеров.
+IDC_MODIFY = Изменение выбранных номеров.
+IDC_EMAIL_ADD = Сохранение выбранных адресов.
+IDC_EMAIL_MODIFY = Изменение выбранных адресов.
+IDC_G_ADD = Назначение выбранного номера группового набора.
+IDC_G_MODIFY = Изменение выбранного номера группового набора.
+IDC_G_EMAIL_ADD = Назначение выбранной группы электронной почты.
+IDC_G_EMAIL_MODIFY = Изменение выбранной группы электронной почты. 
+
+;Fax
+Machine ID = Выбор имени для титульного листа факса.
+Printer ID = Выбор имени для титульного листа факса.
+Fax Number = Выбор номера факса для титульного листа факса.
+Machine Fax No = Выбор номера факса для титульного листа факса.
+Machine Fax Number = Выбор номера факса для титульного листа факса.
+Printer Fax Number = Выбор номера факса для титульного листа факса.
+
+;Network
+BOOTP = IP-адрес принтера автоматически назначается сервером BOOTP.
+DHCP = IP-адрес принтера автоматически назначается сервером DHCP.
+Static = IP-адрес, маску подсети и шлюз можно указать вручную.
+
+Emulation Setting = Режим эмуляции.
+
+;PCL
+Typeface = Вывод информации о гарнитуре текущего шрифта.
+Font = Вывод информации о текущем шрифте.
+Symbol Set = Набор символов — это уникальная группа всех доступных символов шрифта.
+
+;EPSON
+Pitch = Определяет интервал между символами.
+Point Size = Этот параметр доступен только при выборе контурного шрифта с пропорциональными интервалами. Для других шрифтов этот параметр игнорируется.
+Lines Per Page = Задает количество строк на странице.
+Lines = Задает количество строк на странице.
+Form Length = Задает количество строк на странице.
+Courier = Определяет тип шрифта Courier: «Обычный» или «Темный».
+International character set = Международный набор символов — это группа всех символов в том или ином шрифте.
+character set = Международный набор символов — это группа всех символов в том или ином шрифте.
+Character Table = Выбор таблицы символов.
+LPI = Выбор количества строк на странице.
+Auto Wrap = Определяет перенос по словам.
+Form Lines = Выбор количества строк в форме (на странице).
+
+IDL_ADD = Запись шрифта или макроса во флэш-память.
+IDL_DELETE = Удаление шрифта или макроса из флэш-памяти.
+IDL_DELETE_ALL = Удаление всех шрифтов или макросов из флэш-памяти.
+Print list = Печать списка добавленных шрифтов и макросов.
+IDC_ENABLEMACRO = Включение выбранного макроса.
+IDC_DISABLEMACRO = Отключение выбранного макроса.
+IDC_REFRESH = Обновление информации о шрифтах и макросах.
+IDC_DELETE_ALL_FONT_MACRO = Удаление всех шрифтов или макросов из флэш-памяти.
+
+Print PostScript Flash Directory = Печать каталога флэш-памяти.
+Print error information = Определяет, следует ли печатать информацию об ошибках PostScript после печати документа. Для того чтобы при ошибке в задании печати принтер выводил страницу ошибок, выберите значение «Вкл». 
+PostScript error information = Определяет, следует ли печатать информацию об ошибках PostScript после печати документа. Для того чтобы при ошибке в задании печати принтер выводил страницу ошибок, выберите значение «Вкл». 
+PS error information = Определяет, следует ли печатать информацию об ошибках PostScript после печати документа. Для того чтобы при ошибке в задании печати принтер выводил страницу ошибок, выберите значение «Вкл». 
+Print PS Error = Определяет, следует ли печатать информацию об ошибках PostScript после печати документа. Для того чтобы при ошибке в задании печати принтер выводил страницу ошибок, выберите значение «Вкл». 
+Print PostScript Error = Определяет, следует ли печатать информацию об ошибках PostScript после печати документа. 
+Font List = Печать списка шрифтов для принтера.
+Print Font List = Печать списка шрифтов для принтера.
+PCL Font List = Печать списка шрифтов для принтера.
+PS Font List = Печать списка шрифтов для принтера.
+Postscript Font List = Печать списка шрифтов для принтера.
+
+IDC_ADD_PS3 = Запись формы или шрифта PostScript во флэш-память.
+IDC_DELETE_PS3 = Удаление всех форм и шрифтов PostScript из флэш-памяти.
+IDC_PRINT_LIST = Печать списка добавленных форм и шрифтов PostScript.
+IDC_PS3_REFRESH = Сведения об обновлении форм и шрифтов PostScript.
+
+IDC_FMU_RESET= Сброс выбранного имени файла.
+IDC_FMU_DOWNLOAD = Загрузка ресурсов в устройство.
+IDC_FMU_DELETE = Удаление ресурса из устройства.
+IDC_FMU_DELETE_ALL = Удаление всех ресурсов из устройства.
+Format Flash Memory = Форматирование флэш-памяти принтера для инициализации файловой системы. Все макросы, шрифты и файлы форм, загруженные во флэш-память, будут удалены.
+Initialize Font/Form Memory = Выполните инициализацию памяти форм / шрифтов принтера. Все макросы, шрифты и файлы форм, загруженные в память, будут удалены.
+IDC_FMU_REFRESH = Обновление данных об общем, используемом и свободном объеме устройства хранения. Обновление списка имен ресурсов, хранящихся в памяти.
+IDC_FMU_REPORT = Вывод списка ресурсов, хранящихся в памяти устройства.
+
+;EPSON
+Adjust Top Margin = Настройка верхнего поля страницы. 
+
+;Xerox
+Tray 1 Size = Выбор размера бумаги, загруженной в лоток 1 принтера. При выборе нестандартного размера бумаги можно указать размеры в полях «Короткий край» и «Длинный край». 
+Simplex Top Margin = Определяет расстояние между верхней границей области печати и верхним краем первой строки на странице. Предназначен для режима односторонней печати.
+Simplex Left Margin = Определяет расстояние между левой границей области печати и левым краем строк на странице. Предназначен для режима односторонней печати.
+Duplex Top Margin = Определяет расстояние между верхней границей области печати и верхним краем первой строки на странице. Предназначен для режима двусторонней печати. 
+Duplex Left Margin = Определяет расстояние между левой границей области печати и левым краем строк на странице. Предназначен для режима двусторонней печати. 
+2-Sided Printing = В режиме двусторонней печати можно автоматически печатать двусторонние документы. 
+Office Demo = Печать обычной демонстрационной страницы принтера.
+2-Sided Demo =  Печать двусторонней демонстрационной страницы принтера. 
+2-Sided Demo Page =  Печать двусторонней демонстрационной страницы принтера. 
+
+Ink Cartridge Alignment = Выравнивание чернильного картриджа.
+Ink Cartridge Clean = Чистка чернильного картриджа.
+
+Tray Chaining = Если для параметра «Источник бумаги» установлено любое значение, кроме «Автоматически», и в выбранном лотке нет бумаги, принтер автоматически берет бумагу из других лотков. 
+Tray Linking = Если для параметра «Источник бумаги» установлено любое значение, кроме «Автоматически», и в выбранном лотке нет бумаги, принтер автоматически берет бумагу из других лотков. 
+
+Short Binding = Устанавливает нижнее поле оборотной стороны для переплета по короткому краю.
+Long Binding = Устанавливает правое поле оборотной стороны для переплета по длинному краю.
+Image Enhance = Этот параметр используется для улучшения качества печати.
+
+;Firmware Update
+IDL_PROGRESS= Показывает ход обновления микропрограммы.
+IDC_UPDATE= Начинает обновление микропрограммы.
+
+Original Type = При выборе данной опции в соответствии с типом оригинала, Вы получаете копию высшего качества.
+Transfer Belt Reset = Срок службы ленты переноса истек. Замените ленту переноса и нажмите кнопку «Счетчик сброса». В окне счетчика сброса введите серийный номер новой ленты переноса и нажмите на кнопку «Применить».
+Print Network Configuration Page = Печать страницы текущей сетевой конфигурации.
+
+;k2Xrx
+Collation = Эта функция позволяет сортировать полученные документы с помощью драйвера принтера. Принтер будет печатать страницы в той же последовательности, что и в документе.
+Smart Duplexing = Если для этого параметра установлено значение «Вкл.», принтер определит, что документ односторонний, и напечатает его на одной стороне листа, даже если по умолчанию для драйвера принтера установлен режим двусторонней печати.
+Job Held Timer = Принтер приостановит печать на определенный промежуток времени. Максимальное значение — 72 часа.
+Toll Save = Принтер можно настроить так, чтобы сохранять факсы в памяти и отправлять их в назначенное время экономичного звонка. 
+
+Toner Low Alert = В случае, если тонер в картридже заканчивается, появляется сообщение о необходимости замены картриджа. Существует возможность указать, должно ли выводиться данное сообщение.
+Print Supplies Information = Печать страницы сведений о расходных материалах.
+Print Accounting Report = Печать отчета о количестве напечатанных страниц.
+Print Stored Job List = Печать списка заданий, хранящихся на жестком диске.
+Print Completed Job List = Печать списка выполненных заданий печати.
+Print Usage Page = Печать списка общего количества страниц, напечатанных пользователем или группой.
+Screen = Экран позволяет выбрать параметры преобразования однотонного изображения в печатаемое двоичное изображение. Обычный режим позволяет выводить на печать страницы целиком с гладким тоном. Улучшенный режим позволяет выводить на печать страницы с резким текстом и гладкими графическими или растровыми объектами. Детальный режим позволяет выводить на печать страницы с резкими деталями.
+Wireless Network Setting = Измените параметры беспроводной сети в соответствии со своими потребностями.
+Paper Substitution = В случае несоответствия бумаги этот параметр позволяет заменить формат A4 на Letter и наоборот.

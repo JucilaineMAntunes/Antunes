@@ -1,0 +1,1181 @@
+[MAIN]
+Exit = ZakoÒcz
+Help = Pomoc
+Apply = Zastosuj
+Default = Domyúlne drukarki
+Close = Zamknij
+S2PC =Skanuj do komputera
+
+[COMMON]
+IDS_APPNAME = Program do ustawiania opcji drukarki
+IDS_X_APPNAME = ControlCentre
+IDS_P_APPNAME = Panel zdalnego sterowania
+IDS_STRING100 = Wybierz plik oprogramowania uk≥adowego.
+IDS_STRING101 = Niepoprawny plik oprogramowania uk≥adowego.
+IDS_STRING102 = Nie moøna zapisaÊ danych.
+IDS_STRING103 = Nie moøna odczytaÊ danych.
+IDS_STRING104 = przes≥anych bajtÛw
+IDS_STRING105 = Zapis zakoÒczony. Nie wy≥πczaj przed zainicjowaniem urzπdzenia.
+IDS_STRING106 = Uaktualnienie zakoÒczone!
+IDS_STRING107 = Port jest zajÍty
+IDS_STRING108 = Gotowe
+BUSY_ERR_TITLE = Drukarka jest zajÍta 
+IDS_COPYRIGHT2 = Wszelkie prawa zastrzeøone.
+IDC_REFRESH = Odúwieø
+IDL_ID = ID
+IDL_FILENAME = Nazwa pliku
+IDC_ADD_BROWSE = Przeglπdaj
+IDC_SEND = Wyúlij
+IDS_IMPORTERROR = Zosta≥y zg≥oszone pewne b≥Ídy.
+IDS_IMPORTHEADERERROR = Plik CSV zawiera niepoprawne informacje w nag≥Ûwku.
+IDS_IMPORTFILEERROR = Ten plik CSV zawiera nieprawid≥owe dane.
+IDS_DELMSG = Czy na pewno?
+IDS_ERRORSTRING = B≥πd przy wysy≥aniu polecenia do drukarki
+IDS_NOT_RESPOND = Drukarka nie odpowiada
+IDS_SEND_ERROR = B≥πd przy zapisywaniu do portu.
+IDS_SEND_PER = przes≥anych bajtÛw
+IDS_SEND_NOTMEM = Za ma≥o pamiÍci.
+IDS_NOT_SUPPORT = Ten program nie jest obs≥ugiwany w úrodowisku systemu Windows NT
+IDS_STRING107 = Port jest zajÍty
+Port busy = Port jest obecnie uøywany przez innπ aplikacjÍ.
+
+IDS_NOT_RESPOND = Brak odpowiedzi
+AddFilePath_Err = Wybierz program za pomocπ przycisku przeglπdania
+AddFileName_Err = Podaj nazwÍ aplikacji
+ExistErr = Juø istnieje
+Delete_DefaultItem = Wybrano element domyúlny, nie moøna go usunπÊ
+Over_Number = Liczba plikÛw jest ograniczona. Nie moøna dodaÊ tego programu.
+PaperPort = Folder PaperPort nie istnieje. Uruchom program PaperPort, aby utworzyÊ ten folder automatycznie.
+EmptyErr = Lista miejsc docelowych przedniego panelu jest pusta.
+MaxNoErr = Urzπdzenie pozwala na wprowadzenie tylko 9 pozycji.Maksymalna wartoúÊ zosta≥a osiπgniÍta.
+Msg_delete_font = Czy na pewno chcesz usunπÊ tÍ czcionkÍ?
+Msg_delete_macro = Czy na pewno chcesz usunπÊ to makro?
+Msg_delete_font_all = Czy na pewno chcesz usunπÊ wszystkie czcionki z pamiÍci Flash?
+Msg_delete_macro_all =Czy na pewno chcesz usunπÊ wszystkie makra?
+Msg_delete_fontmacro_all = Czy na pewno chcesz usunπÊ wszystkie czcionki i makra z pamiÍci Flash?
+
+IDS_INVALID_FONT = Niew≥aúciwy typ. obs≥uguje tylko ÑAdobe Type1î (typ ASCII).
+IDS_FAIL_FORMDOWNLOAD = Nie moøna pobraÊ czcionki. PonowiÊ?
+IDS_FAIL_FONTDOWNLOAD = Nie moøna pobraÊ formularza. PonowiÊ?
+IDS_FAIL_FORMDELETE = Nie moøna usunπÊ czcionki. PonowiÊ?
+IDS_FAIL_FONTDELETE = Nie moøna usunπÊ formularza. PonowiÊ?
+IDS_SUCCESS_DOWNLOAD_SINGULAR = plik zosta≥ pobrany poprawnie.
+IDS_SUCCESS_DELETE_SINGULAR = plik zosta≥ usuniÍty poprawnie.
+IDS_LIMIT_FILE = Maksymalna liczba plikÛw zasobÛw wynosi 20. Naleøy do nich dodawaÊ tylko pliki zasobÛw, ktÛre sπ najczÍúciej uøywane. Aby pobraÊ wiÍcej plikÛw zasobÛw, naleøy najpierw usunπÊ pliki zasobÛw, ktÛre przechowywane sπ w drukarce.
+Msg_Format_FlashMemory = Wszystkie pliki makr, czcionek i formularzy pobrane do pamiÍci Flash zostanπ usuniÍte. Czy na pewno kontynuowaÊ?
+Msg_InitializeMemory = Wszystkie pliki makr, czcionek i formularzy pobrane do pamiÍci zostanπ usuniÍte. Czy na pewno kontynuowaÊ?
+Msg_Proceed = Czy na pewno kontynuowaÊ?
+IncludeGroup = Wybrana pozycja jest dodana do grupy. UsuÒ tÍ pozycjÍ z grupy.
+
+Msg_Error_IP_Addr = Wprowadzony adres jest nieprawid≥owo sformatowany. Adres powinien sk≥adaÊ siÍ z 4 liczb z zakresu od 0 do 255, przedzielonych kropkami.
+Msg_Error_IP_Value = Wprowadzona wartoúÊ jest nieprawid≥owo sformatowana. WartoúÊ powinna sk≥adaÊ siÍ z 4 liczb z zakresu od 0 do 255, przedzielonych kropkami.
+Msg_Validation = Wymagane pole zosta≥o nieprawid≥owo wype≥nione lub zosta≥o pozostawione puste.
+Msg_Empty_Name = Nazwa wpisu jest pusta. Sprawdü nazwÍ.
+Msg_Empty_Value = WartoúÊ wpisu jest pusta. Sprawdü wartoúÊ.
+IPSet_Err =  Sprawdü wartoúÊ wejúciowπ.
+Path_Err = Nie moøna uøyÊ tej úcieøki. Wybierz innπ úcieøkÍ.
+
+IDOK = OK
+IDCANCEL = Anuluj
+IDL_NAME = Nazwa
+IDS_NUM = Nr
+
+[STRING]
+;Common
+ON = W≥.
+OFF = Wy≥.
+LOW = Nisko
+HIGH = Wysoko
+HIGH 1 = Wysoko 1
+HIGH 2 = Wysoko 2
+HIGH 3 = Wysoko 3
+HIGH1 = Wysoko1
+HIGH2 = Wysoko2
+HIGH3 = Wysoko3
+Plain = Nizina
+Higher = Wyzej
+Highest = Najwyzej
+
+Altitude2Mode_Plain = Nizina
+Altitude2Mode_High = Wysoko
+Altitude3Mode_Plain = Nizina
+Altitude3Mode_High = Wysoko
+Altitude3Mode_Higher = Wyzej
+Altitude4Mode_Plain = Nizina
+Altitude4Mode_High = Wysoko
+Altitude4Mode_Higher = Wyzej
+Altitude4Mode_Highest = Najwyzej
+
+mm = mm
+Print list = Drukuj listÍ
+Typeface = KrÛj czcionki
+Symbol set = Zestaw symboli
+Font List = Lista czcionek
+Font = Czcionka
+Point Size = Rozmiar w punktach
+Pitch = GÍstoúÊ
+Auto Wrap = Zawijanie automatyczne
+LPI = LPI
+Top Margin = GÛrny margines
+Top Margin(mm) = GÛrny margines(mm)
+Top Margin(inch) = GÛrny margines(cali)
+Dark = Ciemny
+Auto = Automatycznie
+Print = Drukuj
+
+;title
+Layout = Uk≥ad
+Paper Option = Opcje papieru
+Graphic = Grafika
+SETTING = Ustawienia
+Information  =  Inne informacje
+Emulation = Emulacja
+Network = SieÊ
+Network(IPv4) = SieÊ(IPv4)
+About = Informacje
+Fax = Faks
+Fax Setting = Ustawienia faksu
+Scan = Skanowanie
+System Setup = Ustawienia
+Paper Setup = Opcje papieru
+
+COLOR = Kolor
+COLOUR = Kolor
+CHECK = Kontrola
+Emulation Setting = Ustawienia emulacji
+PCL = PCL
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = Czcionki i makra Flash
+Store PCL Font and Macro = Zapisz czcionkÍ i makro PCL
+Format = Formatuj
+Format Flash Memory = Formatuj pamiÍÊ Flash
+Initialize Font/Form Memory = Inicjuj pamiÍÊ czcionek/formularzy
+Initialize = Inicjuj
+
+;Phonebook
+Directory = Katalog
+Phonebook = Ksiπøka telefoniczna
+Emailbook = Ksiπøka adresowa e-mail
+Phone Book = Ksiazka tel.
+Address Book = Ksiazka adr.
+
+;fax
+Fax Setting = Ustawienia faksu
+Fax Cover Sheet = Strona tytu≥owa faksu
+Machine ID = Identyfikator urzπdzenia
+Fax Number = Numer faksu
+Machine Fax No = Nr faksu
+Machine Fax Number = Nr faksu
+
+Tray1 Paper = Zasobnik 1 - papier
+Tray2 Paper = Zasobnik 2 - papier
+Tray3 Paper = Zasobnik 3 - papier
+Tray4 Paper = Zasobnik 4 - papier
+Tray 1 Paper = Zasobnik 1 - papier
+Tray 2 Paper = Zasobnik 2 - papier
+Tray 3 Paper = Zasobnik 3 - papier
+Tray 4 Paper = Zasobnik 4 - papier
+Bypass Paper = Zasobnik boczny - papier
+
+Sending = Wysy≥anie
+Redial Interval = Interwa≥ ponownego wybierania
+Redial Count = Liczba prÛb ponownego wybierania
+Prefix Dial = Prefiks wybierania
+ECM Mode = Tryb ECM
+
+DisCard Size = Rozmiar przeniesienia
+Rings to Answer = Sygna≥y do odbioru
+Stamp receiver name = Nazwa znacznika odbioru
+
+Sending Confirmation = Potwierdzenie wys≥ania
+On-Error = W przypadku b≥Ídu
+Auto Journal = Automatyczny dziennik
+RX Redcution = Redukcja odbioru faksu
+Com = Kom.
+Ringer = Dzwonek
+Med = årednio
+Toll Save = OszczÍdzanie impulsÛw
+Clock Mode = Tryb zegara
+Sound = DüwiÍk
+Key Sound = DüwiÍk klawiszy
+
+Redial Term = Okres ponownego wybierania
+Redial Times = Liczba prÛb ponownego wybierania
+Send Report = Raport wysy≥ania
+Auto Report = Automatyczny raport
+
+;scan
+Scan Destination = Miejsce docelowe skanowania
+Destination = Miejsce docelowe
+75dpi Draft = 75 dpi (szkic)
+150dpi = 150 dpi
+200dpi = 200 dpi
+300dpi Normal = 300 dpi normalna
+600dpi = 600 dpi
+
+75dpi-Draft = 75 dpi (szkic)
+300dpi-Normal = 300 dpi normalna
+
+Scan Resolution = RozdzielczoúÊ
+Scan Color = Kolor skanow.
+Scan Colour = Kolor skanow.
+Black and White = Czarno-bia≥y
+Gray = Odcienie szaroúci
+256 Colors = 256 kolorÛw
+256 Colours = 256 kolorÛw
+True Colors = True Color
+True Colours = True Color
+
+Show Preview = Pokaø podglπd
+
+ADF Duplex = Podajnik ADF ó druk. dwustr.
+Long-Edge Binding = Oprawa wzd≥uø d≥uøszej krawÍdzi
+Short-Edge Binding = Oprawa wzd≥uø krÛtszej krawÍdzi
+
+;Layout
+Orientation = Orientacja
+Portrait = Pionowa
+Landscape = Pozioma
+SimplexMargin = Margines druku jednostronnego
+Simplex Margin = Margines druku jednostronnego
+Simplex Margin(mm) = Margines druku jednostronnego(mm)
+Simplex Margin(inch) = Margines druku jednostronnego(cali)
+Left Margin = Lewy margines
+Left Margin(mm) = Lewy margines(mm)
+Left Margin(inch) = Lewy margines(cali)
+Duplex = Druk dwustronny
+Print Option = Opcja drukowania
+Short Edge = KrÛtka krawÍdü
+Long Edge = D≥uga krawÍdü
+
+Margin = Margines
+
+;PaperOption
+Copies = Liczba kopii
+Paper Size = Rozmiar papieru
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = ISO B5
+Letter = Letter
+Legal = Legal
+Executive = Executive
+No 10 Env. = Kop. nr 10
+No. 10 Env. = Kop. nr 10
+No.10 Env. = Kop. nr 10
+Monarch Env. = Kop. Monarch
+DL Env. = Kop. DL
+C4 Env. = Kop. C4
+C5 Env. = Kop. C5
+C6 Env. = Kop. C6
+US Folio = Folio USA
+Oficio = Oficio
+Statement = Statement
+US postcard = Kartka pocztowa USA
+Index Card = Karta indeksu
+Custom Paper = W≥asny rozmiar papieru
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = W≥asny
+Custom1 = W≥asny 1
+Custom2 = W≥asny 2
+Custom3 = W≥asny 3
+Custom4 = W≥asny 4
+Custom5 = W≥asny 5
+Folio = Folio
+
+Paper Type = Typ papieru
+Tray 1 Type = Typ w zasob. 1.
+Tray 2 Type = Typ w zasob. 2.
+Tray 3 Type = Typ w zasob. 3.
+Plain Paper = Papier zwyk≥y
+Bond Paper = Dokumentowy
+Bond = Dokumentowy
+Transparency = Folia
+Card Stock = Brystol
+CardStock = Brystol
+Labels = Etykiety
+Preprinted = Z nadrukiem
+Color Page = Strona kolorowa
+Colour Page = Strona kolorowa
+Envelope = Koperta
+Thick Paper = Papier gruby
+Thin Paper = Papier cienki
+Thick = Papier gruby
+Thin = Papier cienki
+Cotton = Bawe≥niany
+Recycled = Ekologiczny
+
+Printer Default = Domyúlne drukarki
+Colored = Kolorowy
+Coloured = Kolorowy
+Colored Paper = Papier kolorowy
+Coloured Paper = Papier kolorowy
+Color Paper = Papier kolorowy
+Colour Paper = Papier kolorowy
+Recycled Paper = Papier ekologiczny
+Letterhead = Papier firmowy
+Special = Specjalny
+Samsung Photo Paper = Papier foto. Samsung
+Photo Paper = Papier foto.
+Photo Paper 120 = Papier foto. 120
+Photo Paper 160 = Papier foto. 160
+Photo Paper 180 = Papier foto. 180
+Photo Paper 220 = Papier foto. 220
+Photo Paper 120 g/m2 = Papier foto. 120 g/m2
+Photo Paper 160 g/m2 = Papier foto. 160 g/m2
+Photo Paper 180 g/m2 = Papier foto. 180 g/m2
+Photo Paper 220 g/m2 = Papier foto. 220 g/m2
+Photo Paper 120g/m2 = Papier foto. 120g/m2
+Photo Paper 160g/m2 = Papier foto. 160g/m2
+Photo Paper 180g/m2 = Papier foto. 180g/m2
+Photo Paper 220g/m2 = Papier foto. 220g/m2
+Photo/Image=ZdjÍcie/obraz
+Paper Source = èrÛd≥o papieru
+Auto Select = Autom. wybÛr
+Tray1 = Zasobnik 1
+Tray2 = Zasobnik 2
+Tray3 = Zasobnik 3
+Tray4 = Zasobnik 4
+Tray 1 = Zasobnik 1
+Tray 2 = Zasobnik 2
+Tray 3 = Zasobnik 3
+Tray 4 = Zasobnik 4
+Tray 5 = Zasobnik 5
+Manual = RÍczne
+MP Tray = Zasobnik MP
+Manual Feed = Podajnik rÍczny
+Auto Selection = Automatyczny wybÛr
+Manual Feeder = Podajnik rÍczny
+Multi-Purpose Tray = Zasobnik uniwersalny
+
+;Graphic
+Resolution = RozdzielczoúÊ
+300dpi = 300 dpi
+1200dpi = 1200 dpi
+600dpi = 600 dpi
+
+300dpi-Draft = 300 dpi - szkic
+600dpi-Draft = 600 dpi - szkic
+600dpi-Normal = 600 dpi - normalny
+1200dpi-Best = 1200 dpi - najlepszy
+Manual Adjustment = RÍczne dostosowanie
+
+Darkness = Zaciemnienie
+Normal = Normalne
+Draft = Robocza
+Best = Najlepsza
+Light = Jasne
+
+Text Enhance = Ulepszanie tekstu
+Image Enhance = Ulepszanie obrazu
+
+Image Quality = JakoúÊ obrazu
+
+
+;Setting
+Power Save = OszczÍdzanie energii
+1 minute  = 1 minut
+1 minutes  = 1 minut
+5 minutes  = 5 minut
+10 minutes  = 10 minut
+15 minutes  = 15 minut
+20 minutes  = 20 minut
+30 minutes  = 30 minut
+45 minutes  = 45 minut
+60 minutes  = 60 minut
+120 minutes  = 120 minut
+180 minutes  = 180 minut
+240 minutes  = 240 minut
+360 minutes  = 360 minut
+Auto Continue = Automatyczne kontynuowanie
+Jam Recovery = Naprawa zakleszczenia
+Altitude Adjustment = Korekta wysokoúci
+Auto CR = Autom. znak CR
+LF+CR = LF+CR
+LF = LF
+Line Termination = KoÒczenie wierszy
+Job Timeout = Limit czasu zadania
+Toner Save = OszczÍdzanie toneru
+Auto Clean Drum = Automatyczne czyszczenie bÍbna
+Decide Emulation = Okreúla emulacjÍ
+
+;COLOR
+Manual Color Adjustment = RÍczne dostosowanie koloru
+Manual Colour Adjustment = RÍczne dostosowanie koloru
+Color Adjustment = Dostosowanie koloru
+Colour Adjustment = Dostosowanie koloru
+Cyan = B≥Íkitny
+Magenta = Amarantowy
+Yellow = ØÛ≥ty
+Black = Czarny
+
+Auto Color Calibration = Automatyczna kalibracja koloru
+Auto Colour Calibration = Automatyczna kalibracja koloru
+Auto Color Registration = Automatyczna rejestracja koloru
+Auto Colour Registration = Automatyczna rejestracja koloru
+Run Now = Uruchom teraz
+
+Color Mode = Tryb koloru
+Colour Mode = Tryb koloru
+;Color = Kolor
+Glayscale = Skala szaroúci
+
+;CHECK
+Imaging Unit = Jednostka przetwarzania obrazu
+Transfer Belt = Pas transferowy
+Fuser = ZespÛ≥ utrwalajπcy
+Transfer Roll = Wa≥ek transferowy
+MP Pickroll = Rolka pobierania MP
+Tray1 Pickroll = Rolka pobierania Zasobnika 1
+Tray2 Pickroll = Rolka pobierania Zasobnika 2
+Tray3 Pickroll = Rolka pobierania Zasobnika 3
+Tray4 Pickroll = Rolka pobierania Zasobnika 4
+
+%S Image Counted = Liczba obrazÛw
+%S Page Counted = Liczba stron
+
+;Information
+Configuration Print = Wydruk konfiguracji
+Test Print = Druk testowy
+Test Prints = Druk testowy
+Menu Map = Mapa menu
+Network Configuration Print  =  Wydruk konfiguracji sieciowej
+Print Network Configuration  =  Konfiguracja sieci dla wydrukÛw
+
+;Network
+Config Network = Konfiguracja sieci
+Configuration Network = Konfiguracja sieci
+;IP Assign Method  = SieÊ przypisywania adresu IP
+IP Assign Method  = Metoda przypisywania adresu IP
+BOOTP = BOOTP
+DHCP = DHCP
+Static = Statyczna
+Static IP  = Statyczny adres IP
+Default Set = Ustawienia domyúlne
+Restore = PrzywrÛÊ
+Print Network Config = Wydruk konfiguracji sieciowej
+IP Address = Adres IP
+SubnetMask = Maska podsieci
+Gateway = Bramka
+
+;pcl
+Courier = Courier
+Lines Per Page = Wiersze na stronie
+Lines = Linie
+Form Length = D≥ugoúÊ formularza
+PCL Font List = Lista czcion.PCL
+
+Regular = Zwyk≥a
+
+;EPSON
+International character set = MiÍdzynarodowy zestaw znakÛw
+character set = Zestaw znakÛw
+Character Table = Tablica znakÛw
+Form Lines = Wiersze formularza
+
+San Serif = San Serif
+Roman = Roman
+
+USA = USA
+France = Francja
+Germany = Niemcy
+UK = Wielka Brytania
+Sweden = Szwecja
+Denmark 1 = Dania 1
+Denmark1 = Dania1
+Italy = W≥ochy
+Spain 1 = Hiszpania 1
+Spain1 = Hiszpania1
+Japan = Japonia
+Norway = Norwegia
+Denmark 2 = Dania 2
+Denmark2 = Dania2
+Spain 2 = Hiszpania 2
+Spain2 = Hiszpania2
+Latin = £aciÒski
+
+ITALIC = Kursywa
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+Hebrew Old = Hebrajski (stary)
+Hebrew New = Hebrajski (nowy)
+
+;ps3
+Print error information = Informacje o b≥Ídzie drukarki
+
+PS Error Information = Informacje o b≥Ídzie PS
+PS Font List = Lista czcion. PS
+
+PostScript Error Information = Informacje o b≥Ídzie PostScript
+PostScript Font List = Lista czcionek PostScript
+
+Print PS Error = Informacje o b≥Ídzie PS
+Print PostScript Error = Drukowanie b≥ÍdÛw PostScript
+
+;PaperOption
+6 3/4 Env. = Kop. 6 3/4
+No.9 Env. = Kop. nr 9
+No. 9 Env. = Kop. nr 9
+Personal Check = Naklejka osobista
+
+;Graphic
+Toner Density = GÍstoúÊ toneru
+
+;EPSON
+Adjust Top Margin = Dostosuj gÛrny margines
+
+;Xerox
+Print Density = GÍstoúÊ druku
+Tray 1 Size = Rozmiar zasobnika 1
+Print Quantity = Liczba kopii
+Print Quality = JakoúÊ druku
+Simplex Top Margin = GÛrny margines druku jednostronnego
+Simplex Left Margin = Lewy margines druku jednostronnego
+Duplex Top Margin = GÛrny margines druku dwustronnego
+Duplex Left Margin = Lewy margines druku dwustronnego
+2-Sided Printing = Druk dwustronny
+Power Saver(min) = OszczÍdzanie energii (min.)
+Configuration Page = Strona konfiguracyjna
+Office Demo = Demo druku biurowego
+2-Sided Demo = Demo druku dwustronnego
+2-Sided Demo Page = Demo druku dwustronnego
+1200 dpi Quality = JakoúÊ 1200 dpi
+
+;Add
+Print Configuration Page = Drukuj stronÍ konfiguracyjnπ
+Print Demo Page = Drukuj stronÍ demo
+Print Menu Map = Drukuj mapÍ menu
+Print Test Page = Drukuj stronÍ testowπ
+Machine Setup = Ustawienia urzπdzenia
+
+12 Hour = 12-godzinne
+24 Hour = 24-godzinne
+
+Sound/Volume = DüwiÍk/G≥oúnoúÊ
+Alarm Sound = DüwiÍk alarmowy
+Speaker = G≥oúnik
+Receiving = Odbieranie
+Auto Reduction= Automatyczne zmniejszanie
+
+Emulation Type= Typ emulacji
+Duplex Margin = Margines druku dwustronnego
+Duplex Margin(mm) = Margines druku dwustronnego(mm)
+Duplex Margin(inch) = Margines druku dwustronnego(cali)
+Short Binding = Oprawa krÛtkiej krawÍdzi
+Short Binding(mm) = Oprawa krÛtkiej krawÍdz(mm)
+Short Binding(inch) = Oprawa krÛtkiej krawÍdz(cali)
+Long Binding = Oprawa d≥ugiej krawÍdzi
+Long Binding(mm) = Oprawa d≥ugiej krawÍdzi(mm)
+Long Binding(inch) = Oprawa d≥ugiej krawÍdzi(cali)
+
+No.10 Envelope= Koperta nr 10
+Monarch Envelope = Koperta Monarch
+DL Envelope = Koperta DL
+C5 Envelope = Koperta C5
+Post A6 = PocztÛwka A6
+PostCard 4x6 = Kartka pocztowa 4x6
+C6 Envelope = Koperta C6
+Ledger = Ledger
+JPost = JPost
+JPostD = JPostD
+Width = SzerokoúÊ
+Height = WysokoúÊ
+Custom Width = W≥asna szerokoúÊ
+Custom Height = W≥asna wysokoúÊ
+Letter R = Letter poziomo
+A4 R = A4 poziomo
+JIS B5 R = JIS B5 poziomo
+A5 R = A5 poziomo
+Executive R = Executive poziomo
+State R = State poziomo
+A3 Over = Nadwymiarowe A3
+B5 Envelope = Koperta B5
+634 = 634
+NO.9 = Nr 9
+US Post = PocztÛwka US
+Index = Karta indeksowa
+B6 = B6
+Hagaki = Hagaki
+A6 R = A6 poziomo
+Post A6 R = PocztÛwka A6 poziomo
+Hagaki R = Hagaki poziomo
+
+Tray 1 Paper Size = Rozmiar papieru w zasobniku 1
+Tray 2 Paper Size = Rozmiar papieru w zasobniku 2
+Tray 3 Paper Size = Rozmiar papieru w zasobniku 3
+Tray 4 Paper Size = Rozmiar papieru w zasobniku 4
+MP Tray Paper Size = Rozmiar papieru w zasobniku MP
+Manual Feeder Paper Size = Rozmiar papieru w Podajnik rÍczny 
+
+Heavy Weight = CiÍøki
+Hole Punched = Dziurkowany
+Punched = Dziurkowany
+Archive = Archiwalny
+Extra Thick = Bardzo gruby
+
+Tray 1 Tray 2 = Zasobnik 1 Zasobnik 2
+Tray Chaining = £πczenie zasobnikÛw
+FAST1200 = 1200 SZYBKA
+Calibration = Kalibracja
+
+TCP/IP = TCP/IP
+Print Network Information = Wydruk informacji sieciowej
+
+Maintenance = Maintenance
+Cartridge Maintenance = Konserwacja kasety
+Ink Cartridge Alignment = WyrÛwnanie kasety z tuszem
+Ink Cartridge Clean = Czyszczenie kasety z tuszem
+
+Transfer Roller = Wa≥ek transferowy
+Tray1 Roller = Rolka Zasobnika 1
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Original Type = Typ orygina≥u
+Text = Tekst
+Text/Photo = Tekst/ZdjÍcie
+Photo = ZdjÍcie
+Photo 120 = ZdjÍcie 120
+Photo 160 = ZdjÍcie 160
+Photo 180 = ZdjÍcie 180
+Photo 220 = ZdjÍcie 220
+Copy = Kopia
+Transfer Belt Reset = Resetowanie pasa transferowego
+Reset Count = Resetuj licznik
+Serial Number = Numer seryjny
+
+;Dell
+inch = cali
+Print Font List = Drukuj listÍ czcionek
+Printer ID = ID drukarki
+Printer Setup = Konfiguracja drukarki
+Printer Fax Number = Numer faksu drukarki
+Print Network Configuration Page = Drukuj stronÍ konfiguracyjnπ sieci
+Configure Network = Konfiguruj sieÊ
+Tray Linking = £πczenie zasobnikÛw
+
+;k2Xrx
+Collation = Sortowanie
+Smart Duplexing = Inteligentny druk dwustronny
+Job Held Timer = Timer wstrzymanych zadaÒ
+hours = godz.
+Tray 1MPT = Zasobnik 1MPT
+Tray 1(MPT) = Zasobnik 1 (MPT)
+Tray 1 (MPT) = Zasobnik 1 (MPT)
+Tray1MPT Size = Rozmiar zasobnika 1 MPT
+
+Toner Low Alert = alertu Ma≥o toneru
+Print Supplies Information = Drukuj inform. o mat. eksploatcyjnych
+Print Accounting List = Drukuj listÍ rozliczania
+Print Accounting Report = Drukuj raport o kontach
+Print Stored Job List = Drukuj listÍ zapisanych zadaÒ
+Print Completed Job List = Drukuj listÍ ukoÒczonych zadaÒ
+Print Usage Page = Drukuj zuøycie stron
+MP Tray Paper Setup = Ustawienia papieru w zas. uniwersalnym
+Manual Feed Paper Setup = Ustawienia papieru podajnika rÍcznego
+Tray 1 Paper Setup = Ustawienia papieru w zasobniku 1
+Tray 2 Paper Setup = Ustawienia papieru w zasobniku 2
+Tray 3 Paper Setup = Ustawienia papieru w zasobniku 3
+Tray 4 Paper Setup = Ustawienia papieru w zasobniku 4
+High Coverage Mode = Tryb duøego pokrycia
+High Coverage = Duøe pokrycie
+Screen = Ekran
+Enhanced = Ulepszone
+Detailed = SzczegÛ≥owe
+Wireless Network Setting = Ustawienie sieci bezprzewodowej
+Paper Substitution = ZastÍpowanie papieru
+Glossy Photo 111-130g/m2 = B≥yszczπcy fotograficzny 111-130<:hs>g/m2
+Glossy Photo 131-175g/m2 = B≥yszczπcy fotograficzny 131-175<:hs>g/m2
+Glossy Photo 176-220g/m2 = B≥yszczπcy fotograficzny 176-220<:hs>g/m2
+
+[PHONEBOOK]
+CAPTION = Ksiazka tel.
+EMAILCAPTION = Ksiazka adr.
+IDS_EMAIL_ADDRESS = Adres e-mail
+IDS_TEL_NUMBER = Numer telefonu
+IDC_EDIT = Edytuj
+IDC_MODIFY= Modyfikuj
+IDC_DELETE = UsuÒ
+IDC_DELETE_ALL = UsuÒ wszystkie
+IDC_GET_PHONEBOOK = Czytaj
+IDC_SEND_PHONEBOOK = Zapisz
+IDC_GET_EMAIL = Czytaj
+IDC_SEND_EMAIL = Zapisz
+IDL_TYPE = Typ
+IDC_ONETOUCH_DIAL =  Wybieranie jednym przyciskiem
+IDC_SPEED_DIAL_2 =  Szybkie wybieranie
+IDC_GROUP_DIAL = Wybieranie grupowe
+IDC_EMAIL_GROUP_DIAL = Grupowy e-mail
+IDC_READSTATIC = Naciúnij przycisk Czytaj, aby pobraÊ numery telefoniczne z drukarki.
+IDC_WRITESTATIC = Naciúnij przycisk Zapisz, aby zapisaÊ numery telefoniczne w drukarce.
+IDC_Email_READSTATIC = Naciúnij przycisk Czytaj, aby pobraÊ adresy e-mail z drukarki.
+IDC_Email_WRITESTATIC = Naciúnij przycisk Zapisz, aby zapisaÊ adresy e-mail w drukarce.
+IDC_EMAIL = E-mail
+IDC_TOTAL = Razem
+IDC_ADD = Dodaj
+IDC_IMPORT = Importuj
+IDC_EXPORT = Eksportuj
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = Wybieranie grupowe
+CAPTION_EMAIL = Grupowy e-mail
+IDL_I_ADDRESS = Wybrane adresy
+IDL_A_ADDRESS = DostÍpne adresy
+IDL_I_NUMBER = Wybrane numery
+IDL_A_NUMBER = DostÍpne numery
+
+IDL_GNAME = Nazwa grupy
+
+IDC_REMOVE = UsuÒ
+IDC_ADD = Dodaj
+
+[Scan Setting]
+CAPTION = Miejsce docelowe skanowania
+
+IDC_AVAILABLE_STATIC = Lista dostÍpnych miejsc docel.
+IDC_FRONT_STATIC = Lista miejsc docel. prz. panelu
+IDC_SCAN_ADDAPP = Dodaj aplikacjÍ
+IDC_SCAN_REMOVEAPP = UsuÒ aplikacjÍ
+IDC_LOC_STATIC = Domyúlna lokalizacja zapisywania
+
+IDC_ADD_FILEPATH_STATIC = åcieøka
+IDC_ADD_FILENAME_STATIC = Nazwa aplikacji
+
+IDC_SCANTYPE = Typ pliku
+IDC_SCANLANG = JÍzyk 
+
+DocTYPE_ITEM_0 = Zapisz jako BMP
+DocTYPE_ITEM_1 = Zapisz jako JPEG
+DocTYPE_ITEM_2 = Zapisz jako PDF
+DocTYPE_ITEM_3 = Zapisz jako TIFF
+
+EmailTYPE_ITEM_0 = Zapisz jako JPEG
+EmailTYPE_ITEM_1 = Zapisz jako PDF
+EmailTYPE_ITEM_2 = Zapisz jako TIFF
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Tekst (.txt)
+OCR_ITEM_3 = Plik PDF (.pdf)
+OCR_ITEM_4 = Tekst sformat. (.rtf)
+
+LANG_ITEM_0 = angielski
+LANG_ITEM_1 = niemiecki
+LANG_ITEM_2 = francuski
+LANG_ITEM_3 = hiszpaÒski
+LANG_ITEM_4 = w≥oski
+
+LANG_ITEM_5 = szwedzki
+LANG_ITEM_6 = holenderski
+LANG_ITEM_7 = portugalski (stand.)
+LANG_ITEM_8 = portugalski (brazyl.)
+LANG_ITEM_9 = wÍgierski
+
+LANG_ITEM_10 = polski
+LANG_ITEM_11 = rosyjski
+LANG_ITEM_12 = japoÒski
+LANG_ITEM_13 = chiÒski (uproszczony)
+LANG_ITEM_14 = chiÒski (tradycyjny)
+
+LANG_ITEM_15 = koreaÒski
+LANG_ITEM_16 = rosyjski+angielski
+LANG_ITEM_17 = numeryczny
+LANG_ITEM_18 = alfabetyczny
+LANG_ITEM_19 = ukraiÒski
+
+LANG_ITEM_20 = estoÒski
+LANG_ITEM_21 = ≥otewski
+LANG_ITEM_22 = litewski
+LANG_ITEM_23 = norweski
+LANG_ITEM_24 = fiÒski
+
+LANG_ITEM_25 = duÒski
+LANG_ITEM_26 = czeski
+LANG_ITEM_27 = turecki
+LANG_ITEM_28 = ukraiÒski+angielski
+LANG_ITEM_29 = uzbecki
+
+[ScanToPc]
+CAPTION = Opcja JPEG
+IDC_OPTION_STATIC = Funkcja powoduje zapisanie obrazu w postaci pliku JPEG, co umoøliwia szybsze wys≥anie wiadomoúci e-mail.  Wybierz opcjÍ.
+IDC_ORIGINAL = Oryginalny rozmiar
+IDC_SIZE_SMALL = Ma≥y (dostosuj rozmiar obrazu do okna 640 x 480)
+IDC_SIZE_NOMAL = Normalny (dostosuj rozmiar obrazu do okna 800 x 600)
+IDC_SIZE_LARGE = Duøy (dostosuj rozmiar obrazu do okna 1024 x 768)
+IDOK = OK
+IDCANCEL = Anuluj
+
+[Flash]
+IDL_ADD = Dodaj
+IDL_DELETE = UsuÒ
+IDL_DELETE_ALL = UsuÒ wszystkie
+Print list = Drukuj listÍ
+IDC_REFRESH = Odúwieø
+IDC_FONTS = Czcionki
+IDC_MACROS = Makra
+IDC_DELETE_ALL_FONT_MACRO= UsuÒ wszystkie czcionki i makra
+IDC_ENABLEMACRO = W≥πcz makra
+IDC_DISABLEMACRO = Wy≥πcz makra
+
+[PS3]
+IDC_ADD_PS3 = Dodaj
+IDC_DELETE_PS3 = UsuÒ wszystkie
+IDC_PRINT_LIST = Drukuj listÍ
+IDC_PS3_REFRESH = Odúwieø
+Print PostScript Flash Directory = Drukuj katalog pamiÍci Flash PostScript
+Format Flash Memory = Formatuj pamiÍÊ Flash
+Flash Fonts/Forms = Czcionki/formularze pamiÍci Flash
+Size = Rozmiar
+
+IDL_RESOURCE_TYPE = Typ zasobu
+IDC_FMU_RADIO_ALL = Wszystkie
+IDC_FMU_RADIO_FONT = Czcionki
+IDC_FMU_RADIO_FORM = Formularze
+IDL_STORAGE_TYPE = SposÛb przechowywania
+IDC_FMU_RADIO_MEMORY = PamiÍÊ
+IDC_FMU_RADIO_HDD = Dysk twardy
+IDC_FMU_RESET = Resetuj
+IDC_FMU_DOWNLOAD = Pobierz
+IDC_FMU_DELETE = UsuÒ
+IDC_FMU_DELETE_ALL = UsuÒ wszystkie
+IDC_FMU_REFRESH = Odúwieø
+IDC_FMU_STATIC_TOTALMEM = Razem(KB)
+IDC_FMU_STATIC_USEDMEM = Uøywane(KB)
+IDC_FMU_STATIC_AVAILABLEMEM = DostÍpne(KB)
+IDC_FMU_REPORT = Raport
+
+
+[SEND]
+CAPTION = Trwa pobieranie...
+IDL_FILE_SIZE = Rozmiar pliku
+IDL_STATUS = Stan
+
+[SELECT_FILE]
+Select a file = Wybierz plik
+Note = Uwaga: Ten identyfikator bÍdzie ignorowany, jeøeli plik ma w≥asny identyfikator.
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=Aktualizacja oprogramowania uk≥adowego
+IDC_BROWSE=Przeglπdaj...
+IDC_UPDATE=Aktualizuj
+IDL_FILE_NAME=Nazwa pliku:
+IDL_FILE_INFORMATION=Informacja o pliku:
+IDL_FILE_SIZE=Rozmiar pliku:
+IDC_FILE_SIZE=0 bajtÛw
+IDL_PROGRESS=PostÍp
+IDL_MESSAGE=Komunikat:
+
+
+[HELP]
+No help = Z tym elementem nie jest powiπzany øaden temat Pomocy.
+
+;Layout
+Orientation = Umoøliwia okreúlenie kierunku druku na stronie.
+Top Margin = Umoøliwia okreúlenie odleg≥oúci pomiÍdzy gÛrnπ krawÍdziπ obszaru wydruku na stronie i gÛrnπ czÍúciπ pierwszego wiersza na stronie.
+Left Margin = Umoøliwia okreúlenie odleg≥oúci pomiÍdzy lewπ krawÍdziπ obszaru wydruku na stronie i lewymi koÒcami wierszy na stronie.
+Print Option = Drukowanie dwustronne umoøliwia automatyczne drukowanie dwustronnych dokumentÛw.
+Duplex = Drukowanie dwustronne umoøliwia automatyczne drukowanie dwustronnych dokumentÛw.
+
+;Paper Option
+Copies = Okreúla liczbÍ kopii do wydrukowania w zadaniu.
+Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+Tray 1 Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+Tray 2 Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+Tray 3 Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+Tray 4 Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+MP Tray Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+Manual Feeder Paper Size = Okreúla rozmiar papieru za≥adowany w zasobniku drukarki.
+Paper Type = Okreúla typ papieru w drukarce.
+Paper Source = Umoøliwia wybranie domyúlnego zasobnika papieru drukarki.
+
+;Graphic
+Resolution = Okreúla rozdzielczoúÊ wydruku.
+Darkness = Okreúla gÍstoúÊ toneru na stronie.
+
+Auto Color Calibration = Umoøliwia ustawienie okresowej automatycznej kalibracji drukarki, pozwalajπcej na uzyskanie najlepszej jakoúci wydrukÛw kolorowych.
+Auto Colour Calibration = Umoøliwia ustawienie okresowej automatycznej kalibracji drukarki, pozwalajπcej na uzyskanie najlepszej jakoúci wydrukÛw kolorowych.
+Auto Color Registration = Umoøliwia dostosowanie pozycji kolorowego tekstu lub grafiki, aby pasowa≥a do pozycji wydrukowanych kolorÛw w stosunku do tych na ekranie.
+Auto Colour Registration = Umoøliwia dostosowanie pozycji kolorowego tekstu lub grafiki, aby pasowa≥a do pozycji wydrukowanych kolorÛw w stosunku do tych na ekranie.
+Manual Color Adjustment = Umoøliwia rÍcznπ regulacjÍ kontrastu koloru dla kaødej kasety tonera. W przypadku, gdy wydrukowany dokument jest zbyt jasny, wyblak≥y lub niekompletny, przesuÒ suwak w kierunku znaku +. W przypadku, gdy wydrukowany dokument jest zbyt rozmazany, przesuÒ suwak w kierunku znaku -.
+Manual Colour Adjustment = Umoøliwia rÍcznπ regulacjÍ kontrastu koloru dla kaødej kasety tonera. W przypadku, gdy wydrukowany dokument jest zbyt jasny, wyblak≥y lub niekompletny, przesuÒ suwak w kierunku znaku +. W przypadku, gdy wydrukowany dokument jest zbyt rozmazany, przesuÒ suwak w kierunku znaku -.
+
+;Setting
+Power Save = Okreúla czas, jaki up≥ynie, zanim drukarka przejdzie z trybu gotowoúci do trybu niskiego poboru energii.
+Jam Recovery = Powoduje, øe drukarka podejmie prÛbÍ ponownego wydrukowania stron dokumentu, ktÛre zosta≥y zakleszczone.
+Auto Continue = Okreúla dzia≥anie drukarki w sytuacji, kiedy uøytkownik prÛbuje wydrukowaÊ stronÍ bez papieru w zasobniku MP, a ürÛd≥o papieru jest ustawione na Podawanie rÍczne.
+Altitude Adjustment = Pozwala na dostosowanie jakoúci druku wzaleønoúci od wysokoúci nad poziomem morza.
+Auto CR = Po zakoÒczeniu kaødego wiersza drukarka oczekuje znaku nowego wiersza (LF), a po nim znaku powrotu karetki (CR). To ustawienie okreúla zachowanie drukarki, jeøeli zostanie przes≥any znak LF, ale bez znaku CR 
+
+Job Timeout = Okreúla okres oczekiwania drukarki na dane, zanim drukarka przyjmie dane przez inny interfejs.
+Toner Save = Okreúla iloúÊ tonera stosowanego przy wydruku strony.
+Auto Clean Drum = Umoøliwia automatyczne okreúlanie, czy bÍben wymaga czyszczenia. W przypadku w≥πczenia opcji co 500 stron drukowany bÍdzie arkusz czyszczenia OPC. (Oczyszcza bÍben OPC we celu uzyskania lepszej rozdzielczoúci)
+Decide Emulation = Okreúla emulacjÍ.
+Emulation Type = Okreúla emulacjÍ.
+
+
+;Check
+Imaging Unit = Opcja Jednostka przetwarzania obrazu umoøliwia sprawdzenie ca≥kowitej liczby wydrukowanych obrazÛw z bieøπcπ jednostkπ przetwarzania obrazu.
+Transfer Belt = Umoøliwia sprawdzenie ca≥kowitej liczby wydrukowanych obrazÛw z bieøπcym pasem transferowym.
+Fuser Type = Umoøliwia sprawdzenie ca≥kowitej liczby wydrukowanych obrazÛw z bieøπcym zespo≥em utrwalajπcym.
+Fuser = Umoøliwia sprawdzenie ca≥kowitej liczby wydrukowanych obrazÛw z bieøπcym zespo≥em utrwalajπcym.
+Transfer Roll = Informacje tylko dla obs≥ugi technicznej. 
+Tray1 Pickroll = Informacje tylko dla obs≥ugi technicznej. 
+Tray2 Pickroll = Informacje tylko dla obs≥ugi technicznej. 
+Tray3 Pickroll = Informacje tylko dla obs≥ugi technicznej. 
+Tray4 Pickroll = Informacje tylko dla obs≥ugi technicznej. 
+
+
+;Information
+Configuration Print = Drukuje bieøπcπ konfiguracjÍ drukarki.
+Print Configuration Page = Drukuje bieøπcπ konfiguracjÍ drukarki.
+Configuration Page = Drukuje bieøπcπ konfiguracjÍ drukarki.
+Network Configuration Print = Drukuje bieøπcπ konfiguracjÍ sieciowπ drukarki.
+Print Network Configuration = Drukuje bieøπcπ konfiguracjÍ sieciowπ drukarki.
+Test Print = Drukuje stronÍ demonstracyjnπ. 
+Test Prints = Drukuje stronÍ demonstracyjnπ. 
+Print Demo Page = Drukuje stronÍ demonstracyjnπ. 
+Menu Map = Drukuje mapÍ menu drukarki.
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = Okreúla miejsca docelowe skanowania.
+Scan Resolution = Ustawienie RozdzielczoúÊ okreúla iloúÊ informacji, zarejestrowanych przez skaner w zeskanowanym obrazie wyjúciowym.
+Scan Color = Okreúla tryb uøywany do skanowania obrazu. Umoøliwia wybranie typu trybu skanowania przy skanowaniu oryginalnego dokumentu ürÛd≥owego. 
+Scan Colour = Okreúla tryb uøywany do skanowania obrazu. Umoøliwia wybranie typu trybu skanowania przy skanowaniu oryginalnego dokumentu ürÛd≥owego. 
+Show Preview = To pole wyboru decyduje o tym, czy zostanie wyúwietlone okno dialogowe Skanowanie, w ktÛrym moøna zmieniÊ opcje skanowania.  W przypadku zaznaczenia tej opcji zostanie wyúwietlony podglπd skanowania, a opcje skanowania bÍdzie moøna zmieniÊ przed wykonaniem pe≥nego skanowania.  W przypadku niezaznaczenia opcji obraz zostanie zeskanowany bezpoúrednio do wybranej aplikacji.
+ADF Duplex = Jako ürÛd≥o dokumentÛw zostanie wybrany automatyczny podajnik dokumentÛw. Wybierz ten tryb, aby skanowaÊ arkusze zadrukowane po obu stronach. Po wybraniu automatycznego podajnika dokumentÛw z drukiem dwustronnym jako ürÛd≥a dokumentÛw, zostanie zeskanowany dokument umieszczony w automatycznym podajniku dokumentÛw. Jeøeli podajnik bÍdzie pusty, zostanie wyúwietlony komunikat systemowy. Aby kontynuowaÊ, umieúÊ dokument do skanowania w podajniku i ponÛw prÛbÍ skanowania. W przypadku trybu Podajnik ADF - druk. dwustr. wybierz odpowiedni typ oprawy, aby uzyskaÊ prawid≥owπ orientacjÍ stron. Jeøeli strony dokumentu ürÛd≥owego majπ orientacjÍ pionowπ (na przyk≥ad ksiπøka lub ulotka), kliknij opcjÍ Oprawa wzd≥uø d≥uøszej krawÍdzi. Jeøeli majπ orientacjÍ poziomπ (na przyk≥ad notatnik), kliknij opcjÍ Oprawa wzd≥uø krÛtszej krawÍdzi. 
+
+IDC_AVAILABLE_STATIC = Wyúwietla listÍ aplikacji obecnie skojarzonych z plikami BMP w rejestrze komputera. Lista dostÍpnych miejsc docelowych skanowania odúwieøana jest za kaødym razem przy klikniÍciu karty Ustawienia skanowania.
+IDC_FRONT_STATIC =  Wyúwietla aplikacje dodane do przedniego panelu drukarki. Przy pierwszym uruchomieniu drukarki przedni panel drukarki uaktualni domyúlne elementy.
+IDC_SCAN_MOVE = Ten przycisk powoduje przeniesienie elementÛw wybranych na liúcie ÑDostÍpne miejsca docelowe skanowaniaî na listÍ ÑLista miejsc docelowych przedniego paneluî.
+IDC_SCAN_ADDAPP = Za pomocπ tego przycisku moøna dodaÊ wybrane poprawne pliki exe. Dodane elementy wyúwietlane sπ w polu ÑLista dostÍpnych miejsc docelowychî.
+IDC_SCAN_REMOVEAPP = Za pomocπ tego przycisku moøna usunπÊ pozycjÍ dodanπ przez uøytkownika do listy ÑDostÍpne miejsca docelowe skanowaniaî. 
+IDC_LOC_STATIC = Okreúla domyúlny folder zapisywania.
+
+;Phonebook
+Directory = Okreúla ustawienia wiadomoúci e-mail i ksiπøki adresowej. 
+Phonebook = Okreúla ustawienia ksiπøki adresowej.
+Phone Book = Okreúla ustawienia ksiπøki adresowej.
+Emailbook = Okreúla ustawienia ksiπøki adresowej.
+Address Book = Okreúla ustawienia ksiπøki adresowej.
+IDC_EDIT = Uøytkownik moøe zapisaÊ lub edytowaÊ wybrane numery.
+IDC_DELETE = Uøytkownik moøe usunπÊ wybrany wpis.
+IDC_DELETE_ALL = Uøytkownik moøe usunπÊ wszystkie wpisy.
+IDC_GROUP_DIAL = Uøytkownik moøe ustawiÊ lub edytowaÊ wybrany numer wybierania grupowego.  Jeøeli nie zaznaczono wybierania grupowego, przycisk Wybieranie grupowe jest wy≥πczony.
+IDC_GET_PHONEBOOK = Uøytkownik moøe pobraÊ numery Ksiπøki telefonicznej z urzπdzenia.
+IDC_SEND_PHONEBOOK = Uøytkownik moøe za≥adowaÊ numery Ksiπøki telefonicznej do urzπdzenia.
+IDC_EMAIL_GROUP_DIAL = Uøytkownik moøe ustawiÊ lub edytowaÊ wybrany wpis adresu e-mail.  Jeøeli nie zaznaczono wpisu grupowego e-mail, przycisk Grupowy e-mail jest wy≥πczony.
+IDC_GET_EMAIL = Uøytkownik moøe pobraÊ adresy e-mail z urzπdzenia.
+IDC_SEND_EMAIL = Uøytkownik za≥adowaÊ adresy e-mail do urzπdzenia.
+IDC_ADD = Uøytkownik moøe zapisaÊ wybrane pozycje numerÛw.
+IDC_MODIFY = Uøytkownik moøe modyfikowaÊ wybrane pozycje numerÛw.
+IDC_EMAIL_ADD = Uøytkownik moøe zapisaÊ wybrane pozycje adresÛw.
+IDC_EMAIL_MODIFY = Uøytkownik moøe modyfikowaÊ wybrane pozycje adresÛw.
+IDC_G_ADD = Uøytkownik moøe ustawiÊ wybrany numer wybierania grupowego.
+IDC_G_MODIFY = Uøytkownik moøe edytowaÊ wybrany numer wybierania grupowego.
+IDC_G_EMAIL_ADD = Uøytkownik moøe ustawiÊ wybrany adres poczty grupowej.
+IDC_G_EMAIL_MODIFY = Uøytkownik moøe modyfikowaÊ wybrany adres poczty grupowej. 
+
+;Fax
+Machine ID = Umoøliwia podanie nazwy Strony tytu≥owej faksu.
+Printer ID = Umoøliwia podanie nazwy Strony tytu≥owej faksu.
+Fax Number = Umoøliwia podanie numeru faksu na Stronie tytu≥owej faksu.
+Machine Fax No = Umoøliwia podanie numeru faksu na Stronie tytu≥owej faksu.
+Machine Fax Number = Umoøliwia podanie numeru faksu na Stronie tytu≥owej faksu.
+Printer Fax Number = Umoøliwia podanie numeru faksu na Stronie tytu≥owej faksu.
+
+;Network
+BOOTP = Serwer BOOTP przydziela automatycznie adres IP.
+DHCP = Serwer DHCP przydziela automatycznie adres IP.
+Static = Moøna wpisaÊ adres IP, maskÍ podsieci i bramkÍ domyúlnie.
+
+Emulation Setting = Ustawia wartoúÊ kaødej emulacji.
+
+;PCL
+Typeface = Wyúwietla krÛj bieøπcej czcionki.
+Font = Pokazuje bieøπcπ czcionkÍ.
+Symbol Set = Zestaw symboli to unikatowe zgrupowanie wszystkich dostÍpnych znakÛw czcionki.
+
+;EPSON
+Pitch = Okreúla odstÍpy miÍdzy znakami.
+Point Size = Opcja dostÍpna tylko po wybraniu czcionki konturowej o proporcjonalnym odstÍpie. Ignorowana przy pozosta≥ych czcionkach.
+Lines Per Page = Okreúla liczbÍ wierszy na stronie.
+Lines = Okreúla liczbÍ wierszy na stronie.
+Form Length = Okreúla liczbÍ wierszy na stronie.
+Courier = Okreúla typ czcionki Courier: Zwyk≥a lub Ciemna.
+International character set = MiÍdzynarodowy zestaw znakÛw to grupowanie wszystkich dostÍpnych znakÛw czcionki.
+character set = MiÍdzynarodowy zestaw znakÛw to grupowanie wszystkich dostÍpnych znakÛw czcionki.
+Character Table = Okreúla TablicÍ znakÛw.
+LPI = Okreúla liczbÍ wierszy na stronie.
+Auto Wrap = Okreúla zawijanie tekstu.
+Form Lines = Okreúla liczbÍ wierszy na formularzu (stronie).
+
+IDL_ADD = Dodaje czcionkÍ lub formularz do pamiÍci Flash.
+IDL_DELETE = Usuwa czcionkÍ lub formularz z pamiÍci Flash.
+IDL_DELETE_ALL = Usuwa wszystkie czcionki i makra z pamiÍci Flash.
+Print list = Drukuje listÍ dodanych czcionek i makr.
+IDC_ENABLEMACRO = W≥πcza wybrane makro.
+IDC_DISABLEMACRO = Wy≥πcza wybrane makro.
+IDC_REFRESH = Uaktualnia informacjÍ o czcionkach i makrach.
+IDC_DELETE_ALL_FONT_MACRO = Usuwa wszystkie makra i czcionki z pamiÍci Flash.
+
+Print PostScript Flash Directory = Drukuje katalog pamiÍci Flash.
+Print error information = Okreúla, czy w przypadku b≥Ídu PostScript ma byÊ wydrukowana informacja o nim. Jeøeli drukarka ma drukowaÊ stronÍ informacji o b≥Ídzie po wystπpieniu b≥Ídu w zadaniu drukowania, naleøy wybraÊ opcjÍ ÑW≥.î. 
+PostScript error information = Okreúla, czy w przypadku b≥Ídu PostScript ma byÊ wydrukowana informacja o nim. Jeøeli drukarka ma drukowaÊ stronÍ informacji o b≥Ídzie po wystπpieniu b≥Ídu w zadaniu drukowania, naleøy wybraÊ opcjÍ ÑW≥.î. 
+PS error information = Okreúla, czy w przypadku b≥Ídu PostScript ma byÊ wydrukowana informacja o nim. Jeøeli drukarka ma drukowaÊ stronÍ informacji o b≥Ídzie po wystπpieniu b≥Ídu w zadaniu drukowania, naleøy wybraÊ opcjÍ ÑW≥.î. 
+Print PS Error = Okreúla, czy w przypadku b≥Ídu PostScript ma byÊ wydrukowana informacja o nim. Jeøeli drukarka ma drukowaÊ stronÍ informacji o b≥Ídzie po wystπpieniu b≥Ídu w zadaniu drukowania, naleøy wybraÊ opcjÍ ÑW≥.î. 
+Print PostScript Error = Okreúla, czy w przypadku b≥Ídu PostScript ma byÊ wydrukowana informacja o nim.
+Font List = Drukuje listÍ aktualnie dostÍpnych czcionek drukarki.
+Print Font List = Drukuje listÍ aktualnie dostÍpnych czcionek drukarki.
+PCL Font List = Drukuje listÍ aktualnie dostÍpnych czcionek drukarki.
+PS Font List = Drukuje listÍ aktualnie dostÍpnych czcionek drukarki.
+Postscript Font List = Drukuje listÍ aktualnie dostÍpnych czcionek drukarki.
+
+IDC_ADD_PS3 = Dodaje czcionkÍ lub formularz PostScript do pamiÍci Flash.
+IDC_DELETE_PS3 = Usuwa wszystkie czcionki i formularze PostScript z pamiÍci Flash.
+IDC_PRINT_LIST = Drukuje listÍ dodanych czcionek i formularzy PostScript.
+IDC_PS3_REFRESH = Aktualizuje informacje o czcionkach i formularzach PostScript.
+
+IDC_FMU_RESET= Umoøliwia zresetowanie bieøπco wybranej nazwy pliku.
+IDC_FMU_DOWNLOAD = Ten przycisk umoøliwia ≥adowanie zasobÛw do urzπdzenia.
+IDC_FMU_DELETE = Ten przycisk umoøliwia usuwanie zasobu z urzπdzenia.
+IDC_FMU_DELETE_ALL = Ten przycisk umoøliwia usuwanie wszystkich zasobÛw z urzπdzenia.
+Format Flash Memory = Powoduje sformatowanie pamiÍci Flash w drukarce w celu inicjalizacji systemu plikÛw. Wszystkie pliki makr, czcionek i formularzy pobrane do pamiÍci Flash zostanπ usuniÍte.
+Initialize Font/Form Memory = Inicjuje pamiÍÊ czcionek/formularzy w drukarce. Wszystkie pliki makr, czcionek i formularzy pobrane do pamiÍci zostanπ usuniÍte.
+IDC_FMU_REFRESH = Umoøliwia odúwieøenie wartoúci iloúci pamiÍci ca≥kowitej, uøywanej i dostÍpnej. Ponadto powoduje odúwieøenie list nazw zasobÛw przechowywanych w urzπdzeniu.
+IDC_FMU_REPORT = Za pomocπ tego przycisku moøna uzyskaÊ raport z listπ zasobÛw urzπdzenia.
+
+;EPSON
+Adjust Top Margin = Dostosowuje gÛrny margines strony. 
+
+;Xerox
+Tray 1 Size = Okreúla rozmiar za≥adowany w zasobniku 1 drukarki. W przypadku wybrania w≥asnego rozmiaru papieru zostajπ w≥πczone pola KrÛtka krawÍdü i D≥uga krawÍdü i uøytkownik moøe okreúliÊ w≥asne rozmiary papieru. 
+Simplex Top Margin = Umoøliwia okreúlenie odleg≥oúci pomiÍdzy gÛrnπ krawÍdziπ obszaru wydruku na stronie i gÛrnπ czÍúciπ pierwszego wiersza na stronie. Do trybu druku jednostronnego.
+Simplex Left Margin = Umoøliwia okreúlenie odleg≥oúci pomiÍdzy lewπ krawÍdziπ obszaru wydruku na stronie i lewymi koÒcami wierszy na stronie. Do trybu druku jednostronnego.
+Duplex Top Margin = Umoøliwia okreúlenie odleg≥oúci pomiÍdzy gÛrnπ krawÍdziπ obszaru wydruku na stronie i gÛrnπ czÍúciπ pierwszego wiersza na stronie. Do trybu druku dwustronnego. 
+Duplex Left Margin = Umoøliwia okreúlenie odleg≥oúci pomiÍdzy lewπ krawÍdziπ obszaru wydruku na stronie i lewymi koÒcami wierszy na stronie. Do trybu druku dwustronnego. 
+2-Sided Printing = Druk dwustronny umoøliwia automatyczne drukowanie dwustronnych dokumentÛw. 
+Office Demo = Umoøliwia drukowanie strony Demo druku biurowegoa.
+2-Sided Demo =  Umoøliwia drukowanie strony Demo druku dwustronnego. 
+2-Sided Demo Page =  Umoøliwia drukowanie strony Demo druku dwustronnego. 
+
+Ink Cartridge Alignment = Umoøliwia wyrÛwnanie kasety z tuszem.
+Ink Cartridge Clean = Umoøliwia wyczyszczenie kasety z tuszem.
+
+Tray Chaining = Jeúli w polu èrÛd≥o papieru zostanie wybrana wartoúÊ inna niø Automatycznie i jeúli wybrany zasobnik jest pusty, drukarka automatycznie pobierze noúnik z innych zasobnikÛw. 
+Tray Linking = Jeúli w polu èrÛd≥o papieru zostanie wybrana wartoúÊ inna niø Automatycznie i jeúli wybrany zasobnik jest pusty, drukarka automatycznie pobierze noúnik z innych zasobnikÛw. 
+
+Short Binding = Umoøliwia ustawienie dolnego marginesu tylnej strony w przypadku oprawiania wzd≥uø krÛtkiej krawÍdzi.
+Long Binding = Umoøliwia ustawienie prawego marginesu tylnej strony w przypadku oprawiania wzd≥uø d≥ugiej krawÍdzi.
+Image Enhance = Ta pozycja powoduje polepszenie jakoúci druku.
+
+
+
+
+
+Original Type = Aby uzyskaÊ najlepszπ jakoúÊ kopii, naleøy wybraÊ odpowiedni typ orygina≥u w tej opcji.
+Transfer Belt Reset = Okres eksploatacji pasa transferowego zakoÒczy≥ siÍ. WymieÒ pas transferowy na nowy, a nastÍpnie kliknij przycisk Resetuj licznik. Po wyúwietleniu okna dialogowego Resetuj licznik wprowadü numer seryjny nowego pasa transferowego i kliknij przycisk Zastosuj.
+Print Network Configuration Page = Drukuje bieøπcπ konfiguracjÍ sieciowπ drukarki.
+
+;k2Xrx
+Collation = Ten element umoøliwia sortowanie otrzymanych danych za pomocπ sterownika drukarki. Drukarka bÍdzie drukowa≥a wydruki w zestawach w celu dopasowania do kolejnoúci orygina≥Ûw.
+Smart Duplexing = Jeøeli w tym menu wybrano ustawienie W≥πczone, drukarka wykryje zadanie drukowania pojedynczej strony i przeprowadzi drukowanie na jednej stronie, mimo øe w sterowniku drukarki na komputerze domyúlnie ustawione jest drukowanie dwustronne.
+Job Held Timer = Urzπdzenie wstrzymuje zadanie na okreúlony czas. Czas moøna ustawiÊ na maksymalnie 72 godziny.
+Toll Save = Faksy sπ przechowywane w pamiÍci drukarki i wysy≥ane w okreúlonym czasie, w ktÛrym obowiπzuje niøsza op≥ata. 
+
+Toner Low Alert = Jeúli kaseta z tonerem jest pusta, pojawia siÍ komunikat informujπcy uøytkownika o koniecznoúci wymiany kasety. Moøna ustawiÊ opcjÍ w celu wyúwietlania tego komunikatu lub nie.
+Print Supplies Information = Drukuje stronÍ informacji o materia≥ach eksploatacyjnych.
+Print Accounting Report = Drukuje informacje o liczbie wydrukÛw.
+Print Stored Job List = Drukuje zadania zapisane obecnie na twardym dysku.
+Print Completed Job List = Drukuje listÍ ukoÒczonych zadaÒ.
+Print Usage Page = Drukuje ca≥kowitπ liczba stron wydrukowanych przez osobÍ lub grupÍ.
+Screen = Ten Ekran umoøliwia uøytkownikowi wybieranie opcji przy konwertowaniu obrazu o ciπg≥ych przejúciach tonalnych w drukowany obraz binarny. W trybie Normalny wydruki bÍdπ tworzone z g≥adkimi przejúciami tonalnymi na ca≥ej stronie. W trybie Ulepszone wydruki bÍdπ generowane z bardziej ostrym tekstem i g≥adkimi przejúciami w obiektach graficznych/rastrowych na stronie. W tym SzczegÛ≥owe wydruki bÍdπ tworzone z dok≥adnymi szczegÛ≥ami na ca≥ej stronie.
+Wireless Network Setting = Skonfiguruj ustawienia sieci bezprzewodowej stosownie to potrzeb.
+Paper Substitution = Gdy papier jest niedopasowany, ta opcja umoøliwia wykonywanie wydrukÛw A4 na papierze o rozmiarze Letter lub na odwrÛt.

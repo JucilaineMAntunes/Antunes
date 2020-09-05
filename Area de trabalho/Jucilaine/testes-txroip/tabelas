@@ -1,0 +1,77 @@
+select * from Services
+
+select * from consoles
+
+select * from dbo.users
+
+UPDATE dbo.users
+SET MustChangePassword = 0
+WHERE Guid = '033685a045e84c8a9fdac09b128176c6'
+
+select * from DatabaseUpdates order by sequence desc
+
+delete from DatabaseUpdates where guid = '6434d2cb2565433f854ca01ea599df0a'
+
+
+select * from Services
+
+============
+   ALTER TABLE dbo.Groups
+   ADD CONSTRAINT FK_Groups_Radios1
+   FOREIGN KEY(RadioGuid)
+   REFERENCES dbo.radios(Guid);
+   
+   ==============update task==========================
+   
+   
+delete from DatabaseUpdates where guid = '6434d2cb2565433f854ca01ea599df0a'
+
+=====================API
+
+http://localhost:9050/api/stations
+http://localhost:9050/api/radios
+
+--
+
+@{
+    ViewBag.Title = "PhoneContacts";
+    Layout = "~/Views/PhonePatches.cshtml";
+}
+
+<h2>PhoneContacts</h2>
+
+
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<Remota.WebConfig.Models.PhoneContactsResponseModel>
+@{
+    ViewBag.Path = new[] { Text.WebResources.SystemSettings };
+    ViewBag.Title = @Text.WebResources.PhonePatch;
+    ViewBag.FormAction = "/web/phone-contacts ";
+    Layout = "_Layout.cshtml";
+}
+@using System.Linq;
+@using Remota.WebConfig;
+@section Script {
+    <script src="~/Content/scripts/phone-contacts.js" defer></script>
+}
+
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped table-bordered w-100 dt-responsive" id="phonePatches">
+                <thead>
+                    <tr>
+                        <th>@Text.WebResources.PhonePatchAlias!juci</th>
+                        <th>@Text.WebResources.PhonePatchExtension!juci</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var phonePatch in Model.PhonePatches.OrderByDescending(x => x.Alias).Take(10))
+                    {
+                        <tr>
+                            <td>@phonePatch.Alias</td>
+                            <td>@phonePatch.Extension</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

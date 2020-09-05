@@ -1,0 +1,66 @@
+Delegates
+• https://docs.microsoft.com/en-us/dotnet/standard/delegates-lambdas
+
+Delegates pré-definidos
+• Action
+• Func
+• Predicate
+
+
+Referências LINQ
+• https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b/view/SamplePack/1?sortBy=Popularity
+• https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b/view/SamplePack/2?sortBy=Popularity
+• https://odetocode.com/articles/739.aspx
+
+
+
+
+if (userGuid == null) {
+            $.ajax('/api/users/current-user-guid', {
+                method: 'GET',
+                contentType: 'application/json',
+                success: function (data) {
+                    userGuid = data;
+                    $.ajax('/api/users/' + userGuid + '/security-properties', {
+                        method: 'GET',
+                        contentType: 'application/json',
+                        success: function (properties) {
+                            let editPublicContacts = properties.filter(item => item.name === "ChangePublicPhoneContacts")
+                            if (editPublicContacts !== 'undefined') {
+                                changePublicPhoneContacts = true;
+                            } else {
+                                changePublicPhoneContacts = false;
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+
+
+        if (userGuid == null) {
+            $.ajax('/api/users/current-user-guid', {
+                method: 'GET',
+                contentType: 'application/json',
+                success: function (data) {
+                    userGuid = data;
+                    $.ajax('/api/users/' + userGuid + '/security-properties', {
+                        method: 'GET',
+                        contentType: 'application/json',
+                        success: function (properties) {
+                            let editPublicContacts = properties.filter(item => item.name === "ChangePublicPhoneContacts");
+                            if (editPublicContacts !== undefined) {
+                                changePublicPhoneContacts = true;
+                            } else {
+                                changePublicPhoneContacts = false;
+                            }
+                        }
+                    });
+                }
+            });
+
+
+        }
+
+        

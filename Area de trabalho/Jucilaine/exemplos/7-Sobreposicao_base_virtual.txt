@@ -1,0 +1,208 @@
+https://github.com/acenelio/inheritance2-csharp
+
+using System;
+
+using Course.Entities;
+
+
+
+namespace Course
+
+{
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            Account acc1 = new Account(1001, "Alex", 500.0);
+
+            Account acc2 = new SavingsAccount(1002, "Anna", 500.0, 0.01);
+
+
+
+            acc1.Withdraw(10.0);
+
+            acc2.Withdraw(10.0);
+
+
+
+            Console.WriteLine(acc1.Balance);
+
+            Console.WriteLine(acc2.Balance);
+
+        }
+
+    }
+
+}
+=============================dentro de Entities ===================================
+=============================Account.cs===================================
+namespace Course.Entities
+
+{
+
+    class Account
+
+    {
+
+        public int Number { get; private set; }
+
+        public string Holder { get; private set; }
+
+        public double Balance { get; protected set; }
+
+
+
+        public Account()
+
+        {
+
+        }
+
+
+
+        public Account(int number, string holder, double balance)
+
+        {
+
+            Number = number;
+
+            Holder = holder;
+
+            Balance = balance;
+
+        }
+
+
+
+        public virtual void Withdraw(double amount)
+
+        {
+
+            Balance -= amount + 5.0;
+
+        }
+
+
+
+        public void Deposit(double amount)
+
+        {
+
+            Balance += amount;
+
+        }
+
+    }
+
+}
+=============================BusinessAccount.cs===================================
+namespace Course.Entities
+
+{
+
+    class BusinessAccount : Account
+
+    {
+
+        public double LoanLimit { get; set; }
+
+
+
+        public BusinessAccount()
+
+        {
+
+        }
+
+
+
+        public BusinessAccount(int number, string holder, double balance, double loanLimit) 
+
+            : base(number, holder, balance)
+
+        {
+
+            LoanLimit = loanLimit;
+
+        }
+
+
+
+        public void Loan(double amount)
+
+        {
+
+            if (amount <= LoanLimit)
+
+            {
+
+                Balance += amount;
+
+            }
+
+        }
+
+    }
+
+}
+=============================SavingsAccount.cs===================================
+namespace Course.Entities
+
+{
+
+    class SavingsAccount : Account
+
+    {
+
+        public double InterestRate { get; set; }
+
+
+
+        public SavingsAccount()
+
+        {
+
+        }
+
+
+
+        public SavingsAccount(int number, string holder, double balance, double interestRate)
+
+            : base(number, holder, balance)
+
+        {
+
+            InterestRate = interestRate;
+
+        }
+
+
+
+        public void UpdateBalance()
+
+        {
+
+            Balance += Balance * InterestRate;
+
+        }
+
+
+
+        public override void Withdraw(double amount)
+
+        {
+
+            base.Withdraw(amount);
+
+            Balance -= 2.0;
+
+        }
+
+    }
+
+}

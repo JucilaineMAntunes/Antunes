@@ -1,0 +1,44 @@
+[Menu]
+MANUAL=Användarhandbok
+MGR_OPEN=Smart Panel
+MGR_EXIT=Avsluta 
+MGR_SETTING=Alternativ 
+MGR_JOBMONITOR=Jobbövervakaren 
+MGR_DRV_SETTING=Drivrutinsinställning
+MGR_PRN_SETTING=Skrivarinställning
+MGR_BUYNOW=Köp nu
+MGR_GUIDE=Felsökningsguide
+MGR_ERR_TOOLTIP=Ingen skrivardrivrutin eller port som stöds 
+MGR_SCAN_MANAGER=Hanterare för skanning och fax
+MGR_SCAN_MANAGER_OLD=Hanterare för skanning
+
+[Msg]
+OK_BUTTON=OK
+BUSY_ERR_TITLE=Skrivaren är upptagen 
+BUSY_ERR_MSG=Skrivarinställning är tillgängligt när skrivaren är ledig 
+FATAL_ERR_TITLE=Fel
+FATAL_ERR_MSG=Installera en drivrutin eller port som stöds.
+INITIAL_MSG=Vänta...
+SM_OTHERPORT=En annan skrivare används redan.
+SM_INSTALLPRINTER=Skrivardrivrutinen är inte installerad, eller skrivarporten är ej av USB- eller nätverkstyp.
+GUIDE_ERROR=Användarhandboken kunde inte hittas
+USB Printer is not found. Please add the printer=USB-skrivaren kan ej hittas. Lägg till skrivaren
+Printer driver is not installed, please install the driver...=Skrivardrivrutinen är inte installerad, installera drivrutinen...
+No Active Window. Please select a window and press the button again.=Inget akivt fönster. Välj ett fönster och tryck på knappen igen.
+
+[Option]
+SM_OPT_CAPTION=Alternativ
+SM_OPT_TITLE=Kontrollpanelens varningsalternativ
+SM_OPT_CHECK_FINISH=Visa när ett jobb slutförts på nätverksskrivaren
+SM_OPT_CHECK_ERROR=Displayen när skrivaren inte kan skriva ut (t.ex. när papperet är slut)
+SM_OPT_CHECK_WAIT=Displayen när skrivaren inte har några problem utan väntar (t.ex. värms upp)
+SM_OPT_CHECK_JOBMONITOR=Öppna jobbövervakaren när ett jobb sparas i skrivaran
+SM_OPT_INTERVAL=Schemalägg en automatisk statuskontroll var
+SM_OPT_STYLE=Visa med
+SM_OPT_BALLOON=Bubbla
+SM_OPT_PANEL=Popupfönster (Smart Panel)
+SM_OPT_SEC=(1-10 sek)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Avbryt
+SM_OPT_SHOW=Visa statusmeddelande för utskrift
+

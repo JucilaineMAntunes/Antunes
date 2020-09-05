@@ -1,0 +1,1181 @@
+[MAIN]
+Exit = יציאה
+Help = עזרה
+Apply = החל
+Default = ברירת מחדל מדפסת
+Close = סגירה
+S2PC =סריקה למחשב
+
+[COMMON]
+IDS_APPNAME = תוכנית שירות הגדרות מדפסת
+IDS_X_APPNAME = מרכז בקרה
+IDS_P_APPNAME = לוח שליטה מרחוק
+IDS_STRING100 = בחירת קובץ קושחה.
+IDS_STRING101 = קובץ קושחה לא חוקי.
+IDS_STRING102 = כשל בכתיבת נתונים.
+IDS_STRING103 = כשל בקריאת נתונים
+IDS_STRING104 = בתים שהועברו
+IDS_STRING105 = השלמת כתיבה. אין לנתק עד שהמדפסת שלך מאותחלת.
+IDS_STRING106 = העדכון הושלם!
+IDS_STRING107 = היציאה תפוסה
+IDS_STRING108 = מוכן/מוכנה
+BUSY_ERR_TITLE = המדפסת תפוסה
+IDS_COPYRIGHT2 = כל הזכויות שמורות.
+IDC_REFRESH = ריענון
+IDL_ID = זהות
+IDL_FILENAME = שם קובץ
+IDC_ADD_BROWSE = עיון
+IDC_SEND = שלח
+IDS_IMPORTERROR = Some Errors were reported.
+IDS_IMPORTHEADERERROR = This CSV file has invalid header information.
+IDS_IMPORTFILEERROR = This CSV file has invalid data.
+IDS_DELMSG = האם את/ה בטוח/ה?
+IDS_ERRORSTRING = שגיאה בשיגור פקודה למדפסת
+IDS_NOT_RESPOND = המדפסת אינה מגיבה
+IDS_SEND_ERROR = שגיאה בכתיבה ליציאה.
+IDS_SEND_PER = בתים שהועברו
+IDS_SEND_NOTMEM = אין מספיק זיכרון
+IDS_NOT_SUPPORT = תוכנית זו אינה תומכת ב-Windows NT
+IDS_STRING107 = היציאה תפוסה
+Port busy = יישום אחר משתמש ביציאה זו
+
+IDS_NOT_RESPOND = אינו מגיב
+AddFilePath_Err = בחירת תוכנית באמצעות כפתור עיון
+AddFileName_Err = הזן את שם היישום
+ExistErr = כבר קיים
+Delete_DefaultItem = פריט זה הנו בברירת מחדל ואינו ניתן למחיקה
+Over_Number = כמות הקבצים מוגבלת. לא ניתן להוסיף את התוכנית.
+PaperPort = תיקיית PaperPort אינה קיימת. אנא הפעל את תוכנית PaperPort כדי ליצור את התיקייה באופן אוטומטי.
+EmptyErr = רשימת יעד לוח קדמי הינה ריקה.
+MaxNoErr = The device only allows 9 entries.The maximum number has been reached.
+Msg_delete_font = האם את/ה בטוח/ה שברצונך למחוק את הגופן?
+Msg_delete_macro = האם את/ה בטוח/ה שברצונך למחוק את הגופן?
+Msg_delete_font_all = האם את/ה בטוח/ה שברצונך למחוק את כל גופני הפלאש?
+Msg_delete_macro_all =האם את/ה בטוח/ה שברצונך למחוק את כל תוכניות המקרו?
+Msg_delete_fontmacro_all = האם את/ה בטוח/ה שברצונך למחוק את כל גופני הפלאש ותוכניות המקרו?
+
+IDS_INVALID_FONT = סוג זה שגוי. תומך ב-‏‏‏‎‏‏‏‏‎‏‏‏‏‎‏‏‏‏‏‏‎‏‏‏‎‏‏‏‏‏‏‏‎‏‎‏‏‏‎‏‎‏( מסוג ASCII‏‏‏‎‏‎‏)‏‏‏‎‏‎‏ "‎"Adobe Type I
+IDS_FAIL_FORMDOWNLOAD = כשל בהורדת גופן. לנסות שוב?
+IDS_FAIL_FONTDOWNLOAD = כשל בהורדת טופס. לנסות שוב?
+IDS_FAIL_FORMDELETE = כשל במחיקת גופן. לנסות שוב?
+IDS_FAIL_FONTDELETE = כשל במחיקת טופס. לנסות שוב?
+IDS_SUCCESS_DOWNLOAD_SINGULAR = הקובץ הורד בהצלחה.
+IDS_SUCCESS_DELETE_SINGULAR = הקובץ נמחק בהצלחה.
+IDS_LIMIT_FILE = כמות קובצי המשאבים מוגבלת ל-‏‏‏‎‏‎‏‏‏‏‎‏‎‏‎‏‏‏‏‎‏‎‏‎‏‏‏‏‎‏‎‏‎‏‏ 20‏‏‏‎‏‎‏‎‏‏‏‎‏.‏‏‏‎‏‎‏‎‏‏‏‏‏‎‏‎‏‎‏‏‏ ‏‏‏‎‏‎‏‎‏‏‏‎‏‏‏‏‎‏‎‏‎‏‏‏‎‏‏‏‎‏‎‏‎‏‏‏עליך להשתמש באפשרות זו רק עבור קובצי המשאבים בהם אתה משתמש בתדירות גבוהה‎.‏‏‏‎‏‎‏‎‏ להורדת קובצי משאבים נוספים, עליך למחוק תחילה קובצי משאבים המאוחסנים במדפסת.
+Msg_Format_FlashMemory = כל קובצי המאקרו, הגופנים והטפסים שהורדת אל זיכרון ההבזק יוסרו. האם ברצונך להמשיך?
+Msg_InitializeMemory = כל קובצי המאקרו, הגופנים והטפסים שהורדת אל הזיכרון יוסרו. האם ברצונך להמשיך?
+Msg_Proceed = האם ברצונך להמשיך?
+IncludeGroup = הפריט שנבחר קיים כבר בקבוצה. אנא מחק את הפריט מן הקבוצה.
+
+Msg_Error_IP_Addr = הכתובת שהוזן אינו כתוב בצורה נכונה. על הכתובת להכיל 4 מספרים מ - 0 ועד 255, המופרדים על ידי נקודות.
+Msg_Error_IP_Value = הערך שהוזן אינו כתוב בצורה נכונה. על הערך להכיל 4 מספרים מ - 0 ועד 255, המופרדים על ידי נקודות.
+Msg_Validation = שדה חובה הושלם בצורה שגויה או שהושאר ריק.
+Msg_Empty_Name = שם הרישום הנו ריק. אנא ודא את השם.
+Msg_Empty_Value = שם הערך הנו ריק. אנא ודא את הערך.
+IPSet_Err =  אנא ודא את ערך הקלט.
+Path_Err = לא ניתן להשתמש בנתיב זה. אנא, בחר נתיב אחר.
+
+IDOK = אישור
+IDCANCEL = ביטול
+IDL_NAME = שם
+IDS_NUM = מס'
+
+[STRING]
+;Common
+ON = דלוק
+OFF = כבוי
+LOW = נמוך
+HIGH = גבוה
+HIGH 1 = גבוה 1
+HIGH 2 = גבוה 2
+HIGH 3 = גבוה 3
+HIGH1 = גבוה1
+HIGH2 = גבוה2
+HIGH3 = גבוה3
+Plain = מישור
+Higher = הרים בגובה רב
+Highest = הרים בגובה הרב ביותר
+
+Altitude2Mode_Plain = מישור
+Altitude2Mode_High = הרים
+Altitude3Mode_Plain = מישור
+Altitude3Mode_High = הרים
+Altitude3Mode_Higher = הרים בגובה רב
+Altitude4Mode_Plain = מישור
+Altitude4Mode_High = הרים
+Altitude4Mode_Higher = הרים בגובה רב
+Altitude4Mode_Highest = הרים בגובה הרב ביותר
+
+mm = מ"מ
+Print list = הדפס רשימה
+Typeface = צורת גופן
+Symbol set = ערכת סמלים
+Font List = רשימת גופנים
+Font = גופן
+Point Size = גודל בנקודות
+Pitch = מרחק בין תווים
+Auto Wrap = עיטוף אוטומטי
+LPI = שורות באינץ'(LPI)‏‏‏‎‏‎‏‎‏‏‏‎‏‏
+Top Margin = שוליים עליונים
+Top Margin(mm) = שוליים עליונים(מ"מ)
+Top Margin(inch) = שוליים עליונים(אינץ')
+Dark = כהה
+Auto = אוטומטי
+Print = הדפסה
+
+;title
+Layout = עיצוב
+Paper Option = אפשרויות נייר
+Graphic = גרפי
+SETTING = הגדרה
+Information  =  מידע
+Emulation = חיקוי
+Network = רשת
+Network(IPv4) = רשת(IPv4)
+About = אודות
+Fax = פקס
+Fax Setting = הגדרת פקס
+Scan = סריקה
+System Setup = הגדרה
+Paper Setup = אפשרויות נייר
+
+COLOR = צבע
+COLOUR = צבע
+CHECK = בדיקה
+Emulation Setting = הגדרת חיקוי
+PCL = שפת שליטה במדפסת (PCL)‏‏‏‎‏‎‏‎‏‏‏‎‏‏
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = גופן פלאש ומקרו
+Store PCL Font and Macro = אחסן גופן PCL וקובץ
+Format = תבנית
+Format Flash Memory = אתחול זיכרון פלאש
+Initialize Font/Form Memory = אתחל זיכרון גופנים/טפסים
+Initialize = אתחול
+
+;Phonebook
+Directory = ספרייה
+Phonebook = ספר טלפונים
+Emailbook = פנקס כתובות
+Phone Book = ספר טלפונים
+Address Book = פנקס כתובות
+
+;fax
+Fax Setting = הגדרת פקס
+Fax Cover Sheet = עמוד שער פקס
+Machine ID = זהות מכשיר
+Fax Number = זהות המדפסת
+Machine Fax No = מס' מכשיר פקס
+Machine Fax Number = מס' מכשיר פקס
+
+Tray1 Paper = סוג נייר במגש 1
+Tray2 Paper = סוג נייר במגש 2
+Tray3 Paper = סוג נייר במגש 3
+Tray4 Paper = סוג נייר במגש 4
+Tray 1 Paper = סוג נייר במגש 1
+Tray 2 Paper = סוג נייר במגש 2
+Tray 3 Paper = סוג נייר במגש 3
+Tray 4 Paper = סוג נייר במגש 4
+Bypass Paper = עקיפת נייר
+
+Sending = שיגור
+Redial Interval = הפסקת חיוג חוזר
+Redial Count = ספירת חיוג חוזר
+Prefix Dial = חיוג קידומת
+ECM Mode = מצב ECM
+
+DisCard Size = מחיקת עודפים מעבר לגודל דף מוגדר
+Rings to Answer = מסםר צלצולים כדי לענות
+Stamp receiver name = החתמת שם מקבל
+
+Sending Confirmation = שיגור אישור
+On-Error = כשל שיגור פקס
+Auto Journal = יומן אוטומטי
+RX Redcution = צמצום גודל הפקס שהתקבל
+Com = רמקול פעיל
+Ringer = מצלצל
+Med = בינוני
+Toll Save = שמירת צלצול
+Clock Mode = מצב שעון
+Sound = צליל
+Key Sound = צליל מקש
+
+Redial Term = מרווח בין חיוגים חוזרים
+Redial Times = מספר חיוגים חוזרים
+Send Report = דוח משלוח פקס
+Auto Report = דוח אוטומטי
+
+;scan
+Scan Destination = יעד סריקה
+Destination = יעד
+75dpi Draft = טיוטא 75dpi
+150dpi = 150dpi
+200dpi = 200dpi
+300dpi Normal = רגיל 300dpi
+600dpi = 600dpi
+
+75dpi-Draft = טיוטא 75dpi
+300dpi-Normal = רגיל 300dpi
+
+Scan Resolution = רזולוציה
+Scan Color = צבע סריקה
+Scan Colour = צבע סריקה
+Black and White = שחור ולבן
+Gray = אפור
+256 Colors = 256 צבעים
+256 Colours = 256 צבעים
+True Colors = צבע אמיתי
+True Colours = צבע אמיתי
+
+Show Preview = הצג תצוגה מקדימה
+
+ADF Duplex = ADF להדפסה דו-צדדית
+Long-Edge Binding = כריכה בקצה הארוך
+Short-Edge Binding = כריכה בקצה הקצר
+
+;Layout
+Orientation = כיוון הדפסה
+Portrait = אנכי
+Landscape = אופקי
+SimplexMargin = שוליים חד-סטריים
+Simplex Margin = שוליים חד-סטריים
+Simplex Margin(mm) = שוליים חד-סטריים(מ"מ)
+Simplex Margin(inch) = שוליים חד-סטריים(אינץ')
+Left Margin = שוליים שמאליים
+Left Margin(mm) = שוליים שמאליים(מ"מ)
+Left Margin(inch) = שוליים שמאליים(אינץ')
+Duplex = הדפסה דו-צידית
+Print Option = אפשרות הדפסה
+Short Edge = קצה קצר
+Long Edge = קצה ארוך
+
+Margin = שוליים
+
+;PaperOption
+Copies = בעתקים
+Paper Size = גודל נייר
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = ISO B5
+Letter = מכתב
+Legal = משפטי
+Executive = מנהלי
+No 10 Env. = מעטפה מס' 10
+No. 10 Env. = מעטפה מס' 10
+No.10 Env. = מעטפה מס' 10
+Monarch Env. = מעטפה Monarch
+DL Env. = מעטפה DL
+C4 Env. = מעטפה C4
+C5 Env. = מעטפה C5
+C6 Env. = מעטפה C6
+US Folio = פוליו ארה"ב
+Oficio = Oficio
+Statement = הצהרה
+US postcard = גלויה ארה"ב
+Index Card = כרטיסיה
+Custom Paper = נייר מותאם
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = מותאם
+Custom1 = 1 מותאם
+Custom2 = 2 מותאם
+Custom3 = 3 מותאם
+Custom4 = 4 מותאם
+Custom5 = 5 מותאם
+Folio = פוליו
+
+Paper Type = סוג נייר
+Tray 1 Type = סוג מגש 1
+Tray 2 Type = סוג מגש 2
+Tray 3 Type = סוג מגש 3
+Plain Paper = נייר רגיל
+Bond Paper = נייר צילום והדפסה
+Bond = נייר צילום והדפסה
+Transparency = שקף
+Card Stock = נייר לכרטיסים (הזמנות)
+CardStock = נייר לכרטיסים (הזמנות)
+Labels = תוויות
+Preprinted = מודפס מראש
+Color Page = דף צבעוני
+Colour Page = דף צבעוני
+Envelope = מעטפה
+Thick Paper = נייר עבה
+Thin Paper = נייר דק
+Thick = נייר עבה
+Thin = נייר דק
+Cotton = כותנה
+Recycled = ממוחזר
+
+Printer Default = ברירת מחדל מדפסת
+Colored = צבוע
+Coloured = צבוע
+Colored Paper = נייר צבעוני
+Coloured Paper = נייר צבעוני
+Color Paper = נייר צבעוני
+Colour Paper = נייר צבעוני
+Recycled Paper = נייר ממוחזר
+Letterhead = כותרת
+Special = מיוחד
+Samsung Photo Paper = נייר צילום Samsung
+Photo Paper = נייר צילום
+Photo Paper 120 = נייר צילום 120
+Photo Paper 160 = נייר צילום 160
+Photo Paper 180 = נייר צילום 180
+Photo Paper 220 = נייר צילום 220
+Photo Paper 120 g/m2 = נייר צילום 120 g/m2
+Photo Paper 160 g/m2 = נייר צילום 160 g/m2
+Photo Paper 180 g/m2 = נייר צילום 180 g/m2
+Photo Paper 220 g/m2 = נייר צילום 220 g/m2
+Photo Paper 120g/m2 = נייר צילום 120g/m2
+Photo Paper 160g/m2 = נייר צילום 160g/m2
+Photo Paper 180g/m2 = נייר צילום 180g/m2
+Photo Paper 220g/m2 = נייר צילום 220g/m2
+Photo/Image = תצלום או תמונה
+Paper Source = מקור הנייר
+Auto Select = בחירה אוטומטית
+Tray1 = מגש1
+Tray2 = מגש2
+Tray3 = מגש3
+Tray4 = מגש4
+Tray 1 = מגש 1
+Tray 2 = מגש 2
+Tray 3 = מגש 3
+Tray 4 = מגש 4
+Tray 5 = מגש 5
+Manual = ידני
+MP Tray = מגש רב-תכליתי
+Manual Feed = הזנה ידנית
+Auto Selection = בחירה אוטומטית
+Manual Feeder = מזין ידני
+Multi-Purpose Tray = מגש רב תכליתי
+
+;Graphic
+Resolution = רזולוציה
+300dpi = 300dpi
+1200dpi = 1200dpi
+600dpi = 600dpi
+
+300dpi-Draft =  300dpi- טיוטה
+600dpi-Draft =  600dpi- טיוטה
+600dpi-Normal =  600dpi- רגילה
+1200dpi-Best =  1200dpi- מיטבית
+Manual Adjustment = כוונון ידני
+
+Darkness = כהות
+Normal = רגיל
+Draft = טיוטה
+Best = מיטבי
+Light = בהיר
+
+Text Enhance = שיפור טקסט
+Image Enhance = שיפור תמונה
+
+Image Quality = איכות תמונה
+
+
+;Setting
+Power Save = חיסכון בצריכת חשמל
+1 minute  = 1 דקה 
+1 minutes  = 1 דקה 
+5 minutes  = 5 דקות
+10 minutes  = 10 דקות
+15 minutes  = 15 דקות
+20 minutes  = 20 דקות
+30 minutes  = 30 דקות
+45 minutes  = 45 דקות
+60 minutes  = 60 דקות
+120 minutes  = 120 דקות
+180 minutes  = 180 דקות
+240 minutes  = 240 דקות
+360 minutes  = 360 דקות
+Auto Continue = המשך אוטומטי
+Jam Recovery = התאוששות מתקלה
+Altitude Adjustment = כיוונון גובה
+Auto CR = חזרת גררה אוטומטית
+LF+CR = קידום שורה וחזרת גררה
+LF = קידום שורה
+Line Termination = ניתוק קו
+Job Timeout = פסק זמן הדפסה
+Toner Save = שמירת טונר
+Auto Clean Drum = ניקוי אוטומטי של התוף
+Decide Emulation = בחר אמולציה
+
+;COLOR
+Manual Color Adjustment = כיוונון ידני של הצבע
+Manual Colour Adjustment = כיוונון ידני של הצבע
+Color Adjustment = כיוונון הצבע
+Colour Adjustment = כיוונון הצבע
+Cyan = כחול
+Magenta = אדום
+Yellow = צהוב
+Black = שחור
+
+Auto Color Calibration = כיול צבע אוטומטי
+Auto Colour Calibration = כיול צבע אוטומטי
+Auto Color Registration = רישום צבע אוטומטי
+Auto Colour Registration = רישום צבע אוטומטי
+Run Now = הפעל עכשיו
+
+Color Mode = מצב צבע
+Colour Mode = מצב צבע
+;Color = צבע
+Glayscale = גווני אפור
+
+;CHECK
+Imaging Unit = יחידת עיבוד תמונות
+Transfer Belt = רצועת מעבר
+Fuser = גליל הלחמה
+Transfer Roll = גליל העברה
+MP Pickroll = גליל הרמה רב-תכליתי
+Tray1 Pickroll = גליל הרמה מגש1
+Tray2 Pickroll = גליל הרמה מגש2
+Tray3 Pickroll = גליל הרמה מגש3
+Tray4 Pickroll = גליל הרמה מגש4
+
+%S Image Counted = התמונה כלולה בספירה
+%S Page Counted = הדף כלול בספירה
+
+;Information
+Configuration Print = הדפסת הגדרת תצורה
+Test Print = בדיקת הדפסה
+Test Prints = בדיקת הדפסה
+Menu Map = מפת תפריט
+Network Configuration Print  =  הדפסת הגדרת תצורת רשת
+Print Network Configuration  =  הדפס תצורת רשת
+
+;Network
+Config Network = הגדרת תצורת רשת
+Configuration Network = תצורת רשת
+;IP Assign Method  = רשת הקצאת IP
+IP Assign Method  = שיטת הקצאת IP
+BOOTP = BOOTP
+DHCP = DHCP
+Static = סטטי
+Static IP  = IP סטטי
+Default Set = הגדרת ברירת מחדל
+Restore = שחזור
+Print Network Config = הגדרת תצורה רשת הדפסה
+IP Address = כתובת IP
+SubnetMask = מסכת תת-רשת
+Gateway = שער
+
+;pcl
+Courier = שליח
+Lines Per Page = שורות בעמוד
+Lines = שורות
+Form Length = אורך הטופס
+PCL Font List = רשימת גופני PCL
+
+Regular = רגיל
+
+;EPSON
+International character set = קבוצת תווים בינלאומית
+character set = ערכת תווים
+Character Table = טבלת תווים
+Form Lines = שורות בטופס
+
+San Serif = San Serif
+Roman = Roman
+
+USA = ארה"ב
+France = צרפת
+Germany = גרמניה
+UK = אנגליה
+Sweden = שוודיה
+Denmark 1 = דנמרק 1
+Denmark1 = דנמרק1
+Italy = איטליה
+Spain 1 = ספרד 1
+Spain1 = ספרד1
+Japan = יפן
+Norway = נורבגיה
+Denmark 2 = דנמרק 2
+Denmark2 = דנמרק2
+Spain 2 = ספרד 2
+Spain2 = ספרד2
+Latin = לטינית
+
+ITALIC = כתב נטוי
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+Hebrew Old = עברית ישנה
+Hebrew New = עברית חדשה
+
+;ps3
+Print error information = מידע אודות שגיאת הדפסה
+
+PS Error Information = מידע אודות שגיאת PS
+PS Font List = רשימת גופני PS
+
+PostScript Error Information = מידע אודות שגיאת PostScript
+PostScript Font List = רשימת גופני PostScript
+
+Print PS Error = מידע אודות שגיאת PS
+Print PostScript Error = הדפס שגיאת PostScript
+
+;PaperOption
+6 3/4 Env. = 6 3/4 מעטפות
+No.9 Env. = מס' 9 מעטפות
+No. 9 Env. = מס' 9 מעטפות
+Personal Check = כרטיסייה אישית
+
+;Graphic
+Toner Density = צפיפות טונר
+
+;EPSON
+Adjust Top Margin = כוונון שוליים עליונים
+
+;Xerox
+Print Density = צפיפות הדפסה
+Tray 1 Size = גודל מגש 1
+Print Quantity = כמות הדפסה
+Print Quality = איכות הדפסה
+Simplex Top Margin = שוליים עליונים Simplex
+Simplex Left Margin = שוליים שמאליים Simplex
+Duplex Top Margin = שוליים עליונים Duplex
+Duplex Left Margin = שוליים תחתונים Duplex
+2-Sided Printing = הדפסה דו-צדדית
+Power Saver(min) = חיסכון כוח (דקות)
+Configuration Page = דף הגדרת תצורה
+Office Demo = הדגמת Office
+2-Sided Demo = הדגמה דו-צדדית
+2-Sided Demo Page = הדגמה דו-צדדית
+1200 dpi Quality = איכות 1200 dpi
+
+;Add
+Print Configuration Page = הדפס דף הגדרת תצורה
+Print Demo Page = הדפס דף לדוגמה
+Print Menu Map = הדפס מפת תפריט
+Print Test Page = הדפס דף בדיקה
+Machine Setup = התקנת מכשיר
+
+12 Hour = 12 שעות
+24 Hour = 24 שעות
+
+Sound/Volume = קול/עוצמת קול
+Alarm Sound = צליל התראה
+Speaker = רמקול
+Receiving = קליטה
+Auto Reduction= הקטנה אוטומטית
+
+Emulation Type= סוג חיקוי
+Duplex Margin = שולי Duplex
+Duplex Margin(mm) = שולי Duplex(מ"מ)
+Duplex Margin(inch) = שולי Duplex(אינץ')
+Short Binding = כריכה קצרה
+Short Binding(mm) = כריכה קצרה(מ"מ)
+Short Binding(inch) = כריכה קצרה(אינץ')
+Long Binding = כריכה ארוכה
+Long Binding(mm) = כריכה ארוכה(מ"מ)
+Long Binding(inch) = כריכה ארוכה(אינץ')
+
+No.10 Envelope= מעטפה מס' 10
+Monarch Envelope = מעטפת Monarch
+DL Envelope = מעטפת DL
+C5 Envelope = מעטפת C5
+Post A6 = גודל נייר Post A6
+PostCard 4x6 = גלויה 4x6
+C6 Envelope = מעטפה C6
+Ledger = ספר חשבונות
+JPost = גודל נייר JPost
+JPostD = גודל נייר JPostD
+Width = רוחב
+Height = גובה
+Custom Width = רוחב לפי התאמה אישית
+Custom Height = גובה לפי התאמה אישית
+Letter R = סובב Letter
+A4 R = סובב A4
+JIS B5 R = סובב JIS B5
+A5 R = סובב A5
+Executive R = סובב Executive
+State R = סובב State
+A3 Over = נייר גדול יותר מ-A3
+B5 Envelope = מעטפה B5
+634 = 634
+NO.9 = מס' 9
+US Post = דואר ארה"ב
+Index = אינדקס/מפתח
+B6 = B6
+Hagaki = Hagaki
+A6 R = סובב A6
+Post A6 R = סובב Post A6
+Hagaki R = סובב Hagaki
+
+Tray 1 Paper Size = גודל נייר מגש 1
+Tray 2 Paper Size = גודל נייר מגש 2
+Tray 3 Paper Size = גודל נייר מגש 3
+Tray 4 Paper Size = גודל נייר מגש 4
+MP Tray Paper Size = גודל נייר מגש רב-תכליתי
+Manual Feeder Paper Size = גודל נייר מזין ידני
+
+Heavy Weight = משקל כבד
+Hole Punched = חור נקוב
+Punched = חור נקוב
+Archive = ארכיב/גנזך
+Extra Thick = עבה במיוחד
+
+Tray 1 Tray 2 = מגש 1 ומגש 2
+Tray Chaining = שרשור מגשים
+FAST1200 = 1200 מהיר
+Calibration = כיול
+
+TCP/IP = TCP/IP
+Print Network Information = הדםס מידע אודות הרשת
+
+Maintenance = Maintenance
+Cartridge Maintenance = תחזוקת מחסנית
+Ink Cartridge Alignment = יישור מחסנית דיו
+Ink Cartridge Clean = ניקוי מחסנית דיו
+
+Transfer Roller = גלגילון העברה
+Tray1 Roller = גלגילון מגש 1
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Original Type = סוג מסמך המקור
+Text = טקסט
+Text/Photo = טקסט/תמונה
+Photo = תמונה
+Photo 120 = תמונה 120
+Photo 160 = תמונה 160
+Photo 180 = תמונה 180
+Photo 220 = תמונה 220
+Copy = העתקה
+Transfer Belt Reset = איפוס חגורה העברה
+Reset Count = איפוס ספירה
+Serial Number = מספר סידורי
+
+;Dell
+inch = אינץ'
+Print Font List = רשימת גופני הדפסה
+Printer ID = מזהה המדפסת
+Printer Setup = הגדרת המדפסת
+Printer Fax Number = מספר פקס המדפסת
+Print Network Configuration Page = הדפס דף תצורת רשת
+Configure Network = הגדרת תצורת הרשת
+Tray Linking = קישור מגשים
+
+;k2Xrx
+Collation = איסוף
+Smart Duplexing = הדפסה דו-צדדית חכמה
+Job Held Timer = מתזמן החזקת עבודות
+hours = שעות
+Tray 1MPT = מגש 1 רב-תכליתי
+Tray 1(MPT) = מגש 1 (רב-תכליתי)
+Tray 1 (MPT) = מגש 1 (רב-תכליתי)
+Tray1MPT Size = גודל מגש1 רב-תכליתי
+
+Toner Low Alert = התראת כמות טונר נמוכה
+Print Supplies Information = מידע חומרי הדפסה
+Print Accounting List = רשימת חיובי הדפסה
+Print Accounting Report = הדפס דוח חשבונאי
+Print Stored Job List = הדפס רשימת עבודות מאוחסנות
+Print Completed Job List = הדפס רשימת עבודות שהושלמו
+Print Usage Page = הדפס עמוד שימוש
+MP Tray Paper Setup = התקנת מגש נייר רב-תכליתי
+Manual Feed Paper Setup = התקנה של הזנת נייר ידנית
+Tray 1 Paper Setup = התקנת מגש נייר 1
+Tray 2 Paper Setup = התקנת מגש נייר 2
+Tray 3 Paper Setup = התקנת מגש נייר 3
+Tray 4 Paper Setup = התקנת מגש נייר 4
+High Coverage Mode = מצב כיסוי גבוה
+High Coverage = כיסוי גבוה
+Screen = מסך
+Enhanced = משופר
+Detailed = מפורט
+Wireless Network Setting = הגדרת רשת אלחוטית
+Paper Substitution = תחליף לנייר
+Glossy Photo 111-130g/m2 = צילום מבריק 111-130 גרם/מ"ר
+Glossy Photo 131-175g/m2 = צילום מבריק 131-175 גרם/מ"ר
+Glossy Photo 176-220g/m2 = צילום מבריק 176-220 גרם/מ"ר
+
+[PHONEBOOK]
+CAPTION = ספר טלפונים
+EMAILCAPTION = פנקס כתובות
+IDS_EMAIL_ADDRESS = כתובת דו"אל
+IDS_TEL_NUMBER = מספר טלפון
+IDC_EDIT = עריכה
+IDC_MODIFY= שינוי
+IDC_DELETE = מחיקה
+IDC_DELETE_ALL = מחק הכל
+IDC_GET_PHONEBOOK = קריאה
+IDC_SEND_PHONEBOOK = כתיבה
+IDC_GET_EMAIL = קריאה
+IDC_SEND_EMAIL = כתיבה
+IDL_TYPE = סוג
+IDC_ONETOUCH_DIAL =  חיוג בלחיצה אחת
+IDC_SPEED_DIAL_2 =  חיוג מהיר
+IDC_GROUP_DIAL = חיוג קבוצתי
+IDC_EMAIL_GROUP_DIAL = דואר קבוצתי
+IDC_READSTATIC = לחץ לחצן קריאה כדי לאחזר מספרי טלפון מהמדפסת.
+IDC_WRITESTATIC = לחץ לחצן כתיבה כדי לשמור מספרי טלפון למדפסת.
+IDC_Email_READSTATIC = לחץ לחצן קריאה כדי לאחזר  כתובות דו"אל מהמדפסת.
+IDC_Email_WRITESTATIC = לחץ לחצן כתיבה כדי לשמור  כתובות דו"אל למדפסת.
+IDC_EMAIL = דו"אל
+IDC_TOTAL = סך הכול
+IDC_ADD = הוספה
+IDC_IMPORT = Import
+IDC_EXPORT = Export
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = חיוג קבוצתי
+CAPTION_EMAIL = דואר קבוצתי
+IDL_I_ADDRESS = כתובות זמינות
+IDL_A_ADDRESS = כתובות זמינות
+IDL_I_NUMBER = מספרים זמינים
+IDL_A_NUMBER = מספרים זמינים
+
+IDL_GNAME = שם קבוצה
+
+IDC_REMOVE = הסרה
+IDC_ADD = הוספה
+
+[Scan Setting]
+CAPTION = יעד סריקה
+
+IDC_AVAILABLE_STATIC = רישמת יעדים זמינה
+IDC_FRONT_STATIC = רשימת יעדים לוח קדמי
+IDC_SCAN_ADDAPP = הוספת יישום
+IDC_SCAN_REMOVEAPP = הסרת יישום
+IDC_LOC_STATIC = אתר שמירה בברירת מחדל
+
+IDC_ADD_FILEPATH_STATIC = נתיב קובץ
+IDC_ADD_FILENAME_STATIC = שם יישום
+
+IDC_SCANTYPE = סוג קובץ
+IDC_SCANLANG = שפה 
+
+DocTYPE_ITEM_0 = שמור כ - BMP
+DocTYPE_ITEM_1 = שמור כ - JPEG
+DocTYPE_ITEM_2 = שמור כ - PDF
+DocTYPE_ITEM_3 = שמור כ - TIFF
+
+EmailTYPE_ITEM_0 = שמור כ - JPEG
+EmailTYPE_ITEM_1 = שמור כ - PDF
+EmailTYPE_ITEM_2 = שמור כ - TIFF
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Text (.txt)
+OCR_ITEM_3 = PDF (.pdf)
+OCR_ITEM_4 = RTF (.rtf)
+
+LANG_ITEM_0 = אנגלית
+LANG_ITEM_1 = גרמנית
+LANG_ITEM_2 = צרפתית
+LANG_ITEM_3 = ספרדית
+LANG_ITEM_4 = איטלקית
+
+LANG_ITEM_5 = שוודית
+LANG_ITEM_6 = הולנדית
+LANG_ITEM_7 = פורטוגזית (אירופה)
+LANG_ITEM_8 = פורטוגזית (ברזיל)
+LANG_ITEM_9 = הונגרית
+
+LANG_ITEM_10 = פולנית
+LANG_ITEM_11 = רוסית
+LANG_ITEM_12 = יפנית
+LANG_ITEM_13 = סינית מופשטת
+LANG_ITEM_14 = בינית מסורתית
+
+LANG_ITEM_15 = קוריאנית
+LANG_ITEM_16 = רוסית ואנגלית
+LANG_ITEM_17 = מספרי
+LANG_ITEM_18 = לפי סדר אלף-בית
+LANG_ITEM_19 = אוקראינית
+
+LANG_ITEM_20 = אסטונית
+LANG_ITEM_21 = לטבית
+LANG_ITEM_22 = ליטאית
+LANG_ITEM_23 = נורווגית
+LANG_ITEM_24 = פינית
+
+LANG_ITEM_25 = דנית
+LANG_ITEM_26 = ת'כית
+LANG_ITEM_27 = טורקית
+LANG_ITEM_28 = אוקראינית ואנגלית
+LANG_ITEM_29 = אוזבקיסטנית
+
+[ScanToPc]
+CAPTION = אפשרות JPEG
+IDC_OPTION_STATIC = פונקציה \ו משנה את התמונה לקובץ JPEG ומאפשרת לשגר דו"אל מהר יותר.  בחר באופציה.
+IDC_ORIGINAL = הגודל המקורי
+IDC_SIZE_SMALL = קטן (התאמת גודל תמונה לחלון‏‎‏‏‏‎‏‏‏‎‏‏) ‎‎640 X 480
+IDC_SIZE_NOMAL = רגיל (התאמת גודל תמונה לחלון800 X 600 (
+IDC_SIZE_LARGE = גדול (התאמת גודל תמונה לחלון1024 X 768 (
+IDOK = אישור
+IDCANCEL = ביטול
+
+[Flash]
+IDL_ADD = הוספה
+IDL_DELETE = מחיקה
+IDL_DELETE_ALL = מחק הכל
+Print list = הדפס רשימה
+IDC_REFRESH = ריענון
+IDC_FONTS = גופנים
+IDC_MACROS = תוכניות מקרו
+IDC_DELETE_ALL_FONT_MACRO= מחיקת כל הפונטים ותוכניות המקרו
+IDC_ENABLEMACRO = איפשור מקרו
+IDC_DISABLEMACRO = נטרול מקרו
+
+[PS3]
+IDC_ADD_PS3 = הוספה
+IDC_DELETE_PS3 = מחק הכל
+IDC_PRINT_LIST = הדפס רשימה
+IDC_PS3_REFRESH = ריענון
+Print PostScript Flash Directory = הדפס ספריית PostScript Flash
+Format Flash Memory = אתחול זיכרון פלאש
+Flash Fonts/Forms = גופני/קובצי פלאש
+Size = גודל
+
+IDL_RESOURCE_TYPE = סוג משאב
+IDC_FMU_RADIO_ALL = הכל
+IDC_FMU_RADIO_FONT = גופנים
+IDC_FMU_RADIO_FORM = טפסים
+IDL_STORAGE_TYPE = סוג אחסון
+IDC_FMU_RADIO_MEMORY = זיכרון
+IDC_FMU_RADIO_HDD = כונן דיסק קשיח
+IDC_FMU_RESET = איפוס
+IDC_FMU_DOWNLOAD = הורדה
+IDC_FMU_DELETE = מחיקה
+IDC_FMU_DELETE_ALL = מחק הכל
+IDC_FMU_REFRESH = ריענון
+IDC_FMU_STATIC_TOTALMEM = סה"כ (KB)‏
+IDC_FMU_STATIC_USEDMEM = תפוס (KB)‏
+IDC_FMU_STATIC_AVAILABLEMEM = זמין (KB)‏
+IDC_FMU_REPORT = דווח
+
+
+[SEND]
+CAPTION = בתהליך הורדה..
+IDL_FILE_SIZE = גודל קובץ
+IDL_STATUS = מצב
+
+[SELECT_FILE]
+Select a file = בחירת קובץ.
+Note = הערה: יש התעלמות מהזהות הנוכחית כאשר לקובץ יש זהות אישית.
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=Firmware Update
+IDC_BROWSE=Browse...
+IDC_UPDATE=Update
+IDL_FILE_NAME=File name:
+IDL_FILE_INFORMATION=File information
+IDL_FILE_SIZE=File size:
+IDC_FILE_SIZE=0 bytes
+IDL_PROGRESS=Progress
+IDL_MESSAGE=Message:
+
+
+[HELP]
+No help = אין נושא "עזרה" הקשור לפריט זה.
+
+;Layout
+Orientation = קובע אץ כיוון ההדפסה על הדף.
+Top Margin = הגדרת המרחק בין חלקו העליון של השטח הניתן להדפסה וחלקו העליון של השורה הראשונה של הדף.
+Left Margin = הגדרת המרחק בין הקצה השמאלי של השטח הניתן להדפסה של הדף ובקצה השמאלי של כל שורה שעל הדף.
+Print Option = "דופלקס" מאפשר הדפסה דו-צידית אוטומטית של הדף.
+Duplex = "דופלקס" מאפשר הדפסה דו-צידית אוטומטית של הדף.
+
+;Paper Option
+Copies = הגדרת מספר העותקים להדפסה.
+Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+Tray 1 Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+Tray 2 Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+Tray 3 Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+Tray 4 Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+MP Tray Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+Manual Feeder Paper Size = הגדרת גודל הנייר הנטען במגש של המדפסת.
+Paper Type = הגדרת סוג הנייר של המדפסת.
+Paper Source = ניתן לבחור את מגש הנייר בברירת מחדל של המדפסת.
+
+;Graphic
+Resolution = הגדרת רזולוציית ההדפסה.
+Darkness = הגדרת צפיפות הטונר של הדף.
+
+Auto Color Calibration = מאפשר לך להגדיר כיול תקופתי עצמאי על ידי המדפסת לקבלת איכות הדפסת צבע הטובה ביותר.
+Auto Colour Calibration = מאפשר לך להגדיר כיול תקופתי עצמאי על ידי המדפסת לקבלת איכות הדפסת צבע הטובה ביותר.
+Auto Color Registration = מאפשר לך לכוונן את מצב הטקסט או הגרפיקה הצבעונית כדי להתאים את מצב הצבעים המודפסים לאלה המופיעים על המסך.
+Auto Colour Registration = מאפשר לך לכוונן את מצב הטקסט או הגרפיקה הצבעונית כדי להתאים את מצב הצבעים המודפסים לאלה המופיעים על המסך.
+Manual Color Adjustment = מאפשר לך לכוונן באופן ידני את ניגודיות הצבעים עבור כל מחסנית. במקרה שהמסמך המודפס נראה בהיר מדי, דהוי או שחלקים ממנו הושמטו, הזז את פס הגלילה לכיוון הסימן +. במקרה שהמסמך המודפס נראה מטושטש מדי, הזז את פס הגלילה לכיוון הסימן -.
+Manual Colour Adjustment = מאפשר לך לכוונן באופן ידני את ניגודיות הצבעים עבור כל מחסנית. במקרה שהמסמך המודפס נראה בהיר מדי, דהוי או שחלקים ממנו הושמטו, הזז את פס הגלילה לכיוון הסימן +. במקרה שהמסמך המודפס נראה מטושטש מדי, הזז את פס הגלילה לכיוון הסימן -.
+
+;Setting
+Power Save = הגדרת אורך הזמן במעבר ממצב השהייה למצב חיסכון בכוח של המדפסת.
+Jam Recovery = הגדרת האפשרות שהמדפסת תשתדל להדפיס מחדש דפי מסמך שנתקעו במדפסת.
+Auto Continue = פריט זה קובע אם המדפסת תמשיך או לא תמשיך להדפיס במצב של זיהוי נייר שאינו מתאים להגדרות הנייר שלך.
+Altitude Adjustment = באפשרותך למטב את איכות ההדפסה בהתאם לגובה המקום שבו אתה נמצא.
+Auto CR = לאחר הדפסת כל שורה במסמך, המדפסת מצפה לקבל אות של קידום שורה (LF)‏‏‎ וחזרת גררה (CR)‏‏‏‎.‎ הגדרה זו קובעת את אופן פעולת המדפסת אם יתקבל קידום שורה אך לא חזרת גררה. 
+
+Job Timeout = הגדרת המן בה תמתין המדפסת להדפסת הנתונים לפני קבלת מידע נוסף באמצעות הממשק הנוסף.
+Toner Save = הגדרת איכות הטונר שיש להשתמש בו להדפסת הדף.
+Auto Clean Drum = קובע באופן אוטומטי אם יש צורך בניקוי התוף. אם ההגדרה זמינה, דף ניקוי עבור OPC יודפס לאחר כל 500 דפים.  (נקה את תוף ה -  OPC לשיפור הרזולוציה).
+Decide Emulation = בוחר אמולציה.
+Emulation Type = בוחר אמולציה.
+
+
+;Check
+Imaging Unit = יחידת ההדמיה מאפשרת לך לבדוק את מספר העמודים המירבי שהודפס באמצעות יחידת ההדמיה הנוכחית.
+Transfer Belt = מאפשר לך לבדוק את מספר העמודים המירבי שהודפס באמצעות חגורת ההעברה הנוכחית.
+Fuser Type = מאפשר לך לבדוק את מספר העמודים המירבי שהודפס באמצעות ה-fuser הנוכחי.
+Fuser = מאפשר לך לבדוק את מספר העמודים המירבי שהודפס באמצעות ה-fuser הנוכחי.
+Transfer Roll = פריט זה הנו עבור טכנאי שירות בלבד. 
+Tray1 Pickroll = פריט זה הנו עבור טכנאי שירות בלבד. 
+Tray2 Pickroll = פריט זה הנו עבור טכנאי שירות בלבד. 
+Tray3 Pickroll = פריט זה הנו עבור טכנאי שירות בלבד. 
+Tray4 Pickroll = פריט זה הנו עבור טכנאי שירות בלבד. 
+
+
+;Information
+Configuration Print = הדפסת הגדרת התצורה הנוכחית של המדפסת.
+Print Configuration Page = הדפסת הגדרת התצורה הנוכחית של המדפסת.
+Configuration Page = הדפסת הגדרת התצורה הנוכחית של המדפסת.
+Network Configuration Print = הדפסת הגדרת התצורה הנוכחית של הרשת.
+Print Network Configuration = הדפסת הגדרת התצורה הנוכחית של הרשת.
+Test Print = הדפסת דף ההדגמה. 
+Test Prints = הדפסת דף ההדגמה. 
+Print Demo Page = הדפסת דף ההדגמה. 
+Menu Map = הדפסת מפת התפריטים של המדפסת.
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = קביעת הגדרות של יעד הסריקה.
+Scan Resolution = הגדרת הרזולוציה מגדירה את כמות המידע שהסורק ילכוד מתמונה שנסרקה.
+Scan Color = מגדיר את המצב של התמונה הנסרקת. מאפשר לבחור את סוג מצב הסריקה שברצונך להשתמש בו, בעת סריקת מסמך המקור. 
+Scan Colour = מגדיר את המצב של התמונה הנסרקת. מאפשר לבחור את סוג מצב הסריקה שברצונך להשתמש בו, בעת סריקת מסמך המקור. 
+Show Preview = תיבת סימון זו מאפשרת לבחור אם להציג את תיבת דו-שיח סריקה על מנת לשנות אפשרויות סריקה.  אם תבחר באופציה זו, תצוגה מקדימה של הסריקה תוצג, וניתן יהיה לבצע שינויים באופציות של הסריקה לפני ביצוע סריקה מלאה.  אם תיבה זו אינה מסומנת, סריקת התמונה תבוצע ישירות ליישום שנבחר.
+ADF Duplex =  מזין המסמכים האוטומטי נבחר כמקור המסמכים. בחר מצב זה כדי לסרוק דפים המודפסים משני צדדיהם. אם תבחר ב-ADF להדפסה דו-צדדית כמקור המסמכים, ייסרק המסמך שנמצא במזין המסמכים האוטומטי. אם המזין ריק, המערכת תציג הודעה. כדי להמשיך, הנח את המסמך המיועד לסריקה במזין ונסה לסרוק שוב. עבור מצב ADF להדפסה דו-צדדית, בחר את סוג הכריכה המתאים על מנת לקבל את הדפים בכיוון הנכון מהסורק. אם הדפים במקור המסמכים נמצאים בכיוון לאורך (לדוגמה, ספר או עלון), לחץ על כריכה בקצה הארוך. אם הדפים נמצאים בכיוון לרוחב (לדוגמה, פנקס), לחץ על כריכה בקצה הקצר.
+
+IDC_AVAILABLE_STATIC = הצג את רשימת היישומים שעדיין מקושרים לקובצי BMP ברישום נתוני המערכת של המחשב. כאשר כרטיסיית הגדרות סריקה מופעלת, רשימת יעדי סריקה זמינים תעודכן.
+IDC_FRONT_STATIC =  הצג את רשימת היישומים הנוספים ללוח הקדמי של המדפסת. בעת שימוש במדפסת בפעם הראשונה, הלוח הקדמי של המדפסת יעדכן את פריטי ברירת המחדל.
+IDC_SCAN_MOVE = לחצן זה מעביר את הפריטים הנבחרים מ - 'יעד סריקה זמין' אל 'רשימת יעד לוח קדמי'.
+IDC_SCAN_ADDAPP = לחצן זה יכול להוסיף פריט שנבחר מקובץ exe חוקי. הפריט שנוסף מוצג לאחר מכן ברשימת היעדים הזמינים.
+IDC_SCAN_REMOVEAPP = באמצעות לחצן זה, ניתן להסיר פריט שהמשתמש הוסיף אותו ב - 'יעדי סריקה זמינים,. 
+IDC_LOC_STATIC = הלחצן מגדיר את תיקיית השמירה בברירת מחדל.
+
+;Phonebook
+Directory = מגדיר את הגדרות הדו"אל וספר הטלפונים. 
+Phonebook = מגדיר את הגדרות ספר הטלפונים.
+Phone Book = מגדיר את הגדרות ספר הטלפונים.
+Emailbook = מגדיר את הגדרות ספר הטלפונים.
+Address Book = מגדיר את הגדרות ספר הטלפונים.
+IDC_EDIT = משתמשים יכולים לאחסן או לערוך מספרי הזנה נבחרים.
+IDC_DELETE = משתמשים יכולים למחוק את הערך הנבחר שהוזן.
+IDC_DELETE_ALL = משתמשים יכולים למחוק את כל הערכים שהוזנו.
+IDC_GROUP_DIAL = משתמשים יכולים להגדיר או לערוך את מספר החיוג הקבוצתי שנבחר.  אם מספר החיוג שנבחר אינו חיוג קבוצתי, לחצן החיוג הקבוצתי מנוטרל.
+IDC_GET_PHONEBOOK = משתמשים יכולים לקבל את המספרים מספר הטלפונים באמצעות המדפסת.
+IDC_SEND_PHONEBOOK = משתמשים יכולים להוריד את המספרים מספר הטלפונים אל המדפסת.
+IDC_EMAIL_GROUP_DIAL = משתמשים יכולים להגדיר או לערוך את ערך הדואר הקבוצתי שנבחר.  אם מספר החיוג שנבחר אינו דואר קבוצתי, לחצן הדואר הקבוצתי מנוטרל.
+IDC_GET_EMAIL = משתמשים יכולים לקבל את ערכי הדואר המוזן באמצעות המדפסת.
+IDC_SEND_EMAIL = משתמשים יכולים להוריד את ערכי הדואר המוזן באמצעות המדפסת.
+IDC_ADD = המשתמש יכול לשנות כתובות נבחרות.
+IDC_MODIFY = המשתמש יכול לשנות מספרים נבחרים.
+IDC_EMAIL_ADD = המשתמש יכול לשמור כתובות נבחרות.
+IDC_EMAIL_MODIFY = המשתמש יכול לשנות כתובות נבחרות.
+IDC_G_ADD = המשתמש יכול לקבוע מספר חיוג קבוצתי.
+IDC_G_MODIFY = המשתמש יכול לערוך את מספר החיוג הקבוצתי שנבחר.
+IDC_G_EMAIL_ADD = המשתמש יכול לקבוע כתובת דואר אלקטרוני קבוצתית נבחרת.
+IDC_G_EMAIL_MODIFY = המשתמש יכול לשנות את כתובת הדואר האלקטרוני הקבוצתית הנבחרת.
+
+;Fax
+Machine ID = הגדרת השם של העמוד הראשי של הפקס.
+Printer ID = הגדרת השם של העמוד הראשי של הפקס.
+Fax Number = הגדרת מספר הפקס עבור העמוד הראשי של הפקס.
+Machine Fax No = הגדרת מספר הפקס עבור העמוד הראשי של הפקס.
+Machine Fax Number = הגדרת מספר הפקס עבור העמוד הראשי של הפקס.
+Printer Fax Number = הגדרת מספר הפקס עבור העמוד הראשי של הפקס.
+
+;Network
+BOOTP = שרת ה - BOOTP מקצה לך את כתובת ה - IP באופן אוטומטי
+DHCP = שרת ה - DHCP מקצה לך את כתובת ה - IP באופן אוטומטי
+Static = ניתן להזין את כתובת ה - IP‏‏‎‏?, מסכת תת-רשת, ושער באופן ידני.
+
+Emulation Setting = קובע את הערך של כל אמולציה.
+
+;PCL
+Typeface = מציג את צורת הגופן של הגופן הנוכחי.
+Font = מציג את הגופן הנוכחי.
+Symbol Set = מערכת סמלים הינה קבוצה ייחודית של כל התווים הזמינים בגופן.
+
+;EPSON
+Pitch = הגדרת מרווח התווים.
+Point Size = זמין רק בעת בחירת גופן מיתאר בעל מרווח פרופורציונלי. אין התייחסות לפונקציה זו לגבי הגופנים הנוספים.
+Lines Per Page = הגדרת מספר השורות על הדף.
+Lines = הגדרת מספר השורות על הדף.
+Form Length = הגדרת מספר השורות על הדף.
+Courier = הגדרת סוג גופן Courier‏‏‎‏?; רגיל או כהה.
+International character set = מערכת תווים בינלאומית הינה מקבץ של כל התווים הזמינים של גופן.
+character set = מערכת תווים בינלאומית הינה מקבץ של כל התווים הזמינים של גופן.
+Character Table = הגדרת טבלת התווים.
+LPI = הגדרת מספר השורות על הדף.
+Auto Wrap = הגדרת עיטוף המלה.
+Form Lines = הגדרת מספר השורות בטופס (על הדף).
+
+IDL_ADD = הוספת גופן או מקרו לזיכרון הפלאש.
+IDL_DELETE = מחיקת גופן או מקרו מזיכרון הפלאש.
+IDL_DELETE_ALL = מחיקת כל הגופנים או תוכניות המקרו מזיכרון הפלאש.
+Print list = הדפסת רשימה של גופנים או תוכניות מקרו שנוספו.
+IDC_ENABLEMACRO = מאפשר את המקרו שנבחר.
+IDC_DISABLEMACRO = מנטרל את המקרו שנבחר.
+IDC_REFRESH = מעדכן את המידע אודות הגופנים ותכניות המקרו.
+IDC_DELETE_ALL_FONT_MACRO = מחיקת כל תוכניות המקרו והגופמי מזיכרון הפלאש.
+
+Print PostScript Flash Directory = הדפסת סיפריית הפלאש של זיכרון הפלאש.
+Print error information = הגדרת אפשרות להדפסת שגיאת מידע PostScript של לאחר שהמסמך הודפס. אם ברצונך שהמדפסת תדפיס דף שגיאה כאשר מתרחשת שגיאה, יש להגדיר את הפונקציה כ'מופעל' (ON)?‏‏‎‏. 
+PostScript error information = הגדרת אפשרות להדפסת שגיאת מידע PostScript לאחר שהמסמך הודפס. אם ברצונך שהמדפסת תדפיס דף שגיאה כאשר מתרחשת שגיאה, יש להגדיר את הפונקציה כ'מופעל' (ON)?‏‏‎‏. 
+PS error information = הגדרת אפשרות להדפסת שגיאת מידע PostScript לאחר שהמסמך הודפס. אם ברצונך שהמדפסת תדפיס דף שגיאה כאשר מתרחשת שגיאה, יש להגדיר את הפונקציה כ'מופעל' (ON)‏‏‎?‏. 
+Print PS Error = הגדרת אפשרות להדפסת שגיאת מידע PostScript לאחר שהמסמך הודפס. אם ברצונך שהמדפסת תדפיס דף שגיאה כאשר מתרחשת שגיאה, יש להגדיר את הפונקציה כ'מופעל' (ON)‏‏‎‏?. 
+Print PostScript Error = הגדרת אפשרות להדפסת שגיאת מידע PostScript לאחר שהמסמך הודפס.
+Font List = הדפסת רשימת הגופנים הזמינים העדכנית של המדפסת.
+Print Font List = הדפסת רשימת הגופנים הזמינים העדכנית של המדפסת.
+PCL Font List = הדפסת רשימת הגופנים הזמינים העדכנית של המדפסת.
+PS Font List = הדפסת רשימת הגופנים הזמינים העדכנית של המדפסת.
+Postscript Font List = הדפסת רשימת הגופנים הזמינים העדכנית של המדפסת.
+
+IDC_ADD_PS3 = הוספת גופן PostScript או טופס לזיכרון הפלאש.
+IDC_DELETE_PS3 = מחיקת כל גופני וטופסי ה - PostScript מזיכרון הפלאש.
+IDC_PRINT_LIST = הדפסת רשימה של גופני וטופסי PostScript שנוספו.
+IDC_PS3_REFRESH = מידע אודות עדכון גופני וטופסי PostScript‏‏‎‏?.
+
+IDC_FMU_RESET= שם הקובץ העדכני שנבחר ניתן לאיפוס.
+IDC_FMU_DOWNLOAD = באמצעות לחצן זה, משתמש יכול להוריד את המשאבים אל המדפסת.
+IDC_FMU_DELETE = באמצעות לחצן זה, משתמש יכול למחוק את המשאבים מהמדפסת.
+IDC_FMU_DELETE_ALL = באמצעות לחצן זה, משתמש יכול למחוק את כל המשאבים מהמדפסת.
+Format Flash Memory = מאפס את זיכרון ההבזק במדפסת שלך בכדי לאתחל את קובץ המערכת. כל קובצי המאקרו, הגופנים והטפסים שהורדת אל זיכרון ההבזק יוסרו.
+Initialize Font/Form Memory = אתחל זיכרון גופנים/טפסים במדפסת. כל קובצי המאקרו, הגופנים והטפסים שהורדת אל הזיכרון יוסרו.
+IDC_FMU_REFRESH = ניתן לרענן את גודל האחסון הכולל, הנמצא בשימוש, והזמין. כמו כן, פונקציה זו מעדכנת את רשימת שמות המשאבים המאוחסנים בשטח האחסון של המדפסת.
+IDC_FMU_REPORT = באמצעות לחצן זה ניתן לקבל דיווח של רשימת המשאבים של מדפסת זו.
+
+;EPSON
+Adjust Top Margin = כוונון שוליים עליונים של הדף. 
+
+;Xerox
+Tray 1 Size = הגדרת גודל הנייר הנטען במגש 1 של המדפסת. בעת בחירת גודל נייר המותאם אישית, שדות הקצה הקצר והקצר הארוך הנם מאופשרים, וניתן להגדיר גודל נייר בהתאם להגדרת משתמש. 
+Simplex Top Margin = הגדרת המרחק בין חלקו העליון של השטח הניתן להדפסה וחלקו העליון של השורה הראשונה של הדף. מיועד למצב הדפסה ‏‏‏‎Simplex‏‎.
+Simplex Left Margin = הגדרת המרחק בין הקצה השמאלי של השטח הניתן להדפסה של הדף ובקצה השמאלי של כל שורה שעל הדף. מיועד למצב הדפסה ‏‏‏‎Simplex‏‎.
+Duplex Top Margin = הגדרת המרחק בין חלקו העליון של השטח הניתן להדפסה וחלקו העליון של השורה הראשונה של הדף. מיועד למצב הדפסה ‏‏‏‎Duplex‏‎. 
+Duplex Left Margin = הגדרת המרחק בין הקצה השמאלי של השטח הניתן להדפסה של הדף ובקצה השמאלי של כל שורה שעל הדף. מיועד למצב הדפסה ‏‏‏‎Duplex‏‎. 
+2-Sided Printing = הדפסה דו-צדדית מאפשרת לך להדפיס באופן אוטומטי מסמכים דו-צדדיים. 
+Office Demo = מדפיס את דף ההדגמה של המדפסת של הדגמת Office‏‎.
+2-Sided Demo =  מדפיס את דף ההדגמה הדו-צדדי של המדפסת. 
+2-Sided Demo Page =  מדפיס את דף ההדגמה הדו-צדדי של המדפסת.
+
+Ink Cartridge Alignment = מיישר את מחסנית הדיו.
+Ink Cartridge Clean = מנקה את מחסנית הדיו.
+
+Tray Chaining = כאשר הנך בוחר כל ערך אחר פרט לאוטומטי ממקור הנייר והמגש שבחרת הנו ריק, המדפסת מדפיסה ממגשים אחרים באופן אוטומטי. 
+Tray Linking = כאשר הנך בוחר כל ערך אחר פרט לאוטומטי ממקור הנייר והמגש שבחרת הנו ריק, המדפסת מדפיסה ממגשים אחרים באופן אוטומטי. 
+
+Short Binding = קובע את השוליים התחתונים של הצד האחורי לכריכה קצרה.
+Long Binding = קובע את השוליים הימני של הצד האחורי לכריכה ארוכה.
+Image Enhance = פריט זה משפר את איכות ההדפסה.
+
+
+
+
+
+Original Type = כאשר אתה בוחר אפשרות זו בהתאם לסוג מסמך המקור, באפשרותך לקבל איכות העתקה מיטבית.
+Transfer Belt Reset = פג תוקפה של חגורה ההעברה. החלף את חגורת ההעברה בחדשה ולחץ על לחצן איפוס הספירה. כשמופיע החלון איפוס ספירה, הזן את המספר הסידורי של חגורת ההעברה החדשה, ולאחר מכן לחץ על הלחצן "החל".
+Print Network Configuration Page = הדפסת הגדרת התצורה הנוכחית של הרשת.
+
+;k2Xrx
+Collation = פריט זה מאפשר לך לאסוף את הנתונים שהתקבלו באמצעות מנהל התקן המדפסת. המדפסת תדפיס פלט בקבוצות כדי להתאים לרצף של דפי המקור.
+Smart Duplexing = אם תפריט זה מוגדר כ"פועל", המדפסת תזהה עבודת עמוד יחיד ותדפיס אותו כעמוד יחיד פשוט גם אם מנהל התקן המדפסת שבמחשב הוגדר להדפסה דו-צדדית כברירת מחדל.
+Job Held Timer = ההתקן מחזיק בעבודה למשך תקופת זמן מסויימת. באפשרותך להגדיר תקופת זמן של 72 שעות לכל היותר.
+Toll Save = מגדיר למדפסת שלך לאחסן את הפקסים שלך בזכרון ולשלוח אותם בשעות התעריף הנמוך שציינת. 
+
+Toner Low Alert = אם הטונר במחסנית אזל, מופיעה הודעה המורה לך להחליף את מחסנית הטונר. ניתן להגדיר אם להציג הודעה זו.
+Print Supplies Information = הדפסה של מידע חומרי הדפסה.
+Print Accounting Report = הדפסת דוח של מספר התדפיסים.
+Print Stored Job List = הדפס עבודות המאוחסנות כעת בדיסק הקשיח.
+Print Completed Job List = הדפס רשימה של עבודות הדפסה שהושלמו.
+Print Usage Page = הדפס את מספר העמודים הכללי שהודפסו על-ידי אדם או קבוצה מסוימים.
+Screen = המסך מאפשר למשתמש לבחור אפשרויות להמיר תמונה בגוון רציף לתמונה בינארית הניתנת להדפסה. מצב רגיל מאפשר ליצור הדפסים עם גוון חלק על-גבי עמוד שלם. מצב משופר מאפשר ליצור הדפסים עם טקסט חד וגרפיקה חלקה/ואובייקטי סריקה על-גבי עמוד שלם. מצב מפורט מאפשר ליצור הדפסים עם פרטים חדים על-גבי עמוד שלם.
+Wireless Network Setting = קבע תצורה של הגדרות רשת אלחוטית בהתאם לצרכיך.
+Paper Substitution = כאשר הנייר אינו מתאים, אפשרות זו קובעת שההתקן ידפיס נייר בגודל A4 על-גבי נייר בגודל Letter, ולהפך.

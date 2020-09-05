@@ -1,0 +1,14 @@
+SM_OPT_CAPTION=Seçenekler
+SM_OPT_TITLE=Smart Panel Uyarý Seçeneði
+SM_OPT_CHECK_FINISH=Að yazýcýsý için iþ tamamlandýðýnda görüntüle
+SM_OPT_CHECK_ERROR=Yazdýrma iþlemi gerçekleþtirilemediðinde göster (örneðin, kaðýt bittiðinde)
+SM_OPT_CHECK_WAIT=Yazýcýda sorun yokken ancak beklemedeylen göster (örneðin, ýsýnýrken)
+SM_OPT_CHECK_JOBMONITOR=Ýþ yazýcýya kaydedildiðinde Ýþ Monitörü'nü baþlat
+SM_OPT_INTERVAL=Þu aralýklarla otomatik durum denetimi zamanla:
+SM_OPT_STYLE=Görüntüle
+SM_OPT_BALLOON=Balon stili
+SM_OPT_PANEL=Açýlýr pencere (Smart Panel)
+SM_OPT_SEC=(1-10 sn)
+SM_OPT_OK=Tamam
+SM_OPT_CANCEL=Ýptal
+SM_OPT_SHOW=Yazdýrma durum mesajýný göster

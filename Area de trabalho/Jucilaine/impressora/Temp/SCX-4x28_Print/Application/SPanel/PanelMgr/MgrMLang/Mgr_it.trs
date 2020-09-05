@@ -1,0 +1,44 @@
+[Menu]
+MANUAL=Guida dell'utente
+MGR_OPEN=Smart Panel
+MGR_EXIT=Esci 
+MGR_SETTING=Opzioni 
+MGR_JOBMONITOR=Monitor lavori 
+MGR_DRV_SETTING=Impostazioni driver
+MGR_PRN_SETTING=Impostazioni stampant
+MGR_BUYNOW=Acquista
+MGR_GUIDE=Risoluzione dei problemi
+MGR_ERR_TOOLTIP= Nessun driver o porta di stampante supportati
+MGR_SCAN_MANAGER=Gestione scansione e fax
+MGR_SCAN_MANAGER_OLD=Gestione digitalizzazione
+
+[Msg]
+OK_BUTTON=OK
+BUSY_ERR_TITLE=La stampante è occupata 
+BUSY_ERR_MSG=L'Impostazione stampante è disponibile quando la stampante è inattiva
+FATAL_ERR_TITLE=Errore
+FATAL_ERR_MSG=Installare il driver o la porta supportati.
+INITIAL_MSG=Attendere...
+SM_OTHERPORT=L'altra stampante è già monitorata.
+SM_INSTALLPRINTER=Il driver della stampante non è installato oppure la porta della stampante non è una porta USB o di rete.
+GUIDE_ERROR=Guida dell’utente non trovata
+USB Printer is not found. Please add the printer=Stampante USB non trovata. Aggiungere la stampante
+Printer driver is not installed, please install the driver...=Il driver della stampante non è installato. Installare il driver...
+No Active Window. Please select a window and press the button again.=Nessuna finestra attiva. Selezionare una finestra e premere di nuovo il pulsante.
+
+[Option]
+SM_OPT_CAPTION=Opzioni
+SM_OPT_TITLE=Opzione avviso Smart Panel
+SM_OPT_CHECK_FINISH=Visualizza al termine del lavoro per la stampante di rete
+SM_OPT_CHECK_ERROR=Appare quando la stampante non riesce a stampare (es.: carta esaurita)
+SM_OPT_CHECK_WAIT=Appare quando la stampante non ha problemi ma è in attesa (es.: riscaldamento)
+SM_OPT_CHECK_JOBMONITOR=Avvia Monitor lavori quando il lavoro viene salvato nella stampante
+SM_OPT_INTERVAL=Pianifica un controllo automatico dello stato automatico ogni
+SM_OPT_STYLE=Visualizzazione
+SM_OPT_BALLOON=Stile nota
+SM_OPT_PANEL=Finestra popup (Smart Panel)
+SM_OPT_SEC=(1-10 sec.)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Annulla
+SM_OPT_SHOW=Visualizza messaggio di stato di stampa
+

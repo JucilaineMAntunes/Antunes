@@ -1,0 +1,26 @@
+UpdateTask_00432.cs+27
+/Remota.Server/Updates/Tasks/UpdateTask_00432.cs
+using Remota.Database.Updates;
+namespace Remota.Server.Updates.Tasks
+{
+    [UpdateTaskInfo(432, "Criando tabela CstaProfileExtensions")]
+    public class UpdateTask_00432 : SqlUpdateTask
+    {
+        protected override string[] GetSqlCommands()
+        {
+            return new[]
+            {
+                $@"CREATE TABLE CstaProfileExtensions
+	               (
+	                   Guid uniqueidentifier NOT NULL,
+	                   ProfileGuid uniqueidentifier NOT NULL,
+	                   ExtensionGuid uniqueidentifier NOT NULL
+	               ) ON [PRIMARY]",
+                 $@"ALTER TABLE CstaProfileExtensions ADD CONSTRAINT PK_CstaProfileExtensions PRIMARY KEY CLUSTERED (Guid)
+	                WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]",
+                 $@"ALTER TABLE CstaProfileExtensions ADD CONSTRAINT FK_CstaProfileExtensions_CstaProfiles FOREIGN KEY (ProfileGuid) 
+	                REFERENCES CstaProfiles (Guid) ON UPDATE NO ACTION ON DELETE CASCADE"
+            };
+        }
+    }
+}

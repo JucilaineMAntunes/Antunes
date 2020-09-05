@@ -1,0 +1,44 @@
+[Menu]
+MANUAL=User's Guide
+MGR_OPEN=Smart Panel
+MGR_EXIT=Exit
+MGR_SETTING=Options
+MGR_JOBMONITOR=Job Monitor
+MGR_DRV_SETTING=Driver Setting
+MGR_PRN_SETTING=Printer Setting
+MGR_BUYNOW=Buy Now
+MGR_GUIDE=Troubleshooting Guide
+MGR_ERR_TOOLTIP=No supported printer driver or port
+MGR_SCAN_MANAGER=Scan and Fax Manager
+MGR_SCAN_MANAGER_OLD=Scan Manager
+
+[Msg]
+OK_BUTTON=OK
+BUSY_ERR_TITLE=Printer is busy
+BUSY_ERR_MSG=Printer Setting is available when the printer is idle
+FATAL_ERR_TITLE=Error
+FATAL_ERR_MSG=Please install supported driver or port.
+INITIAL_MSG=Please wait...
+SM_OTHERPORT=Other printer is already monitored
+SM_INSTALLPRINTER=Printer driver is not installed or printer port is not USB or network.
+GUIDE_ERROR=User's Guide not found
+USB Printer is not found. Please add the printer= USB Printer is not found. Please add the printer
+Printer driver is not installed, please install the driver...= Printer driver is not installed, please install the driver...
+No Active Window. Please select a window and press the button again.= No Active Window. Please select a window and press the button again.
+
+[Option]
+SM_OPT_CAPTION=Options
+SM_OPT_TITLE=Smart Panel Alert Option
+SM_OPT_CHECK_FINISH=Display when job is finished for network printer
+SM_OPT_CHECK_ERROR=Display when the printer cannot print (for example, paper out)
+SM_OPT_CHECK_WAIT=Display when the printer has no problem but waiting (for example, warming up)
+SM_OPT_CHECK_JOBMONITOR=Launch Job Monitor when the job is saved in the printer
+SM_OPT_INTERVAL=Schedule an automatic status checking every
+SM_OPT_STYLE=Display with
+SM_OPT_BALLOON=Balloon style
+SM_OPT_PANEL=Popup window (Smart Panel)
+SM_OPT_SEC=(1-10 sec)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Cancel
+SM_OPT_SHOW=Display printing status message
+

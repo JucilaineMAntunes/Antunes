@@ -1,0 +1,14 @@
+SM_OPT_CAPTION=Alternativer
+SM_OPT_TITLE=Smart Panel-varselmelding
+SM_OPT_CHECK_FINISH=Vises når jobben er klar til nettverksutskrift
+SM_OPT_CHECK_ERROR=Vis når skriveren ikke kan skrive ut (for eksempel når den er tom for papir)
+SM_OPT_CHECK_WAIT=Vis når skriveren venter (for eksempel når den varmer opp)
+SM_OPT_CHECK_JOBMONITOR=Start Jobbstyring når jobben er lagret på skriveren
+SM_OPT_INTERVAL=Still inn automatisk statuskontroll hvert
+SM_OPT_STYLE=Vis med
+SM_OPT_BALLOON=Boblestil
+SM_OPT_PANEL=Hurtigvindu (Smart Panel)
+SM_OPT_SEC=(1.-10. sek.)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Avbryt
+SM_OPT_SHOW=Vis skriverstatusmelding

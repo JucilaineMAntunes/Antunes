@@ -1,0 +1,43 @@
+[Menu]
+MANUAL=Uivatelská pøíruèka
+MGR_OPEN=Smart Panel
+MGR_EXIT=Konec 
+MGR_SETTING=Monosti 
+MGR_JOBMONITOR=Monitor úloh 
+MGR_DRV_SETTING=Nastavení ovladaèe
+MGR_PRN_SETTING=Nastavení tiskárny
+MGR_BUYNOW=Zakoupit
+MGR_GUIDE=Odstraòování problémù
+MGR_ERR_TOOLTIP=ádnı podporovanı ovladae nebo port
+MGR_SCAN_MANAGER=Správce skenování a faxu
+MGR_SCAN_MANAGER_OLD=Správce skenování
+
+[Msg]
+OK_BUTTON=OK
+BUSY_ERR_TITLE=Tiskárna je zaneprázdnina.
+BUSY_ERR_MSG=Nastavení tiskárny je k dispozici jen kdy je tiskárna neeinná.
+FATAL_ERR_TITLE=Chyba
+FATAL_ERR_MSG=Nainstalujte podporovanı ovladaè nebo port.
+INITIAL_MSG=Poekejte prosím...
+SM_OTHERPORT=Ji je monitorována jiná tiskárna.
+SM_INSTALLPRINTER=Ovladaè tiskárny není nainstalován nebo port tiskárny není typu USB nebo síovı.
+GUIDE_ERROR=Uivatelská pøíruèka nebyla nalezena
+USB Printer is not found. Please add the printer=Tiskárna s rozhraním USB nebyla nalezena. Prosíme p?idejte tiskárnu
+Printer driver is not installed, please install the driver...=Ovlada? tiskárny není nainstalován, prosím nainstalujte ovlada?...
+No Active Window. Please select a window and press the button again.=ádné aktivní okno. Prosíme zvolte okno a stiskn?te tla?ítko znovu.
+
+[Option]
+SM_OPT_CAPTION=Monosti
+SM_OPT_TITLE=Volba upozornìní pro Smart Panel
+SM_OPT_CHECK_FINISH=Zobrazit, pokud je ukonèena úloha síové tiskárny
+SM_OPT_CHECK_ERROR=Zobrazit, pokud tiskárna nemùe tisknout (napø. zaseknutı papír)
+SM_OPT_CHECK_WAIT=Zobrazit, pokud tiskárna nemá problém, ale èeká (napø. se zahøívá)
+SM_OPT_CHECK_JOBMONITOR=Spustit monitor úloh, pokud je úloha uloena v tiskárnì
+SM_OPT_INTERVAL=Naplánovat automatickou kontrolu stavu kadıch
+SM_OPT_STYLE=Styl zobrazení
+SM_OPT_BALLOON=Bublina
+SM_OPT_PANEL=Místní nabídka (Smart Panel)
+SM_OPT_SEC=(1-10 s)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Zrušit
+SM_OPT_SHOW=Zobrazit hlášení o stavu tisku

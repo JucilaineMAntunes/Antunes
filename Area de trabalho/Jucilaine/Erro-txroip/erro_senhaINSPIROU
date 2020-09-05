@@ -1,0 +1,285 @@
+update users
+set PasswordChanged =  getdate()
+where username ='admin'
+
+
+
+
+
+_ViewImports.cshtml.
+
+
+
+
+@using Remota.WebApp;
+@using Remota.WebApp.Models
+
+@functions
+{
+private MenuEnum Menu()
+{
+    if (ViewData["Title"].ToString().Contains("Consoles"))
+    {
+        return MenuEnum.History;
+    }
+    else
+    {
+        return MenuEnum.Configuration;
+    }
+}
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Remota.WebApp</title>
+    <link rel="stylesheet" href="~/css/app.css" />
+</head>
+<body class="d-flex flex-column vh-100">
+
+    @RenderSection("Modal", false)
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg col">
+            <a class="navbar-brand flex-column col col-12 col-xl-2 col-lg-3 col-md-4" href="/">
+                <svg height="48" width="128">
+                    <svg id="logo" viewBox="0 0 377 150">
+
+                        <g transform="translate(-26.3 -28.5)">
+                            <path class="st0" d="m209 54.7c-8.77-1.68-14.8-8.84-13.4-16 1.36-7.11 9.62-11.6 18.4-9.87s14.8 8.84 13.4 16c-1.37 7.11-9.63 11.6-18.4 9.87" clip-rule="evenodd" fill="#649f35" fill-rule="evenodd"></path>
+                            <path class="st0" d="m230 52.4c23.7 4.67 43.8 11.5 58.5 19.9-12.5-12-31.8-22-55.3-29 0.14 1.11 0.11 2.24-0.11 3.36-0.4 2.2-1.48 4.14-3.03 5.72m-72.8-19.4c-57.2 0-107 16-131 39.2 28.1-16 76.4-26.6 131-26.6 11.4 0 22.4 0.46 33.1 1.32-1.58-2.54-2.25-5.44-1.7-8.33 0.26-1.38 0.79-2.67 1.53-3.82-10.6-1.19-21.6-1.82-33-1.82z" clip-rule="evenodd" fill="#649f35" fill-rule="evenodd"></path>
+                            <path class="st1" d="m115 141 34.4-37.2-22.1-22.3h-30.6v59.5h-16.9v-59.5h-27.8v-13h84.8l23.2 24.6 22-24.6h19.4l-31.6 33.3 39.1 39.1h-22.9l-26.5-28.1-24.5 28.1z" clip-rule="evenodd" fill="#7b909d" fill-rule="evenodd"></path>
+                            <g fill="#649f35">
+                                <path class="st2" d="m277 138c-3.46-1.67-5.99-4.44-7.59-8.32s-2.4-9.25-2.4-16.1c0-7.11 0.8-12.6 2.4-16.5 1.6-3.88 4.13-6.59 7.59-8.13 3.46-1.53 8.16-2.3 14.1-2.3 6 0 10.7 0.8 14.2 2.4s5.99 4.34 7.59 8.22 2.4 9.32 2.4 16.3c0 6.99-0.78 12.4-2.35 16.3s-4.08 6.63-7.54 8.22c-3.46 1.6-8.23 2.4-14.3 2.4-5.94 0.01-10.6-0.82-14.1-2.48zm19.9-10.1c1.3-0.69 2.28-2.12 2.94-4.31 0.65-2.19 0.98-5.53 0.98-10s-0.33-7.85-0.98-10-1.63-3.62-2.94-4.31-3.23-1.03-5.78-1.03c-2.48 0-4.37 0.34-5.68 1.03s-2.29 2.12-2.94 4.31-0.98 5.53-0.98 10 0.33 7.85 0.98 10 1.63 3.62 2.94 4.31c1.3 0.68 3.2 1.03 5.68 1.03 2.55 0 4.48-0.34 5.78-1.03z"></path>
+                                <path class="st2" d="m325 68h14.5v72.5h-14.5z"></path>
+                                <path class="st2" d="m352 68h30.6c6.07 0 11.1 1.7 15 5.09 3.92 3.4 5.87 9.99 5.87 19.8 0 17-6.76 25.5-20.3 25.5-2.09 0-4.8-0.18-8.13-0.54s-6.17-0.7-8.52-1.03v23.7h-14.5v-72.4zm28.9 37.3c2.61 0 4.58-0.98 5.92-2.94s2.01-5.09 2.01-9.4c0-7.96-2.54-12-7.64-12h-14.7v24.3h14.4z"></path>
+                            </g>
+                            <g fill="#7b909d">
+                                <path class="st3" d="m254 178c-1.24-0.13-2.29-0.3-3.15-0.51v-3.35c1.7 0.17 3.84 0.26 6.43 0.26 1.16 0 2.04-0.16 2.63-0.47s0.89-0.87 0.89-1.67v-0.77c0-0.63-0.19-1.11-0.56-1.44s-0.9-0.5-1.59-0.5h-1.8c-2.1 0-3.67-0.46-4.7-1.37-1.04-0.92-1.56-2.41-1.56-4.49v-1.03c0-3.96 2.28-5.95 6.83-5.95 1.07 0 2.17 0.07 3.32 0.21 1.14 0.14 2.17 0.31 3.09 0.5v3.34c-2.61-0.17-4.58-0.26-5.92-0.26-1.09 0-1.91 0.17-2.46 0.5s-0.83 0.95-0.83 1.84v0.57c0 0.72 0.21 1.25 0.62 1.59 0.41 0.33 1.03 0.5 1.87 0.5h2.09c1.83 0 3.23 0.5 4.19 1.5s1.44 2.31 1.44 3.93v1.2c0 1.6-0.3 2.84-0.89 3.73s-1.42 1.5-2.49 1.83-2.39 0.5-3.97 0.5c-1.08 0.01-2.24-0.06-3.48-0.19z"></path>
+                                <path class="st3" d="m278 177c-1.03-0.61-1.54-1.86-1.54-3.75v-11.8c0-1.72 0.47-2.95 1.42-3.7s2.08-1.13 3.42-1.13c2.92 0 5.97 0.12 9.15 0.37v3.55h-7.89c-1.24 0-1.86 0.58-1.86 1.74v3.06l8.38 0.23v3.34l-8.38 0.23v2.92c0 1.26 0.59 1.89 1.77 1.89h7.98v3.54c-2.54 0.29-5.48 0.43-8.83 0.43-1.39 0-2.6-0.3-3.62-0.91z"></path>
+                                <path class="st3" d="m302 157h8.75c1.87 0 3.34 0.5 4.42 1.5s1.62 2.76 1.62 5.28c0 1.77-0.3 3.09-0.9 3.95s-1.42 1.51-2.45 1.94l3.95 8.49h-4.32l-3.4-7.83c-0.92 0-2.06-0.02-3.43-0.06v7.89h-4.23v-21.2zm8 9.92c0.82 0 1.45-0.23 1.89-0.7s0.66-1.28 0.66-2.44c0-1.13-0.22-1.9-0.66-2.33s-1.07-0.64-1.89-0.64h-3.77v6.12h3.77z"></path>
+                                <path class="st3" d="m327 157h4.37l4.95 16.6 4.95-16.6h4.35l-6.64 21.2h-5.35z"></path>
+                                <path class="st3" d="m357 177c-1.03-0.61-1.54-1.86-1.54-3.75v-11.8c0-1.72 0.47-2.95 1.42-3.7s2.08-1.13 3.42-1.13c2.92 0 5.97 0.12 9.15 0.37v3.55h-7.89c-1.24 0-1.86 0.58-1.86 1.74v3.06l8.38 0.23v3.34l-8.38 0.23v2.92c0 1.26 0.59 1.89 1.77 1.89h7.98v3.54c-2.54 0.29-5.48 0.43-8.83 0.43-1.39 0-2.59-0.3-3.62-0.91z"></path>
+                                <path class="st3" d="m381 157h8.75c1.87 0 3.34 0.5 4.42 1.5s1.62 2.76 1.62 5.28c0 1.77-0.3 3.09-0.9 3.95s-1.42 1.51-2.45 1.94l3.95 8.49h-4.32l-3.4-7.83c-0.92 0-2.06-0.02-3.43-0.06v7.89h-4.23v-21.2zm8.01 9.92c0.82 0 1.45-0.23 1.89-0.7s0.66-1.28 0.66-2.44c0-1.13-0.22-1.9-0.66-2.33s-1.07-0.64-1.89-0.64h-3.77v6.12h3.77z"></path>
+                            </g>
+                            <path class="st0" d="m210 68.2h28.8c5.76 0 9.92 1.1 12.5 3.32 2.57 2.22 3.86 5.8 3.86 10.7v17c0 4.89-1.29 8.45-3.86 10.7-2.6 2.25-6.76 3.37-12.5 3.37h-9.45l33.4 27.4h-24.2l-28.6-26.8v-13h21.3c2.92 0 4.91-0.42 5.99-1.26s1.61-2.34 1.61-4.49v-8.74c0-2.11-0.54-3.58-1.61-4.42-1.08-0.84-3.07-1.26-5.99-1.26h-21.3v-12.5z" clip-rule="evenodd" fill="#649f35" fill-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                </svg>
+            </a>
+
+            <div class="mr-auto">
+                <ul class="ul-menu">
+                    <li role="button" class="@(Menu() == MenuEnum.History ? "history-page-selected" : "history-page")">
+                        <a class="histpage">
+                            <i class="fas fa-history fa-2x"></i>
+                        </a>
+                    </li>
+                    <li role="button" class="@(Menu() == MenuEnum.Configuration ? "config-page-selected" : "config-page")">
+                        <a class="confpage">
+                            <i class="fas fa-cog fa-2x"></i>
+                        </a>
+                    </li>
+                    <hr class="hr-menu" />
+                </ul>
+            </div>
+
+            <a class="profile-link-brand text-primary nav-link nav-general-option" href="/web/profile">
+                <img width="36" height="36" class="rounded-circle navbar-user-icon" alt="@Remota.WebApp.Resources.WebResources.Profile" src="data:image/png;base64,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" />
+                <span class="navbar-collapser navbar-user-name d-none d-md-inline-block">Administrator</span>
+            </a>
+
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navbar-dropdown-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/web/profile">@Remota.WebApp.Resources.WebResources.Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/logout">@Remota.WebApp.Resources.WebResources.Logoff</a>
+                </div>
+            </div>
+
+            <button class="ml-3 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="row flex-grow-1 m-0">
+        <div id="navbarToggler" class="col col-12 col-xl-2 col-lg-3 col-md-4 d-lg-block bg-dark px-0 collapse">
+            <div>
+                <nav class="nav nav-pills flex-column flex-nowrap border border-left-0 border-bottom-0 border-right-0 border-secondary">
+
+                    @if (Menu() == MenuEnum.Configuration)
+                    {
+                        <h6 class="text-primary align-self-center mx-2 pt-4 align-self-md-start text-uppercase">@Remota.WebApp.Resources.WebResources.ServerStatus</h6>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Monitor" asp-action="SystemMonitor" href="/monitor">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.SystemMonitor</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.ActiveSessions</span>
+                        </a>
+
+                        <h6 class="text-primary align-self-center mx-2 pt-4 align-self-md-start text-uppercase">@Remota.WebApp.Resources.WebResources.SystemSettings</h6>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-dot-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.General</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Services</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.RadioNetworks</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Consoles</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Posts</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Integrations</span>
+                        </a>
+
+
+                        <div class="nav-item">
+                            <a id="tasks-item-menu" class="collapse-item nav-link text-light" data-toggle="collapse" href="#tasks-collapse" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="tasksCollapse">
+                                <i class="fas fa-plus-circle"></i>
+                                <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.Tasks</span>
+                            </a>
+
+                            <div class="collapse collapse-menu" id="tasks-collapse">
+                                <nav class="nav nav-pills flex-column flex-nowrap pl-4 bg-deep-dark">
+                                    <a class="nav-item nav-link text-light" role="button" asp-controller="Schedules" asp-action="Index">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.Schedules</span>
+                                    </a>
+                                    <a class="nav-item nav-link text-light" href="/web/tasks">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.TaskList</span>
+                                    </a>
+                                    <a class="nav-item nav-link text-light" href="/web/custom-alerts">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.CustomAlerts</span>
+                                    </a>
+                                    <a class="nav-item nav-link text-light" href="/web/running-jobs">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.RunningJobs</span>
+                                    </a>
+                                    <a class="nav-item nav-link text-light" href="/web/jobs-history">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.JobsHistory</span>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="nav-item">
+                            <a id="telephony-item-menu" class="collapse-item nav-link text-light" data-toggle="collapse" href="#telephony-collapse" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="telephony-collapse">
+                                <i class="fas fa-plus-circle"></i>
+                                <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.Telephony</span>
+                            </a>
+
+                            <div class="collapse collapse-menu" id="telephony-collapse">
+                                <nav class="nav nav-pills flex-column flex-nowrap pl-4 bg-deep-dark">
+                                    <a class="nav-item nav-link text-light" href="/web/phone-patches">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.PhonePatch</span>
+                                    </a>
+                                    <a class="nav-item nav-link text-light" href="/web/csta-phone-extension">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.CstaPhoneExtension</span>
+                                    </a>
+                                    <a class="nav-item nav-link text-light" href="/web/csta-profiles">
+                                        <i class="far fa-circle"></i>
+                                        <span class="ml-2 mr-sm-auto">@Remota.WebApp.Resources.WebResources.CstaProfiles</span>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <h6 class="text-primary align-self-center mx-2 pt-4 align-self-md-start text-uppercase">@Remota.WebApp.Resources.WebResources.Management</h6>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="AccessGroups" asp-action="Index" href="AccessGroups">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.AccessGroups</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Security" asp-action="Index" href="Security">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Security</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Users" asp-action="Index" >
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Users</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Groups</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.RadioGroups</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Multimedia</span>
+                        </a>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Home" asp-action="Index">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.PhoneContact</span>
+                        </a>
+                    }
+                    else
+                    {
+                        <h6 class="text-primary align-self-center mx-2 pt-4 align-self-md-start text-uppercase">@Remota.WebApp.Resources.WebResources.Recordings</h6>
+
+                        <a class="nav-item nav-link text-light" role="button" asp-controller="Consoles" asp-action="Consoles" href="/consoles">
+                            <i class="far fa-circle"></i>
+                            <span class="ml-2">@Remota.WebApp.Resources.WebResources.Consoles</span>
+                        </a>
+                    }
+
+
+                </nav>
+            </div>
+        </div>
+
+        <form class="col col-12 col-xl-10 col-lg-9 col-md-8 container-fluid" method="post">
+            <div class="row pt-2">
+                <div class="col-12">
+                    @RenderBody()
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="~/js/app.bundle.js" asp-append-version="true"></script>
+    <script src="~/js/datatables.bundle.js" asp-append-version="true"></script>
+    <script src="~/js/access-groups.bundle.js" asp-append-version="true"></script>
+    <script src="~/js/security.bundle.js" asp-append-version="true"></script>
+    <script src="~/js/users.bundle.js" asp-append-version="true"></script>
+</body>
+</html>

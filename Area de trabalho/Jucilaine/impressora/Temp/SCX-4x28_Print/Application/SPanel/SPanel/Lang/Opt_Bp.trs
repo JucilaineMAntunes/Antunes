@@ -1,0 +1,14 @@
+SM_OPT_CAPTION=Opções
+SM_OPT_TITLE=Opção de alerta do Smart Panel
+SM_OPT_CHECK_FINISH=Exibir quando o trabalho for concluído para a impressora de rede
+SM_OPT_CHECK_ERROR=Exibir quando não for possível imprimir (ex: sem papel)
+SM_OPT_CHECK_WAIT=Exibir se não houver problemas e a impressora estiver esperando (ex: aquecendo)
+SM_OPT_CHECK_JOBMONITOR=Iniciar o Monitor de trabalhos quando o trabalho for salvo na impressora
+SM_OPT_INTERVAL=Agendar um status automático a cada
+SM_OPT_STYLE=Exibir com
+SM_OPT_BALLOON=Estilo de balões
+SM_OPT_PANEL=Janela popup (Smart Panel)
+SM_OPT_SEC=(1-10 s)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Cancelar
+SM_OPT_SHOW=Exibir a mensagem de status de impressão

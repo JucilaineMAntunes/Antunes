@@ -1,0 +1,43 @@
+[Menu]
+MANUAL=Käyttöopas
+MGR_OPEN=Smart Panel
+MGR_EXIT=Poistu 
+MGR_SETTING=Asetukset 
+MGR_JOBMONITOR=Työvalvonta 
+MGR_DRV_SETTING=Ajurin asetus
+MGR_PRN_SETTING=Tulostimen asetus
+MGR_BUYNOW=Osta heti
+MGR_GUIDE=Vianmääritysopas
+MGR_ERR_TOOLTIP= Ei tuettua tulostinajuria tai liitäntää 
+MGR_SCAN_MANAGER=Skannauksen ja faksauksen hallinta
+MGR_SCAN_MANAGER_OLD=Skannauksen hallinta
+
+[Msg]
+OK_BUTTON=OK
+BUSY_ERR_TITLE=Odota hetki 
+BUSY_ERR_MSG=Pääset tulostinasetuksiin kun tulostin on valmiustilassa
+FATAL_ERR_TITLE=Virhe
+FATAL_ERR_MSG=Asenna tuettu ajuri tai liitäntä.
+INITIAL_MSG=Odota hetki...
+SM_OTHERPORT=Toista tulostinta tarkkaillaan parhaillaan.
+SM_INSTALLPRINTER=Tulostinohjainta ei ole asennettu tai tulostinportti ei ole USB-portti tai verkko.
+GUIDE_ERROR=Käyttöopasta ei löydy
+USB Printer is not found. Please add the printer=USB-tulostinta ei löydy. Lisää tulostin
+Printer driver is not installed, please install the driver...=Tulostinohjainta ei ole asennettu, asenna ohjain...
+No Active Window. Please select a window and press the button again.=Aktiivista ikkunaa ei ole. Valitse ikkuna ja paina sitten painiketta uudelleen.
+
+[Option]
+SM_OPT_CAPTION=Asetukset
+SM_OPT_TITLE= Smart Panel huomautus
+SM_OPT_CHECK_FINISH=Näytä, kun verkkotulostus on suoritettu
+SM_OPT_CHECK_ERROR=Tulee näyttöön, kun tulostin ei voi tulostaa (esimerkiksi paperi on loppunut)
+SM_OPT_CHECK_WAIT=Näkyy, kun tulostimessa ei ole ongelmaa, mutta se odottaa (se lämpenee tms.)
+SM_OPT_CHECK_JOBMONITOR=Käynnistä työvalvonta, kun työ on tallennettu tulostimelle
+SM_OPT_INTERVAL=Ajasta automaattinen tilantarkistus
+SM_OPT_STYLE=Näytä
+SM_OPT_BALLOON=Puhekupla
+SM_OPT_PANEL=Ponnahdusikkuna (Smart Panel)
+SM_OPT_SEC=1-10 sekunnin välein
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Peruuta
+SM_OPT_SHOW=Näytä tulostuksen tilasanoma

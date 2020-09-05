@@ -1,0 +1,54 @@
+[Menu]
+MANUAL=מדריך למשתמש 
+MGR_OPEN=Smart Panel
+MGR_EXIT=יציאה
+MGR_SETTING=אפשרויות
+MGR_JOBMONITOR=מנטר משימות
+MGR_DRV_SETTING=הגדרת מנהל התקן
+MGR_PRN_SETTING=הגדרת מדפסת
+MGR_BUYNOW=קנה עכשיו
+MGR_GUIDE=מדריך איתור תקלות
+MGR_ERR_TOOLTIP=אין מנהל התקן מדפסת או יציאה שיש להם תמיכה
+MGR_SCAN_MANAGER=מנהל הסריקה והפקס
+MGR_SCAN_MANAGER_OLD=מנהל סריקה
+
+[Msg]
+OK_BUTTON=אישור
+BUSY_ERR_TITLE=המדפסת תפוסה
+BUSY_ERR_MSG=הגדרת המדפסת זמינה כאשר המדפסת נמצאת במצב סרק
+FATAL_ERR_TITLE=שגיאה
+FATAL_ERR_MSG=אנא התקן מנהל התקן או יציאה שיש להם תמיכה
+INITIAL_MSG=אנא המתן...
+SM_OTHERPORT=מדפסת אחרת כבר נמצאת בניטור
+SM_INSTALLPRINTER=מנהל ההתקן של המדפסת אינו מותקן או שיציאת המדפסת אינה מסוג USB או יציאת רשת.
+GUIDE_ERROR=לא ניתן למצוא את המדריך למשתמש
+
+[notice]
+NOTICE_TITLE=הודעה
+NOTICE_STRING1=כאשר אתה מדפיס מסמך, גם אחרי שתצא מהפנל החכם, צלמית המגש שלו  תופיע שוב.
+NOTICE_STRING2=אם ברצונך להסיר לחלוטין את צלמית המגש, יש להסיר את התקנת הפנל החכם באופן הבא:
+NOTICE_STRING3=1. בחר  START (התחל) -> PROGRAMS (תוכניות) או All Programs (כל התוכניות) -> את שם מנהל התקן המדפסת שלך -> Maintenance (תחזוקה)
+NOTICE_STRING4=2. בחר Remove (הסר) כאשר המסך יופיע.
+NOTICE_STRING5=3. בחר את Staus Monitor (מנטר מצב) ולחץ Next (הבא)
+NOTICE_STRING6=4. לחץ  Yes (כן) כאשר יופיע החלון המבקש ממך להסיר את הרכיבים שבחרת.
+NOTICE_STRING7=5. לחץ Finish (סיים) לאחר סיום ההסרה
+USB Printer is not found. Please add the printer=מדפסת ה-USB לא נמצאה. הוסף את המדפסת
+Printer driver is not installed, please install the driver...=מנהל ההתקן של המדפסת אינו מותקן, התקן את מנהל ההתקן...
+No Active Window. Please select a window and press the button again.=אין חלון פעיל. בחר חלון ולחץ על הלחצן שנית.
+
+[Option]
+SM_OPT_CAPTION=אפשרויות
+SM_OPT_TITLE=אפשרות אתראה Smart Panel
+SM_OPT_CHECK_FINISH=הצג כאשר המשימה הסתיימה עבור מדפסת רשת
+SM_OPT_CHECK_ERROR=מציגה מתי המדפסת אינה יכולה להדפיס (למשל, נגמר הנייר)
+SM_OPT_CHECK_WAIT=מציגה מתי אין למדפסת בעיה אלא היא רק בהמתנה (למשל, מתחממת)
+SM_OPT_CHECK_JOBMONITOR=הפעל את מנטר המשימות כאשר המשימה נשמרת במדפסת
+SM_OPT_INTERVAL=קבע לוח זמנים לבדיקת מצב אוטומטית כל
+SM_OPT_STYLE=הצג עם
+SM_OPT_BALLOON=סגנון בלון
+SM_OPT_PANEL=חלון קופץ (Smart Panel)
+SM_OPT_SEC=(1-10 שניות)
+SM_OPT_OK=אישור
+SM_OPT_CANCEL=בטל
+SM_OPT_SHOW=הצג הודעת מצב ההדפסה
+

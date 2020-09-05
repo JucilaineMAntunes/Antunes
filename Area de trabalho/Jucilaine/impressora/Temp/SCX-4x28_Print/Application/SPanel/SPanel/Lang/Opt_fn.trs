@@ -1,0 +1,14 @@
+SM_OPT_CAPTION=Options
+SM_OPT_TITLE=Option d'alerte du Smart Panel
+SM_OPT_CHECK_FINISH=Afficher un message lorsque la tâche est terminée sur l'imprimante réseau
+SM_OPT_CHECK_ERROR=Affichage lorsque l’imprimante ne peut pas imprimer (par exemple, papier épuisé)
+SM_OPT_CHECK_WAIT=Affiche l’imprimante en attente qui n’a pas de problème (par ex. préchauffage)
+SM_OPT_CHECK_JOBMONITOR=Lancer le moniteur des tâches lorsque la tâche est enregistrée sur l'imprimante
+SM_OPT_INTERVAL=Programmer une vérification automatique de l'état toutes les
+SM_OPT_STYLE=Afficher sous forme de
+SM_OPT_BALLOON=Info-bulles
+SM_OPT_PANEL=Fenêtre locale (Smart Panel)
+SM_OPT_SEC=(1-10 s)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Annuler
+SM_OPT_SHOW=Afficher le message d’état d’impression

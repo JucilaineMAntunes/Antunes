@@ -1,0 +1,1180 @@
+[MAIN]
+Exit = Avsluta
+Help = Hjälp
+Apply = Verkställ
+Default = Skrivarstandard
+Close = Stäng
+S2PC =Skanna till PC
+
+[COMMON]
+IDS_APPNAME = Hjälpprogram för skrivarinställningar
+IDS_X_APPNAME = ControlCentre
+IDS_P_APPNAME = Fjärrkontrollpanelen
+IDS_STRING100 = Välj en fil inbyggd programvarufil.
+IDS_STRING101 = Ogiltig inbyggd programvarufil.
+IDS_STRING102 = Kunde ej skriva data.
+IDS_STRING103 = Kunde ej läsa data.
+IDS_STRING104 = överförda byte
+IDS_STRING105 = Skrivning klar. Stäng inte av maskinen innan den startats upp.
+IDS_STRING106 = Uppdatering klar!
+IDS_STRING107 = Porten är upptagen
+IDS_STRING108 = Redo
+BUSY_ERR_TITLE = Skrivaren är upptagen 
+IDS_COPYRIGHT2 = Med ensamrätt.
+IDC_REFRESH = Uppdatera
+IDL_ID = ID
+IDL_FILENAME = Filnamn
+IDC_ADD_BROWSE = Bläddra
+IDC_SEND = Skicka
+IDS_IMPORTERROR = Fel har rapporterats.
+IDS_IMPORTHEADERERROR = CSV-filen innehåller ogiltig rubrikinformation.
+IDS_IMPORTFILEERROR = CSV-filen innehåller ogiltig data.
+IDS_DELMSG = Är du säker?
+IDS_ERRORSTRING = Ett fel uppstod när ett kommando skickades till skrivaren.
+IDS_NOT_RESPOND = Skrivaren svarar inte
+IDS_SEND_ERROR = Fel vid skrivning till port.
+IDS_SEND_PER = överförda byte
+IDS_SEND_NOTMEM = Det finns inte tillräckligt mycket minne
+IDS_NOT_SUPPORT = Programmet stöder ej Windows NT
+IDS_STRING107 = Porten är upptagen
+Port busy = Porten används av ett annat program.
+
+IDS_NOT_RESPOND = Svarar ej
+AddFilePath_Err = Välj ett program med hjälp av knappen bläddra
+AddFileName_Err = Ange programmets namn
+ExistErr = Finns redan
+Delete_DefaultItem = Detta är ett standardobjekt och kan inte raderas
+Over_Number = Antalet filer är begränsat. Kan ej lägga till programmet.
+PaperPort = Mappen PaperPort finns ej. Kör PaperPort-programmet för att automatiskt skapa mappen.
+EmptyErr = Målapplikationslistan på frontpanelen är tom.
+MaxNoErr = Enheten tillåter endast 9 poster.Högsta tillåtna antal har nåtts.
+Msg_delete_font = Är du säker på att du vill ta bort det här typsnittet?
+Msg_delete_macro = Är du säker på att du vill ta bort det här makrot?
+Msg_delete_font_all = Är du säker på att du vill ta bort alla typsnitt?
+Msg_delete_macro_all =Är du säker på att du vill ta bort alla makron?
+Msg_delete_fontmacro_all = Är du säker på att du vill ta bort alla typsnitt och makron?
+
+IDS_INVALID_FONT = Felaktig typ. stöder endast "Adobe Typ1" (ASCII type).
+IDS_FAIL_FORMDOWNLOAD = Kunde ej ladda ner typsnitt. Försök igen?
+IDS_FAIL_FONTDOWNLOAD = Kunde ej ladda ner formulär. Försök igen?
+IDS_FAIL_FORMDELETE = Kunde ej radera typsnitt. Försök igen?
+IDS_FAIL_FONTDELETE = Kunde ej radera formulär. Försök igen?
+IDS_SUCCESS_DOWNLOAD_SINGULAR = filen laddades ner utan problem.
+IDS_SUCCESS_DELETE_SINGULAR = filen raderades utan problem.
+IDS_LIMIT_FILE = Antalet resursfiler är begränsat till 20. Du bör endast använda fuktionen för de resursfiler som du oftast använder. Om du vill ladda ner fler resursfiler bör du först ta bort resursfiler som redan är lagrade på skrivaren.
+Msg_Format_FlashMemory = Alla makro-, teckensnitt- och mallfiler som du laddat ner i flash-minnet kommer att tas bort. Är du säker på att du vill fortsätta?
+Msg_InitializeMemory = Alla makro-, teckensnitt- och mallfiler som du har laddat ner i minnet kommer att tas bort. Är du säker på att du vill fortsätta?
+Msg_Proceed = Är du säker på att du vill fortsätta?
+IncludeGroup = Det valda objektet är inkluderat i gruppen. Ta bort objektet i gruppen.
+
+Msg_Error_IP_Addr = Adressen som du angivit är felaktigt formaterad. Adressen måste innehålla 4 siffror från 0 till 255 med mellanrum mellan.
+Msg_Error_IP_Value = Värdet som du angivit är felaktigt formaterat. Värdet måste innehålla 4 siffror från 0 till 255 med mellanrum mellan.
+Msg_Validation = Ett obligatoriskt fält har fyllts i felaktigt, eller lämnats tomt.
+Msg_Empty_Name = Inget namn har angivits för posten. Kontrollera namnet.
+Msg_Empty_Value = Inget värde har angivits för posten. Kontrollera värdet.
+IPSet_Err =  Kontrollera inmatningsvärdet.
+Path_Err = Kan ej använda sökvägen. Välj en annan sökväg.
+
+IDOK = OK
+IDCANCEL = Avbryt
+IDL_NAME = Namn
+IDS_NUM = Nr.
+
+[STRING]
+;Common
+ON = På
+OFF = Av
+LOW = Låg
+HIGH = Hög
+HIGH 1 = Hög 1
+HIGH 2 = Hög 2
+HIGH 3 = Hög 3
+HIGH1 = Hög1
+HIGH2 = Hög2
+HIGH3 = Hög3
+Plain = Standard
+Higher = Högre
+Highest = Högst
+
+Altitude2Mode_Plain = Standard
+Altitude2Mode_High = Hög
+Altitude3Mode_Plain = Standard
+Altitude3Mode_High = Hög
+Altitude3Mode_Higher = Högre
+Altitude4Mode_Plain = Standard
+Altitude4Mode_High = Hög
+Altitude4Mode_Higher = Högre
+Altitude4Mode_Highest = Högst
+
+mm = mm
+Print list = Skriv ut lista
+Typeface = Teckensnitt
+Symbol set = Symboluppsättning
+Font List = Typsnittslista
+Font = Typsnitt
+Point Size = Punktstorlek
+Pitch = Breddsteg
+Auto Wrap = Automatiskt radbyte
+LPI = LPI
+Top Margin = Övre marginal
+Top Margin(mm) = Övre marginal(mm)
+Top Margin(inch) = Övre marginal(tum)
+Dark = Mörk
+Auto = Auto
+Print = Skriv ut
+
+;title
+Layout = Layout
+Paper Option = Pappersalternativ
+Graphic = Grafik
+SETTING = Inställning
+Information  =  Information
+Emulation = Emulering
+Network = Nätverk
+Network(IPv4) = Nätverk(IPv4)
+About = Om
+Fax = Fax
+Fax Setting = Faxinställning
+Scan = Skanna
+System Setup = Inställning
+Paper Setup = Pappersalternativ
+
+COLOR = Färg
+COLOUR = Färg
+CHECK = Kontroll
+Emulation Setting = Emuleringsinställning
+PCL = PCL
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = Flash-typsnitt och makron
+Store PCL Font and Macro = Lagra PCL-teckensitt och makro
+Format = Format
+Format Flash Memory = Formatera Flash-minne
+Initialize Font/Form Memory = Initiera minne för teckensnitt/mallar
+Initialize = Initiera
+
+;Phonebook
+Directory = Register
+Phonebook = Telefonbok
+Emailbook = E-postaddressbok
+Phone Book = Telefonbok
+Address Book = Adressbok
+
+;fax
+Fax Setting = Faxinställning
+Fax Cover Sheet = Framsida på fax
+Machine ID = Maskin-ID
+Fax Number = Faxnummer
+Machine Fax No = Maskinens faxnummer
+Machine Fax Number = Maskinens faxnummer
+
+Tray1 Paper = Kassett 1 Papper
+Tray2 Paper = Kassett 2 Papper
+Tray3 Paper = Kassett 3 Papper
+Tray4 Paper = Kassett 4 Papper
+Tray 1 Paper = Kassett 1 Papper
+Tray 2 Paper = Kassett 2 Papper
+Tray 3 Paper = Kassett 3 Papper
+Tray 4 Paper = Kassett 4 Papper
+Bypass Paper = Manuell matning
+
+Sending = Skickar
+Redial Interval = Återuppringningsintervall
+Redial Count = Återuppringningsräkning
+Prefix Dial = Prefixnummer
+ECM Mode = ECM-läge
+
+DisCard Size = Ignorera format
+Rings to Answer = Signaler innan svar
+Stamp receiver name = Ange mottagarnamn
+
+Sending Confirmation = Skicka bekräftelse
+On-Error = Vid fel
+Auto Journal = Autojournal
+RX Redcution = Mottagningsreduktion
+Com = Kommunikation
+Ringer = Ringsignal
+Med = Medium
+Toll Save = Ekonomisamtal
+Clock Mode = Klockinställning
+Sound = Ljud
+Key Sound = Knappaton
+
+Redial Term = Uppringningsintervall
+Redial Times = Uppringningstider
+Send Report = Rapport för skickade fax
+Auto Report = Autorapport
+
+;scan
+Scan Destination = Skanningsdestination
+Destination = Destination
+75dpi Draft = 75 dpi Utkast
+150dpi = 150 dpi
+200dpi = 200 dpi
+300dpi Normal = 300 dpi Normal
+600dpi = 600 dpi
+
+75dpi-Draft = 75 dpi Utkast
+300dpi-Normal = 300 dpi Normal
+
+Scan Resolution = Upplösning
+Scan Color = Skanning i färg
+Scan Colour = Skanning i färg
+Black and White = Svartvitt
+Gray = Grå
+256 Colors = 256 färger
+256 Colours = 256 färger
+True Colors = True Color
+True Colours = True Color
+
+Show Preview = Visa förhandsgranskning
+
+ADF Duplex = ADI Dubbelsidig
+Long-Edge Binding = Bindning långsida
+Short-Edge Binding = Bindning kortsida
+
+;Layout
+Orientation = Riktning
+Portrait = Porträtt
+Landscape = Landskap
+SimplexMargin = Enkelsidig marginal
+Simplex Margin = Enkelsidig marginal
+Simplex Margin(mm) = Enkelsidig marginal(mm)
+Simplex Margin(inch) = Enkelsidig marginal(tum)
+Left Margin = Vänster marginal
+Left Margin(mm) = Vänster marginal(mm)
+Left Margin(inch) = Vänster marginal(tum)
+Duplex = Duplex
+Print Option = Utskriftsalternativ
+Short Edge = Kortsida
+Long Edge = Långsida
+
+Margin = Marginaler
+
+;PaperOption
+Copies = Kopior
+Paper Size = Pappersformat
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = ISO B5
+Letter = Letter
+Legal = Legal
+Executive = Executive
+No 10 Env. = Kuvert nr. 10
+No. 10 Env. = Kuvert nr. 10
+No.10 Env. = Kuvert nr. 10
+Monarch Env. = Monarch-kuvert
+DL Env. = Kuvert DL
+C4 Env. = Kuvert C4
+C5 Env. = Kuvert C5
+C6 Env. = Kuvert C6
+US Folio = US Folio
+Oficio = Oficio
+Statement = Statement
+US postcard = US vykort
+Index Card = Registerkort
+Custom Paper = Anpassat papper
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = Anpassat
+Custom1 = Anpassat 1
+Custom2 = Anpassat 2
+Custom3 = Anpassat 3
+Custom4 = Anpassat 4
+Custom5 = Anpassat 5
+Folio = Folio
+
+Paper Type = Papperstyp
+Tray 1 Type = Papperstyp i kassett 1 
+Tray 2 Type = Papperstyp i kassett 2
+Tray 3 Type = Papperstyp i kassett 3
+Plain Paper = Vanligt papper
+Bond Paper = Bondpapper
+Bond = Bondpapper
+Transparency = OH-film
+Card Stock = Kortpapper
+CardStock = Kortpapper
+Labels = Etiketter
+Preprinted = Förtryckt
+Color Page = Färgsida
+Colour Page = Färgsida
+Envelope = Kuvert
+Thick Paper = Tjockt papper
+Thin Paper = Tunt papper
+Thick = Tjockt papper
+Thin = Tunt papper
+Cotton = Bomull
+Recycled = Återvunnet papper
+
+Printer Default = Skrivarstandard
+Colored = Färgat
+Coloured = Färgat
+Colored Paper = Färgat papper
+Coloured Paper = Färgat papper
+Color Paper = Färgat papper
+Colour Paper = Färgat papper
+Recycled Paper = Återvunnet papper
+Letterhead = Brevhuvud
+Special = Special
+Samsung Photo Paper = Samsung-fotopapper
+Photo Paper = Fotopapper
+Photo Paper 120 = Fotopapper 120
+Photo Paper 160 = Fotopapper 160
+Photo Paper 180 = Fotopapper 180
+Photo Paper 220 = Fotopapper 220
+Photo Paper 120 g/m2 = Fotopapper 120 g/m2
+Photo Paper 160 g/m2 = Fotopapper 160 g/m2
+Photo Paper 180 g/m2 = Fotopapper 180 g/m2
+Photo Paper 220 g/m2 = Fotopapper 220 g/m2
+Photo Paper 120g/m2 = Fotopapper 120g/m2
+Photo Paper 160g/m2 = Fotopapper 160g/m2
+Photo Paper 180g/m2 = Fotopapper 180g/m2
+Photo Paper 220g/m2 = Fotopapper 220g/m2
+Photo/Image = Foto/Bild
+Paper Source = Papperskälla
+Auto Select = Automatiskt val
+Tray1 = Papperskassett 1
+Tray2 = Papperskassett 2
+Tray3 = Papperskassett 3
+Tray4 = Papperskassett 4
+Tray 1 = Papperskassett 1
+Tray 2 = Papperskassett 2
+Tray 3 = Papperskassett 3
+Tray 4 = Papperskassett 4
+Tray 5 = Papperskassett 5
+Manual = Manuell
+MP Tray = Multikassett
+Manual Feed = Manuell matning
+Auto Selection = Välj automatiskt
+Manual Feeder = Manuell matning
+Multi-Purpose Tray = Multi-kassett
+
+;Graphic
+Resolution = Upplösning
+300dpi = 300 dpi
+1200dpi = 1200 dpi
+600dpi = 600 dpi
+
+300dpi-Draft = 300 dpi - Utkast
+600dpi-Draft = 600 dpi - Utkast
+600dpi-Normal = 600 dpi - Normal
+1200dpi-Best = 1200 dpi - Bäst
+Manual Adjustment = Manuell justering
+
+Darkness = Svärta
+Normal = Normal
+Draft = Utkast
+Best = Bäst
+Light = Ljus
+
+Text Enhance = Textförbättring
+Image Enhance = Bildförbättring
+
+Image Quality = Bildkvalitet
+
+
+;Setting
+Power Save = Energispar
+1 minute  = 1 minut
+1 minutes  = 1 minut
+5 minutes  = 5 minuter
+10 minutes  = 10 minuter
+15 minutes  = 15 minuter
+20 minutes  = 20 minuter
+30 minutes  = 30 minuter
+45 minutes  = 45 minuter
+60 minutes  = 60 minuter
+120 minutes  = 120 minuter
+180 minutes  = 180 minuter
+240 minutes  = 240 minuter
+360 minutes  = 360 minuter
+Auto Continue = Fortsätt automatiskt
+Jam Recovery = Återställ papper som fastnat
+Altitude Adjustment = Höghöjdsjustering
+Auto CR = Automatisk radretur
+LF+CR = LF+CR
+LF = LF
+Line Termination = Radavslut
+Job Timeout = Timeout för jobb
+Toner Save = Tonerspar
+Auto Clean Drum = Automatisk rengöring av trumma
+Decide Emulation = Bestämmer emulering
+
+;COLOR
+Manual Color Adjustment = Manuell färgjustering
+Manual Colour Adjustment = Manuell färgjustering
+Color Adjustment = Färgjustering
+Colour Adjustment = Färgjustering
+Cyan = Cyan
+Magenta = Magenta
+Yellow = Gul
+Black = Svart
+
+Auto Color Calibration = Automatisk färgkalibrering
+Auto Colour Calibration = Automatisk färgkalibrering
+Auto Color Registration = Automatisk färgregistrering
+Auto Colour Registration = Automatisk färgregistrering
+Run Now = Kör nu
+
+Color Mode = Färgläge
+Colour Mode = Färgläge
+;Color = Färg
+Glayscale = Gråskala
+
+;CHECK
+Imaging Unit = Imagingenhet
+Transfer Belt = Överföringsband
+Fuser = Fixeringsenhet (fuser)
+Transfer Roll = Överföringsvals
+MP Pickroll = Plockvals för multikassetten
+Tray1 Pickroll = Plockvals för Kassett 1
+Tray2 Pickroll = Plockvals för Kassett 2
+Tray3 Pickroll = Plockvals för Kassett 3
+Tray4 Pickroll = Plockvals för Kassett 4
+
+%S Image Counted = Bild räknad
+%S Page Counted = Sida räknad
+
+;Information
+Configuration Print = Utskrift av konfigureringssida
+Test Print = Testutskrift
+Test Prints = Testutskrift
+Menu Map = Menykarta
+Network Configuration Print  =  Utskrift av nätverkskonfigurering
+Print Network Configuration  =  Skriv ut nätverkskonfiguration
+
+;Network
+Config Network = Konfigurera nätverk
+Configuration Network = Nätverkskonfiguration
+;IP Assign Method  = IP-tilldela nätverk
+IP Assign Method  = Tilldelningsmetod för IP-adress
+BOOTP = BOOTP
+DHCP = DHCP
+Static = Statisk
+Static IP  = Statisk IP
+Default Set = Standardinställning
+Restore = Återställ
+Print Network Config = Skriv ut nätverkskonfigurering
+IP Address = IP-adress
+SubnetMask = Undernätverksmask
+Gateway = Gateway
+
+;pcl
+Courier = Courier
+Lines Per Page = Rader per sida
+Lines = Rader
+Form Length = Rader per sida
+PCL Font List = PCL-typsn.lista
+
+Regular = Regular
+
+;EPSON
+International character set = Internationell teckenuppsättning
+character set = Teckenuppsättning
+Character Table = Teckentabell
+Form Lines = Rader per sida
+
+San Serif = San Serif
+Roman = Roman
+
+USA = USA
+France = Frankrike
+Germany = Tyskland
+UK = Storbritannien
+Sweden = Sverige
+Denmark 1 = Danmark 1
+Denmark1 = Danmark1
+Italy = Italien
+Spain 1 = Spanien 1
+Spain1 = Spanien1
+Japan = Japan
+Norway = Norge
+Denmark 2 = Danmark 2
+Denmark2 = Danmark2
+Spain 2 = Spanien 2
+Spain2 = Spanien2
+Latin = Latin
+
+ITALIC = Kursiv
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+HebrewOld = Hebrew Old
+HebrewNew = Hebrew New
+
+;ps3
+Print error information = Skriv ut felrapport
+
+PS Error Information = PS-felrapport
+PS Font List = PS-typsn.lista
+
+PostScript Error Information = PostScript-felrapport
+PostScript Font List = PostScript-typsnittslista
+
+Print PS Error = PS-felrapport
+Print PostScript Error = Skriv ut PostScript-fel 
+
+;PaperOption
+6 3/4 Env. = Kuvert 6 3/4
+No.9 Env. = Kuvert nr. 9
+No. 9 Env. = Kuvert nr. 9
+Personal Check = Personligt klistermärke
+
+;Graphic
+Toner Density = Tonertäthet
+
+;EPSON
+Adjust Top Margin = Justera övre marginal
+
+;Xerox
+Print Density = Trycksvärtning
+Tray 1 Size = Kassett 1 Format
+Print Quantity = Utskriftsantal
+Print Quality = Utskriftskvalitet
+Simplex Top Margin = Enkel övre marginal
+Simplex Left Margin = Enkel vänstermarginal
+Duplex Top Margin = Duplex övre marginal
+Duplex Left Margin = Duplex vänstermarginal
+2-Sided Printing = Dubbelsidig utskrift
+Power Saver(min) = Energispar (min)
+Configuration Page = Konfigureringssida
+Office Demo = Kontorsdemo
+2-Sided Demo = Tvåsidig demo
+2-Sided Demo Page = Tvåsidig demo
+1200 dpi Quality = 1200 dpi kvalitet
+
+;Add
+Print Configuration Page = Skriv ut konfigureringssida
+Print Demo Page = Skriv ut demosida
+Print Menu Map = Skriv ut menykarta
+Print Test Page = Skriv ut testsida
+Machine Setup = Maskininställning
+
+12 Hour = 12 timmar
+24 Hour = 24 timmar
+
+Sound/Volume = Ljud/Volym
+Alarm Sound = Varningsljud
+Speaker = Högtalare
+Receiving = Tar emot
+Auto Reduction= Auto-förminskning
+
+Emulation Type= Emuleringstyp
+Duplex Margin = Duplexmarginal
+Duplex Margin(mm) = Duplexmarginal(mm)
+Duplex Margin(inch) = Duplexmarginal(tum)
+Short Binding = Bindning vid kortsidan
+Short Binding(mm) = Bindning vid kortsidan(mm)
+Short Binding(inch) = Bindning vid kortsidan(tum)
+Long Binding = Bindning vid långsidan
+Long Binding(mm) = Bindning vid långsidan(mm)
+Long Binding(inch) = Bindning vid långsidan(tum)
+
+No.10 Envelope= Kuvert nr. 10
+Monarch Envelope = Kuvert Monarch
+DL Envelope = Kuvert DL
+C5 Envelope = Kuvert C5
+Post A6 = Vykort A6
+PostCard 4x6 = Postcard 4x6
+C6 Envelope = Kuvert C6
+Ledger = Ledger
+JPost = JPost
+JPostD = JPostD
+Width = Bredd
+Height = Höjd
+Custom Width = Anpassad bredd
+Custom Height = Anpassad höjd
+Letter R = Letter R
+A4 R = A4 R
+JIS B5 R = JIS B5 R
+A5 R = A5 R
+Executive R = Executive R
+State R = State R
+A3 Over = Större än A3
+B5 Envelope = Kuvert B5
+634 = 634
+NO.9 = NR. 9
+US Post = US vykort
+Index = Indexkort
+B6 = B6
+Hagaki = Hagaki
+A6 R = A6 R
+Post A6 R = Vykort A6 R
+Hagaki R = Hagaki R
+
+Tray 1 Paper Size = Kassett 1 Pappersformat
+Tray 2 Paper Size = Kassett 2 Pappersformat
+Tray 3 Paper Size = Kassett 3 Pappersformat
+Tray 4 Paper Size = Kassett 4 Pappersformat
+MP Tray Paper Size = Pappersformat för Multikassetten
+Manual Feeder Paper Size = Pappersformat för Manuell matning
+
+Heavy Weight = Tungt papper
+Hole Punched = Håltaget papper
+Punched = Håltaget papper
+Archive = Arkivpapper
+Extra Thick = Extra tjock papper
+
+Tray 1 Tray 2 = Kassett 1 Kassett 2
+Tray Chaining = Kassettlänkning
+FAST1200 = SNABB 1200
+Calibration = Kalibrering
+
+TCP/IP = TCP/IP
+Print Network Information = Skriv ut nätverksinformation
+
+;Maintenance = Maintenance
+Cartridge Maintenance = Patronunderhåll
+Ink Cartridge Alignment = Inriktning av bläckpatron
+Ink Cartridge Clean = Rengöring av bläckpatron
+
+Transfer Roller = Överföringsvals
+Tray1 Roller = Plockvals för Kassett 1
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+;Captiva Fax setting
+Line Configuration = Konfigurera linje
+Machine Name = Maskinnamn
+Audio Line Monitor = Linjeövervakning
+Ring Volume = Ringsignalens volym
+Medium = Medium
+Manual Dial Tone Volume = Volym för manuell kopplingston
+Fax Transmission Defaults = Grundinställning av faxöverföring
+Automatic Redial Attempts = Auto återuppringningsförsök
+Redial Time Interval = Tidsintervall vid återuppringning
+Prefix Dial Number = Prefixnummer
+Error Collection Mode = Felkorrigeringsläge
+Confirmation Report = Bekräftelserapport
+Always Print = Skriv alltid ut
+Print On Error = Skriv ut vid fel
+Receive Defaults = Grundinställning av mottagning
+Auto Answer Delay = Fördröjning vid automatiskt svar
+Receive Header =Ta emot sidhuvud
+Transmission Report = Överföringsrapport
+Default Output Options = Grundinställda utmatningsalternativ
+Stapled = Häftat
+
+Maintenance = Underhåll
+Firmware Upgrade = Uppgradera fast programvara
+
+Auto Line Monitor = Automatisk linjeövervakning
+
+Original Type = Originaltyp
+Text = Text
+Text/Photo = Text/foto
+Photo = Foto
+Photo 120 = Foto 120
+Photo 160 = Foto 160
+Photo 180 = Foto 180
+Photo 220 = Foto 220
+Copy = Kopiering
+Transfer Belt Reset = Återställ överföringsband
+Reset Count = Återställ räkning
+Serial Number = Serienummer
+
+;Dell
+inch = tum
+Print Font List = Skriv ut typsnittslista
+Printer ID = Skrivar-ID
+Printer Setup = Skrivarinställning
+Printer Fax Number = Skrivarens faxnummer
+Print Network Configuration Page = Skriv ut sida med nätverkskonfigurationen
+Configure Network = Konfigurera nätverket
+Tray Linking = Kassettlänkning
+
+;k2Xrx
+Collation = Sortering
+Smart Duplexing = Smart dubbelsidig utskrift
+Job Held Timer = Timer för hållet jobb
+hours = timmar
+Tray 1MPT = Kassett 1MPT
+Tray 1(MPT) = Kassett 1(MPT)
+Tray 1 (MPT) = Kassett 1 (MPT)
+Tray1MPT Size = Kassett1MPT-storlek
+
+Toner Low Alert = Låg tonernivå
+Print Supplies Information = Information om utskriftsmaterial
+Print Accounting List = Lista över utskriftsredovisning
+Print Accounting Report = Rapport över utskriftsredovisning
+Print Stored Job List = Lista över sparade utskriftsjobb
+Print Completed Job List = Lista över färdiga utskriftsjobb
+Print Usage Page = Sida över utskriftsanvändning
+MP Tray Paper Setup = Pappersinställning för multikassett
+Manual Feed Paper Setup = Pappersinställning för manuell matning
+Tray 1 Paper Setup = Pappersinställning för kassett 1
+Tray 2 Paper Setup = Pappersinställning för kassett 2
+Tray 3 Paper Setup = Pappersinställning för kassett 3
+Tray 4 Paper Setup = Pappersinställning för kassett 4
+High Coverage Mode = Hög täckning - läge
+High Coverage = Hög täckning
+Screen = Skärm
+Enhanced = Förbättrad
+Detailed = Detaljerad
+Wireless Network Setting = Trådlös nätverksinställning
+Paper Substitution = Pappersbyte
+Glossy Photo 111-130g/m2 = Blankt foto 111–130 g/m2
+Glossy Photo 131-175g/m2 = Blankt foto 131–175 g/m2
+Glossy Photo 176-220g/m2 = Blankt foto 176–220 g/m2
+[PHONEBOOK]
+CAPTION = Telefonbok
+EMAILCAPTION = Adressbok
+IDS_EMAIL_ADDRESS = E-postadress
+IDS_TEL_NUMBER = Telefonnummer
+IDC_EDIT = Redigera
+IDC_MODIFY= Modifiera
+IDC_DELETE = Radera
+IDC_DELETE_ALL = Radera alla
+IDC_GET_PHONEBOOK = Läs
+IDC_SEND_PHONEBOOK = Skriv
+IDC_GET_EMAIL = Läs
+IDC_SEND_EMAIL = Skriv
+IDL_TYPE = Typ
+IDC_ONETOUCH_DIAL =  Direktvalsnummer
+IDC_SPEED_DIAL_2 =  Snabbvalsnummer
+IDC_GROUP_DIAL = Gruppuppringning
+IDC_EMAIL_GROUP_DIAL = Grupp-e-post
+IDC_READSTATIC = Tryck på knappen Läs för att hämta telefonnummer från skrivaren.
+IDC_WRITESTATIC = Tryck på knappen Skriv för att spara telefonnummer i skrivaren.
+IDC_Email_READSTATIC = Tryck på knappen Läs för att hämta e-post-adresser från skrivaren.
+IDC_Email_WRITESTATIC = Tryck på knappen Skriv för att spara e-post-adresser i skrivaren.
+IDC_EMAIL = E-post
+IDC_TOTAL = Totalt
+IDC_ADD = Lägg till
+IDC_IMPORT = Importera
+IDC_EXPORT = Exportera
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = Gruppuppringning
+CAPTION_EMAIL = Grupp-e-post
+IDL_I_ADDRESS = Inkluderade adresser
+IDL_A_ADDRESS = Tillgängliga adresser
+IDL_I_NUMBER = Inkluderade nummer
+IDL_A_NUMBER = Tillgängliga nummer
+
+IDL_GNAME = Gruppnamn
+
+IDC_REMOVE = Ta bort
+IDC_ADD = Lägg till
+
+[Scan Setting]
+CAPTION = Skanningsdestination
+
+IDC_AVAILABLE_STATIC = Listan tillgängliga skan.dest.
+IDC_FRONT_STATIC = Destinationslista på frontpanel
+IDC_SCAN_ADDAPP = Lägg till program
+IDC_SCAN_REMOVEAPP = Ta bort program
+IDC_LOC_STATIC = Standardplats att spara på
+
+IDC_ADD_FILEPATH_STATIC = Filsökväg
+IDC_ADD_FILENAME_STATIC = Programnamn
+
+IDC_SCANTYPE = Filtyp
+IDC_SCANLANG = Språk 
+
+DocTYPE_ITEM_0 = Spara till BMP
+DocTYPE_ITEM_1 = Spara till JPEG
+DocTYPE_ITEM_2 = Spara till PDF
+DocTYPE_ITEM_3 = Spara till TIFF
+
+EmailTYPE_ITEM_0 = Spara till JPEG
+EmailTYPE_ITEM_1 = Spara till PDF
+EmailTYPE_ITEM_2 = Spara till TIFF
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Text (.txt)
+OCR_ITEM_3 = PDF (.pdf)
+OCR_ITEM_4 = RTF (.rtf)
+
+LANG_ITEM_0 = Engelska
+LANG_ITEM_1 = Tyska
+LANG_ITEM_2 = Franska
+LANG_ITEM_3 = Spanska
+LANG_ITEM_4 = Italienska
+
+LANG_ITEM_5 = Svenska
+LANG_ITEM_6 = Nederländska
+LANG_ITEM_7 = Portugisiska (Europa)
+LANG_ITEM_8 = Portugis. (Brasilien)
+LANG_ITEM_9 = Ungerska
+
+LANG_ITEM_10 = Polska
+LANG_ITEM_11 = Ryska
+LANG_ITEM_12 = Japanska
+LANG_ITEM_13 = Förenklad kinesiska
+LANG_ITEM_14 = Traditionell kinesiska
+
+LANG_ITEM_15 = Koreanska
+LANG_ITEM_16 = Ryska + engelska
+LANG_ITEM_17 = Numerisk
+LANG_ITEM_18 = Alfabetisk
+LANG_ITEM_19 = Ukrainska
+
+LANG_ITEM_20 = Estniska
+LANG_ITEM_21 = Lettiska
+LANG_ITEM_22 = Litauiska
+LANG_ITEM_23 = Norska
+LANG_ITEM_24 = Finska
+
+LANG_ITEM_25 = Danska
+LANG_ITEM_26 = Tjeckiska
+LANG_ITEM_27 = Turkiska
+LANG_ITEM_28 = Ukrainska + engelska
+LANG_ITEM_29 = Uzbekiska
+
+[ScanToPc]
+CAPTION = JPEG-alternativ
+IDC_OPTION_STATIC = Med hjälp av denna funktion ändras bilden till en JPEG-fil, vilket gör att du kan skicka e-post snabbare.  Välj ett alternativ.
+IDC_ORIGINAL = Originalets format
+IDC_SIZE_SMALL = Liten (Justera bildstorleken efter ett 640 X 480-fönster)
+IDC_SIZE_NOMAL = Normal (Justera bildstorleken efter ett 800 X 600-fönster)
+IDC_SIZE_LARGE = Stor (Justera bildstorleken efter ett 1024 X 768-fönster)
+IDOK = Ok
+IDCANCEL = Avbryt
+
+[Flash]
+IDL_ADD = Lägg till
+IDL_DELETE = Radera
+IDL_DELETE_ALL = Radera alla
+Print list = Skriv ut lista
+IDC_REFRESH = Uppdatera
+IDC_FONTS = Teckensnitt
+IDC_MACROS = Makron
+IDC_DELETE_ALL_FONT_MACRO= Radera alla teckensnitt och makron
+IDC_ENABLEMACRO = Aktivera makro
+IDC_DISABLEMACRO = Avaktivera makro
+
+[PS3]
+IDC_ADD_PS3 = Lägg till
+IDC_DELETE_PS3 = Radera alla
+IDC_PRINT_LIST = Skriv ut lista
+IDC_PS3_REFRESH = Uppdatera
+Print PostScript Flash Directory = Skriv ut PostScript Flashregister
+Format Flash Memory = Formatera Flash-minne
+Flash Fonts/Forms = Flash-typsnitt/mallar
+Size = Storlek
+
+IDL_RESOURCE_TYPE = Resurstyp
+IDC_FMU_RADIO_ALL = Alla
+IDC_FMU_RADIO_FONT = Teckensnitt
+IDC_FMU_RADIO_FORM = Mallar
+IDL_STORAGE_TYPE = Lagrinstyp
+IDC_FMU_RADIO_MEMORY = Minne
+IDC_FMU_RADIO_HDD = Hårddisk
+IDC_FMU_RESET = Återställ
+IDC_FMU_DOWNLOAD = Ladda ner
+IDC_FMU_DELETE = Radera
+IDC_FMU_DELETE_ALL = Radera alla
+IDC_FMU_REFRESH = Uppdatera
+IDC_FMU_STATIC_TOTALMEM = Totalt (Kb)
+IDC_FMU_STATIC_USEDMEM = Använt (Kb)
+IDC_FMU_STATIC_AVAILABLEMEM = Tillgängligt (Kb)
+IDC_FMU_REPORT = Rapport
+
+
+[SEND]
+CAPTION = Hämtar...
+IDL_FILE_SIZE = Filstorlek
+IDL_STATUS = Status
+
+[SELECT_FILE]
+Select a file = Välj en fil
+Note = Obs: Detta ID ignoreras när filen har ett eget ID.
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=Uppgradera fast programvara
+IDC_BROWSE=Bläddra...
+IDC_UPDATE=Uppgradera
+IDL_FILE_NAME=Filnamn:
+IDL_FILE_INFORMATION=Filinformation
+IDL_FILE_SIZE=Filstorlek:
+IDC_FILE_SIZE=0 byte
+IDL_PROGRESS=Förlopp
+IDL_MESSAGE=Meddelande:
+
+
+[HELP]
+No help = Det finns ingen hjälpfil för det här objektet.
+
+;Layout
+Orientation = Bestämmer riktningen för utskriften på sidan.
+Top Margin = Bestämmer avståndet mellan den övre kanten på sidans utskriftsområde och den övre delen på sidans första rad.
+Left Margin = Bestämmer avståndet mellan den vänstra kanten på sidans utskriftsområde och den vänstra delen av varje rad på sidan.
+Print Option = Med hjälp av duplex-alternativet kan du automatiskt skriva ut tvåsidiga dokument.
+Duplex = Med hjälp av duplex-alternativet kan du automatiskt skriva ut tvåsidiga dokument.
+
+;Paper Option
+Copies = Bestämmer hur många kopior som ska skrivas ut för varje jobb.
+Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+Tray 1 Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+Tray 2 Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+Tray 3 Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+Tray 4 Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+MP Tray Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+Manual Feeder Paper Size = Ställer in pappersformatet för det papper som fylls på i skrivaren.
+Paper Type = Bestämmer skrivarens papperstyp.
+Paper Source = Du kan ställa in skrivarens standardpapperskälla.
+
+;Graphic
+Resolution = Bestämmer utskriftsupplösningen.
+Darkness = Bestämmer sidans tonertäthet. 
+
+Auto Color Calibration = Med hjälp av den här funktionen kan du ställa in skrivaren så att den kalibrererar sig själv med jämna mellanrum så att du alltid uppnår bästa resultat för dina fägutskrifter.
+Auto Colour Calibration = Med hjälp av den här funktionen kan du ställa in skrivaren så att den kalibrererar sig själv med jämna mellanrum så att du alltid uppnår bästa resultat för dina fägutskrifter.
+Auto Color Registration = Med hjälp av den här funktionen kan du justera positionen för text eller grafik i färg så att de matchar positionen för dessa på skärmen.
+Auto Colour Registration = Med hjälp av den här funktionen kan du justera positionen för text eller grafik i färg så att de matchar positionen för dessa på skärmen.
+Manual Color Adjustment = Du kan manuellt justera den valda färgkontrasten för varje tonerkassett. Om utskriften är för ljus, blek eller har saknade partier, drar du skjutreglaget mot +. Om utskriften blir för suddig, drar du skjutreglaget mot -.
+Manual Colour Adjustment = Du kan manuellt justera den valda färgkontrasten för varje tonerkassett. Om utskriften är för ljus, blek eller har saknade partier, drar du skjutreglaget mot +. Om utskriften blir för suddig, drar du skjutreglaget mot -.
+
+;Setting
+Power Save = Bestämmer hur lång tid det tar för skrivaren att växla från viloläget till energisparläget.
+Jam Recovery = Ställer in skrivaren så att den försöker att skriva ut sidor i ett dokument, som fastnat, igen.
+Auto Continue = Ställer in skrivarens respons när användaren skriver ut en sida när det inte finns papper i multikassetten och drivrutinens papperskälla är inställd på manuell matning.
+Altitude Adjustment = Du kan optimera utskriftskvaliteten i enlighet med altituden (höghöjdskorrigering).
+Auto CR = Efter varje rad i dokumentet väntar skrivaren på radframmatning (LF) och sedan radretur (CR). Inställning bestämmer vad skrivaren gör om den får en LF, men ingen CR. 
+
+Job Timeout = Bestämmer den tid som skrivaren väntar på att datan ska skrivas ut innan den accepterar data via andra gränssnitt.
+Toner Save = Bestämmer hur mycket toner som ska användas vid utskrift av en sida. 
+Auto Clean Drum = Avgör automatiskt om trumman bör rengöras. Om funktionen är aktiverad skrivs en rengöringssida för OPC:n ut för varje 500 sidor som skrivs ut. (Rengör OPC-trumman för att uppnå högre upplösning)
+Decide Emulation = Bestämmer emuleringen.
+Emulation Type = Bestämmer emuleringen.
+
+
+;Check
+Imaging Unit = Med hjälp av Skannerenhet kan du kontrollera det totala antalet utskrifter med den aktuella skannerenheten.
+Transfer Belt = Här kan du kontrollera det totala antalet utskrifter med det aktuella överföringsbandet.
+Fuser Type = Här kan du kontrollera det totala antalet utskrifter med den aktuella fixeringsenheten.
+Fuser = Här kan du kontrollera det totala antalet utskrifter med den aktuella fixeringsenheten.
+Transfer Roll = Detta alternativ är endast för servicetekniker. 
+Tray1 Pickroll = Detta alternativ är endast för servicetekniker. 
+Tray2 Pickroll = Detta alternativ är endast för servicetekniker. 
+Tray3 Pickroll = Detta alternativ är endast för servicetekniker. 
+Tray4 Pickroll = Detta alternativ är endast för servicetekniker. 
+
+
+;Information
+Configuration Print = Skriver ut skrivarens aktuella konfigurering.
+Print Configuration Page = Skriver ut skrivarens aktuella konfigurering.
+Configuration Page = Skriver ut skrivarens aktuella konfigurering.
+Network Configuration Print = Skriver ut skrivarens aktuella nätverkskonfigurering.
+Print Network Configuration = Skriver ut skrivarens aktuella nätverkskonfigurering.
+Test Print = Skriver ut en demosida. 
+Test Prints = Skriver ut en demosida. 
+Print Demo Page = Skriver ut en demosida. 
+Menu Map = Skriver ut skrivarens manykarta.
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = Ställer in skanningsdestinationer.
+Scan Resolution = Upplösningsinställningen bestämmer mängden information som skannern återger i den skannade bilden.
+Scan Color = Här specificeras inställningen som bilden ska skannas i. Du kan välja den typ av skanningsläge du vill använda när du skannar originaldokumentet.
+Scan Colour = Här specificeras inställningen som bilden ska skannas i. Du kan välja den typ av skanningsläge du vill använda när du skannar originaldokumentet.
+Show Preview = I kryssrutan kan du välja huruvida dialogrutan för skanning ska visas för att ändra skanningsinställningarna.  Om alternativet är valt visas skanningsinställningarna innan skanningen utförs så att du kan ändra dem.  Om alternativet inte valts kommer bilden att skannas direkt till det valda programmet.
+ADF Duplex = den automatiska dokumentinmataren är vald som dokumentkälla. Välj detta läge om du vill skanna tvåsidiga ark. Om du väljer ADI Dubbelsidig som dokumentkälla, skannas dokumentet i den automatiska dokumentinmataren. Om mataren är tom visas ett meddelande. Fortsätt genom att placera det dokument som ska skannas i mataren och försök skanna igen. När du använder läget ADI Dubbelsidig ska du även välja lämplig bindningstyp så att sidorna får rätt orientering i skannern. Om sidorna i källdokumentet har stående orientering (som t.ex. en bok eller broschyr), klickar du på Bindning långsida. Om de har liggande orientering (som t.ex. ett anteckningsblock), klickar du på Bindning kortsida.
+
+IDC_AVAILABLE_STATIC = Visa listan med aktuella program som är länkade till BMP-filer i PC:ns register. Om fliken Skannerinställningar aktiveras uppdateras listan med målapplikationer.
+IDC_FRONT_STATIC =  Visa listan med program som läggs till till skrivarens frontpanel. När skrivaren används för första gången uppdaterar skrivarens frontpanel standardobjekten.
+IDC_SCAN_MOVE = Med hjälp av den här knappen flyttas objekten som valdes i listan 'Målapplikationer' till 'Målapplikationslistan'.
+IDC_SCAN_ADDAPP = Med hjälp av den här knappen kan ett objekt läggas till som har markerats i en giltig "exe"-fil. Objektet som har lagts till visas sedan i "Tillgänglig destinationslista".
+IDC_SCAN_REMOVEAPP = Med hjälp av knappen kan ett objekt som lagts till av användaren i listan 'Målapplikationer' tas bort. 
+IDC_LOC_STATIC = Bestämmer standardfolder att spara i.
+
+;Phonebook
+Directory = Inställningar för e-post-lista och telefonbok. 
+Phonebook = Inställningar för telefonboken.
+Phone Book = Inställningar för telefonboken.
+Emailbook = Inställningar för adressbok.
+Address Book = Inställningar för adressbok.
+IDC_EDIT = Användaren kan lagra eller välja nummerposter.
+IDC_DELETE = Användaren kan radera vald nummerpost.
+IDC_DELETE_ALL = Användaren kan radera alla poster.
+IDC_GROUP_DIAL = Användaren kan ställa in eller redigera det valda gruppnumret.  Om den valda posten inte är ett gruppnummer avaktiveras knappen gruppval.
+IDC_GET_PHONEBOOK = Användare kan hämta numren i telefonboken från maskinen.
+IDC_SEND_PHONEBOOK = Användare kan ladda ner numren i telefonboken till maskinen.
+IDC_EMAIL_GROUP_DIAL = Användare kan ställa in eller redigera den valda posten för grupp-e-post.  Om den valda posten inte är grupp-e-post avaktiveras knappen grupp-e-post.
+IDC_GET_EMAIL = Användare kan hämta poster för e-post från maskinen.
+IDC_SEND_EMAIL = Användare kan ladda ner poster för e-post till maskinen.
+IDC_ADD = Användaren kan lagra valda nummerposter.
+IDC_MODIFY = Användaren kan ändra valda nummerposter.
+IDC_EMAIL_ADD = Användaren kan lagra valda addressposter.
+IDC_EMAIL_MODIFY = Användaren kan ändra valda addressposter.
+IDC_G_ADD = Användaren kan ställa in önskat gruppnummer.
+IDC_G_MODIFY = Användaren kan redigera önskat gruppnummer.
+IDC_G_EMAIL_ADD = Användaren kan ställa in önskad grupp-e-post.
+IDC_G_EMAIL_MODIFY = Användaren kan ändra önskad grupp-e-post.
+
+;Fax
+Machine ID = Anger namnet på faxmeddelandets framsida.
+Printer ID = Anger namnet på faxmeddelandets framsida.
+Fax Number = Anger faxnumret på faxmeddelandets framsida.
+Machine Fax No = Anger faxnumret på faxmeddelandets framsida.
+Machine Fax Number = Anger faxnumret på faxmeddelandets framsida.
+Printer Fax Number = Anger faxnumret på faxmeddelandets framsida.
+
+;Network
+BOOTP = BOOTP-servern tilldelar automatiskt en IP-adress till dig.
+DHCP = DHCP-servern tilldelar automatiskt en IP-adress till dig.
+Static = Du kan ange IP-adress, undernätmask och gateway manuellt.
+
+Emulation Setting = Ställer in värdet på varje emulering.
+
+;PCL
+Typeface = Visar teckensnitt för aktuellt typsnitt.
+Font = Visar aktuellt typsnitt.
+Symbol Set = En symboluppsättning är en unik gruppering av alla tillgängliga tecken i ett typsnitt.
+
+;EPSON
+Pitch = Bestämmer teckenavståndet.
+Point Size = Endast tillgängligt om du väljer ett typsnitt med proportionellt utrymme. Funktionen ignoreras för andra typsnitt.
+Lines Per Page = Ställer in antalet rader på sidan.
+Lines = Ställer in antalet rader på sidan.
+Form Length = Ställer in antalet rader på sidan.
+Courier = Bestämmer typen av Courier-typsnitt; Regular eller Mörk.
+International character set = En internationell teckenuppsättning är en gruppering av alll tillgängliga tecken för ett typsnitt.
+character set = En internationell teckenuppsättning är en gruppering av alll tillgängliga tecken för ett typsnitt.
+Character Table = Bestämmer teckentabellen.
+LPI = Bestämmer antalet rader på sidan.
+Auto Wrap = Bestämmer ordbrytning.
+Form Lines = Ställer in antalet rader på mallen (sidan).
+
+IDL_ADD = Lägger till ett typsnitt eller makro till Flash-minnet.
+IDL_DELETE = Raderar ett typsnitt eller makro från Flash-minnet.
+IDL_DELETE_ALL = Raderar alla typsnitt eller makron från Flash-minnet.
+Print list = Skriv ut en lista med typsnitt och makron som lagts till.
+IDC_ENABLEMACRO = Aktiverar vald makro.
+IDC_DISABLEMACRO = Avaktiverar vald makro.
+IDC_REFRESH = Uppdaterar information om teckensnitt och makron.
+IDC_DELETE_ALL_FONT_MACRO = Raderar alla makron och teckensnitt i Flash-minnet.
+
+Print PostScript Flash Directory = Skriver ut Flash-minnets Flashregister.
+Print error information = Specificerar huruvida felinformation för PostScript ska skrivas ut när varje dokument har skrivits ut. Om du vill att skrivaren skriver ut en felsida varje gång ett fel uppstår under ett utskriftjobb ställer du in funktionen på PÅ. 
+PostScript error information = Specificerar huruvida felinformation för PostScript ska skrivas ut när varje dokument har skrivits ut. Om du vill att skrivaren skriver ut en felsida varje gång ett fel uppstår under ett utskriftjobb ställer du in funktionen på PÅ. 
+PS error information = Specificerar huruvida felinformation för PostScript ska skrivas ut när varje dokument har skrivits ut. Om du vill att skrivaren skriver ut en felsida varje gång ett fel uppstår under ett utskriftjobb ställer du in funktionen på PÅ. 
+Print PS Error = Specificerar huruvida felinformation för PostScript ska skrivas ut när varje dokument har skrivits ut. Om du vill att skrivaren skriver ut en felsida varje gång ett fel uppstår under ett utskriftjobb ställer du in funktionen på PÅ. 
+Print PostScript Error = Specificerar huruvida felinformation för PostScript ska skrivas ut när varje dokument har skrivits ut.
+Font List = Skriver ut skrivarens aktuella tillgängliga typsnittslista.
+Print Font List = Skriver ut skrivarens aktuella tillgängliga typsnittslista.
+PCL Font List = Skriver ut skrivarens aktuella tillgängliga typsnittslista.
+PS Font List = Skriver ut skrivarens aktuella tillgängliga typsnittslista.
+Postscript Font List = Skriver ut skrivarens aktuella tillgängliga typsnittslista.
+
+IDC_ADD_PS3 = Lägger till ett PostScript-typsnitt eller formulär till Flash-minnet.
+IDC_DELETE_PS3 = Raderar alla PostScript-typsnitt och formulär i Flash-minnet.
+IDC_PRINT_LIST = Skriver ut en lista med de PostScript-typsnitt och formulär som lagts till.
+IDC_PS3_REFRESH = Uppdatera informationen om PostScript-typsnitt och formulär.
+
+IDC_FMU_RESET= Du kan återställa det aktuella valda filnamnet.
+IDC_FMU_DOWNLOAD = Med hjälp av den här knappen kan användaren ladda ner resurser till maskinen.
+IDC_FMU_DELETE = Med hjälp av den här knappen kan användaren ta bort en resurs från maskinen.
+IDC_FMU_DELETE_ALL = Med hjälp av den här knappen kan användaren ta bort alla resurser från maskinen.
+Format Flash Memory = Formaterar skrivarens flash-minne så att det initierar filsystemet. Alla makro-, teckensnitt- och mallfiler som du laddat ner i flash-minnet kommer att tas bort.
+Initialize Font/Form Memory = Initiera minne för teckensnitt/mallar i skrivaren. Alla makro-, teckensnitt- och mallfiler som du har laddat ner i minnet kommer att tas bort.
+IDC_FMU_REFRESH = Du kan uppdatera totalt, använt och tillgängligt lagringsutrymme. Detta uppdaterar också listan med resursnamn som lagras i maskinens minne.
+IDC_FMU_REPORT = Med hjälp av den här knappen kan du få en rapport över listan med resurser i maskinen.
+
+;EPSON
+Adjust Top Margin = Justerar den övre marginalen på sidan. 
+
+;Xerox
+Tray 1 Size = Ställer in formatet för det papper fyllts på i kassett 1 i skrivaren. När du väljer att använda papper i anpassat format är Bindning vid kortsida och Bindning vid långsida aktiverade och du kan använda användardefinierade pappersformat. 
+Simplex Top Margin = Bestämmer avståndet mellan den övre kanten på sidans utskriftsområde och den övre delen på sidans första rad. Gäller för enkelsidigt utskriftsläge.
+Simplex Left Margin = Bestämmer avståndet mellan den vänstra kanten på sidans utskriftsområde och den vänstra delen av varje rad på sidan. Gäller för enkelsidigt utskriftsläge.
+Duplex Top Margin = Bestämmer avståndet mellan den övre kanten på sidans utskriftsområde och den övre delen på sidans första rad. Gäller för duplex utskriftsläge. 
+Duplex Left Margin = Bestämmer avståndet mellan den vänstra kanten på sidans utskriftsområde och den vänstra delen av varje rad på sidan. Gäller för duplex utskriftsläge. 
+2-Sided Printing = Dubbelsidig utskrift gör att du automatiskt kan skriva ut dubbelsidiga dokument. 
+Office Demo = Skriver ut skrivarens kontorsdemosida.
+2-Sided Demo =  Skriver ut skrivarens dubbelsidiga demosida. 
+2-Sided Demo Page =  Skriver ut skrivarens dubbelsidiga demosida. 
+
+Ink Cartridge Alignment = Riktar in bläckpatronen.
+Ink Cartridge Clean = Rengör bläckpatronen.
+
+Tray Chaining = Om du väljer ett annat värde än Automatiskt val under Källa och den valda kassetten är tom skriver skrivaren automatiskt ut från andra kassetter. 
+Tray Linking = Om du väljer ett annat värde än Automatiskt val under Källa och den valda kassetten är tom skriver skrivaren automatiskt ut från andra kassetter. 
+
+Short Binding = Ställer inte den nedre marginalen på baksidan för bindning vid kortsidan.
+Long Binding = Ställer in den högra marginalen på baksidan för bindning vid långsidan.
+Image Enhance = Med hjälp av alternativet förbättras utskriftskvaliteten.
+
+;Firmware Update
+IDL_PROGRESS= Visar förloppet för uppgraderingen av den fasta programvaran.
+IDC_UPDATE= Startar uppgraderingen av den fasta programvaran.
+
+Original Type = Välj alternativ efter originaltyp. Det ger bäst utskriftskvalitet.
+Transfer Belt Reset = Överföringsbandets livslängd har överskridits. Byt ut överföringsbandet mot ett nytt och klicka på knappen Återställ räkning. När fönstret Återställ räkning visas anger du serienumret för det nya överföringsbandet och klickar på Verkställ.
+Print Network Configuration Page = Skriver ut skrivarens aktuella nätverkskonfigurering.
+
+;k2Xrx
+Collation = Med det här alternativet kan du sortera mottagna data genom skrivardrivrutinen. Skrivaren gör utskrifter i uppsättningar för att matcha följden hos originalet.
+Smart Duplexing = Om menyn är inställd till På upptäcker skrivaren ett jobb med bara en sida och skriver ut det med enkelsidig utskrift även om skrivardrivrutinen på datorn är inställd på dubbelsidig utskrift som standard.
+Job Held Timer = Maskinen håller jobbet under en angiven tid. Du kan ange en tidsperiod på högst 72 timmar.
+Toll Save = Anger att skrivaren ska lagra dina fax i minnet och skicka dem under en angiven lågprisperiod. 
+
+Toner Low Alert = Om tonern i kassetten är slut visas ett meddelande om att tonerkassetten måste bytas ut. Du kan ange om det här meddelandet ska visas.
+Print Supplies Information = Skriver ut informationssida om förbrukningsvaror.
+Print Accounting Report = Skriver ut rapport om antal utskrifter.
+Print Stored Job List = Skriver ut jobb som för närvarande lagras på hårddisken.
+Print Completed Job List = Skriver ut en lista över färdiga utskriftsjobb.
+Print Usage Page = Skriver ut det totala antalet sidor som har skrivits ut av en person eller en grupp.
+Screen = På denna Skärm kan användaren välja alternativ för att omvandla en bild i enhetlig färgton till en utskrivbar binär bild. I läget Normal genereras utskrifter med jämn ton på hela sidan. I läget Förbättrad genereras utskrifter med skarp text och jämna grafik/rasterbilder på sidan. I läget Detaljerad genereras utskrifter med skarpa detaljer på hela sidan.
+Wireless Network Setting = Konfigurerar de trådlösa nätverksinställningarna efter dina behov.
+Paper Substitution = När fel papperstyp används ställer detta alternativ in maskinen på att skriva ut papper i A4-format i Letter-format eller tvärtom.

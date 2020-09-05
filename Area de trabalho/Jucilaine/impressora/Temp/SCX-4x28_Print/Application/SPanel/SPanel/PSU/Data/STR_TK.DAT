@@ -1,0 +1,1181 @@
+[MAIN]
+Exit = Çýk
+Help = Yardým
+Apply = Uygula
+Default = Yazýcý Vars. Deð.
+Close = Kapat
+S2PC =PC'ye Tara
+
+[COMMON]
+IDS_APPNAME = Yazýcý Ayarlarý Yardýmcý Programý
+IDS_X_APPNAME = ControlCentre
+IDS_P_APPNAME = Uzaktan Kumanda Paneli
+IDS_STRING100 = Bir ürün yazýlýmý dosyasý seçin.
+IDS_STRING101 = Geçersiz ürün yazýlýmý dosyasý.
+IDS_STRING102 = Veri yazýlamadý.
+IDS_STRING103 = Veri okunamadý.
+IDS_STRING104 = bayt transfer edildi
+IDS_STRING105 = Yazma iþlemi tamamlandý. Cihazýnýz baþlatýlýncaya kadar kapatmayýn.
+IDS_STRING106 = Güncelleme Tamamlandý!
+IDS_STRING107 = Baðlantý noktasý meþgul
+IDS_STRING108 = Hazýr
+BUSY_ERR_TITLE = Yazýcý meþgul 
+IDS_COPYRIGHT2 = Tüm Haklarý Saklýdýr.
+IDC_REFRESH = Yenile
+IDL_ID = ID
+IDL_FILENAME = Dosya adý
+IDC_ADD_BROWSE = Gözat
+IDC_SEND = Gönder
+IDS_IMPORTERROR = Bazi Hatalar rapor edildi.
+IDS_IMPORTHEADERERROR = Bu CSV dosyasý geçersiz baþlýk bilgilerine sahip.
+IDS_IMPORTFILEERROR = Bu CSV dosyasý geçersiz verilere sahip.
+IDS_DELMSG = Emin misiniz?
+IDS_ERRORSTRING = Yazýcýya komut göndermede hata
+IDS_NOT_RESPOND = Yazýcý yanýt vermiyor
+IDS_SEND_ERROR = Baðlantý noktasýna yazmada hata.
+IDS_SEND_PER = bayt transfer edildi
+IDS_SEND_NOTMEM = Bellek yetersiz
+IDS_NOT_SUPPORT = Bu program does Windows NT'yi desteklememektedir
+IDS_STRING107 = Baðlantý noktasý meþgul
+Port busy = Baðlantý noktasý baþka bir uygulama tarafýndan kullanýlýyor.
+
+IDS_NOT_RESPOND = Cevap vermiyor
+AddFilePath_Err = Gözat düðmesini kullanarak bir program seçin
+AddFileName_Err = Uygulama adýný girin
+ExistErr = Zaten var
+Delete_DefaultItem = Bu bir varsayýlan öðedir ve silinemez
+Over_Number = Dosyalarýn miktarý sýnýrlýdýr. Programý ekleyemiyor.
+PaperPort = PaperPort klasörü yok. Klasörü otomatik olarak yaratmak için lütfen PaperPort programýný çalýþtýrýn.
+EmptyErr = Ön Panel Hedef Listesi boþ.
+MaxNoErr = Aygýt sadece 9 giriþe izin verir.Maksimum numaraya ulaþýldý.
+Msg_delete_font = Yazý tipini silmek istediðinizden emin misiniz?
+Msg_delete_macro = Makroyu silmek istediðinizden emin misiniz?
+Msg_delete_font_all = Tüm flash yazý tiplerini silmek istediðinizden emin misiniz?
+Msg_delete_macro_all =Tüm makrolarý silmek istediðinizden emin misiniz?
+Msg_delete_fontmacro_all = Tüm flash yazý tiplerini ve makrolarý silmek istediðinizden emin misiniz?
+
+IDS_INVALID_FONT = Bu tip yanlýþtýr. yalnýzca "Adobe Type1"i (ASCII tipi) desteklemektedir.
+IDS_FAIL_FORMDOWNLOAD = Yazý tipi yüklenemedi. Yeniden dene?
+IDS_FAIL_FONTDOWNLOAD = Form yüklenenemedi. Yeniden dene?
+IDS_FAIL_FORMDELETE = Yazý tipi silinemedi. Yeniden dene?
+IDS_FAIL_FONTDELETE = Form silinemedi. Yeniden dene?
+IDS_SUCCESS_DOWNLOAD_SINGULAR = dosya baþarýyla yüklendi.
+IDS_SUCCESS_DELETE_SINGULAR = dosya baþarýyla silindi.
+IDS_LIMIT_FILE = Kaynak dosya miktarý 20 dosya ile sýnýrlýdýr. Bunu sadece en sýk kullandýðýnýz kaynak dosyalarý için kullanmalýsýnýz. Daha fazla kaynak dosya indirmek için önce, yazýcýda kayýtlý kaynak dosyalarý silmelisiniz.
+Msg_Format_FlashMemory = Flash belleðe yüklediðiniz tüm makro, yazý tipi ve form dosyalarý kaldýrýlacaktýr. Devam etmek istediðinizden emin misiniz?
+Msg_InitializeMemory = Belleðe yüklediðiniz tüm makro, yazý tipi ve form dosyalarý kaldýrýlacak. Devam etmek istediðinizden emin misiniz?
+Msg_Proceed = Devam etmek istediðinizden emin misiniz?
+IncludeGroup = Seçilen öðe gruba dahil edilmiþtir. Lütfen gruptan öðeyi silin.
+
+Msg_Error_IP_Addr = Girdiðiniz adres doðru biçimlendirilmemiþ. Adres, 0 ile 255 arasýnda, noktalarla birbirinden ayrýlan 4 rakamdan oluþmalýdýr.
+Msg_Error_IP_Value = Girdiðiniz deðer doðru biçimlendirilmemiþ. Deðer, 0 ile 255 arasýnda, noktalarla birbirinden ayrýlan 4 rakamdan oluþmalýdýr.
+Msg_Validation = Gerekli alan yanlýþ doldurulmuþ veya boþ býrakýlmýþ.
+Msg_Empty_Name = Giriþ adý boþ. Lütfen adý kontrol edin.
+Msg_Empty_Value = Giriþ deðeri boþ. Lütfen deðeri kontrol edin.
+IPSet_Err =  Lütfen giriþ deðerini kontrol edin.
+Path_Err = Bu yol kullanýlamaz. Lütfen baþka bir yol seçin.
+
+IDOK = Tamam
+IDCANCEL = Ýptal
+IDL_NAME = Ad
+IDS_NUM = No. 
+
+[STRING]
+;Common
+ON = Açýk
+OFF = Kapalý
+LOW = Düþük
+HIGH = Yüksek
+HIGH 1 = Yüksek 1
+HIGH 2 = Yüksek 2
+HIGH 3 = Yüksek 3
+HIGH1 = Yüksek1
+HIGH2 = Yüksek2
+HIGH3 = Yüksek3
+Plain = Düz
+Higher = Daha yüksek
+Highest = En yüksek
+
+Altitude2Mode_Plain = Düz
+Altitude2Mode_High = Yüksek
+Altitude3Mode_Plain = Düz
+Altitude3Mode_High = Yüksek
+Altitude3Mode_Higher = Daha yüksek
+Altitude4Mode_Plain = Düz
+Altitude4Mode_High = Yüksek
+Altitude4Mode_Higher = Daha yüksek
+Altitude4Mode_Highest = En yüksek
+
+mm = mm
+Print list = Liste yazdýr
+Typeface = Yazý Yüzü
+Symbol set = Simge dizisi
+Font List = Yazý Tipi List.
+Font = Yazý Tipi
+Point Size = Nokta Boyutu
+Pitch = Karakter Sýklýðý
+Auto Wrap = Otomatik Kaydýrma
+LPI = LPI
+Top Margin = Üst Kenar Boþluðu
+Top Margin(mm) = Üst Kenar Boþluðu(mm)
+Top Margin(inch) = Üst Kenar Boþluðu(inç)
+Dark = Koyu
+Auto = Otomatik
+Print = Yazdýr
+
+;title
+Layout = Düzen
+Paper Option = Kaðýt Seçeneði
+Graphic = Grafik
+SETTING = Ayar
+Information  =  Bilgi
+Emulation = Emülasyon
+Network = Að
+Network(IPv4) = Að(IPv4)
+About = Hakkýnda
+Fax = Faks
+Fax Setting = Faks Ayarý
+Scan = Tara
+System Setup = Ayar
+Paper Setup = Kaðýt Seçeneði
+
+COLOR = Renkli
+COLOUR = Renkli
+CHECK = Kontrol
+Emulation Setting = Emülasyon Ayarý
+PCL = PCL
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = Flash Yazý Tipi ve Makro
+Store PCL Font and Macro = PCL Yazý Tipi ve Makro'yu kaydet
+Format = Biçimlendir
+Format Flash Memory = Flaþ Belleði Biçimlendir
+Initialize Font/Form Memory = Yazý tipi/form belleðinizi baþlatýn
+Initialize = Baþlangýç
+
+;Phonebook
+Directory = Epostarehberi
+Phonebook = Telefon Defteri
+Emailbook = Emailbook
+Phone Book = Telefon Defteri
+Address Book = Adres Defteri
+
+;fax
+Fax Setting = Faks Ayarý
+Fax Cover Sheet = Faks Kapak Sayfasý
+Machine ID = Cihaz ID
+Fax Number = Faks Numarasý
+Machine Fax No = Cihaz Faks No.
+Machine Fax Number = Cihaz Faks No.
+
+Tray1 Paper = Tepsi1 Kaðýt
+Tray2 Paper = Tepsi2 Kaðýt
+Tray3 Paper = Tepsi3 Kaðýt
+Tray4 Paper = Tepsi4 Kaðýt
+Tray 1 Paper = Tepsi 1 Kaðýt
+Tray 2 Paper = Tepsi 2 Kaðýt
+Tray 3 Paper = Tepsi 3 Kaðýt
+Tray 4 Paper = Tepsi 4 Kaðýt
+Bypass Paper = Geçiþ Kaðýt
+
+Sending = Gönderiyor
+Redial Interval = Tekrar Arama Aralýðý
+Redial Count = Tekrar Arama Sayýsý
+Prefix Dial = Ön.Bel.Arama
+ECM Mode = ECM Modu
+
+DisCard Size = Fazla Boyutu Sil
+Rings to Answer = Cevaplanacak Çalma Sayýsý
+Stamp receiver name = Alýndý ad bilgisi
+
+Sending Confirmation = Gönderi Onayý
+On-Error = Açýk-Hata
+Auto Journal = Otomatik Günlük
+RX Redcution = RX Küçültme
+Com = Þirket
+Ringer = Zil
+Med = Orta
+Toll Save = Ýndirimli Tarife
+Clock Mode = Saat Modu
+Sound = Ses
+Key Sound = Tuþ Sesi
+
+Redial Term = Yeniden Arama Koþulu
+Redial Times = Yeniden Arama Sayýsý
+Send Report = Gönderim Raporu
+Auto Report = Otomatik Rapor
+
+;scan
+Scan Destination = Taranacak Hedef
+Destination = Hedef
+75dpi Draft = 75dpi Taslak
+150dpi = 150dpi
+200dpi = 200dpi
+300dpi Normal = 300dpi Normal
+600dpi = 600dpi
+
+75dpi-Draft = 75dpi Taslak
+300dpi-Normal = 300dpi Normal
+
+Scan Resolution = Çözünürlük
+Scan Color = Tarama Rengi
+Scan Colour = Tarama Rengi
+Black and White = Siyah Beyaz
+Gray = Gri
+256 Colors = 256 renk
+256 Colours = 256 renk
+True Colors = Gerçek Renk
+True Colours = Gerçek Renk
+
+Show Preview = Önizleme Göster
+
+ADF Duplex = ADF Çift Taraflý
+Long-Edge Binding = Uzun Kenardan Ciltleme
+Short-Edge Binding = Kýsa Kenardan Ciltleme
+
+;Layout
+Orientation = Yönelim
+Portrait = Dikey
+Landscape = Yatay
+SimplexMargin = Tek Taraflý Kenar Boþluðu
+Simplex Margin = Tek Taraflý Kenar Boþluðu
+Simplex Margin(mm) = Tek Taraflý Kenar Boþluðu(mm)
+Simplex Margin(inch) = Tek Taraflý Kenar Boþluðu(inç)
+Left Margin = Sol Kenar Boþluðu
+Left Margin(mm) = Sol Kenar Boþluðun(mm)
+Left Margin(inch) = Sol Kenar Boþluðu(inç)
+Duplex = Çift Taraflý
+Print Option = Yazdýrma Seçeneði
+Short Edge = Kýsa Kenar
+Long Edge = Uzun Kenar
+
+Margin = Kenar Boþluðu
+
+;PaperOption
+Copies = Kopya Sayýsý
+Paper Size = Kaðýt Boyutu
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = ISO B5
+Letter = Letter
+Legal = Legal
+Executive = Executive
+No 10 Env. = No 10 Zarf
+No. 10 Env. = No 10 Zarf
+No.10 Env. = No 10 Zarf
+Monarch Env. = Monarch Zarf
+DL Env. = DL Zarf
+C4 Env. = C4 Zarf
+C5 Env. = C5 Zarf
+C6 Env. = C6 Zarf
+US Folio = US Folyo
+Oficio = Oficio
+Statement = Bildiri
+US postcard = US Posta Kartý
+Index Card = Ýndeks Kartý
+Custom Paper = Özel Kaðýt
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = Özel
+Custom1 = Özel 1
+Custom2 = Özel 2
+Custom3 = Özel 3
+Custom4 = Özel 4
+Custom5 = Özel 5
+Folio = Folyo
+
+Paper Type = Kaðýt Tipi
+Tray 1 Type = Tepsi 1 Tipi
+Tray 2 Type = Tepsi 2 Tipi
+Tray 3 Type = Tepsi 3 Tipi
+Plain Paper = Düz Kaðýt
+Bond Paper = Bond Kaðýt
+Bond = Bond Kaðýt
+Transparency = Asetat
+Card Stock = Kart Stoðu
+CardStock = Kart Stoðu
+Labels = Etiket
+Preprinted = Baskýlý
+Color Page = Renkli Sayfa
+Colour Page = Renkli Sayfa
+Envelope = Zarf
+Thick Paper = Kalýn Kaðýt
+Thin Paper = Ýnce Kaðýt
+Thick = Kalýn Kaðýt
+Thin = Ýnce Kaðýt
+Cotton = Pamuklu
+Recycled = Geri Dönüþtürülmüþ
+
+Printer Default = Yazýcý Varsayýlan Deðeri
+Colored = Renkli
+Coloured = Renkli
+Colored Paper = Renkli Kaðýt
+Coloured Paper = Renkli Kaðýt
+Color Paper = Renkli Kaðýt
+Colour Paper = Renkli Kaðýt
+Recycled Paper = Geri Dönüþtürülmüþ Kaðýt
+Letterhead = Antet
+Special = Özel
+Samsung Photo Paper = Samsung Foto. Kaðýdý
+Photo Paper = Foto. Kaðýdý
+Photo Paper 120 = Foto. Kaðýdý 120
+Photo Paper 160 = Foto. Kaðýdý 160
+Photo Paper 180 = Foto. Kaðýdý 180
+Photo Paper 220 = Foto. Kaðýdý 220
+Photo Paper 120 g/m2 = Foto. Kaðýdý 120 g/m2
+Photo Paper 160 g/m2 = Foto. Kaðýdý 160 g/m2
+Photo Paper 180 g/m2 = Foto. Kaðýdý 180 g/m2
+Photo Paper 220 g/m2 = Foto. Kaðýdý 220 g/m2
+Photo Paper 120g/m2 = Foto. Kaðýdý 120g/m2
+Photo Paper 160g/m2 = Foto. Kaðýdý 160g/m2
+Photo Paper 180g/m2 = Foto. Kaðýdý 180g/m2
+Photo Paper 220g/m2 = Foto. Kaðýdý 220g/m2
+Photo/Image = Fotoðraf/Görüntü
+Paper Source = Kaðýt Kaynaðý
+Auto Select = Otomatik Seçim
+Tray1 = Tepsi1
+Tray2 = Tepsi2
+Tray3 = Tepsi3
+Tray4 = Tepsi4
+Tray 1 = Tepsi 1
+Tray 2 = Tepsi 2
+Tray 3 = Tepsi 3
+Tray 4 = Tepsi 4
+Tray 5 = Tepsi 5
+Manual = Elle
+MP Tray = MP Tepsisi
+Manual Feed = Elle Besleme
+Auto Selection = Otomatik Seçim
+Manual Feeder = Elle Besleme
+Multi-Purpose Tray = Çok Amaçlý Tepsi
+
+;Graphic
+Resolution = Çözünürlük
+300dpi = 300dpi
+1200dpi = 1200dpi
+600dpi = 600dpi
+
+300dpi-Draft = 300 dpi-Taslak
+600dpi-Draft = 600 dpi-Taslak
+600dpi-Normal = 600 dpi-Normal
+1200dpi-Best = 1200 dpi-En Ýyi
+Manual Adjustment = Elle Ayarlama
+
+Darkness = Koyuluk
+Normal = Normal
+Draft = Taslak
+Best = En Ýyi
+Light = Açýk
+
+Text Enhance = Metin Geliþtirme
+Image Enhance = Görüntü Geliþtirme
+
+Image Quality = Görüntü Kalitesi
+
+
+;Setting
+Power Save = Güç Tasarrufu
+1 minute  = 1 dakika
+1 minutes  = 1 dakika
+5 minutes  = 5 dakika
+10 minutes  = 10 dakika
+15 minutes  = 15 dakika
+20 minutes  = 20 dakika
+30 minutes  = 30 dakika
+45 minutes  = 45 dakika
+60 minutes  = 60 dakika
+120 minutes  = 120 dakika
+180 minutes  = 180 dakika
+240 minutes  = 240 dakika
+360 minutes  = 360 dakika
+Auto Continue = Otomatik Devam
+Jam Recovery = Sýkýþma Kurtarma
+Altitude Adjustment = Ýrtifa Ayarý
+Auto CR = Otomatik CR
+LF+CR = LF+CR
+LF = LF
+Line Termination = Hattý Kapatma
+Job Timeout = Ýþ Zaman Aþýmý
+Toner Save = Toner Tasarrufu
+Auto Clean Drum = Otomatik Tambur Temizleme
+Decide Emulation = Öykünme Belirle
+
+;COLOR
+Manual Color Adjustment = Manuel Renk Ayarý
+Manual Colour Adjustment = Manuel Renk Ayarý
+Color Adjustment = Renk Ayarý
+Colour Adjustment = Renk Ayarý
+Cyan = Deniz Mavisi
+Magenta = Macenta
+Yellow = Sarý
+Black = Siyah
+
+Auto Color Calibration = Otomatik Renk Kalibrasyonu
+Auto Colour Calibration = Otomatik Renk Kalibrasyonu
+Auto Color Registration = Otomatik Renk Kaydý
+Auto Colour Registration = Otomatik Renk Kaydý
+Run Now = Þimdi Çalýþtýr
+
+Color Mode = Renk Modu
+Colour Mode = Renk Modu
+;Color = Renkli
+Glayscale = Gri tonlamalý
+
+;CHECK
+Imaging Unit = Görüntüleme Birimi
+Transfer Belt = Transfer Kayýþý
+Fuser = Fuser
+Transfer Roll = Transfer Silindiri
+MP Pickroll = MP Alýþ Silinidiri
+Tray1 Pickroll = Tepsi1 Alýþ Silinidiri
+Tray2 Pickroll = Tepsi2 Alýþ Silinidiri
+Tray3 Pickroll = Tepsi3 Alýþ Silinidiri
+Tray4 Pickroll = Tepsi4 Alýþ Silinidiri
+
+%S Image Counted = Görüntü Sayýldý
+%S Page Counted = Sayfa Sayýldý
+
+;Information
+Configuration Print = Yapýlandýrma Baskýsý
+Test Print = Test Baskýsý
+Test Prints = Test Baskýsý
+Menu Map = Menü Haritasý
+Network Configuration Print  =  Að Yapýlandýrma Baskýsý
+Print Network Configuration  =  Yazdýrma Aðý Yapýlandýrmasý
+
+;Network
+Config Network = Að Yapýlandýr
+Configuration Network = Yapýlandýrma Aðý
+;IP Assign Method  = IP Að Ata
+IP Assign Method  = IP Yöntem Ata
+BOOTP = BOOTP
+DHCP = DHCP
+Static = Statik
+Static IP  = Statik IP
+Default Set = Varsayýlan Ayarla
+Restore = Geri yükle
+Print Network Config = Að Yapýlandýrmasýný Yazdýr
+IP Address = IP Adresi
+SubnetMask = Alt Að Maskesi
+Gateway = Að Geçidi
+
+;pcl
+Courier = Courier
+Lines Per Page = Sayfa Baþýna Satýr Sayýsý
+Lines = Satýr
+Form Length = Form Uzunluðu
+PCL Font List = PCL Y.Tipi List.
+
+Regular = Normal
+
+;EPSON
+International character set = Uluslararasý karakter dizisi
+character set = Karakter Kümesi
+Character Table = Karakter Tablosu
+Form Lines = Form Satýr Sayýsý
+
+San Serif = San Serif
+Roman = Roman
+
+USA = ABD
+France = Fransa
+Germany = Almanya
+UK = Ýngiltere
+Sweden = Ýsveç
+Denmark 1 = Danimarka 1
+Denmark1 = Danimarka1
+Italy = Ýtalya
+Spain 1 = Ýspanya 1
+Spain1 = Ýspanya1
+Japan = Japonya
+Norway = Norveç
+Denmark 2 = Danimarka 2
+Denmark2 = Danimarka2
+Spain 2 = Ýspanya 2
+Spain2 = Ýspanya2
+Latin = Latin
+
+ITALIC = Eðik
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+HebrewOld = Hebrew Old
+HebrewNew = Hebrew New
+
+;ps3
+Print error information = Yazdýrma hatasý bilgisi
+
+PS Error Information = PS Hata Bilgisi
+PS Font List = PS Y.Tipi List.
+
+PostScript Error Information = PostScript Hata Bilgisi
+PostScript Font List = PostScript Yazý Tipi Listesi
+
+Print PS Error = PS Hata Bilgisi
+Print PostScript Error = PostScript Hatasýný Yazdýr
+
+;PaperOption
+6 3/4 Env. = 6 3/4 Zarf
+No.9 Env. = No. 9 Zarf
+No. 9 Env. = No. 9 Zarf
+Personal Check = Kiþisel Etiket
+
+;Graphic
+Toner Density = Toner Yoðunluðu
+
+;EPSON
+Adjust Top Margin = Üst Boþluðu Ayarla
+
+;Xerox
+Print Density = Yazdýrma Yoðunluðu
+Tray 1 Size = Tepsi 1 Boyutu
+Print Quantity = Yazdýrma Miktarý
+Print Quality = Yazdýrma Kalitesi
+Simplex Top Margin = Tek Taraflý Üst Boþluk
+Simplex Left Margin = Tek Taraflý Sol Boþluk
+Duplex Top Margin = Çift Taraflý Üst Boþluk
+Duplex Left Margin = Çift Taraflý Sol Boþluk
+2-Sided Printing = 2 Taraflý Yazdýrma
+Power Saver(min) = Güç Tasarrufu (dak)
+Configuration Page = Yapýlandýrma Sayfasý
+Office Demo = Ofis Tanýtýmý
+2-Sided Demo = 2 Taraflý Tanýtým
+2-Sided Demo Page = 2 Taraflý Tanýtým
+1200 dpi Quality = 1200 dpi Kalite
+
+;Add
+Print Configuration Page = Yapýlandýrma Sayfasýný Yazdýr
+Print Demo Page = Tanýtým Sayfasýný Yazdýr
+Print Menu Map = Menü Haritasýný Yazdýr
+Print Test Page = Test Sayfasý Yazdýr
+Machine Setup = Makine Ayarlarý
+
+12 Hour = 12 Saat
+24 Hour = 24 Saat
+
+Sound/Volume = Ses/Ses Düzeyi
+Alarm Sound = Alarm Sesi
+Speaker = Hoparlör
+Receiving = Alýyor
+Auto Reduction= Otomatik Küçültme
+
+Emulation Type= Emülasyon Türü
+Duplex Margin = Çift Taraflý Boþluk
+Duplex Margin(mm) = Çift Taraflý Boþluk(mm)
+Duplex Margin(inch) = Çift Taraflý Boþluk(inç)
+Short Binding = Kýsa Ciltleme
+Short Binding(mm) = Kýsa Ciltleme(mm)
+Short Binding(inch) = Kýsa Ciltleme(inç)
+Long Binding = Uzun Ciltleme
+Long Binding(mm) = Uzun Ciltleme(mm)
+Long Binding(inch) = Uzun Ciltleme(inç)
+
+No.10 Envelope= No. 10 Zarf
+Monarch Envelope = Monarch Zarf
+DL Envelope = DL Zarf
+C5 Envelope = C5 Zarf
+Post A6 = Post A6
+PostCard 4x6 = Posta Kartý 4x6
+C6 Envelope = C6 Zarf
+Ledger = Ledger
+JPost = JPost
+JPostD = JPostD
+Width = Geniþlik
+Height = Uzunluk
+Custom Width = Özel Geniþlik
+Custom Height = Özel Yükseklik
+Letter R = Letter D
+A4 R = A4 D
+JIS B5 R = JIS B5 D
+A5 R = A5 D
+Executive R = Executive D
+State R = State D
+A3 Over = A3'ten Büyük
+B5 Envelope = B5 Zarf
+634 = 634
+NO.9 = No. 9
+US Post = US Post
+Index = Dizin
+B6 = B6
+Hagaki = Hagaki
+A6 R = A6 D
+Post A6 R = Post A6 D
+Hagaki R = Hagaki D
+
+Tray 1 Paper Size = Tepsi 1 Kaðýt Boyutu
+Tray 2 Paper Size = Tepsi 2 Kaðýt Boyutu
+Tray 3 Paper Size = Tepsi 3 Kaðýt Boyutu
+Tray 4 Paper Size = Tepsi 4 Kaðýt Boyutu
+MP Tray Paper Size = MP Tepsisi Kaðýt Boyutu
+Manual Feeder Paper Size = Elle Besleme  Kaðýt Boyutu
+
+Heavy Weight = Aðýr
+Hole Punched = Delik Zýmbalý
+Punched = Delik Zýmbalý
+Archive = Arþiv
+Extra Thick = Ekstra Kalýn
+
+Tray 1 Tray 2 = Tepsi 1 Tepsi 2
+Tray Chaining = Tepsi Zincirleme
+FAST1200 = HIZLI 1200
+Calibration = Kalibrasyon
+
+TCP/IP = TCP/IP
+Print Network Information = Að Bilgisini Yazdýr
+
+Maintenance = Maintenance
+Cartridge Maintenance = Kartuþ Bakýmý
+Ink Cartridge Alignment = Mürekkep Kartuþunun Hizalanmasý
+Ink Cartridge Clean = Mürekkep Kartuþunun Temizlenmesi
+
+Transfer Roller = Transfer Silindiri
+Tray1 Roller = Tepsi 1 Silindir
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Original Type = Orijinal Türü
+Text = Metin
+Text/Photo = Metin/Fotoðraf
+Photo = Fotoðraf
+Photo 120 = Fotoðraf 120
+Photo 160 = Fotoðraf 160
+Photo 180 = Fotoðraf 180
+Photo 220 = Fotoðraf 220
+Copy = Kopya
+Transfer Belt Reset = Transfer Kayýþý Sýfýrlama
+Reset Count = Sýfýrlama Sayýsý
+Serial Number = Seri Numarasý
+
+;Dell
+inch = inç
+Print Font List = Yazý Tipi Listesini Yazdýr
+Printer ID = Yazýcý Kimliði
+Printer Setup = Yazýcý Ayarlarý
+Printer Fax Number = Yazýcý Faks Numarasý
+Print Network Configuration Page = Að Yapýlandýrma Sayfasýný Yazdýr
+Configure Network = Aðý Yapýlandýr
+Tray Linking = Tepsi Baðlantýsý
+
+;k2Xrx
+Collation = Harmanlama
+Smart Duplexing = Akýllý Dupleksleme
+Job Held Timer = Bekletilen Ýþ Zamanlayýcýsý
+hours = saat
+Tray 1MPT = Tepsi 1MPT
+Tray 1(MPT) = Tepsi 1(MPT)
+Tray 1 (MPT) = Tepsi 1(MPT)
+Tray1MPT Size = Tepsi1MPT Boyutu
+
+Toner Low Alert = Toner Az Uyarýsý
+Print Supplies Information = Sarf Malzemesi Bilgilerini Yazdýr
+Print Accounting List = Muhasebe Listesini Yazdýr
+Print Accounting Report = Hesap Raporu Yazdýr
+Print Stored Job List = Saklanan Ýþ Listesi Yazdýr
+Print Completed Job List = Tamamlanan Ýþ Listesi Yazdýr
+Print Usage Page = Kullaným Sayfasý Yazdýr
+MP Tray Paper Setup = MP Tepsisi Kaðýt Ayarý
+Manual Feed Paper Setup = Elle Besleme Kaðýt Ayarý
+Tray 1 Paper Setup = Tepsi 1 Kaðýt Ayarý
+Tray 2 Paper Setup = Tepsi 2 Kaðýt Ayarý
+Tray 3 Paper Setup = Tepsi 3 Kaðýt Ayarý
+Tray 4 Paper Setup = Tepsi 4 Kaðýt Ayarý
+High Coverage Mode = Yüksek Kapsama Modu
+High Coverage = Yüksek Kapsama
+Screen = Ekran
+Enhanced = Geliþmiþ
+Detailed = Ayrýntýlý
+Wireless Network Setting = Kablosuz Að Ayarý
+Paper Substitution = Kaðýt Deðiþtirme
+Glossy Photo 111-130g/m2 = Parlak Resim 111-130 g/m2
+Glossy Photo 131-175g/m2 = Parlak Resim 131-175 g/m2
+Glossy Photo 176-220g/m2 = Parlak Resim 176-220 g/m2
+
+[PHONEBOOK]
+CAPTION = Telefon Deft.
+EMAILCAPTION = Adres Defteri
+IDS_EMAIL_ADDRESS = E-Posta Adresi
+IDS_TEL_NUMBER = Telefon Numarasý
+IDC_EDIT = Düzenle
+IDC_MODIFY= Deðiþtir
+IDC_DELETE = Sil
+IDC_DELETE_ALL = Tümünü Sil
+IDC_GET_PHONEBOOK = Oku
+IDC_SEND_PHONEBOOK = Yaz
+IDC_GET_EMAIL = Oku
+IDC_SEND_EMAIL = Yaz
+IDL_TYPE = Tip
+IDC_ONETOUCH_DIAL =  Tek tuþla arama
+IDC_SPEED_DIAL_2 =  Hýzlý arama
+IDC_GROUP_DIAL = Grup arama
+IDC_EMAIL_GROUP_DIAL = Grup posta
+IDC_READSTATIC = Yazýcýdaki telefon numaralarýný görmek için Read düðmesine basýn.
+IDC_WRITESTATIC = Telefon numaralarýný yazýcýya kaydetmek inin Yaz düðmesine basýn.
+IDC_Email_READSTATIC = Yazýcýdaki e-posta adreslerini görmek için Read düðmesine basýn.
+IDC_Email_WRITESTATIC = E-posta adreslerini yazýcýya kaydetmek inin Yaz düðmesine basýn.
+IDC_EMAIL = E-posta
+IDC_TOTAL = Toplam
+IDC_ADD = Ekle
+IDC_IMPORT = Dýþarýdan al
+IDC_EXPORT = Dýþa Aktar
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = Grup arama
+CAPTION_EMAIL = Grup Posta
+IDL_I_ADDRESS = Mevcut Adresler
+IDL_A_ADDRESS = Geçerli Adresler
+IDL_I_NUMBER = Mevcut numaralar
+IDL_A_NUMBER = Geçerli numaralar
+
+IDL_GNAME = Grup Adý
+
+IDC_REMOVE = Kaldýr
+IDC_ADD = Ekle
+
+[Scan Setting]
+CAPTION = Taranacak Hedef
+
+IDC_AVAILABLE_STATIC = Geçerli Hedefler Listesi
+IDC_FRONT_STATIC = Ön Panel Hedef Listesi
+IDC_SCAN_ADDAPP = Uygulama Ekle
+IDC_SCAN_REMOVEAPP = Uygulama Kaldýr
+IDC_LOC_STATIC = Varsayýlan Kayýt Yeri
+
+IDC_ADD_FILEPATH_STATIC = Dosya Yolu
+IDC_ADD_FILENAME_STATIC = Uygulama Adý
+
+IDC_SCANTYPE = Dosya Tipi
+IDC_SCANLANG = Dil 
+
+DocTYPE_ITEM_0 = BMP olarak kaydet
+DocTYPE_ITEM_1 = JPEG olarak kaydet
+DocTYPE_ITEM_2 = PDF olarak kaydet
+DocTYPE_ITEM_3 = TIFF olarak kaydet
+
+EmailTYPE_ITEM_0 = JPEG olarak kaydet
+EmailTYPE_ITEM_1 = PDF olarak kaydet
+EmailTYPE_ITEM_2 = TIFF olarak kaydet
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Text (.txt)
+OCR_ITEM_3 = PDF (.pdf)
+OCR_ITEM_4 = RTF (.rtf)
+
+LANG_ITEM_0 = Ýngilizce
+LANG_ITEM_1 = Almanca
+LANG_ITEM_2 = Fransýzca
+LANG_ITEM_3 = Ýspanyolca
+LANG_ITEM_4 = Ýtalyanca
+
+LANG_ITEM_5 = Ýsveç Dili
+LANG_ITEM_6 = Hollanda Dili
+LANG_ITEM_7 = Portekizce (Avrupa)
+LANG_ITEM_8 = Portekizce (Brezilya)
+LANG_ITEM_9 = Macarca
+
+LANG_ITEM_10 = Lehçe
+LANG_ITEM_11 = Rusça
+LANG_ITEM_12 = Japonca
+LANG_ITEM_13 = Basit Çince
+LANG_ITEM_14 = Geleneksel Çince
+
+LANG_ITEM_15 = Kore Dili
+LANG_ITEM_16 = Rusça+Ýngilizce
+LANG_ITEM_17 = Nümerik
+LANG_ITEM_18 = Alfabetik
+LANG_ITEM_19 = Ukrayna Dili
+
+LANG_ITEM_20 = Estonca
+LANG_ITEM_21 = Letonca
+LANG_ITEM_22 = Litvanca
+LANG_ITEM_23 = Norveç dili
+LANG_ITEM_24 = Fince
+
+LANG_ITEM_25 = Danca
+LANG_ITEM_26 = Çekçe
+LANG_ITEM_27 = Türkçe
+LANG_ITEM_28 = Ukrayna Dili+Ýngilizce
+LANG_ITEM_29 = Özbekçe
+
+[ScanToPc]
+CAPTION = JPEG Seçeneði
+IDC_OPTION_STATIC = Bu iþlev görüntüyü JPEG dosyasýna dönüþtürerek daha hýzlý e-posta göndermeyi saðlar.  Bir seçenek seçin.
+IDC_ORIGINAL = Orijinal boyut
+IDC_SIZE_SMALL = Küçük   (Görünüt boyutunu 640 X 480 pencereye ayarlar)
+IDC_SIZE_NOMAL = Normal (Görünüt boyutunu 800 X 600 pencereye ayarlar)
+IDC_SIZE_LARGE = Büyük (Görünüt boyutunu 1024 X 768 pencereye ayarlar)
+IDOK = Tamam
+IDCANCEL = Ýptal
+
+[Flash]
+IDL_ADD = Ekle
+IDL_DELETE = Sil
+IDL_DELETE_ALL = Tümünü sil
+Print list = Liste yazdýr
+IDC_REFRESH = Yenile
+IDC_FONTS = Yazý Tipleri
+IDC_MACROS = Makrolar
+IDC_DELETE_ALL_FONT_MACRO= Tüm yazý tipleri ve makrolarý sil
+IDC_ENABLEMACRO = Makroyu etkinleþtir
+IDC_DISABLEMACRO = Makroyu devre dýþý býrak
+
+[PS3]
+IDC_ADD_PS3 = Ekle
+IDC_DELETE_PS3 = Tümünü sil
+IDC_PRINT_LIST = Liste yazdýr
+IDC_PS3_REFRESH = Yenile
+Print PostScript Flash Directory = PostScript Flaþ Dizinini Yazdýr
+Format Flash Memory = Flaþ Belleði Biçimlendir
+Flash Fonts/Forms = Flash Yazý Tipleri/Formlar
+Size = Boyut
+
+IDL_RESOURCE_TYPE = Kaynak tipi
+IDC_FMU_RADIO_ALL = Hepsi
+IDC_FMU_RADIO_FONT = Yazý Tipleri
+IDC_FMU_RADIO_FORM = Formlar
+IDL_STORAGE_TYPE = Depolama tipi
+IDC_FMU_RADIO_MEMORY = Bellek
+IDC_FMU_RADIO_HDD = HDD
+IDC_FMU_RESET = Sýfýrla
+IDC_FMU_DOWNLOAD = Yükle
+IDC_FMU_DELETE = Sil
+IDC_FMU_DELETE_ALL = Tümünü sil
+IDC_FMU_REFRESH = Yenile
+IDC_FMU_STATIC_TOTALMEM = Toplam(KB)
+IDC_FMU_STATIC_USEDMEM = Kullanýlan(KB)
+IDC_FMU_STATIC_AVAILABLEMEM = Kullanýlabilir(KB)
+IDC_FMU_REPORT = Rapor
+
+
+[SEND]
+CAPTION = Yüklüyor...
+IDL_FILE_SIZE = Dosya boyutu
+IDL_STATUS = Durum
+
+[SELECT_FILE]
+Select a file = Bir dosya seçin
+Note = Not: Dosyanýn kendi kimlik numarasý varsa bu kimlik numarasý dikkate alýnmaz.
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=Aygýt Yazýlýmýný Güncelleþtirme
+IDC_BROWSE=Gözat...
+IDC_UPDATE=Güncelleþtir
+IDL_FILE_NAME=Dosya adý:
+IDL_FILE_INFORMATION=Dosya bilgisi
+IDL_FILE_SIZE=Dosya boyutu:
+IDC_FILE_SIZE=0 bayt
+IDL_PROGRESS=Ýlerleme durumu
+IDL_MESSAGE=Mesaj:
+
+
+[HELP]
+No help = Bu birimle ilgili bir Yardým konusu yok.
+
+;Layout
+Orientation = Sayfada yazdýrma yönünü belirler.
+Top Margin = Sayfanýn yazdýrýlabilir alanýnýn üst kenarýyla sayfanýn ilk satýrýnýn üstü arasýndaki uzaklýðý belirler.
+Left Margin = Sayfanýn yazdýrýlabilir alanýnýn sol kenarýyla sayfadaki her satýrýn sol kenarý arasýndaki uzaklýðý belirler.
+Print Option = Çift Taraf seçeneði otomatik olarak iki taraflý belgeler yazdýrmanýzý saðlar.
+Duplex = Çift Taraf seçeneði otomatik olarak iki taraflý belgeler yazdýrmanýzý saðlar.
+
+;Paper Option
+Copies = Her iþin kaç kopya yazdýrýlacaðýný belirler.
+Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+Tray 1 Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+Tray 2 Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+Tray 3 Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+Tray 4 Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+MP Tray Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+Manual Feeder Paper Size = Yazýcý Tepsisindeki kaðýt boyutunu ayarlar.
+Paper Type = Yazýcýnýn Kaðýt Tipini belirler.
+Paper Source = Yazýcýnýn varsayýlan kaðýt Tepsisini seçebilirsiniz.
+
+;Graphic
+Resolution = Baský çözünürlüðünü belirler.
+Darkness = Sayfadaki toner yoðunluðunu belirler.
+
+Auto Color Calibration = Yazýcýyý, mümkün olan en iyi renkli baský kalitesi için kendi kendini kalibre etmek üzere ayarlamanýzý saðlar.
+Auto Colour Calibration = Yazýcýyý, mümkün olan en iyi renkli baský kalitesi için kendi kendini kalibre etmek üzere ayarlamanýzý saðlar.
+Auto Color Registration = Renkli metinlerin veya grafiklerin konumunu, basýlan renklerin konumunun ekranýnýzdakilere eþit olmasý için ayarlamanýzý saðlar. 
+Auto Colour Registration = Renkli metinlerin veya grafiklerin konumunu, basýlan renklerin konumunun ekranýnýzdakilere eþit olmasý için ayarlamanýzý saðlar. 
+Manual Color Adjustment = Her kartuþ için elle renk karþýtlýðý ayarý yapmanýzý saðlar. Basýlý belge çok açýk, soluk veya silik görünüyorsa kaydýrma çubuðunu + yönde kaydýrýn. Basýlý belge çok bulanýk görünüyorsa kaydýrma çubuðunu - yönde kaydýrýn.
+Manual Colour Adjustment = Her kartuþ için elle renk karþýtlýðý ayarý yapmanýzý saðlar. Basýlý belge çok açýk, soluk veya silik görünüyorsa kaydýrma çubuðunu + yönde kaydýrýn. Basýlý belge çok bulanýk görünüyorsa kaydýrma çubuðunu - yönde kaydýrýn.
+
+;Setting
+Power Save = Yazýcýnýn bekleme modundan düþük güç moduna ne kadar süre sonra geçeceðini belirler.
+Jam Recovery = Yazýcýnýn bir belgenin sýkýþmýþ olan sayfalarýný en iyi þekilde tekrar yazdýrmasýný belirler.
+Auto Continue = Kullanýcý, MP tepsisinde kaðýt yokken, ancak sürücünün kaðýt kaynaðý Elle Beslemeye ayarlýyken bir sayfa yazdýrdýðýnda, yazýcýnýn tepkisini belirler.
+Altitude Adjustment = Yazdýrma kalitesini, bulundugunuz irtifaya göre en iyi hale getirebilirsiniz. 
+Auto CR = Bir belgenin her satýrýndan sonra yazýcý, bir satýr besleme (LF) ve ardýndan bir satýr baþý (CR) karakteri bekler. Bu ayar, yazýcý bir LF alýp bir CR alamadýðýnda neyapacaðýný belirler. 
+
+Job Timeout = Baþka arabirimden veri almadan önce yazýcýnýn sizin verilerinizi yazdýrmak için ne kadar bekleyeceðini belirler.
+Toner Save = Sayfanýn yazdýrýlmasýnda kullanýlacak toner miktarýný belirler.
+Auto Clean Drum = Tamburun temizlenip temizlenmeyeceðini otomatik olarak belirler. Ýþaretlenmiþse, OPC için her 500 sayfada bir temizleme sayfasý yazdýrýlacaktýr. (Daha iyi çözünürlük için OPC tamburunu temizleyin)
+Decide Emulation = Öykünmeyi belirler.
+Emulation Type = Öykünmeyi belirler.
+
+
+;Check
+Imaging Unit = Görüntüleme Birimi, geçerli görüntüleme birimi ile yazdýrýlan toplam resim sayýsýný kontrol etmenizi saðlar.
+Transfer Belt = Geçerli transfer kayýþý ile yazdýrýlan toplam sayýyý kontrol etmenizi saðlar.
+Fuser Type = Geçerli füzer birimi ile yazdýrýlan toplam sayýyý kontrol etmenizi saðlar.
+Fuser = Geçerli füzer birimi ile yazdýrýlan toplam sayýyý kontrol etmenizi saðlar.
+Transfer Roll = Bu öðe yalnýzca servis teknisyenleri için geçerlidir. 
+Tray1 Pickroll = Bu öðe yalnýzca servis teknisyenleri için geçerlidir. 
+Tray2 Pickroll = Bu öðe yalnýzca servis teknisyenleri için geçerlidir. 
+Tray3 Pickroll = Bu öðe yalnýzca servis teknisyenleri için geçerlidir. 
+Tray4 Pickroll = Bu öðe yalnýzca servis teknisyenleri için geçerlidir. 
+
+
+;Information
+Configuration Print = Yazýcýnýn geçerli yapýlandýrmasýný yazdýrýr.
+Print Configuration Page = Yazýcýnýn geçerli yapýlandýrmasýný yazdýrýr.
+Configuration Page = Yazýcýnýn geçerli yapýlandýrmasýný yazdýrýr.
+Network Configuration Print = Yazýcýnýn geçerli að yapýlandýrmasýný yazdýrýr.
+Print Network Configuration = Yazýcýnýn geçerli að yapýlandýrmasýný yazdýrýr.
+Test Print = Tanýtým Sayfasý yazdýrýr. 
+Test Prints = Tanýtým Sayfasý yazdýrýr. 
+Print Demo Page = Tanýtým Sayfasý yazdýrýr. 
+Menu Map = Yazýcýnýn Menü Haritasýný yazdýrýr.
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = Tarama hedef ayarlarýný yapar.
+Scan Resolution = Çözünürlük ayarý, tarayýcýnýn, taranmýþ bir görüntü elde etmek için yakalayacaðý bilgi miktarýný belirler.
+Scan Color = Görüntünün taranacaðý modu belirler. Orijinal kaynak belge taranýrken kullanmak istediðiniz tarama modu türünü seçmenize olanak saðlar.
+Scan Colour = Görüntünün taranacaðý modu belirler. Orijinal kaynak belge taranýrken kullanmak istediðiniz tarama modu türünü seçmenize olanak saðlar.
+Show Preview = Bu iþaret kutusu, tarama seçeneklerini deðiþtirmek üzere Tarama iletiþim penceresinin görünüp görünmeyeceðini belirler.  Bu seçenek seçilirse, bir öntarama gösterilecek ve tam bir tarama gerçekleþtirmeden önce tarama seçenekleri deðiþtirilebilecektir.  Bu kutu seçilmezse görüntü doðrudan, seçilen uygulamaya tarancaktýr.
+ADF Duplex = Belge kaynaðý olarak Otomatik Belge Besleyici seçilir. Çift taraflý kaðýtlarý taramak için bu modu seçin. Belge kaynaðý olarak ADF Çift Taraflý'yý seçerseniz, Otomatik Belge Besleyici'deki belge taranýr. Besleyici boþsa sistem bir ileti görüntüler. Devam etmek için taranacak belgeyi besleyiciye yerleþtirin ve taramayý tekrar baþlatýn. ADF Çift Taraflý modu söz konusu olduðunda, sayfalarýn tarayýcýdan düzgün biçimde yönlenmiþ olarak çýkmasý için uygun ciltleme türünü seçin. Belge kaynaðýndaki sayfalar dikey yönlü ise (örneðin kitap veya broþür gibi), Uzun Kenardan Ciltleme'yi týklatýn. Yatay yönlü ise (örneðin not defteri gibi), Kýsa Kenardan Ciltleme'yi týklatýn.
+
+IDC_AVAILABLE_STATIC = PC kaydýndaki BMP dosyalarýna baðlý geçerli uygulamalarýn listesini gösterir. Tarama Ayarlarý sekmesi her açýldýðýnda Geçerli Tarama Hedefleri listesi güncellenecektir.
+IDC_FRONT_STATIC =  Yazýcýnýn Ön Paneline eklenen uygulamalarýn listesini gösterir. Yazýcý ilk kez kullanýldýðýnda, yazýcýnýn Ön Paneli varsayýlan öðeleri güncelleyecektir.
+IDC_SCAN_MOVE = Bu düðme 'Geçerli Tarama Hedefleri'nden seçilen öðeleri 'Ön Panel Hedef Liste'sine taþýr.
+IDC_SCAN_ADDAPP = Bu düðme geçerli “exe” dosyalarýndan seçilen bir öðeyi ekleyebilir. Eklenen öðe daha sonra “Kullanýlabilen Hedef listesi”nde gösterilir.
+IDC_SCAN_REMOVEAPP = Bu düðme kullanýcý tarafýndan 'Geçerli Tarama Hedefleri'ne eklenen bir öðeyi kaldýrýr. 
+IDC_LOC_STATIC = Varsayýlan kayýt klasörünü belirler.
+
+;Phonebook
+Directory = E-posta ve telefon defteri ayarlarýný belirler. 
+Phonebook = Telefon defteri ayarlarýný belirler.
+Phone Book = Telefon defteri ayarlarýný belirler.
+Emailbook = Adres defteri ayarlarýný belirler.
+Address Book = Adres defteri ayarlarýný belirler.
+IDC_EDIT = Kullanýcý seçilen giriþ numaralarýný saklayabilir veya düzenleyebilir.
+IDC_DELETE = Kullanýcý seçilen giriþi silebilir.
+IDC_DELETE_ALL = Kullanýcý tüm giriþleri silebilir.
+IDC_GROUP_DIAL = Kullanýcý seçilen grup arama numarasýný ayarlayabilir veya düzenleyebilir.  Seçilen arama Grup aramasý deðilse, Grup arama düðmesi devre dýþý kalýr.
+IDC_GET_PHONEBOOK = Kullanýcý, cihazdan Telefon Defteri numaralarýný alabilir.
+IDC_SEND_PHONEBOOK = Kullanýcý, cihaza Telefon Defteri numaralarýný yükleyebilir.
+IDC_EMAIL_GROUP_DIAL = Kullanýcý seçilen grup posta giriþini ayarlayabilir veya düzenleyebilir.  Seçilen posta Grup postasý deðilse, Grup postasý düðmesi devre dýþý kalýr.
+IDC_GET_EMAIL = Kullanýcý cihazdan posta giriþlerini alabilir.
+IDC_SEND_EMAIL = Kullanýcý cihaza posta giriþlerini yükleyebilir.
+IDC_ADD = Kullanýcý seçilen giriþ numaralarýný kaydedebilir.
+IDC_MODIFY = Kullanýcý seçilen giriþ numaralarýný deðiþtirebilir.
+IDC_EMAIL_ADD = Kullanýcý seçilen giriþ adreslerini kaydedebilir.
+IDC_EMAIL_MODIFY = Kullanýcý seçilen giriþ adreslerini deðiþtirebilir.
+IDC_G_ADD = Kullanýcý seçilen grup arama numarasýný kaydedebilir.
+IDC_G_MODIFY = Kullanýcý seçilen grup arama numarasýný düzenleyebilir.
+IDC_G_EMAIL_ADD = Kullanýcý seçilen grup postasýný kaydedebilir.
+IDC_G_EMAIL_MODIFY = Kullanýcý seçilen grup postasýný deðiþtirebilir.
+
+;Fax
+Machine ID = Faks Kapak Sayfasý için bir ad belirler.
+Printer ID = Faks Kapak Sayfasý için bir ad belirler.
+Fax Number = Faks Kapak Sayfasý  için bir faks numarasý belirler.
+Machine Fax No = Faks Kapak Sayfasý  için bir faks numarasý belirler.
+Machine Fax Number = Faks Kapak Sayfasý  için bir faks numarasý belirler.
+Printer Fax Number = Faks Kapak Sayfasý  için bir faks numarasý belirler.
+
+;Network
+BOOTP = BOOTP sunucusu IP adresini otomatik olarak size verir.
+DHCP = DHCP sunucusu IP adresini otomatik olarak size verir.
+Static = IP adresini, alt að maskesini ve að geçidini elle girebilirsiniz.
+
+Emulation Setting = Her öykünmenin deðerini ayarlar.
+
+;PCL
+Typeface = Geçerli yazý tipinin yazý yüzünü gösterir.
+Font = Geçerli yazý tipini gösterir.
+Symbol Set = Simge dizisi, bir yazý tipinde kullanýlabilen tüm karakterlerin tek gruplanýþýdýr.
+
+;EPSON
+Pitch = Karakter aralýðýný belirler.
+Point Size = Yalnýzca orantýlý boþluk verilen dýþ çizgili bir yazý tipi seçtiðinizde kullanýlabilir. Diðer yazý tipleri için dikkate alýnmaz.
+Lines Per Page = Sayfadaki satýr sayýsýný ayarlar.
+Lines = Sayfadaki satýr sayýsýný ayarlar.
+Form Length = Sayfadaki satýr sayýsýný ayarlar.
+Courier = Courier yazý tipini belirler; Normal veya Koyu.
+International character set = Uluslararasý karakter dizisi, bir yazý tipinde kullanýlabilen tüm karakterlerin bir gruplamasýdýr.
+character set = Uluslararasý karakter dizisi, bir yazý tipinde kullanýlabilen tüm karakterlerin bir gruplamasýdýr.
+Character Table = Karakter Tablosunu belirler.
+LPI = Sayfadaki satýr sayýsýný belirler.
+Auto Wrap = Sözcük kaydýrmayý belirler.
+Form Lines = Formdaki (sayfadaki) satýr sayýsýný ayarlar.
+
+IDL_ADD = Flaþ belleðe bir yazý tipi veya makro ekler.
+IDL_DELETE = Flaþ bellekten bir yazý tipi veya makro siler.
+IDL_DELETE_ALL = Flaþ bellekteki tüm yazý tiplerini ya da makrolarý siler.
+Print list = Eklenen yazý tiplerinin veya makrolarýn bir listesini yazdýrýr.
+IDC_ENABLEMACRO = Seçilen makroyu etkinleþtirir.
+IDC_DISABLEMACRO = Seçilen makroyu devre dýþý býrakýr.
+IDC_REFRESH = Yazý tipi ve makro bilgilerini güncelleþtirir.
+IDC_DELETE_ALL_FONT_MACRO = Flaþ bellekteki tüm makrolarý ve yazý tiplerini siler.
+
+Print PostScript Flash Directory = Flaþ belleðin Flaþ Dizinini yazdýrýr.
+Print error information = Belgeniz yazdýrýldýktan sonra PostScript hatasý bilgilerinin yazdýrýlýp yazdýrýlmayacaðýný belirler. Yazdýrma iþinde bir hata olduðu zaman yazýcýnýn bir hata sayfasý yazdýrmasýný istiyorsanýz AÇIK ayarýný seçin. 
+PostScript error information = Belgeniz yazdýrýldýktan sonra PostScript hatasý bilgilerinin yazdýrýlýp yazdýrýlmayacaðýný belirler. Yazdýrma iþinde bir hata olduðu zaman yazýcýnýn bir hata sayfasý yazdýrmasýný istiyorsanýz AÇIK ayarýný seçin. 
+PS error information = Belgeniz yazdýrýldýktan sonra PostScript hatasý bilgilerinin yazdýrýlýp yazdýrýlmayacaðýný belirler. Yazdýrma iþinde bir hata olduðu zaman yazýcýnýn bir hata sayfasý yazdýrmasýný istiyorsanýz AÇIK ayarýný seçin. 
+Print PS Error = Belgeniz yazdýrýldýktan sonra PostScript hatasý bilgilerinin yazdýrýlýp yazdýrýlmayacaðýný belirler. Yazdýrma iþinde bir hata olduðu zaman yazýcýnýn bir hata sayfasý yazdýrmasýný istiyorsanýz AÇIK ayarýný seçin. 
+Print PostScript Error = Belgeniz yazdýrýldýktan sonra PostScript hatasý bilgilerinin yazdýrýlýp yazdýrýlmayacaðýný belirler.
+Font List = Yazýcýnýn geçerli kullanýlabilir yazý tipi listesini yazdýrýr.
+Print Font List = Yazýcýnýn geçerli kullanýlabilir yazý tipi listesini yazdýrýr.
+PCL Font List = Yazýcýnýn geçerli kullanýlabilir yazý tipi listesini yazdýrýr.
+PS Font List = Yazýcýnýn geçerli kullanýlabilir yazý tipi listesini yazdýrýr.
+Postscript Font List = Yazýcýnýn geçerli kullanýlabilir yazý tipi listesini yazdýrýr.
+
+IDC_ADD_PS3 = Flaþ belleðe bir PostScript yazý tipi veya formu ekler.
+IDC_DELETE_PS3 = Flaþ bellekteki tüm PostScript yazý tiplerini ve formlarýný siler.
+IDC_PRINT_LIST = Eklenen PostScript yazý tiplerinin ve formlarýnýn bir listesini yazdýrýr.
+IDC_PS3_REFRESH = PostScript yazý tipleri ve formlarý hakkýndaki bilgileri güncelleþtirir.
+
+IDC_FMU_RESET= Geçerli seçilmiþ dosya adýný sýfýrlayabilirsiniz.
+IDC_FMU_DOWNLOAD = Bu düðme ile kullanýcý, kaynaklarý cihaza yükleyebilir.
+IDC_FMU_DELETE = Bu düðme ile kullanýcý, kaynaðý cihazdan silebilir.
+IDC_FMU_DELETE_ALL = Bu düðme ile kullanýcý, tüm kaynaklarý cihazdan silebilir.
+Format Flash Memory = Dosya sistemini baþlatmak için yazýcýnýzdaki flash belleði biçimlendirir. Flash belleðe yüklediðiniz tüm makro, yazý tipi ve form dosyalarý kaldýrýlacaktýr.
+Initialize Font/Form Memory = Yazýcýnýzdaki yazý tipi/form belleðinizi baþlatýn. Belleðe yüklediðiniz tüm makro, yazý tipi ve form dosyalarý kaldýrýlacak.
+IDC_FMU_REFRESH = Toplam, kullanýlan ve kullanabilir depolama boyutlarýný yenileyebilirsiniz. Bu ayrýca, cihaz hafýzasýnda saklanan kaynak adlarý listesini da  günceller.
+IDC_FMU_REPORT = Bu düðme cihazdaki kaynaklarýn listesini rapor eder.
+
+;EPSON
+Adjust Top Margin = Sayfanýn üst boþluðunu ayarlar. 
+
+;Xerox
+Tray 1 Size = Yazýcý Tepsisi 1'deki kaðýt boyutunu ayarlar. Özel kaðýt boyutu kullanýmýný seçtiðinizde, Kýsa Kenar ve Uzun Kenar alanlarý etkinleþir, böylece kullanýcý tanýmlý kaðýt boyutlarýný tanýmlayabilirsiniz. 
+Simplex Top Margin = Sayfanýn yazdýrýlabilir alanýnýn üst kenarýyla sayfanýn ilk satýrýnýn üstü arasýndaki uzaklýðý belirler. Tek Taraflý yazdýrma içindir.
+Simplex Left Margin = Sayfanýn yazdýrýlabilir alanýnýn sol kenarýyla sayfadaki her satýrýn sol kenarý arasýndaki uzaklýðý belirler. Tek Taraflý yazdýrma içindir.
+Duplex Top Margin = Sayfanýn yazdýrýlabilir alanýnýn üst kenarýyla sayfanýn ilk satýrýnýn üstü arasýndaki uzaklýðý belirler. Çift Taraflý yazdýrma içindir. 
+Duplex Left Margin = Sayfanýn yazdýrýlabilir alanýnýn sol kenarýyla sayfadaki her satýrýn sol kenarý arasýndaki uzaklýðý belirler. Çift Taraflý yazdýrma içindir. 
+2-Sided Printing = Ýki Taraflý Yazdýrma otomatik olarak iki taraflý belgeler yazdýrmanýzý saðlar. 
+Office Demo = Yazýcýnýn Ofis Tanýtým Sayfasýný yazdýrýr.
+2-Sided Demo =  Yazýcýnýn 2 Taraflý Tanýtým Sayfasýný yazdýrýr. 
+2-Sided Demo Page =  Yazýcýnýn 2 Taraflý Tanýtým Sayfasýný yazdýrýr. 
+
+Ink Cartridge Alignment = Mürekkep Kartuþunu hizalar.
+Ink Cartridge Clean = Mürekkep Kartuþunu temizler.
+
+Tray Chaining = Kaðýt Kaynaðýndan Otomatik dýþýnda bir deðer seçerseniz ve seçilen tepsi boþsa yazýcý otomatik olarak diðer tepsilerden yazdýrýr. 
+Tray Linking = Kaðýt Kaynaðýndan Otomatik dýþýnda bir deðer seçerseniz ve seçilen tepsi boþsa yazýcý otomatik olarak diðer tepsilerden yazdýrýr. 
+
+Short Binding = Kýsa ciltleme için arka tarafýn alt kenar boþluðunu ayarlar.
+Long Binding = Uzun ciltleme için arka tarafýn sað kenar boþluðunu ayarlar.
+Image Enhance = Bu öðe yazdýrma kalitesini geliþtirir.
+
+
+
+
+
+Original Type = Bu seçeneði orijinal türe göre belirlediðinizde en iyi kopya kalitesini elde edebilirsiniz.
+Transfer Belt Reset = Transfer kayýþý ömrü doldu. Transfer kayýþýný yenisiyle deðiþtirin, daha sonra Sýfýrlama Sayýsý düðmesini týklatýn. Sýfýrlama Sayýsý penceresi açýldýðýnda, yeni transfer kayýþýnýn seri numarasýný girin ve Uygula öðesini týklatýn.
+Print Network Configuration Page = Yazýcýnýn geçerli að yapýlandýrmasýný yazdýrýr.
+
+;k2Xrx
+Collation = Bu öðe, baský sürücüsü üzerinden alýnan verileri harmanlamanýzý saðlar. Yazýcý, çýktýlarý kümeler halinde, orijinallerin sýrasýyla yazdýrýr.
+Smart Duplexing = Bu menü Açýk olarak ayarlanýrsa, yazýcý tek sayfalýk bir iþ seçer ve bilgisayarýnýzdaki yazýcý sürücüsü varsayýlan olarak dupleks yazdýrmaya ayarlanmýþ olsa da simpleks tek sayfa olarak yazdýrýr.
+Job Held Timer = Makine bir iþi belirli bir süre boyunca bekletir. En fazla 72 saatlik bir süre ayarlayabilirsiniz.
+Toll Save = Yazýcýnýzý, fakslarý belleðinde saklayacak ve bunlarý daha sonra belirtilen indirimli saatlerde gönderecek þekilde ayarlar. 
+
+Toner Low Alert = Kartuþtaki toner bittiðinde, kullanýcýnýn toner kartuþunu deðiþtirmesini isteyen bir mesaj görüntülenir. Bu mesajýn görüntülenmesi veya görüntülenmemesi seçeneðini ayarlayabilirsiniz.
+Print Supplies Information = Sarf malzemesi bilgileri sayfasýný yazdýrýr.
+Print Accounting Report = Çýktý sayýsý raporu yazdýrýr.
+Print Stored Job List = Sabit diskte kayýtlý olan iþleri yazdýrýr.
+Print Completed Job List = Tamamlanan yazdýrma iþlerinin listesini yazdýrýr.
+Print Usage Page = Kiþi veya grup tarafýndan yazdýrýlan sayfalarýn toplam sayýsýný yazdýrýr.
+Screen = Ekran, sürekli tonlu bir görüntüyü yazdýrýlabilir ikili görüntüye dönüþtürmek için kullanýcýnýn seçenekleri belirmesini saðlar. Normal mod, tüm sayfanýn yumuþak tonlu olduðu çýktýlar oluþturur. Geliþmiþ mod, sayfada keskin metinlerin ve yumuþak grafik/raster nesnelerin olduðu çýktýlar oluþturur. Ayrýntýlý mod, tüm sayfada keskin ayrýntýlarýn olduðu çýktýlar oluþturur.
+Wireless Network Setting = Kablosuz að ayarlarýný gereksinimlerinize göre yapýlandýrýn.
+Paper Substitution = Kaðýt uyuþmazlýðý varsa, bu seçenek A4 boyutlu kaðýdý Letter boyutunda kaðýda yazdýrmasý veya tersi için makineyi ayarlar.

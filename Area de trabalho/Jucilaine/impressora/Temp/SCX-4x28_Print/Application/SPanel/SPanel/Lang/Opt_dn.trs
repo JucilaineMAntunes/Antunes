@@ -1,0 +1,14 @@
+SM_OPT_CAPTION=Indstillinger
+SM_OPT_TITLE=Smart Panel - alarmindstilling
+SM_OPT_CHECK_FINISH=Vis, når jobbet er afsluttet for netværksprinter
+SM_OPT_CHECK_ERROR=Displayet, når printeren ikke kanudskrive (f.eks. når den mangler papir)
+SM_OPT_CHECK_WAIT=Displayet, når printeren venter (f.eks. varmer op)
+SM_OPT_CHECK_JOBMONITOR=Start jobovervågning, når jobbet gemmes i printeren
+SM_OPT_INTERVAL=Planlæg en automatisk statuskontrol hver
+SM_OPT_STYLE=Vis med
+SM_OPT_BALLOON=Boble
+SM_OPT_PANEL=Popup-vindue (Smart Panel)
+SM_OPT_SEC=(1-10 sek.)
+SM_OPT_OK=OK
+SM_OPT_CANCEL=Annuller
+SM_OPT_SHOW=Vis udskriftstatusmeddelelse

@@ -1,0 +1,1181 @@
+[MAIN]
+Exit = 結束
+Help = 說明
+Apply = 套用
+Default = 印表機預設值
+Close = 關閉
+S2PC = 掃描至電腦
+
+[COMMON]
+IDS_APPNAME = 印表機設定公用程式
+IDS_X_APPNAME = ControlCentre
+IDS_P_APPNAME = 遠端控制面板
+IDS_STRING100 = 選擇韌體檔案。
+IDS_STRING101 = 無效韌體檔案。
+IDS_STRING102 = 寫入資料失敗。
+IDS_STRING103 = 讀取資料失敗。
+IDS_STRING104 = 位元已傳輸
+IDS_STRING105 = 寫入完成。 電腦初始化完畢後才可關閉您的機器。
+IDS_STRING106 = 更新完成！
+IDS_STRING107 = 通訊埠忙線中
+IDS_STRING108 = 就緒
+BUSY_ERR_TITLE = 印表機忙碌中
+IDS_COPYRIGHT2 = 版權所有。
+IDC_REFRESH = 重新整理
+IDL_ID = ID
+IDL_FILENAME = 檔案名稱
+IDC_ADD_BROWSE = 瀏覽
+IDC_SEND = 傳送
+IDS_IMPORTERROR = 已報告部分錯誤。
+IDS_IMPORTHEADERERROR = 此 CSV 檔案有無效的標題資訊
+IDS_IMPORTFILEERROR = 此 CSV 檔案有無效資料
+IDS_DELMSG = 您確定嗎？
+IDS_ERRORSTRING = 傳送指令給印表機時發生錯誤
+IDS_NOT_RESPOND = 印表機沒有回應
+IDS_SEND_ERROR = 寫入通訊埠時錯誤。
+IDS_SEND_PER = 位元已傳輸
+IDS_SEND_NOTMEM = 沒有足夠的記憶體
+IDS_NOT_SUPPORT = Windows NT 不支援此程式
+IDS_STRING107 = 通訊埠忙線中
+Port busy = 通訊埠目前由其他的應用程式使用。
+
+IDS_NOT_RESPOND = 沒有回應
+AddFilePath_Err = 使用瀏覽按鈕選擇程式
+AddFileName_Err = 輸入應用程式名稱
+ExistErr = 已存在
+Delete_DefaultItem = 此為預設值無法刪除
+Over_Number = 檔案的數量有限。 無法新增程式。
+PaperPort = PaperPort 資料夾不存在。 請執行 PaperPort 程式以自動建立資料夾。
+EmptyErr = 前置面板目的地清單是空的。
+MaxNoErr = 設備只允許輸入 9 個條目。已達到最大數目。
+Msg_delete_font = 您確定要刪除字型嗎？
+Msg_delete_macro = 您確定要刪除巨集嗎？
+Msg_delete_font_all = 您確定要刪除所有快閃字型嗎？
+Msg_delete_macro_all =您確定要刪除所有巨集嗎？
+Msg_delete_fontmacro_all = 您確定要刪除所有快閃字型及巨集嗎？
+
+IDS_INVALID_FONT = 此類型錯誤。 僅支援「Adobe Type1」（ASCII 型）。
+IDS_FAIL_FORMDOWNLOAD = 下載字型失敗。 重試？
+IDS_FAIL_FONTDOWNLOAD = 下載表格失敗。 重試？
+IDS_FAIL_FORMDELETE = 刪除字型失敗。 重試？
+IDS_FAIL_FONTDELETE = 刪除表格失敗。 重試？
+IDS_SUCCESS_DOWNLOAD_SINGULAR = 檔案下載成功。
+IDS_SUCCESS_DELETE_SINGULAR = 檔案刪除成功。
+IDS_LIMIT_FILE = 資源檔案數目上限為 20。請選擇您最常用的資源檔案。 如需下載更多資源檔案，請先刪除印表機中儲存的資源檔案。
+Msg_Format_FlashMemory = 將移除所有下載至快閃記憶體的巨集、字型與表單檔。 確定繼續嗎？
+Msg_InitializeMemory = 將從記憶體中刪除您下載的全部巨集、字體與表單文檔。 確定要繼續嗎？
+Msg_Proceed = 確定繼續嗎？
+IncludeGroup = 所選項目包含在群組中。 請刪除群組中的項目。
+
+Msg_Error_IP_Addr = 您所輸入的位址格式不正確。 位址必須由 4 個 0 到 255 之間的數位組成，之間用句點分隔。
+Msg_Error_IP_Value = 您所輸入的值格式不正確。 值必須由 4 個 0 到 255 之間的數位組成，之間用句點分隔。
+Msg_Validation = 有一個必填欄位為空白或未正確填寫。
+Msg_Empty_Name = 條目的名稱是空的。 請檢查名稱。
+Msg_Empty_Value =條目的值是空的。 請檢查該值。
+IPSet_Err =  請檢查輸入值。
+Path_Err = 無法使用該路徑。 請選取其他路徑。
+
+IDOK = 確定
+IDCANCEL = 取消
+IDL_NAME = 名稱：
+IDS_NUM = 編號
+
+[STRING]
+;Common
+ON = 開啟
+OFF = 關閉
+LOW = 低
+HIGH = 高
+HIGH 1 = 高 1
+HIGH 2 = 高 2
+HIGH 3 = 高 3
+HIGH1 = 高1
+HIGH2 = 高2
+HIGH3 = 高3
+Plain = 平原
+Higher = 較高
+Highest = 極高
+
+Altitude2Mode_Plain = 平原
+Altitude2Mode_High = 高
+Altitude3Mode_Plain = 平原
+Altitude3Mode_High = 高
+Altitude3Mode_Higher = 較高
+Altitude4Mode_Plain = 平原
+Altitude4Mode_High = 高
+Altitude4Mode_Higher = 較高
+Altitude4Mode_Highest = 極高
+
+mm = mm
+Print list = 列印清單
+Typeface = 字體
+Symbol set = 符號集
+Font List = 字型清單
+Font = 字型
+Point Size = 字型點數大小
+Pitch = 點
+Auto Wrap = 自動換行
+LPI = LPI
+Top Margin = 上方邊界
+Top Margin(mm) = 上方邊界(mm)
+Top Margin(inch) = 上方邊界(英吋)
+Dark = 深
+Auto = 自動
+Print = 列印
+
+;title
+Layout = 配置
+Paper Option = 紙張選項
+Graphic = 圖形
+SETTING = 設定
+Information  =  資訊
+Emulation = 模擬
+Network = 網路
+Network(IPv4) = 網路(IPv4)
+About = 關於
+Fax = 傳真
+Fax Setting = 傳真設定
+Scan = 掃描
+System Setup = 設定
+Paper Setup = 紙張選項
+
+COLOR = 色彩
+COLOUR = 色彩
+CHECK = 檢查
+Emulation Setting = 模擬設定
+PCL = PCL
+EPSON/IBM = EPSON/IBM
+EPSON = EPSON
+IBM = IBM
+ps3 = PS3
+PostScript = PostScript
+Flash Font and Macro = 快閃字型和巨集
+Store PCL Font and Macro = 儲存 PCL 字型和巨集
+Format = 格式
+Format Flash Memory = 格式化快閃記憶體
+Initialize Font/Form Memory = 初始化字體/表單記憶體
+Initialize = 初始化
+
+;Phonebook
+Directory = 目錄
+Phonebook = 電話簿
+Emailbook = 通訊錄
+Phone Book = 電話簿
+Address Book = 通訊錄
+
+;fax
+Fax Setting = 傳真設定
+Fax Cover Sheet = 傳真封面
+Machine ID = 機器 ID
+Fax Number = 傳真號碼
+Machine Fax No = 機器傳真號碼
+Machine Fax Number = 機器傳真號碼
+
+Tray1 Paper = 紙匣 1 紙張
+Tray2 Paper = 紙匣 2 紙張
+Tray3 Paper = 紙匣 3 紙張
+Tray4 Paper = 紙匣 4 紙張
+Tray 1 Paper = 紙匣 1 紙張
+Tray 2 Paper = 紙匣 2 紙張
+Tray 3 Paper = 紙匣 3 紙張
+Tray 4 Paper = 紙匣 4 紙張
+Bypass Paper = 手送紙張
+
+Sending = 傳送中
+Redial Interval = 重撥間隔時間
+Redial Count = 重撥次數
+Prefix Dial = 撥號首碼
+ECM Mode = ECM 模式
+
+DisCard Size = 裁剪大小
+Rings to Answer = 應答響鈴
+Stamp receiver name = 標出接收端名稱
+
+Sending Confirmation = 傳送確認
+On-Error = 錯誤
+Auto Journal = 自動列印日誌
+RX Redcution = 接收比例縮小
+Com = Com
+Ringer = 鈴聲
+Med = 中
+Toll Save = 節費
+Clock Mode = 時鐘模式
+Sound = 音效
+Key Sound = 按鍵音
+
+Redial Term = 重撥間隔
+Redial Times = 重撥次數
+Send Report = 傳送傳送
+Auto Report = 自動報告
+
+;scan
+Scan Destination = 掃瞄目的地
+Destination = 目的地
+75dpi Draft = 75dpi 草稿
+150dpi = 150dpi
+200dpi = 200dpi
+300dpi Normal = 300dpi 正常
+600dpi = 600dpi
+
+75dpi-Draft = 75dpi 草稿
+300dpi-Normal = 300dpi 正常
+
+Scan Resolution = 解析度
+Scan Color = 掃瞄色彩
+Scan Colour = 掃瞄色彩
+Black and White = 黑白
+Gray = 灰
+256 Colors = 256 色
+256 Colours = 256 色
+True Colors = 全彩
+True Colours = 全彩
+
+Show Preview = 顯示預覽
+
+ADF Duplex = ADF 雙面
+Long-Edge Binding = 長邊裝訂
+Short-Edge Binding = 短邊裝訂
+
+;Layout
+Orientation = 方向
+Portrait = 直印
+Landscape = 橫印
+SimplexMargin = 單面列印邊界
+Simplex Margin = 單面列印邊界
+Simplex Margin(mm) = 單面列印邊界(mm)
+Simplex Margin(inch) = 單面列印邊界(英吋)
+Left Margin = 左方邊界
+Left Margin(mm) = 左方邊界(mm)
+Left Margin(inch) = 左方邊界(英吋)
+Duplex = 雙面列印
+Print Option = 列印選項
+Short Edge = 邊緣短
+Long Edge = 邊緣長
+
+Margin = 邊界
+
+;PaperOption
+Copies = 列印份數
+Paper Size = 紙張大小
+A4 = A4
+A5 = A5
+A6 = A6
+B5 = B5
+JIS B4 = JIS B4
+JIS B5 = JIS B5
+JIS B6 = JIS B6
+ISO B5 = ISO B5
+Letter = Letter
+Legal = Legal
+Executive = Executive
+No 10 Env. = 10 號信封
+No. 10 Env. = 10 號信封
+No.10 Env. = 10 號信封
+Monarch Env. = Monarch 信封
+DL Env. = DL 信封
+C4 Env. = C4 信封
+C5 Env. = C5 信封
+C6 Env. = C6 信封
+US Folio = US Folio 紙張
+Oficio = Oficio 紙張
+Statement = Statement 紙張
+US postcard = 美式明信片
+Index Card = 索引卡
+Custom Paper = 自訂紙張
+
+B5 JIS = B5 JIS
+B6 JIS = B6 JIS
+Custom = 自訂
+Custom1 = 自訂 1
+Custom2 = 自訂 2
+Custom3 = 自訂 3
+Custom4 = 自訂 4
+Custom5 = 自訂 5
+Folio = Folio 紙張
+
+Paper Type = 紙張類型
+Tray 1 Type = 紙匣 1 類型
+Tray 2 Type = 紙匣 2 類型
+Tray 3 Type = 紙匣 3 類型
+Plain Paper = 一般紙張
+Bond Paper = 證券紙
+Bond = 證券紙
+Transparency = 投影片
+Card Stock = 卡片紙
+CardStock = 卡片紙
+Labels = 標籤
+Preprinted = 預覽列印
+Color Page = 彩色頁面
+Colour Page = 彩色頁面
+Envelope = 信封
+Thick Paper = 厚紙
+Thin Paper = 薄紙
+Thick = 厚紙
+Thin = 薄紙
+Cotton = 棉質
+Recycled = 再生紙
+
+Printer Default = 印表機預設值
+Colored = 色紙
+Coloured = 色紙
+Colored Paper = 色紙
+Coloured Paper = 色紙
+Color Paper = 色紙
+Colour Paper = 色紙
+Recycled Paper = 再生紙
+Letterhead = 專用信箋
+Special = 特殊
+Samsung Photo Paper = Samsung相片紙
+Photo Paper = 相片紙
+Photo Paper 120 = 相片紙 120
+Photo Paper 160 = 相片紙 160
+Photo Paper 180 = 相片紙 180
+Photo Paper 220 = 相片紙 220
+Photo Paper 120 g/m2 = 相片紙 120 g/m2
+Photo Paper 160 g/m2 = 相片紙 160 g/m2
+Photo Paper 180 g/m2 = 相片紙 180 g/m2
+Photo Paper 220 g/m2 = 相片紙 220 g/m2
+Photo Paper 120g/m2 = 相片紙 120g/m2
+Photo Paper 160g/m2 = 相片紙 160g/m2
+Photo Paper 180g/m2 = 相片紙 180g/m2
+Photo Paper 220g/m2 = 相片紙 220g/m2
+Photo/Image = 相片/影像
+Paper Source = 紙張來源
+Auto Select = 自動選取
+Tray1 = 紙匣 1
+Tray2 = 紙匣 2
+Tray3 = 紙匣 3
+Tray4 = 紙匣 4
+Tray 1 = 紙匣 1
+Tray 2 = 紙匣 2
+Tray 3 = 紙匣 3
+Tray 4 = 紙匣 4
+Tray 5 = 紙匣 5
+Manual = 手動
+MP Tray = MP 紙匣
+Manual Feed = 手動送紙
+Auto Selection = 自動選取
+Manual Feeder = 手動送紙器
+Multi-Purpose Tray = 多功能紙匣
+
+;Graphic
+Resolution = 解析度
+300dpi = 300dpi
+1200dpi = 1200dpi
+600dpi = 600dpi
+
+300dpi-Draft = 300dpi-草稿
+600dpi-Draft = 600dpi-草稿
+600dpi-Normal = 600dpi-正常
+1200dpi-Best = 1200dpi-最佳
+Manual Adjustment = 手動調整
+
+Darkness = 暗
+Normal = 正常
+Draft = 草稿
+Best = 最佳
+Light = 亮
+
+Text Enhance = 增強文字
+Image Enhance = 增強影像
+
+Image Quality = 影像品質
+
+
+;Setting
+Power Save = 省電
+1 minute  = 1 分鐘
+1 minutes  = 1 分鐘
+5 minutes  = 5 分鐘
+10 minutes  = 10 分鐘
+15 minutes  = 15 分鐘
+20 minutes  = 20 分鐘
+30 minutes  = 30 分鐘
+45 minutes  = 45 分鐘
+60 minutes  = 60 分鐘
+120 minutes  = 120 分鐘
+180 minutes  = 180 分鐘
+240 minutes  = 240 分鐘
+360 minutes  = 360 分鐘
+Auto Continue = 自動繼續
+Jam Recovery = 夾紙復原
+Altitude Adjustment = 高度調整
+Auto CR = 自動換行(CR)
+LF+CR = LF+CR
+LF = LF
+Line Termination = 連線中斷
+Job Timeout = 工作逾時
+Toner Save = 碳粉節省
+Auto Clean Drum = 自動清潔感光鼓
+Decide Emulation = 決定模擬程式
+
+;COLOR
+Manual Color Adjustment = 手動調整色彩
+Manual Colour Adjustment = 手動調整色彩
+Color Adjustment = 色彩調整
+Colour Adjustment = 色彩調整
+Cyan = 青色
+Magenta = 洋紅色
+Yellow = 黃色
+Black = 黑色
+
+Auto Color Calibration = 自動色彩校正
+Auto Colour Calibration = 自動色彩校正
+Auto Color Registration = 自動色彩登錄
+Auto Colour Registration = 自動色彩登錄
+Run Now = 立刻執行
+
+Color Mode = 顏色模式
+Colour Mode = 顏色模式
+;Color = 色彩
+Glayscale = 灰階
+
+;CHECK
+Imaging Unit = 成像單元
+Transfer Belt = 傳送帶
+Fuser = 定影器
+Transfer Roll = 傳送滾筒
+MP Pickroll = MP 挑紙滾輪
+Tray1 Pickroll = 紙匣 1 挑紙滾輪
+Tray2 Pickroll = 紙匣 2 挑紙滾輪
+Tray3 Pickroll = 紙匣 3 挑紙滾輪
+Tray4 Pickroll = 紙匣 4 挑紙滾輪
+
+%S Image Counted = 影像已計算
+%S Page Counted = 頁面已計算
+
+;Information
+Configuration Print = 列印組態設定
+Test Print = 測試列印
+Test Prints = 測試列印
+Menu Map = 功能表導覽圖
+Network Configuration Print  =  列印網路設定
+Print Network Configuration  =  列印網路設定
+
+;Network
+Config Network = 設定網路
+Configuration Network = 設定網路
+;IP Assign Method  = 指定網路 IP
+IP Assign Method  = IP 指定方法
+BOOTP = BOOTP
+DHCP = DHCP
+Static = 靜態
+Static IP  = 靜態 IP
+Default Set = 預設設定
+Restore = 還原
+Print Network Config = 列印網路設定
+IP Address = IP 位址
+SubnetMask = 子網路遮罩
+Gateway = 閘道
+
+;pcl
+Courier = Courier
+Lines Per Page = 每頁行數
+Lines = 行數
+Form Length = 表格長度
+PCL Font List = PCL 字型清單
+
+Regular = 標準
+
+;EPSON
+International character set = 國際字元組
+character set = 字元集
+Character Table = 字元表
+Form Lines = 表格行數
+
+San Serif = San Serif
+Roman = Roman
+
+USA = 美國
+France = 法國
+Germany = 德國
+UK = 英國
+Sweden = 瑞典
+Denmark 1 = 丹麥 1
+Denmark1 = 丹麥1
+Italy = 義大利
+Spain 1 = 西班牙 1
+Spain1 = 西班牙1
+Japan = 日本
+Norway = 挪威
+Denmark 2 = 丹麥 2
+Denmark2 = 丹麥2
+Spain 2 = 西班牙 2
+Spain2 = 西班牙2
+Latin = 拉丁
+
+ITALIC = 斜體
+PC437US = PC437US
+PC850 = PC850
+HEBREWOLD = HEBREWOLD
+HEBREWNEW = HEBREWNEW
+Hebrew Old = Hebrew Old
+Hebrew New = Hebrew New
+
+;ps3
+Print error information = 列印錯誤資訊
+
+PS Error Information = PS 錯誤資訊
+PS Font List = PS 字型清單
+
+PostScript Error Information = PostScript 錯誤資訊
+PostScript Font List = PostScript 字型清單
+
+Print PS Error = PS 錯誤資訊 
+Print PostScript Error = 列印PostScript錯誤
+
+;PaperOption
+6 3/4 Env. = 6 3/4 信封
+No.9 Env. = 9 號信封
+No. 9 Env. = 9 號信封
+Personal Check = 車牌貼紙
+
+;Graphic
+Toner Density = 碳粉密度
+
+;EPSON
+Adjust Top Margin = 調整上方邊界
+
+;Xerox
+Print Density = 列印密度
+Tray 1 Size = 紙匣 1 大小
+Print Quantity = 列印數量
+Print Quality = 列印品質
+Simplex Top Margin = 單面列印上方邊界
+Simplex Left Margin = 單面列印左方邊界
+Duplex Top Margin = 雙面列印上方邊界
+Duplex Left Margin = 雙面列印左方邊界
+2-Sided Printing = 雙面列印
+Power Saver(min) = 省電(分鐘)
+Configuration Page = 組態頁
+Office Demo = 辦公示範
+2-Sided Demo = 雙面示範
+2-Sided Demo Page = 雙面示範
+1200 dpi Quality = 1200 dpi 品質
+
+;Add
+Print Configuration Page = 列印組態頁
+Print Demo Page = 列印示範頁
+Print Menu Map = 列印功能表圖
+Print Test Page = 列印測試頁
+Machine Setup = 機器設定
+
+12 Hour = 12 小時制
+24 Hour = 24 小時制
+
+Sound/Volume = 音效/音量
+Alarm Sound = 提示音
+Speaker = 揚聲器
+Receiving = 接收
+Auto Reduction= 自動縮小
+
+Emulation Type= 模擬類型
+Duplex Margin = 雙面列印邊界
+Duplex Margin(mm) = 雙面列印邊界(mm)
+Duplex Margin(inch) = 雙面列印邊界(英吋)
+Short Binding = 短邊裝訂
+Short Binding(mm) = 短邊裝訂(mm)
+Short Binding(inch) = 短邊裝訂(英吋)
+Long Binding = 長邊裝訂
+Long Binding(mm) = 躞銝阰q(mm)
+Long Binding(inch) = 躞銝阰q(英吋)
+
+No.10 Envelope= 10 號信封
+Monarch Envelope = Monarch 信封
+DL Envelope = DL 信封
+C5 Envelope = C5 信封
+Post A6 = 明信片 A6
+PostCard 4x6 = 明信片 4x6
+C6 Envelope = C6 信封
+Ledger = Ledger
+JPost = JPost
+JPostD = JPostD
+Width = 寬度
+Height = 高度
+Custom Width = 自訂寬度
+Custom Height = 自訂高度
+Letter R = Letter R
+A4 R = A4 R
+JIS B5 R = JIS B5 R
+A5 R = A5 R
+Executive R = Executive R
+State R = State R
+A3 Over = 大 A3
+B5 Envelope = B5 信封
+634 = 634
+NO.9 = 9 號
+US Post = 美國明信片
+Index = 索引卡
+B6 = B6
+Hagaki = Hagaki
+A6 R = A6 R
+Post A6 R = 明信片 A6 R
+Hagaki R = Hagaki R
+
+Tray 1 Paper Size = 紙匣 1 紙張大小
+Tray 2 Paper Size = 紙匣 2 紙張大小
+Tray 3 Paper Size = 紙匣 3 紙張大小
+Tray 4 Paper Size = 紙匣 4 紙張大小
+MP Tray Paper Size = MP 紙匣紙張大小
+Manual Feeder Paper Size = 手動送紙器 紙張大小
+
+Heavy Weight = 重磅紙
+Hole Punched = 穿孔紙
+Punched = 穿孔紙
+Archive = 檔案紙
+Extra Thick = 超厚紙
+
+Tray 1 Tray 2 = 紙匣 1 紙匣 2
+Tray Chaining = 鏈式紙匣
+FAST1200 = 快速 1200
+Calibration = 校準
+
+TCP/IP = TCP/IP
+Print Network Information = 列印網路資訊
+
+Maintenance = Maintenance
+Cartridge Maintenance = 碳粉匣維護
+Ink Cartridge Alignment = 油墨匣校準
+Ink Cartridge Clean = 油墨匣清潔
+
+Transfer Roller = 傳送滾輪
+Tray1 Roller = 紙匣 1 滾輪
+
+;ks/kssm
+Code = Code
+Zoom = Zoom
+Mode = Mode
+CPI = CPI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Original Type = 原稿類型
+Text = 文字
+Text/Photo = 文字/相片
+Photo = 相片
+Photo 120 = 相片 120
+Photo 160 = 相片 160
+Photo 180 = 相片 180
+Photo 220 = 相片 220
+Copy = 複印
+Transfer Belt Reset = 傳送帶重設
+Reset Count = 重設計數
+Serial Number = 序號
+
+;Dell
+inch = 英吋
+Print Font List = 列印字型清單
+Printer ID = 印表機 ID
+Printer Setup = 印表機設定
+Printer Fax Number = 印表機傳真號碼
+Print Network Configuration Page = 列印網路組態頁
+Configure Network = 組態網路
+Tray Linking = 紙匣連結
+
+;k2Xrx
+Collation = 定序
+Smart Duplexing = 智慧雙面列印
+Job Held Timer = 工作保留計時器
+hours = 小時
+Tray 1MPT = 紙匣 1MPT
+Tray 1(MPT) = 紙匣 1(MPT)
+Tray 1 (MPT) = 紙匣 1(MPT)
+Tray1MPT Size = 紙匣 1 MPT 大小
+
+Toner Low Alert =  碳粉不足警告
+Print Supplies Information = 列印耗材資訊
+Print Accounting List = 列印計量清單
+Print Accounting Report = 列印計量報告
+Print Stored Job List = 列印已儲存的工作清單
+Print Completed Job List = 列印已完成的工作清單
+Print Usage Page = 列印使用頁
+MP Tray Paper Setup = 多功能紙匣紙張設定
+Manual Feed Paper Setup = 手動送紙紙張設定
+Tray 1 Paper Setup = 紙匣 1 紙張設定
+Tray 2 Paper Setup = 紙匣 2 紙張設定
+Tray 3 Paper Setup = 紙匣 3 紙張設定
+Tray 4 Paper Setup = 紙匣 4 紙張設定
+High Coverage Mode = 高涵蓋面模式
+High Coverage = 高涵蓋面
+Screen = 畫面
+Enhanced = 加強
+Detailed = 詳細
+Wireless Network Setting =無線網路設定
+Paper Substitution = 紙張替換
+Glossy Photo 111-130g/m2 = 光面相紙 111-130 克/平方米
+Glossy Photo 131-175g/m2 = 光面相紙 131-175 克/平方米
+Glossy Photo 176-220g/m2 = 光面相紙 176-220 克/平方米
+
+[PHONEBOOK]
+CAPTION = 電話簿
+EMAILCAPTION = 通訊錄
+IDS_EMAIL_ADDRESS = 電子郵件位址
+IDS_TEL_NUMBER = 電話號碼
+IDC_EDIT = 編輯
+IDC_MODIFY= 修改
+IDC_DELETE = 刪除
+IDC_DELETE_ALL = 全部刪除
+IDC_GET_PHONEBOOK = 讀取
+IDC_SEND_PHONEBOOK = 寫入
+IDC_GET_EMAIL = 讀取
+IDC_SEND_EMAIL = 寫入
+IDL_TYPE = 類型
+IDC_ONETOUCH_DIAL =  單鍵撥號
+IDC_SPEED_DIAL_2 =  快速撥號
+IDC_GROUP_DIAL = 群組撥號
+IDC_EMAIL_GROUP_DIAL = 群組寄送
+IDC_READSTATIC = 按「讀取」按鈕可獲取印表機中的電話號碼。
+IDC_WRITESTATIC = 按「寫入」按鈕可將電話號碼儲存到印表機。
+IDC_Email_READSTATIC = 按「讀取」按鈕可獲取印表機中的電子郵件位址。
+IDC_Email_WRITESTATIC = 按「寫入」按鈕可將電子郵件位址儲存到印表機。
+IDC_EMAIL = 電子郵件
+IDC_TOTAL = 總數
+IDC_ADD = 新增
+IDC_IMPORT = 匯入
+IDC_EXPORT = 匯出
+
+[GROUP_DIAL]
+CAPTION_PHONEBOOK = 群組撥號
+CAPTION_EMAIL = 群組寄送
+IDL_I_ADDRESS = 內含位址：
+IDL_A_ADDRESS = 可用位址：
+IDL_I_NUMBER = 內含號碼：
+IDL_A_NUMBER = 可用號碼：
+
+IDL_GNAME = 群組名稱：
+
+IDC_REMOVE = 移除
+IDC_ADD = 新增
+
+[Scan Setting]
+CAPTION = 掃瞄目的地
+
+IDC_AVAILABLE_STATIC = 可用目的地清單
+IDC_FRONT_STATIC = 前置面板目的地清單
+IDC_SCAN_ADDAPP = 新增應用程式
+IDC_SCAN_REMOVEAPP = 移除應用程式
+IDC_LOC_STATIC = 預設儲存位置
+
+IDC_ADD_FILEPATH_STATIC = 檔案路徑
+IDC_ADD_FILENAME_STATIC = 應用程式名稱
+
+IDC_SCANTYPE = 檔案類型
+IDC_SCANLANG = 語言 
+
+DocTYPE_ITEM_0 = 儲存為 BMP
+DocTYPE_ITEM_1 = 儲存為 JPEG
+DocTYPE_ITEM_2 = 儲存為 PDF
+DocTYPE_ITEM_3 = 儲存為 TIFF
+
+EmailTYPE_ITEM_0 = 儲存為 JPEG
+EmailTYPE_ITEM_1 = 儲存為 PDF
+EmailTYPE_ITEM_2 = 儲存為 TIFF
+
+OCR_ITEM_0 = Microsoft Excel (.csv)
+OCR_ITEM_1 = Microsoft Word (.doc)
+OCR_ITEM_2 = Text (.txt)
+OCR_ITEM_3 = PDF (.pdf)
+OCR_ITEM_4 = RTF (.rtf)
+
+LANG_ITEM_0 = 英文
+LANG_ITEM_1 = 德文
+LANG_ITEM_2 = 法文
+LANG_ITEM_3 = 西班牙文
+LANG_ITEM_4 = 義大利文
+
+LANG_ITEM_5 = 瑞典文
+LANG_ITEM_6 = 荷蘭文
+LANG_ITEM_7 = 葡萄牙文（歐洲）
+LANG_ITEM_8 = 葡萄牙文（巴西）
+LANG_ITEM_9 = 匈牙利文
+
+LANG_ITEM_10 = 波蘭文
+LANG_ITEM_11 = 俄文
+LANG_ITEM_12 = 日文
+LANG_ITEM_13 = 簡體中文
+LANG_ITEM_14 = 繁體中文
+
+LANG_ITEM_15 = 韓文
+LANG_ITEM_16 = 俄文+英文 
+LANG_ITEM_17 = 數字
+LANG_ITEM_18 = 字母
+LANG_ITEM_19 = 烏克蘭文
+
+LANG_ITEM_20 = 愛沙尼亞文
+LANG_ITEM_21 = 拉脫維亞文
+LANG_ITEM_22 = 立陶宛文
+LANG_ITEM_23 = 挪威文
+LANG_ITEM_24 = 芬蘭文
+
+LANG_ITEM_25 = 丹麥文
+LANG_ITEM_26 = 捷克文
+LANG_ITEM_27 = 土耳其文
+LANG_ITEM_28 = 烏克蘭文+英文
+LANG_ITEM_29 = 烏茲別克文
+
+[ScanToPc]
+CAPTION = JPEG 選項
+IDC_OPTION_STATIC = 您可使用此功能將影像轉成 JPEG 檔，讓電子郵件傳送更快速。  選擇選項
+IDC_ORIGINAL = 原始大小
+IDC_SIZE_SMALL = 小（調整影像大小為視窗 640 x 480）
+IDC_SIZE_NOMAL = 正常（調整影像大小為視窗 800 x 600）
+IDC_SIZE_LARGE = 大（調整影像大小為視窗 1024 x 768）
+IDOK = 確定
+IDCANCEL = 取消
+
+[Flash]
+IDL_ADD = 新增
+IDL_DELETE = 刪除
+IDL_DELETE_ALL = 全部刪除
+Print list = 列印清單
+IDC_REFRESH = 重新整理
+IDC_FONTS = 字型
+IDC_MACROS = 巨集
+IDC_DELETE_ALL_FONT_MACRO= 刪除全部字形與巨集
+IDC_ENABLEMACRO = 啟用巨集
+IDC_DISABLEMACRO = 停用巨集
+
+[PS3]
+IDC_ADD_PS3 = 新增
+IDC_DELETE_PS3 = 全部刪除
+IDC_PRINT_LIST = 列印清單
+IDC_PS3_REFRESH = 重新整理
+Print PostScript Flash Directory = 列印 PostScript 快閃目錄
+Format Flash Memory = 格式化快閃記憶體
+Flash Fonts/Forms = 快閃字型/表格
+Size = 大小
+
+IDL_RESOURCE_TYPE = 資源類型
+IDC_FMU_RADIO_ALL = 全部
+IDC_FMU_RADIO_FONT = 字型
+IDC_FMU_RADIO_FORM = 表格
+IDL_STORAGE_TYPE = 儲存類型
+IDC_FMU_RADIO_MEMORY = 記憶體
+IDC_FMU_RADIO_HDD = 硬碟
+IDC_FMU_RESET = 重設
+IDC_FMU_DOWNLOAD = 下載
+IDC_FMU_DELETE = 刪除
+IDC_FMU_DELETE_ALL = 全部刪除
+IDC_FMU_REFRESH = 重新整理
+IDC_FMU_STATIC_TOTALMEM = 總共 (KB)：
+IDC_FMU_STATIC_USEDMEM = 已使用 (KB)：
+IDC_FMU_STATIC_AVAILABLEMEM = 可用 (KB)：
+IDC_FMU_REPORT = 報告
+
+
+[SEND]
+CAPTION = 下載中...
+IDL_FILE_SIZE = 檔案大小
+IDL_STATUS = 狀態
+
+[SELECT_FILE]
+Select a file = 選取一個檔案
+Note = 注意： 如檔案已有自己的 ID，此 ID 將被忽略。
+
+[INK_CARTRIDGE]
+IDC_INK_CNOR_STR1 = If your printed output is streaked like the example on the left, the print cartridges need to be cleaned. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CNOR_STR2 = Click Clean to clean the print cartridges now.
+IDC_INK_CMID_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CMID_STR2 = If the print quality looks good, click Done.
+IDC_INK_CMID_STR3 = Otherwise, click Clean Again to do a more thorough cleaning. This takes about some minutes and uses one sheet of paper.
+IDC_INK_CADV_STR1 = A page is printing that shows the results of this stage of cleaning.
+IDC_INK_CADV_STR2 = If the print quality looks good, click Done.
+IDC_INK_CADV_STR3 = Otherwise, click Prime to prime the print cartridges. This takes about two minutes, uses one sheet of paper, and uses a lot of ink.
+IDC_INK_CRTN_STR1 = A page is printing tat shows the result of the priming.
+IDC_INK_CRTN_STR2 = If the print quality looks good, click Done.
+IDC_INK_CRTN_STR3 = Otherwise, click Clean Again to clean the print cartridges again. If the does not fix the problem, replace the print cartridges.
+
+IDC_PRINT_PAGE = Print Page
+IDC_CANCEL = Cancel
+IDC_NOR_CLEAN = Clean
+IDC_MID_CLEAN = Intermediate Clean
+IDC_ADV_CLEAN = Prime
+IDC_CLEAN_AGAIN = Clean Again
+IDC_ALIGN = Align
+IDC_ALIGN_CONT = Continue
+IDC_ALIGN_AGAIN = Align
+IDC_BACK = Back
+IDC_NEXT = Continue
+IDC_FINISH = Done
+
+IDC_ALIGNDLG1_STR1 = Print cartridge alignment ensures the best possible print quality.
+IDC_ALIGNDLG1_STR2 = To perform an alignment, you need the page that is automatically printed after you insert a print cartridge. If you do not have this alignment page, click Print Page to generate the page.
+IDC_ALIGNDLG1_STR3 = If you already have the page, click Continue.
+IDC_ALIGNDLG2_STR1 = Follow these steps to perform the alignment.
+IDC_ALIGNDLG2_STR2 =1. Place the alignment page, with the patterns facing down, at the front left corner on the scanner glass.
+IDC_ALIGNDLG2_STR3 = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR3_START = 2. Press the "Scan" button on your MFP until turn on the light.
+IDC_ALIGNDLG2_STR4 = During alignment the green light next to the On button will blink. When the process is complete the light will stop blinking and remain green.
+
+IDC_ALIGNSFPDLG1_STR1 = This procedure aligns the print cartridges to give you the best possible print quality.
+IDC_ALIGNSFPDLG1_STR2 = You may not notice misalignment, but you should align each time a print cartridge is replaced.
+IDC_ALIGNSFPDLG1_STR3 = Click "Align" to align the print cartridges now. This takes about some minutes and uses two sheets of paper.
+IDC_ALIGNSFPDLG2_STR1 = A page is printing with sets of alignment patterns.
+IDC_ALIGNSFPDLG2_STR2 = Select the arrow label which is closest to left side of page. 
+IDC_ALIGNSFPDLG2_STR3 = Examine the page and select the best aligned pattern in each set then click "Continue".
+IDC_ALIGNSFPDLG3_STR1 = A page is printing with two aligned patterns: a square and a cross.
+IDC_ALIGNSFPDLG3_STR2 = If the patterns look like the example on the left, click "Done". Otherwise click "Align" to repeat the alignment.
+
+[FWUP]
+CAPTION=韌體更新
+IDC_BROWSE=瀏覽...
+IDC_UPDATE=更新
+IDL_FILE_NAME=檔案名稱：
+IDL_FILE_INFORMATION=檔案資訊
+IDL_FILE_SIZE=檔案大小：
+IDC_FILE_SIZE=0 位元組
+IDL_PROGRESS=進度
+IDL_MESSAGE=訊息：
+
+
+[HELP]
+No help = 此項目沒有相關說明主題。
+
+;Layout
+Orientation = 決定列印於紙上的方向。
+Top Margin = 決定頁面上可列印範圍的頂端邊緣和首行上緣的距離。
+Left Margin = 決定頁面上可列印範圍的左邊緣和各行左端的距離。
+Print Option = 您可使用「雙面列印」選項自動列印雙面文件。
+Duplex = 您可使用「雙面列印」選項自動列印雙面文件。
+
+;Paper Option
+Copies = 決定每一工作所要列印的數量。
+Paper Size = 設定印表機紙匣中載入的紙張類型。
+Tray 1 Paper Size = 設定印表機紙匣中載入的紙張類型。
+Tray 2 Paper Size = 設定印表機紙匣中載入的紙張類型。
+Tray 3 Paper Size = 設定印表機紙匣中載入的紙張類型。
+Tray 4 Paper Size = 設定印表機紙匣中載入的紙張類型。
+MP Tray Paper Size = 設定印表機紙匣中載入的紙張類型。
+Manual Feeder Paper Size = 設定印表機紙匣中載入的紙張類型。
+Paper Type = 決定印表機的紙張類型。
+Paper Source = 您可以選擇印表機的預設紙匣。
+
+;Graphic
+Resolution = 決定印表機解析度。
+Darkness = 決定頁面碳粉密度。
+
+Auto Color Calibration = 可讓您將印表機設定為定期自動校正以達到最佳的彩色列印品質。
+Auto Colour Calibration = 可讓您將印表機設定為定期自動校正以達到最佳的彩色列印品質。
+Auto Color Registration = 可讓您調整彩色的文字或圖形的位置讓列印色彩和螢幕上的位置吻合。
+Auto Colour Registration = 可讓您調整彩色的文字或圖形的位置讓列印色彩和螢幕上的位置吻合。
+Manual Color Adjustment = 可讓您手動調整每個墨水匣的色彩對比。 如果印出的文件看起來太淡、褪色或是截斷，請將滑桿往 + 的方向移動。 如果印出的文件看起來太模糊，請將滑桿往 - 的方向移動。
+Manual Colour Adjustment = 可讓您手動調整每個墨水匣的色彩對比。 如果印出的文件看起來太淡、褪色或是截斷，請將滑桿往 + 的方向移動。 如果印出的文件看起來太模糊，請將滑桿往 - 的方向移動。
+
+;Setting
+Power Save = 決定印表機從待命到低電源模式所花的時間。
+Jam Recovery = 決定印表機會儘可能將夾紙的文件重新列印。
+Auto Continue = 決定當使用者列印時，MP 紙匣中沒有紙，但驅動程式的紙張來源設定為「手動送紙」時印表機的回應。
+Altitude Adjustment = 您可以根據所在高度將列印品質最佳化。
+Auto CR = 在文件每一行的後端，印表機會接收一個換行字元（LF）及返回字元（CR）。 此設定決定當印表機接收到 LF 而非 CR 時所要進行的動作。 
+
+Job Timeout = 決定印表機等待列印您資料的時間，之後才會接受其他介面的資料。
+Toner Save = 決定列印頁面時所要使用的碳粉量。
+Auto Clean Drum = 決定是否要自動清潔感光鼓。 如果啟用此選項，每列印 500 頁後便會列印 OPC 清潔頁 （清潔 OPC 感光鼓可維持較佳的解析度）。
+Decide Emulation = 決定模擬程式。
+Emulation Type = 決定模擬程式。
+
+
+;Check
+Imaging Unit = 成像單元可讓您檢查以目前的成像單元可列印的影像總數。
+Transfer Belt = 可讓您檢查以目前的傳送帶可列印的影像總數。
+Fuser Type = 可讓您檢查以目前的定影器單元可列印的影像總數。
+Fuser = 可讓您檢查以目前的定影器單元可列印的影像總數。
+Transfer Roll = 本項目只供維修服務技術人員使用。 
+Tray1 Pickroll = 本項目只供維修服務技術人員使用。 
+Tray2 Pickroll = 本項目只供維修服務技術人員使用。 
+Tray3 Pickroll = 本項目只供維修服務技術人員使用。 
+Tray4 Pickroll = 本項目只供維修服務技術人員使用。 
+
+
+;Information
+Configuration Print = 列印印表機目前的設定。
+Print Configuration Page = 列印印表機目前的設定。
+Configuration Page = 列印印表機目前的設定。
+Network Configuration Print = 列印印表機目前的設定。
+Print Network Configuration = 列印印表機目前的設定。
+Test Print = 列印展示頁面。 
+Test Prints = 列印展示頁面。 
+Print Demo Page = 列印展示頁面。 
+Menu Map = 列印印表機的功能表導覽圖。
+Print Test Page = Prints the test Page.
+
+;Scan Destination
+Destination = 設定掃瞄目的地設定。
+Scan Resolution = 解析度設定決定掃描器在掃瞄影像中所要擷取的資訊數量。
+Scan Color = 指定要掃瞄影像的模式。可讓您選擇掃瞄原始來源文件時所要使用的掃瞄類型。
+Scan Colour = 指定要掃瞄影像的模式。可讓您選擇掃瞄原始來源文件時所要使用的掃瞄類型。
+Show Preview = 此核取方塊可勾選是否出現掃描對話方塊，以變更掃描選項。  若選取此選項，完整掃描前將顯示掃描預覽，且可調整掃描選項。  若不勾選此核取方塊，將直接掃描影像至選取的應用程式。
+ADF Duplex =  選取自動文件送紙器為文件來源。選取此模式掃描雙面頁面。如您選取 ADF 雙面作為文件來源，掃描器將掃描自動文件送紙器中的文件。如果自動文件送紙器是空的，系統將顯示訊息。若要繼續，將要掃描的文件置入送紙器中，然後再試著掃描一次。使用 ADF 雙面模式時，請選取適當的裝訂類型，以便從掃描器取得方向正確的掃描頁面。 如果來源文件中的文件為直向文件 (例如書或小冊)，請按一下長邊裝訂。如果為橫向 (例如筆記本)，請按一下短邊裝訂。
+
+IDC_AVAILABLE_STATIC = 顯示目前連結至電腦登錄 BMP 檔案的應用程式清單。 執行掃描設定標籤時，將更新可用的掃描目的地。
+IDC_FRONT_STATIC =  顯示新增至印表機前置面板的應用程式清單。 初次使用印表機時，前置面板將以預設值更新。
+IDC_SCAN_MOVE = 此按鈕可移動「可用的掃描目的地」選項至「前置面板目的地清單」。
+IDC_SCAN_ADDAPP = 此按鈕可新增有效 exe 執行檔中的選取項目。 新增項目將顯示在「可用的目的地清單」中。
+IDC_SCAN_REMOVEAPP = 此按鈕可移除使用者在「可用的掃描目的地」中新增的項目。 
+IDC_LOC_STATIC = 決定預設的儲存資料夾。
+
+;Phonebook
+Directory = 設定電子郵件及電話簿設定。 
+Phonebook = 設定電話簿設定。
+Phone Book = 設定電話簿設定。
+Emailbook = 設定通訊錄秦]定。
+Address Book = 設定通訊錄秦]定。
+IDC_EDIT = 使用者可儲存或編輯選取的項目號碼。
+IDC_DELETE = 使用者可刪除選取的項目。
+IDC_DELETE_ALL = 使用者可刪除所有項目。
+IDC_GROUP_DIAL = 使用者可設定或編輯選取的群組撥號號碼。  如果未選擇群組撥號，無法使用群組撥號按鈕。
+IDC_GET_PHONEBOOK = 使用者可從機器取得電話簿號碼。
+IDC_SEND_PHONEBOOK = 使用者可下載電話簿號碼至機器上。
+IDC_EMAIL_GROUP_DIAL = 使用者可設定或編輯選取的群組郵寄項目。  如果未選擇群組郵寄，便無法使用群組郵寄按鈕。
+IDC_GET_EMAIL = 使用者可從機器取得郵寄項目。
+IDC_SEND_EMAIL = 使用者可從機器下載郵寄項目。
+IDC_ADD = 使用者可儲存選取的項目編號。
+IDC_MODIFY = 使用者可修改選取的項目編號。
+IDC_EMAIL_ADD = 使用者可儲存選取的項目位址。
+IDC_EMAIL_MODIFY = 使用者可修改選取的項目位址。
+IDC_G_ADD = 使用者可設定選取的群組撥號號碼。
+IDC_G_MODIFY = 使用者可編輯選取的群組撥號號碼。
+IDC_G_EMAIL_ADD = 使用者可設定選取的群組郵件。
+IDC_G_EMAIL_MODIFY = 使用者可修改選取的群組郵件。
+
+;Fax
+Machine ID = 指定傳真封面的名稱。
+Printer ID = 指定傳真封面的名稱。
+Fax Number = 指定傳真封面的傳真號碼。
+Machine Fax No = 指定傳真封面的傳真號碼。
+Machine Fax Number = 指定傳真封面的傳真號碼。
+Printer Fax Number = 指定傳真封面的傳真號碼。
+
+;Network
+BOOTP = BOOTP 伺服器會自動分配 IP 位址給您。
+DHCP = DHCP 伺服器會自動分配 IP 位址給您。
+Static = 您可以手動輸入 IP 位址、子網路遮罩及閘道。
+
+Emulation Setting = 設定每一個模擬程式的值。
+
+;PCL
+Typeface = 顯示目前字型的字體。
+Font = 顯示目前字型。
+Symbol Set = 符號集是某字型所有可用字元的特定群組。
+
+;EPSON
+Pitch = 決定字元間距。
+Point Size = 僅在選取成比例間隔的輪廓字型時可用。 其他字型將被忽略。
+Lines Per Page = 設定每頁行數。
+Lines = 設定每頁行數。
+Form Length = 設定每頁行數。
+Courier = 決定 Courier 字型的類型，標準或深色。
+International character set = 國際字元組是字型中所有可用字元的群組。
+character set = 國際字元組是字型中所有可用字元的群組。
+Character Table = 決定字元表。
+LPI = 決定每頁行數。
+Auto Wrap = 決定斷行字數。
+Form Lines = 設定表格（頁）上的行數。
+
+IDL_ADD = 新增字型或巨集至快閃記憶體。
+IDL_DELETE = 刪除快閃記憶體中的字型或巨集。
+IDL_DELETE_ALL = 刪除快閃記憶體中的全部字型或巨集。
+Print list = 列印已新增字型或巨集的清單。
+IDC_ENABLEMACRO = 啟用選取的巨集。
+IDC_DISABLEMACRO = 停用選取的巨集。
+IDC_REFRESH = 更新字型及巨集的相關資訊。
+IDC_DELETE_ALL_FONT_MACRO = 刪除快閃記憶體中所有的巨集和字型。
+
+Print PostScript Flash Directory = 列印快閃記憶體的快閃目錄。
+Print error information = 指定文件列印之後是否列印 PostScript 錯誤資訊。 若要列印工作中途發生錯誤的錯誤頁，請設定「開啟」。 
+PostScript error information = 指定文件列印之後是否列印 PostScript 錯誤資訊。 若要列印工作中途發生錯誤的錯誤頁，請設定「開啟」。 
+PS error information = 指定文件列印之後是否列印 PostScript 錯誤資訊。 若要列印工作中途發生錯誤的錯誤頁，請設定「開啟」。 
+Print PS Error = 指定文件列印之後是否列印 PostScript 錯誤資訊。 若要列印工作中途發生錯誤的錯誤頁，請設定「開啟」。 
+Print PostScript Error = 指定文件列印之後是否列印 PostScript 錯誤資訊。 若要列印工作中途發生錯誤的錯誤頁，請設定「開啟」。 
+Font List = 列印目前印表機可用的字型清單。
+Print Font List = 列印目前印表機可用的字型清單。
+PCL Font List = 列印目前印表機可用的字型清單。
+PS Font List = 列印目前印表機可用的字型清單。
+Postscript Font List = 列印目前印表機可用的字型清單。
+
+IDC_ADD_PS3 = 新增 PostScript 字型或表格至快閃記憶體。
+IDC_DELETE_PS3 = 刪除快閃記憶體中的所有 PostScript 字型與表格。
+IDC_PRINT_LIST = 列印已新增的 PostScript 字型及表格清單。
+IDC_PS3_REFRESH = 更新關於 PostScript 字型與表格的資訊。
+
+IDC_FMU_RESET= 您可重設目前選取的檔案名稱。
+IDC_FMU_DOWNLOAD = 使用者可使用此按鈕將資源下載到機器中。
+IDC_FMU_DELETE = 使用者可使用此按鈕刪除機器中的資源。
+IDC_FMU_DELETE_ALL = 使用者可使用此按鈕刪除機器中的全部資源。
+Format Flash Memory = 格式化印表機中的快閃記憶體，以起始化檔案系統。 將移除所有下載至快閃記憶體的巨集、字型與表單檔。
+Initialize Font/Form Memory = 初始化印表機中的字體/表單記憶體。 將從記憶體中刪除您下載的全部巨集、字體與表單文檔。
+IDC_FMU_REFRESH = 您可重新整理總體、已使用及可用的存儲空間。 此外，還會更新存儲在機器儲存器中的資源名稱清單。
+IDC_FMU_REPORT = 此按鈕可報告機器中的資源清單。
+
+;EPSON
+Adjust Top Margin = 調整頁面的上方邊界。 
+
+;Xerox
+Tray 1 Size = 設定印表機紙匣 1 中裝入的紙張大小。 選擇使用自訂紙張大小時，「短邊」與「長邊」欄位將啟用，您可以定義自訂的紙張大小。 
+Simplex Top Margin = 決定頁面上可列印範圍的頂端邊緣和首行上緣的距離。 決定頁面上可列印範圍的頂端邊緣和首行上緣的距離。 用於單面列印模式。
+Simplex Left Margin = 決定頁面上可列印範圍的左邊緣和各行左端的距離。 用於單面列印模式。
+Duplex Top Margin = 決定頁面上可列印範圍的頂端邊緣和首行上緣的距離。 用於雙面列印模式。 
+Duplex Left Margin = 決定頁面上可列印範圍的左邊緣和各行左端的距離。 用於雙面列印模式。 
+2-Sided Printing = 「雙面列印」可以自動列印兩面的文件。 
+Office Demo = 印出印表機的辦公示範頁。
+2-Sided Demo =  印出印表機的雙面示範頁。 
+2-Sided Demo Page =  印出印表機的雙面示範頁。 
+
+Ink Cartridge Alignment = 校準油墨匣。
+Ink Cartridge Clean = 清潔油墨匣。
+
+Tray Chaining = 從「紙張來源」選取「自動」以外的值而所選紙匣為空時，印表機會從其他紙匣列印。 
+Tray Linking = 從「紙張來源」選取「自動」以外的值而所選紙匣為空時，印表機會從其他紙匣列印。 
+
+Short Binding = 設定短邊裝訂的背面的下方邊界。
+Long Binding = 設定長邊裝訂的背面的右方邊界。
+Image Enhance = 此項目可增強列印品質。
+
+
+
+
+
+Original Type = 根據原稿類型選取此選項時，可獲得最佳影印品質。Transfer Belt Reset = The life of the transfer belt is expired. Replace the transfer belt with a new one then, click the Reset Count button. When the Reset Count window pops up, enter the serial number of new transfer belt, and click Apply.
+Transfer Belt Reset = 傳送帶使用期限已到。 用新的傳送帶來替換舊的，按一下“重設計數”按鈕。 “重設計數”視窗彈出時，輸入新傳送帶的序號，再按一下“套用”。
+Print Network Configuration Page = 列印印表機目前的設定。
+
+;k2Xrx
+Collation = 此項目可讓您透過列印驅動程式自動分頁收到的資料。 印表機將以組的方式列印輸出以符合原始順序。
+Smart Duplexing = 若此功能表設定為開啟，即使您 PC 上的印表機驅動程式已將雙面列印設定為預設值，印表機仍會偵測單一頁面工作並以單面列印。
+Job Held Timer = 機器會將工作保留一段特定期間。 您可以設定最多 72 小時的期間。
+Toll Save = 設定您的印表機以將傳真儲存在記憶體中，並在特定的節費時間內傳送。 
+
+Toner Low Alert = 如果碳粉匣內的碳粉已用完，會出現一則]提示使用者更換碳粉匣的訊息。 可設定此選項，以選擇是否出現該訊息。
+Print Supplies Information = 列印耗材資訊頁面。
+Print Accounting Report = 列印有關列印輸出數目的報告。
+Print Stored Job List = 列印目前儲存在硬碟機中的工作。
+Print Completed Job List = 列印已完成的列印工作清單。
+Print Usage Page = 列印個人或群組已列印的總頁數。
+Screen = 畫面允許用戶選擇選項以將連續調影像轉換為可列印的二值影像。 正常模式會生成整個頁面都為平滑調的列印輸出。 加強模式會生成頁面中具有清晰文字和平滑的圖形/光柵物體的列印輸出。 詳細模式會生成整個頁面都具有清晰的詳細資訊的列印輸出。
+Wireless Network Setting =根據需要設定無線網路設定。
+Paper Substitution = 紙張不符時，此選項會讓機器設定為將 A4 大小紙張列印在 Letter 大小紙張中，反之亦然。

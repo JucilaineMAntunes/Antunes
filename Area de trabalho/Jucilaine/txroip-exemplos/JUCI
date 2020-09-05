@@ -1,0 +1,113 @@
+            Post["/api/csta-profiles/update", true] = async (_, __) =>
+             {
+                 try
+                 {
+                     var model = this.Bind<CstaProfileModel>();
+                     //var modell = this.Bind<CstaProfileExtensionModel>(x => x.ProfileGuid, x => x.ExtensionGuid);                    
+                     var result = this.Validate(model);
+
+                     if (result.IsValid)
+
+                     {
+                         var profile = new dbModels.CstaProfiles.CstaProfileModel();
+                         profile.Alias = model.Alias;
+
+                         var extensions = new List<CstaProfileExtensionModelJUCI>();
+
+                         foreach (var cstaProfileExtension in extensions)
+                         {
+                             var item = this.Validate(extensions);
+
+                             if (!item.IsValid)
+                                 break;
+
+                             var extension = new CstaProfileExtensionModelJUCI();
+                             extension.ProfileGuid = (Guid)model.Guid;
+                             extension.ExtensionGuid = cstaProfileExtension.ExtensionGuid;
+                             extensions.Add(extension);
+                         }
+
+                         await _service.UpdateAsync(profile, extensions.ToArray());
+                         return Negotiate.WithModel(new object()).WithStatusCode(HttpStatusCode.OK);
+                     }
+                     else
+                     {
+                         return Negotiate.WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.Error_FailureValidatingItem);
+                     }
+
+                 }
+                 catch (Exception e)
+                 {
+                     _logger.LogError(e);
+
+                     return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = Resources.WebResources.Error_FailureSavingCstaProfile };
+                 }
+             };
+			 
+			 ------------------[
+			 
+            /*Post["/api/csta-profiles/add", true] = async (_, __) =>
+            {
+                try
+                {
+                    var model = this.Bind<CstaProfileModel>();
+                    var result = this.Validate(model);
+                    var item = this.Validate(this.Bind<CstaProfileExtensionModel>());
+
+                    if (result.IsValid)
+                    {
+                        var profile = new dbModels.CstaProfiles.CstaProfileModel();
+                        var extensions = new List<CstaProfileExtensionModel>();
+
+                        foreach (var cstaProfileExtension in extensions)
+                        {
+                            if (!item.IsValid)
+                                break;
+
+                            var extension = new CstaProfileExtensionModel();
+                            extension.ProfileGuid = (Guid)model.Guid;
+                            extension.ExtensionGuid = cstaProfileExtension.ExtensionGuid;
+                            extensions.Add(extension);
+                        }
+
+                        await _service.AddAsync(profile, extensions.ToArray());
+                        return Negotiate.WithModel(new object()).WithStatusCode(HttpStatusCode.OK);
+                    }
+                    else
+                    {
+                        return Negotiate.WithModel(result).WithStatusCode(HttpStatusCode.BadRequest).WithReasonPhrase(WebResources.Error_FailureValidatingItem);
+                    }
+
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError(e);
+
+                    return new Response { StatusCode = HttpStatusCode.InternalServerError, ReasonPhrase = Resources.WebResources.Error_FailureSavingCstaProfile };
+                }
+            };*/
+			
+			
+			
+			
+			
+			 /* private dbModels.CstaProfiles.CstaProfileModel CstaProfileModelToDbCstaProfileModel(CstaProfileModel model)
+        {
+            return new dbModels.CstaProfiles.CstaProfileModel()
+            {
+                Guid = model.Guid ?? Guid.Empty,
+                Alias = model.Alias
+               // ProfileGuids = profileModels?.Select(x => x.Guid)?.ToArray()
+            };
+            
+        }*/
+        /*
+        private CstaProfileExtensionModel CstaProfileExtensionModelToDbCstaProfileExtensionModel(CstaProfileExtensionModel model)
+        {
+            return new CstaProfileExtensionModel()
+            {
+                ProfileGuid = model.ProfileGuid,
+                ExtensionGuid = model.ExtensionGuid,
+            };
+        }
+        */
