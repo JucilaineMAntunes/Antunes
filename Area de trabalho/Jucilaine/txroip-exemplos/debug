@@ -1,2 +1,0 @@
-$('input#CheckPrivate').prop("checked", 'True');
-dataTable.buttons(1).enabled

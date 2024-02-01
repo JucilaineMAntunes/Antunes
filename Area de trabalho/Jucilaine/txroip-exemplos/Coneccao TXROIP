@@ -1,4 +1,0 @@
-update services
-set HostName = '192.168.15.43',
-NetworkInterface = '192.168.15.43'
-where Guid in ('01B9B35F-5A6F-4D27-B2C1-D242201A1C2D','D21E7313-F5AB-4A4F-B180-E9F45CA37655')

@@ -1,3 +1,0 @@
-
-insert into CstaProfiles (guid, alias)
-values('8D16E36F-4402-446E-B180-2E28CAA0D545','Perfil')
